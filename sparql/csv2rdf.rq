@@ -1,108 +1,112 @@
-PREFIX s: <https://sireneld.io/vocab#>
-PREFIX st: <https://sireneld.io/siret/>
-PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sn: <https://sireneld.io/vocab/sirene#>
+PREFIX sx: <https://sireneld.io/vocab/sirext#>
+PREFIX st: <httpsn://sireneld.io/siret/>
+PREFIX rdfsn: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
 PREFIX org: <http://www.w3.org/ns/org#>
 
 CONSTRUCT {
-	?company a org:Organization ;
-		s:SIREN ?SIREN ;
-		s:NIC ?NIC ;
-		s:L1_NORMALISEE ?L1_NORMALISEE ;
-		s:L2_NORMALISEE ?L2_NORMALISEE ;
-		s:L3_NORMALISEE ?L3_NORMALISEE ;
-		s:L4_NORMALISEE ?L4_NORMALISEE ;
-		s:L5_NORMALISEE ?L5_NORMALISEE ;
-		s:L6_NORMALISEE ?L6_NORMALISEE ;
-		s:L7_NORMALISEE ?L7_NORMALISEE ;
-		s:L1_DECLAREE ?L1_DECLAREE ;
-		s:L2_DECLAREE ?L2_DECLAREE ;
-		s:L3_DECLAREE ?L3_DECLAREE ;
-		s:L4_DECLAREE ?L4_DECLAREE ;
-		s:L5_DECLAREE ?L5_DECLAREE ;
-		s:L6_DECLAREE ?L6_DECLAREE ;
-		s:L7_DECLAREE ?L7_DECLAREE ;
-		s:NUMVOIE ?NUMVOIE ;
-		s:INDREP ?INDREP ;
-		s:TYPVOIE ?TYPVOIE ;
-		s:LIBVOIE ?LIBVOIE ;
-		s:CODPOS ?CODPOS ;
-		s:CEDEX ?CEDEX ;
-		s:DEPET ?DEPET ;
-		s:COMET ?COMET ;
-		s:TCD ?TCD ;
-		s:SIEGE ?SIEGE ;
-		s:ENSEIGNE ?ENSEIGNE ;
-		s:IND_PUBLIPO ?IND_PUBLIPO ;
-		s:DIFFCOM ?DIFFCOM ;
-		s:AMINTRET ?AMINTRET ;
-		s:NATETAB ?NATETAB ;
-		s:APET700 ?APET700 ;
-		s:DAPET ?DAPET ;
-		s:TEFET ?TEFET ;
-		s:EFETCENT ?EFETCENT ;
-		s:DEFET ?DEFET ;
-		s:ORIGINE ?ORIGINE ;
-		s:DCRET ?DCRET ;
-		s:DDEBACT ?DDEBACT ;
-		s:ACTIVNAT ?ACTIVNAT ;
-		s:LIEUACT ?LIEUACT ;
-		s:ACTISURF ?ACTISURF ;
-		s:SAISONAT ?SAISONAT ;
-		s:MODET ?MODET ;
-		s:PRODET ?PRODET ;
-		s:PRODPART ?PRODPART ;
-		s:AUXILT ?AUXILT ;
-		s:NOMEN_LONG ?NOMEN_LONG ;
-		s:NOM ?NOM ;
-        s:PRENOM ?PRENOM ;
-        s:CIVILITE ?CIVILITE ;
-		s:RNA ?RNA ;
-		s:NICSIEGE ?NICSIEGE ;
-		s:RPEN ?RPEN ;
-		s:DEPCOMEN ?DEPCOMEN ;
-        s:ADR_MAIL ?ADR_MAIL ;
-		s:NJ ?NJ ;
-		s:APEN700 ?APEN700 ;
-		s:DAPEN ?DAPEN ;
-		s:APRM ?APRM ;
-		s:ESS ?ESS ;
-		s:DATEESS ?DATEESS ;
-		s:TEFEN ?TEFEN ;
-		s:EFENCENT ?EFENCENT ;
-		s:DEFEN ?DEFEN ;
-		s:CATEGORIE ?CATEGORIE ;
-		s:DCREN ?DCREN ;
-		s:AMINTREN ?AMINTREN ;
-		s:MONOACT ?MONOACT ;
-		s:MODEN ?MODEN ;
-		s:PRODEN ?PRODEN ;
-		s:ESAANN ?ESAANN ;
-		s:TCA ?TCA ;
-		s:ESAAPEN ?ESAAPEN ;
-		s:ESASEC1N ?ESASEC1N ;
-		s:ESASEC2N ?ESASEC2N ;
-		s:ESASEC3N ?ESASEC3N ;
-		s:ESASEC4N ?ESASEC4N ;
-		s:VMAJ ?VMAJ ;
-		s:VMAJ1 ?VMAJ1 ;
-		s:VMAJ2 ?VMAJ2 ;
-		s:VMAJ3 ?VMAJ3 ;
-		s:DATEMAJ ?DATEMAJ_dateTime ;
-		s:longitude ?longitude_double ;
-		s:latitude ?latitude_double ;
-		s:geo_score ?geo_score_double ;
-		s:geo_type ?geo_type ;
-		s:geo_adresse ?geo_adresse ;
-		s:geo_id ?geo_id ;
-		s:geo_ligne ?geo_ligne .
+	?etablissement a sx:Etablissement ;
+		sn:SIREN ?SIREN ;
+		sn:NIC ?NIC ;
+		sn:L1_NORMALISEE ?L1_NORMALISEE ;
+		sn:L2_NORMALISEE ?L2_NORMALISEE ;
+		sn:L3_NORMALISEE ?L3_NORMALISEE ;
+		sn:L4_NORMALISEE ?L4_NORMALISEE ;
+		sn:L5_NORMALISEE ?L5_NORMALISEE ;
+		sn:L6_NORMALISEE ?L6_NORMALISEE ;
+		sn:L7_NORMALISEE ?L7_NORMALISEE ;
+		sn:L1_DECLAREE ?L1_DECLAREE ;
+		sn:L2_DECLAREE ?L2_DECLAREE ;
+		sn:L3_DECLAREE ?L3_DECLAREE ;
+		sn:L4_DECLAREE ?L4_DECLAREE ;
+		sn:L5_DECLAREE ?L5_DECLAREE ;
+		sn:L6_DECLAREE ?L6_DECLAREE ;
+		sn:L7_DECLAREE ?L7_DECLAREE ;
+		sn:NUMVOIE ?NUMVOIE ;
+		sn:INDREP ?INDREP ;
+		sn:TYPVOIE ?TYPVOIE ;
+		sn:LIBVOIE ?LIBVOIE ;
+		sn:CODPOS ?CODPOS ;
+		sn:CEDEX ?CEDEX ;
+		sn:DEPET ?DEPET ;
+		sn:COMET ?COMET ;
+		sn:TCD ?TCD ;
+		sn:SIEGE ?SIEGE ;
+		sn:ENSEIGNE ?ENSEIGNE ;
+		sn:IND_PUBLIPO ?IND_PUBLIPO ;
+		sn:DIFFCOM ?DIFFCOM ;
+		sn:AMINTRET ?AMINTRET ;
+		sn:NATETAB ?NATETAB ;
+		sn:APET700 ?APET700 ;
+		sn:DAPET ?DAPET ;
+		sn:TEFET ?TEFET ;
+		sn:EFETCENT ?EFETCENT ;
+		sn:DEFET ?DEFET ;
+		sn:ORIGINE ?ORIGINE ;
+		sn:DCRET ?DCRET ;
+		sn:DDEBACT ?DDEBACT ;
+		sn:ACTIVNAT ?ACTIVNAT ;
+		sn:LIEUACT ?LIEUACT ;
+		sn:ACTISURF ?ACTISURF ;
+		sn:SAISONAT ?SAISONAT ;
+		sn:MODET ?MODET ;
+		sn:PRODET ?PRODET ;
+		sn:PRODPART ?PRODPART ;
+		sn:AUXILT ?AUXILT ;
+		sn:NOMEN_LONG ?NOMEN_LONG ;
+		sn:NOM ?NOM ;
+        sn:PRENOM ?PRENOM ;
+        sn:CIVILITE ?CIVILITE ;
+		sn:RNA ?RNA ;
+		sn:NICSIEGE ?NICSIEGE ;
+		sn:RPEN ?RPEN ;
+		sn:DEPCOMEN ?DEPCOMEN ;
+        sn:ADR_MAIL ?ADR_MAIL ;
+		sn:NJ ?NJ ;
+		sn:APEN700 ?APEN700 ;
+		sn:DAPEN ?DAPEN ;
+		sn:APRM ?APRM ;
+		sn:ESS ?ESS ;
+		sn:DATEESS ?DATEESS ;
+		sn:TEFEN ?TEFEN ;
+		sn:EFENCENT ?EFENCENT ;
+		sn:DEFEN ?DEFEN ;
+		sn:CATEGORIE ?CATEGORIE ;
+		sn:DCREN ?DCREN ;
+		sn:AMINTREN ?AMINTREN ;
+		sn:MONOACT ?MONOACT ;
+		sn:MODEN ?MODEN ;
+		sn:PRODEN ?PRODEN ;
+		sn:ESAANN ?ESAANN ;
+		sn:TCA ?TCA ;
+		sn:ESAAPEN ?ESAAPEN ;
+		sn:ESASEC1N ?ESASEC1N ;
+		sn:ESASEC2N ?ESASEC2N ;
+		sn:ESASEC3N ?ESASEC3N ;
+		sn:ESASEC4N ?ESASEC4N ;
+		sn:VMAJ ?VMAJ ;
+		sn:VMAJ1 ?VMAJ1 ;
+		sn:VMAJ2 ?VMAJ2 ;
+		sn:VMAJ3 ?VMAJ3 ;
+		sn:DATEMAJ ?DATEMAJ_dateTime ;
+		sn:longitude ?longitude_double ;
+		sn:latitude ?latitude_double ;
+		sn:geo_score ?geo_score_double ;
+		sn:geo_type ?geo_type ;
+		sn:geo_adresse ?geo_adresse ;
+		sn:geo_id ?geo_id ;
+		sn:geo_ligne ?geo_ligne ;
+        sn:siret ?siret
+        .
 }
  WHERE {
-
-    bind(uri(concat("https://sireneld.io/siret/",?SIREN,?NIC)) as ?company)
+    bind(concat(?SIREN,?NIC) as ?siret)
+    bind(uri(concat("httpsn://sireneld.io/siret/",?siret)) as ?etablissement)
     bind(xs:double(?geo_score) as ?geo_score_double)
     bind(xs:double(?latitude) as ?latitude_double)
     bind(xs:double(?longitude) as ?longitude_double)
     bind(xs:dateTime(?DATEMAJ) as ?DATEMAJ_dateTime)
+
 
 }
