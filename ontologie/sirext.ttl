@@ -25,22 +25,22 @@ rdfs:seeAlso <https://sireneld.io> .
     foaf:mbox <mailto:colin@maudry.com>  .
 
 sirext:longitude a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Longitude issue du géocodage" ;
+rdfs:label "Longitude" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirext: .
 
 sirext:latitude a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Latitude issue du géocodage" ;
+rdfs:label "Latitude" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirext: .
 
 sirext:geo_score a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Score de la qualité du géocode" ;
+rdfs:label "Géoscore" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirext: .
@@ -74,18 +74,18 @@ rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirext: .
 
 sirext:siret a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Combinaison du SIREN et du NIC de l'établissement" ;
+rdfs:label "SIRET" ;
 rdfs:range xs:string ;
 rdfs:domain sirext:Etablissement ;
 rdfs:isDefinedBy sirext: .
 
 sirext:Etablissement a rdfs:Class ;
-rdfs:comment "Entité identifiée par un numéro SIRET." ;
+rdfs:comment "Entité identifiée par un numéro SIRET" ;
 rdfs:label "Établissement" ;
 rdfs:isDefinedBy sirext: .
 
 sirext:Entreprise a rdfs:Class ;
-rdfs:comment "Entité identifiée par un numéro SIREN." ;
+rdfs:comment "Entité identifiée par un numéro SIREN" ;
 rdfs:label "Entreprise" ;
 rdfs:isDefinedBy sirext: .
