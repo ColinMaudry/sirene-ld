@@ -77,10 +77,15 @@ sirext:siret a rdf:Property ;
 rdfs:comment "" ;
 rdfs:label "" ;
 rdfs:range xs:string ;
-rdfs:domain sirene:Organisation ;
+rdfs:domain sirext:Etablissement ;
 rdfs:isDefinedBy sirext: .
 
-sirext:Organisation a rdfs:Class ;
-rdfs:comment "" ;
-rdfs:label "" ;
+sirext:Etablissement a rdfs:Class ;
+rdfs:comment "Entité identifiée par un numéro SIRET." ;
+rdfs:label "Établissement" ;
+rdfs:isDefinedBy sirext: .
+
+sirext:Entreprise a rdfs:Class ;
+rdfs:comment "Entité identifiée par un numéro SIREN." ;
+rdfs:label "Entreprise" ;
 rdfs:isDefinedBy sirext: .
