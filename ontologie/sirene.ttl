@@ -1,0 +1,614 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sirene: <https://sireneld.io/vocab/sirene#> .
+@prefix sirext: <https://sireneld.io/vocab/sirext#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+sirene: a owl:Ontology ;
+dcterms:title "Ontologie SIRENE" ;
+dcterms:creator <http://colin.maudry.com/rdf/colin-maudry#me> ;
+dcterms:created "2018-04-29"^^xs:date ;
+dcterms:modified "2018-04-29"^^xs:date ;
+dcterms:description "L'ontologie SIRENE est dérivée des termes utilisés par l'INSEE pour décrire les organisations présentes dans le répertoire SIRENE. Ce répertoire est publié en Open Data sur data.gouv.fr."@fr ;
+cc:license <http://unlicense.org> ;
+vann:preferredNamespaceUri sirene: ;
+vann:preferredNamespacePrefix "sirene";
+rdfs:seeAlso <https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/> ;
+rdfs:seeAlso sirext: ;
+rdfs:seeAlso <https://sireneld.io> .
+
+<http://colin.maudry.com/rdf/colin-maudry#me> foaf:name "Colin Maudry" ;
+    foaf:mbox <mailto:colin@maudry.com>  .
+
+sirene:SIREN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:NIC a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L1_NORMALISEE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L2_NORMALISEE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L3_NORMALISEE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L4_NORMALISEE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L5_NORMALISEE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L6_NORMALISEE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:sirene:L7_NORMALISEE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L1_DECLAREE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L2_DECLAREE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L3_DECLAREE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L4_DECLAREE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L5_DECLAREE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L6_DECLAREE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:L7_DECLAREE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:NUMVOIE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:INDREP a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:TYPVOIE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:LIBVOIE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:CODPOS a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:CEDEX a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DEPET a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:COMET a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:TCD a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:SIEGE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ENSEIGNE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:IND_PUBLIPO a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DIFFCOM a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:AMINTRET a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:NATETAB a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:APET700 a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DAPET a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:TEFET a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:EFETCENT a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DEFET a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ORIGINE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DCRET a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DDEBACT a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ACTIVNAT a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:LIEUACT a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ACTISURF a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:SAISONAT a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:MODET a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:PRODET a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:PRODPART a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:AUXILT a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:NOMEN_LONG a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:SIGLE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:NOM a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:PRENOM a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:CIVILITE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:RNA a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:NICSIEGE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:RPEN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DEPCOMEN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ADR_MAIL a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:NJ a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:APEN700 a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DAPEN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:APRM a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ESS a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DATEESS a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:TEFEN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:EFENCENT a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DEFEN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:CATEGORIE a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DCREN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:AMINTREN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:MONOACT a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:MODEN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:PRODEN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ESAANN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:TCA a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ESAAPEN a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ESASEC1N a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ESASEC2N a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ESASEC3N a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:ESASEC4N a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:VMAJ a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:VMAJ1 a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:VMAJ2 a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:VMAJ3 a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .
+
+sirene:DATEMAJ a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirene: .

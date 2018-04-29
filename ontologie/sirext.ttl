@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sirene: <https://sireneld.io/vocab/sirene#> .
+@prefix sirext: <https://sireneld.io/vocab/sirext#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+sirext: a owl:Ontology ;
+dcterms:title "Extension de SIRENE" ;
+dcterms:creator <http://colin.maudry.com/rdf/colin-maudry#me> ;
+dcterms:created "2018-04-29"^^xs:date ;
+dcterms:modified "2018-04-29"^^xs:date ;
+dcterms:description "L'ontologie SIREXT étend l'ontologie de base SIRENE dérivée des termes créés par l'INSEE pour l'exploitation et la publication du fichier SIRENE."@fr ;
+cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+vann:preferredNamespaceUri sirext: ;
+vann:preferredNamespacePrefix "sirext";
+rdfs:seeAlso sirene: ;
+rdfs:seeAlso <https://sireneld.io> .
+
+<http://colin.maudry.com/rdf/colin-maudry#me> foaf:name "Colin Maudry" ;
+    foaf:mbox <mailto:colin@maudry.com>  .
+
+sirext:longitude a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirext: .
+
+sirext:latitude a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirext: .
+
+sirext:geo_score a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirext: .
+
+sirext:geo_type a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirext: .
+
+sirext:geo_adresse a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirext: .
+
+sirext:geo_id a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirext: .
+
+sirext:geo_ligne a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirext: .
+
+sirext:siret a rdf:Property ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:range xs:string ;
+rdfs:domain sirene:Organisation ;
+rdfs:isDefinedBy sirext: .
+
+sirext:Organisation a rdfs:Class ;
+rdfs:comment "" ;
+rdfs:label "" ;
+rdfs:isDefinedBy sirext: .
