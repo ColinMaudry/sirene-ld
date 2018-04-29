@@ -47,28 +47,28 @@ rdfs:isDefinedBy sirext: .
 
 sirext:geo_type a rdf:Property ;
 rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:label "geo_type" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirext: .
 
 sirext:geo_adresse a rdf:Property ;
 rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:label "geo_adresse" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirext: .
 
 sirext:geo_id a rdf:Property ;
 rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:label "geo_id" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirext: .
 
 sirext:geo_ligne a rdf:Property ;
 rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:label "geo_ligne" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirext: .
