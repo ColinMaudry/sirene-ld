@@ -9,6 +9,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 
+
 sirene: a owl:Ontology ;
 dcterms:title "Ontologie SIRENE" ;
 dcterms:creator <http://colin.maudry.com/rdf/colin-maudry#me> ;
@@ -26,589 +27,589 @@ rdfs:seeAlso <https://sireneld.io> .
     foaf:mbox <mailto:colin@maudry.com>  .
 
 sirene:SIREN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Identifiant de l'entreprise" ;
+rdfs:label "SIREN" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:NIC a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Numéro interne de classement de l'établissement" ;
+rdfs:label "NIC" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L1_NORMALISEE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Première ligne de l’adressage de l’établissement" ;
+rdfs:label "Adresse normalisée (l1)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L2_NORMALISEE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Deuxième ligne de l’adressage de l’établissement" ;
+rdfs:label "Adresse normalisée (l2)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L3_NORMALISEE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Troisième ligne de l’adressage de l’établissement" ;
+rdfs:label "Adresse normalisée (l3)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L4_NORMALISEE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Quatrième ligne de l’adressage de l’établissement" ;
+rdfs:label "Adresse normalisée (l4)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L5_NORMALISEE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Cinquième ligne de l’adressage de l’établissement" ;
+rdfs:label "Adresse normalisée (l5)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L6_NORMALISEE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Sixième ligne de l’adressage de l’établissement" ;
+rdfs:label "Adresse normalisée (l6)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:sirene:L7_NORMALISEE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Septième ligne de l’adressage de l’établissement" ;
+rdfs:label "Adresse normalisée (l7)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L1_DECLAREE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Première ligne de l’adressage déclaré pour l’établissement" ;
+rdfs:label "Adresse déclarée (l1)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L2_DECLAREE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Deuxième ligne de l’adressage déclaré pour l’établissement" ;
+rdfs:label "Adresse déclarée (l2)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L3_DECLAREE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Troisième ligne de l’adressage déclaré pour l’établissement" ;
+rdfs:label "Adresse déclarée (l3)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L4_DECLAREE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Quatrième ligne de l’adressage déclaré pour l’établissement" ;
+rdfs:label "Adresse déclarée (l4)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L5_DECLAREE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Cinquième ligne de l’adressage déclaré pour l’établissement" ;
+rdfs:label "Adresse déclarée (l5)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L6_DECLAREE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Sixième ligne de l’adressage déclaré pour l’établissement" ;
+rdfs:label "Adresse déclarée (l6)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:L7_DECLAREE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Septième ligne de l’adressage déclaré pour l’établissement" ;
+rdfs:label "Adresse déclarée (l7)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:NUMVOIE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Numéro dans la voie" ;
+rdfs:label "Numéro dans la voie" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:INDREP a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Indice de répétition" ;
+rdfs:label "Indice de répétition" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:TYPVOIE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Type de voie de localisation de l'établissement" ;
+rdfs:label "Type de voie de localisation" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:LIBVOIE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Libellé de voie de localisation de l'établissement" ;
+rdfs:label "Libellé de voie de localisation" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:CODPOS a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Code postal" ;
+rdfs:label "Code postal" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:CEDEX a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Code CEDEX" ;
+rdfs:label "CEDEX" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DEPET a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Département de localisation de l'établissement" ;
+rdfs:label "Département de localisation" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:COMET a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Commune de localisation de l'établissement" ;
+rdfs:label "Commune de localisation" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:TCD a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Tranche de commune détaillée" ;
+rdfs:label "Tranche de commune détaillée" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:SIEGE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Qualité de siège ou non de l'établissement" ;
+rdfs:label "Qualité de siège" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ENSEIGNE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Enseigne ou nom de l'exploitation" ;
+rdfs:label "Enseigne" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:IND_PUBLIPO a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Indicateur du champ du publipostage" ;
+rdfs:label "Indicateur du champ du publipostage" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DIFFCOM a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Statut de diffusion de l'établissement" ;
+rdfs:label "Statut de diffusion" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:AMINTRET a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Année et mois d'introduction de l'établissement dans la base de diffusion" ;
+rdfs:label "Année et mois d'introduction dans la base" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:NATETAB a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Nature de l'établissement d'un entrepreneur individuel" ;
+rdfs:label "Nature" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:APET700 a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Activité principale de l'établissement" ;
+rdfs:label "Activité principale" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DAPET a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Année de validité de l'activité principale de l'établissement" ;
+rdfs:label "Année de validité de l'activité principale" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:TEFET a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Tranche d'effectif salarié de l'établissement" ;
+rdfs:label "Tranche d'effectif salarié" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:EFETCENT a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Effectif salarié de l'établissement à la centaine près" ;
+rdfs:label "Effectif salarié" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DEFET a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Année de validité de l'effectif salarié de l'établissement" ;
+rdfs:label "Année de validité de l'effectif salarié" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ORIGINE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Origine de la création de l'établissement" ;
+rdfs:label "Origine de la création" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DCRET a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Année et mois de création de l'établissement" ;
+rdfs:label "Année et mois de création" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DDEBACT a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Date de début d’activité" ;
+rdfs:label "Date de début d’activité" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ACTIVNAT a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Nature de l'activité de l'établissement" ;
+rdfs:label "Nature de l'activité" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:LIEUACT a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Lieu de l'activité de l'établissement" ;
+rdfs:label "Lieu de l'activité" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ACTISURF a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Type de magasin" ;
+rdfs:label "Type de magasin" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:SAISONAT a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Caractère saisonnier ou non de l'activité de l'établissement" ;
+rdfs:label "Caractère saisonnier ou non de l'activité" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:MODET a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Modalité de l'activité principale de l'établissement" ;
+rdfs:label "Modalité de l'activité principale" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:PRODET a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Caractère productif de l'établissement" ;
+rdfs:label "Caractère productif" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:PRODPART a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Participation particulière à la production de l'établissement" ;
+rdfs:label "Participation particulière à la production" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:AUXILT a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Caractère auxiliaire de l'activité de l'établissement" ;
+rdfs:label "Caractère auxiliaire de l'activité" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:NOMEN_LONG a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Nom ou raison sociale de l'entreprise" ;
+rdfs:label "Nom ou raison sociale" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:SIGLE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Sigle de l'entreprise" ;
+rdfs:label "Sigle" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:NOM a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Nom de naissance" ;
+rdfs:label "Nom de naissance" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:PRENOM a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Prénom" ;
+rdfs:label "Prénom" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:CIVILITE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Civilité des entrepreneurs individuels" ;
+rdfs:label "Civilité des entrepreneurs individuels" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:RNA a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Numéro d’identification au répertoire national des associations" ;
+rdfs:label "Numéro d’identification au répertoire national des associations" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:NICSIEGE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Numéro interne de classement de l'établissement siège" ;
+rdfs:label "Numéro interne de classement de l'établissement siège" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:RPEN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Région de localisation du siège de l'entreprise" ;
+rdfs:label "Région de localisation du siège" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DEPCOMEN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Département et commune de localisation du siège de l'entreprise" ;
+rdfs:label "Département et commune de localisation du siège" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ADR_MAIL a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Adresse mail" ;
+rdfs:label "Adresse mail" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:NJ a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Nature juridique de l'entreprise" ;
+rdfs:label "Nature juridique" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:APEN700 a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Activité principale de l'entreprise" ;
+rdfs:label "Activité principale" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DAPEN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Année de validité de l'activité principale de l'entreprise" ;
+rdfs:label "Année de validité de l'activité principale" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:APRM a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Activité principale au registre des métiers" ;
+rdfs:label "Activité principale au registre des métiers" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ESS a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Appartenance au champ de l’économie sociale et solidaire" ;
+rdfs:label "Appartenance au champ de l’économie sociale et solidaire" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DATEESS a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Date ESS" ;
+rdfs:label "Date ESS" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:TEFEN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Tranche d'effectif salarié de l'entreprise" ;
+rdfs:label "Tranche d'effectif salarié" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:EFENCENT a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Effectif salarié de l'entreprise à la centaine près" ;
+rdfs:label "Effectif salarié de l'entreprise à la centaine près" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DEFEN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Année de validité de l'effectif salarié de l'entreprise" ;
+rdfs:label "Année de validité de l'effectif salarié" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:CATEGORIE a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Catégorie d'entreprise" ;
+rdfs:label "Catégorie d'entreprise" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DCREN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Année et mois de création de l'entreprise" ;
+rdfs:label "Année et mois de création" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:AMINTREN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Année et mois d'introduction de l'entreprise dans la base de diffusion" ;
+rdfs:label "Année et mois d'introduction de l'entreprise dans la base de diffusion" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:MONOACT a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Indice de monoactivité de l'entreprise" ;
+rdfs:label "Indice de monoactivité" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:MODEN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Modalité de l'activité principale de l'entreprise" ;
+rdfs:label "Modalité de l'activité principale" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:PRODEN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Caractère productif de l'entreprise" ;
+rdfs:label "Caractère productif" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ESAANN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Année de validité des rubriques de niveau entreprise en provenance de l'ESA (Enquêtes Sectorielles Annuelles)" ;
+rdfs:label "Année de validité des rubriques de niveau entreprise en provenance de l'ESA (Enquêtes Sectorielles Annuelles)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:TCA a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Tranche de chiffre d'affaires pour les entreprises enquêtées par l'ESA (Enquêtes Sectorielles Annuelles)" ;
+rdfs:label "Tranche de chiffre d'affaires pour les entreprises enquêtées par l'ESA (Enquêtes Sectorielles Annuelles)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ESAAPEN a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Activité principale de l'entreprise issue de l'ESA (Enquêtes Sectorielles Annuelles)" ;
+rdfs:label "Activité principale de l'entreprise issue de l'ESA (Enquêtes Sectorielles Annuelles)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ESASEC1N a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Première activité secondaire déclarée dans l'ESA (Enquêtes Sectorielles Annuelles)" ;
+rdfs:label "Première activité secondaire déclarée dans l'ESA (Enquêtes Sectorielles Annuelles)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ESASEC2N a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Deuxième activité secondaire déclarée dans l'ESA (Enquêtes Sectorielles Annuelles)" ;
+rdfs:label "Deuxième activité secondaire déclarée dans l'ESA (Enquêtes Sectorielles Annuelles)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ESASEC3N a rdf:Property ;
 rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:label "Troisième activité secondaire déclarée dans l'ESA (Enquêtes Sectorielles Annuelles)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:ESASEC4N a rdf:Property ;
 rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:label "Quatrième activité secondaire déclarée dans l'ESA (Enquêtes Sectorielles Annuelles)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:VMAJ a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Nature de la mise à jour (création, suppression, modification)" ;
+rdfs:label "Nature de la mise à jour (création, suppression, modification)" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:VMAJ1 a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Indicateur de mise à jour n°1" ;
+rdfs:label "Indicateur de mise à jour n°1" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:VMAJ2 a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Indicateur de mise à jour n°2" ;
+rdfs:label "Indicateur de mise à jour n°2" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:VMAJ3 a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Indicateur de mise à jour n°3" ;
+rdfs:label "Indicateur de mise à jour n°3" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
 
 sirene:DATEMAJ a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "" ;
+rdfs:comment "Date de traitement de la mise à jour" ;
+rdfs:label "Date de traitement de la mise à jour" ;
 rdfs:range xs:string ;
 rdfs:domain sirene:Organisation ;
 rdfs:isDefinedBy sirene: .
