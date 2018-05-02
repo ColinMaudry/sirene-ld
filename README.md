@@ -37,103 +37,17 @@ Si vous souhaitez en savoir plus sur le Linked Data, je vous conseille chaudemen
 
 - Vous trouverez des échantillons de données (CSV source et résultats de transformation) dans `[échantillons](https://github.com/ColinMaudry/sirene-ld/tree/master/échantillons)`
 
-
 ## Domaines et structure des URI
 
-## Suivi du traitement des champs
+## Soutien
 
-Les champs de la base SIRENE sont documentés dans [dessin_L2_description_complete.pdf](https://github.com/ColinMaudry/sirene-ld/blob/master/dessin_L2_description_complete.pdf).
+Je compte consacrer pas mal de temps à ce projet et je devrai louer un serveur dédié afin de traiter, héberger et publier la masse de données que représente le SIRENE une fois transformé en graphe (en moyenne 500 Mo par département), sans compter les données périphériques (codes officiels géographiques, nomenclature NAF, etc.).
 
-| Champ                       | Conversion ? | Commentaire |
-| --------------------------- | ------------ | ----------- |
-| SIREN                       | Oui          |             |
-| NIC                         | Oui          |             |
-| L1_NORMALISE                | Oui          |             |
-| L2_NORMALISE                | Oui          |             |
-| L3_NORMALISE                | Oui          |             |
-| L4_NORMALISE                | Oui          |             |
-| L5_NORMALISE                | Oui          |             |
-| L6_NORMALISE                | Oui          |             |
-| L7_NORMALISE                | Oui          |             |
-| L1_DECLAREE                 | Oui          |             |
-| L2_DECLAREE                 | Oui          |             |
-| L3_DECLAREE                 | Oui          |             |
-| L4_DECLAREE                 | Oui          |             |
-| L5_DECLAREE                 | Oui          |             |
-| L6_DECLAREE                 | Oui          |             |
-| L7_DECLAREE                 | Oui          |             |
-| NUMVOIE                     | Oui          |             |
-| INDREP                      | Oui          |             |
-| TYPVOIE                     | Oui          |             |
-| LIBVOIE                     | Oui          |             |
-| CODEPOS                     | Oui          |             |
-| CEDEX                       | Oui          |             |
-| DEPET                       | Oui          |             |
-| COMET                       | Oui          |             |
-| TCD                         | Oui          |             |
-| SIEGE                       | Oui          |             |
-| ENSEIGNE                    | Oui          |             |
-| IND_PUBLIPO                 | Oui          |             |
-| DIFFCOM                     | Oui          |             |
-| AMINTRET                    | Oui          |             |
-| NATETAB                     | Oui          |             |
-| APET700                     | Oui          |             |
-| TEFET                       | Oui          |             |
-| EFETCENT                    | Oui          |             |
-| DEFET                       | Oui          |             |
-| ORIGINE                     | Oui          |             |
-| DCRET                       | Oui          |             |
-| DDEBACT                     | Oui          |             |
-| ACTIVNAT                    | Oui          |             |
-| LIEUACT                     | Oui          |             |
-| ACTISURF                    | Oui          |             |
-| SAISONAT                    | Oui          |             |
-| MODET                       | Oui          |             |
-| PRODET                      | Oui          |             |
-| PRODPART                    | Oui          |             |
-| AUXILT                      | Oui          |             |
-| NOMEN_LONG                  | Oui          |             |
-| SIGLE                       | Oui          |             |
-| NOM                         | Oui          |             |
-| PRENOM                      | Oui          |             |
-| CIVILITE                    | Oui          |             |
-| RNA                         | Oui          |             |
-| NICSIEGE                    | Oui          |             |
-| RPEN                        | Oui          |             |
-| DEPCOMEN                    | Oui          |             |
-| ADR_MAIL                    | Oui          |             |
-| NJ                          | Oui          |             |
-| APEN700                     | Oui          |             |
-| DAPEN                       | Oui          |             |
-| APRM  (pas de conversion)   | Oui          |             |
-| ESS (pas de conversion)     | Oui          |             |
-| DATEESS (pas de conversion) | Oui          |             |
-| TEFEN                       | Oui          |             |
-| EFENCENT                    | Oui          |             |
-| DEFEN                       | Oui          |             |
-| CATEGORIE                   | Oui          |             |
-| DCREN                       | Oui          |             |
-| AMINTREN                    | Oui          |             |
-| MONOACT                     | Oui          |             |
-| MODEN                       | Oui          |             |
-| PRODEN                      | Oui          |             |
-| ESAANN                      | Oui          |             |
-| TCA                         | Oui          |             |
-| ESAAPEN                     | Oui          |             |
-| ESASEC1N                    | Oui          |             |
-| ESASEC2N                    | Oui          |             |
-| ESASEC3N                    | Oui          |             |
-| ESASEC4N                    | Oui          |             |
-| VMAJ                        | Oui          |             |
-| VMAJ1                       | Oui          |             |
-| VMAJ2                       | Oui          |             |
-| VMAJ3                       | Oui          |             |
-| DATEMAJ                     | Oui          |             |
-| longitude                   | Oui          |             |
-| latitude                    | Oui          |             |
-| geo_score                   | Oui          |             |
-| geo_adresse                 | Oui          |             |
-| geo_type                    | Oui          |             |
-| geo_id                      | Oui          |             |
-| geo_ligne                   | Oui          |             |
-|                             |              |             |
+Ainsi, pour soutenir ce projet vous pouvez :
+
+- ajouter une étoile dans Github (en haut à droite de l'écran)
+- retweeter les tweets qui ont [le hashtag #sireneLD](https://twitter.com/hashtag/sireneLD?f=tweets)
+- m'envoyer vos commentaires et encouragements par email ([colin@maudry.com](mailto:colin@maudry.com))
+- me faire un don (j'étudie la possibilité de passer par [Liberapay](https://liberapay.com/))
+
+[![paypal](https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R6D94GJG3YJ2Q)
