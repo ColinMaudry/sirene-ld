@@ -1,0 +1,1084 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sirecj: <https://sireneld.io/vocab/sirecj#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+sirecj: a owl:Ontology ;
+    rdfs:seeAlso <https://www.insee.fr/fr/information/2028129> ;
+    rdfs:label "Catégories juridiques (niveau III)" .
+
+
+sirecj:CJ a rdfs:Class ;
+	rdfs:label "Artisan-commerçant " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1100 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Artisan-commerçant " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1200 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Commerçant " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1300 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Artisan " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1400 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Officier public ou ministériel " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1500 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Profession libérale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1600 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Exploitant agricole " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1700 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Agent commercial " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1800 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Associé gérant de Société " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1900 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "(Autre) Personne physique " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2110 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Indivision entre personnes physiques " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2120 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Indivision avec personne morale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2210 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société créée de fait entre personnes physiques " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2220 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société créée de fait avec personne morale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2310 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société en participation entre personnes physiques " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2320 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société en participation avec personne morale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2385 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société en participation de professions libérales " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2400 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Fiducie " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2700 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Paroisse hors zone concordataire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:2900 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre groupement de droit privé non doté de la personnalité morale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:3110 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Représentation ou agence commerciale d'état ou organisme public étranger immatriculé au RCS " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:3120 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société commerciale étrangère immatriculée au RCS" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:3205 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Organisation internationale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:3210 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "État, collectivité ou établissement public étranger" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:3220 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société étrangère non immatriculée au RCS " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:3290 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre personne morale de droit étranger " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:4110 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public national à caractère industriel ou commercial doté d'un comptable public " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:4120 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public national à caractère industriel ou commercial non doté d'un comptable public " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:4130 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Exploitant public " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:4140 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public local à caractère industriel ou commercial " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:4150 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Régie d'une collectivité locale à caractère industriel ou commercial " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:4160 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Institution Banque de France " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5191 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société de caution mutuelle " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5192 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société coopérative de banque populaire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5193 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Caisse de crédit maritime mutuel " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5194 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Caisse (fédérale) de crédit mutuel " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5195 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association coopérative inscrite (droit local Alsace Moselle) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5196 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Caisse d'épargne et de prévoyance à forme coopérative " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5202 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société en nom collectif " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5203 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société en nom collectif coopérative " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5306 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société en commandite simple " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5307 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société en commandite simple coopérative " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5308 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société en commandite par actions " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5309 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société en commandite par actions coopérative " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5370 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société de Participations Financières de Profession Libérale Société en commandite par actions (SPFPL SCA)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5385 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société d'exercice libéral en commandite par actions " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5410 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL nationale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5415 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL d'économie mixte " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5422 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL immobilière pour le commerce et l'industrie (SICOMI) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5426 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL immobilière de gestion" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5430 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL d'aménagement foncier et d'équipement rural (SAFER)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5431 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL mixte d'intérêt agricole (SMIA) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5432 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL d'intérêt collectif agricole (SICA) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5442 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL d'attribution " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5443 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL coopérative de construction " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5451 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL coopérative de consommation " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5453 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL coopérative artisanale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5454 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL coopérative d'intérêt maritime " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5455 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL coopérative de transport" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5458 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL coopérative ouvrière de production (SCOP)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5459 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL union de sociétés coopératives " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5460 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre SARL coopérative " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5470 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société de Participations Financières de Profession Libérale Société à responsabilité limitée (SPFPL SARL)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5485 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société d'exercice libéral à responsabilité limitée " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5498 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SARL unipersonnelle " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5499 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société à responsabilité limitée (sans autre indication)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5505 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA à participation ouvrière à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5510 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA nationale à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5515 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA d'économie mixte à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5520 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Fonds à forme sociétale à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5522 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA immobilière pour le commerce et l'industrie (SICOMI) à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5525 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA immobilière d'investissement à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5530 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA d'aménagement foncier et d'équipement rural (SAFER) à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5531 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société anonyme mixte d'intérêt agricole (SMIA) à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5532 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA d'intérêt collectif agricole (SICA) à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5542 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA d'attribution à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5543 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative de construction à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5546 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA de HLM à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5547 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative de production de HLM à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5548 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA de crédit immobilier à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5551 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative de consommation à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5552 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative de commerçants-détaillants à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5553 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative artisanale à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5554 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative (d'intérêt) maritime à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5555 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative de transport à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5558 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative ouvrière de production (SCOP) à conseil d'administration" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5559 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA union de sociétés coopératives à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5560 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre SA coopérative à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5570 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société de Participations Financières de Profession Libérale Société anonyme à conseil d'administration (SPFPL SA à conseil d'administration)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5585 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société d'exercice libéral à forme anonyme à conseil d'administration " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5599 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA à conseil d'administration (s.a.i.)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5605 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA à participation ouvrière à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5610 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA nationale à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5615 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA d'économie mixte à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5620 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Fonds à forme sociétale à directoire" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5622 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA immobilière pour le commerce et l'industrie (SICOMI) à directoire" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5625 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA immobilière d'investissement à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5630 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Safer anonyme à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5631 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA mixte d'intérêt agricole (SMIA)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5632 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA d'intérêt collectif agricole (SICA)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5642 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA d'attribution à directoire" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5643 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative de construction à directoire" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5646 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA de HLM à directoire" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5647 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société coopérative de production de HLM anonyme à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5648 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA de crédit immobilier à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5651 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative de consommation à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5652 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative de commerçants-détaillants à directoire" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5653 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative artisanale à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5654 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative d'intérêt maritime à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5655 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative de transport à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5658 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA coopérative ouvrière de production (SCOP) à directoire" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5659 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA union de sociétés coopératives à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5660 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre SA coopérative à directoire" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5670 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société de Participations Financières de Profession Libérale Société anonyme à Directoire (SPFPL SA à directoire)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5685 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société d'exercice libéral à forme anonyme à directoire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5699 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SA à directoire (s.a.i.)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5710 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SAS, société par actions simplifiée" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5720 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société par actions simplifiée à associé unique ou société par actions simplifiée unipersonnelle " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5770 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société de Participations Financières de Profession Libérale Société par actions simplifiée (SPFPL SAS)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5785 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société d'exercice libéral par action simplifiée " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:5800 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société européenne " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6100 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Caisse d'Épargne et de Prévoyance " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6210 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement européen d'intérêt économique (GEIE) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6220 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement d'intérêt économique (GIE) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6316 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Coopérative d'utilisation de matériel agricole en commun (CUMA) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6317 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société coopérative agricole " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6318 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Union de sociétés coopératives agricoles " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6411 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société d'assurance à forme mutuelle" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6511 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Sociétés Interprofessionnelles de Soins Ambulatoires " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6521 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile de placement collectif immobilier (SCPI) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6532 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile d'intérêt collectif agricole (SICA) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6533 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement agricole d'exploitation en commun (GAEC) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6534 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement foncier agricole " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6535 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement agricole foncier " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6536 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement forestier " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6537 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement pastoral " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6538 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement foncier et rural" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6539 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile foncière " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6540 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile immobilière " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6541 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile immobilière de construction-vente" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6542 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile d'attribution " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6543 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile coopérative de construction " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6544 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile immobilière d' accession progressive à la propriété" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6551 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile coopérative de consommation " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6554 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile coopérative d'intérêt maritime " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6558 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile coopérative entre médecins " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6560 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre société civile coopérative " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6561 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP d'avocats " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6562 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP d'avocats aux conseils " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6563 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP d'avoués d'appel " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6564 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP d'huissiers " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6565 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de notaires " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6566 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de commissaires-priseurs " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6567 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de greffiers de tribunal de commerce " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6568 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de conseils juridiques " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6569 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de commissaires aux comptes " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6571 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de médecins " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6572 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de dentistes " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6573 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP d'infirmiers " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6574 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de masseurs-kinésithérapeutes" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6575 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de directeurs de laboratoire d'analyse médicale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6576 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de vétérinaires " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6577 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP de géomètres experts" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6578 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "SCP d'architectes " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6585 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre société civile professionnelle" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6588 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile laitière " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6589 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile de moyens " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6595 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Caisse locale de crédit mutuel " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6596 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Caisse de crédit agricole mutuel " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6597 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Société civile d'exploitation agricole " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6598 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Exploitation agricole à responsabilité limitée " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6599 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre société civile " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:6901 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre personne de droit privé inscrite au registre du commerce et des sociétés" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7111 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autorité constitutionnelle " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7112 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autorité administrative ou publique indépendante" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7113 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Ministère " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7120 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Service central d'un ministère " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7150 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Service du ministère de la Défense " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7160 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Service déconcentré à compétence nationale d'un ministère (hors Défense)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7171 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Service déconcentré de l'État à compétence (inter) régionale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7172 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Service déconcentré de l'État à compétence (inter) départementale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7179 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "(Autre) Service déconcentré de l'État à compétence territoriale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7190 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Ecole nationale non dotée de la personnalité morale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7210 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Commune et commune nouvelle " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7220 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Département " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7225 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Collectivité et territoire d'Outre Mer" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7229 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "(Autre) Collectivité territoriale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7230 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Région " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7312 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Commune associée et commune déléguée " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7313 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Section de commune " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7314 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Ensemble urbain " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7321 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association syndicale autorisée " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7322 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association foncière urbaine " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7323 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association foncière de remembrement " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7331 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public local d'enseignement " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7340 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Pôle métropolitain" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7341 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Secteur de commune " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7342 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "District urbain " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7343 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Communauté urbaine " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7344 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Métropole" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7345 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Syndicat intercommunal à vocation multiple (SIVOM) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7346 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Communauté de communes " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7347 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Communauté de villes " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7348 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Communauté d'agglomération " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7349 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre établissement public local de coopération non spécialisé ou entente " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7351 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Institution interdépartementale ou entente" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7352 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Institution interrégionale ou entente " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7353 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Syndicat intercommunal à vocation unique (SIVU) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7354 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Syndicat mixte fermé " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7355 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Syndicat mixte ouvert" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7356 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Commission syndicale pour la gestion des biens indivis des communes " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7357 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Pôle d'équilibre territorial et rural (PETR)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7361 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Centre communal d'action sociale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7362 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Caisse des écoles " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7363 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Caisse de crédit municipal " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7364 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement d'hospitalisation " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7365 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Syndicat inter hospitalier " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7366 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public local social et médico-social " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7367 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Centre Intercommunal d'action sociale (CIAS)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7371 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Office public d'habitation à loyer modéré (OPHLM) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7372 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Service départemental d'incendie et de secours (SDIS)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7373 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public local culturel " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7378 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Régie d'une collectivité locale à caractère administratif " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7379 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "(Autre) Établissement public administratif local " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7381 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Organisme consulaire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7382 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public national ayant fonction d'administration centrale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7383 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public national à caractère scientifique culturel et professionnel " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7384 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre établissement public national d'enseignement " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7385 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre établissement public national administratif à compétence territoriale limitée " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7389 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public national à caractère administratif " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7410 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement d'intérêt public (GIP) " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7430 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Établissement public des cultes d'Alsace-Lorraine " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7450 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Etablissement public administratif, cercle et foyer dans les armées " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7470 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement de coopération sanitaire à gestion publique " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:7490 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre personne morale de droit administratif " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8110 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Régime général de la Sécurité Sociale" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8120 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Régime spécial de Sécurité Sociale" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8130 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Institution de retraite complémentaire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8140 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Mutualité sociale agricole " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8150 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Régime maladie des non-salariés non agricoles " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8160 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Régime vieillesse ne dépendant pas du régime général de la Sécurité Sociale" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8170 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Régime d'assurance chômage " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8190 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre régime de prévoyance sociale " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8210 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Mutuelle " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8250 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Assurance mutuelle agricole " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8290 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre organisme mutualiste " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8310 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Comité central d'entreprise " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8311 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Comité d'établissement " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8410 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Syndicat de salariés " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8420 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Syndicat patronal " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8450 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Ordre professionnel ou assimilé " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8470 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Centre technique industriel ou comité professionnel du développement économique " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8490 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre organisme professionnel " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8510 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Institution de prévoyance " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:8520 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Institution de retraite supplémentaire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9110 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Syndicat de copropriété " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9150 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association syndicale libre " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9210 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association non déclarée " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9220 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association déclarée " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9221 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association déclarée d'insertion par l'économique" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9222 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association intermédiaire " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9223 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement d'employeurs " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9224 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association d'avocats à responsabilité professionnelle individuelle" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9230 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association déclarée, reconnue d'utilité publique" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9240 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Congrégation " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9260 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Association de droit local (Bas-Rhin, Haut-Rhin et Moselle)" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9300 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Fondation " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9900 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Autre personne morale de droit privé " ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:9970 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Groupement de coopération sanitaire à gestion privée " ;
+	rdfs:isDefinedBy sirecj: .
