@@ -11,17 +11,17 @@
 
 
 sirene: a owl:Ontology ;
-dcterms:title "Ontologie SIRENE" ;
-dcterms:creator <http://colin.maudry.com/rdf/colin-maudry#me> ;
-dcterms:created "2018-04-29"^^xs:date ;
-dcterms:modified "2018-04-29"^^xs:date ;
-dcterms:description "L'ontologie SIRENE est dérivée des termes utilisés par l'INSEE pour décrire les organisations présentes dans le répertoire SIRENE. Ce répertoire est publié en Open Data sur data.gouv.fr."@fr ;
-cc:license <http://unlicense.org> ;
-vann:preferredNamespaceUri sirene: ;
-vann:preferredNamespacePrefix "sirene";
-rdfs:seeAlso <https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/> ;
-rdfs:seeAlso sirext: ;
-rdfs:seeAlso <https://sireneld.io> .
+    dcterms:title "Ontologie SIRENE" ;
+    dcterms:creator <http://colin.maudry.com/rdf/colin-maudry#me> ;
+    dcterms:created "2018-04-29"^^xs:date ;
+    dcterms:modified "2018-04-29"^^xs:date ;
+    dcterms:description "L'ontologie SIRENE est dérivée des termes utilisés par l'INSEE pour décrire les organisations présentes dans le répertoire SIRENE. Ce répertoire est publié en Open Data sur data.gouv.fr."@fr ;
+    cc:license <http://unlicense.org> ;
+    vann:preferredNamespaceUri sirene: ;
+    vann:preferredNamespacePrefix "sirene";
+    rdfs:seeAlso <https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/> ;
+    rdfs:seeAlso sirext: ;
+    rdfs:seeAlso <https://sireneld.io> .
 
 <http://colin.maudry.com/rdf/colin-maudry#me> foaf:name "Colin Maudry" ;
     foaf:mbox <mailto:colin@maudry.com>  .

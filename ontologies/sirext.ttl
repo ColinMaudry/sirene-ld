@@ -10,16 +10,16 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 
 sirext: a owl:Ontology ;
-dcterms:title "Extension de SIRENE" ;
-dcterms:creator <http://colin.maudry.com/rdf/colin-maudry#me> ;
-dcterms:created "2018-04-29"^^xs:date ;
-dcterms:modified "2018-04-29"^^xs:date ;
-dcterms:description "L'ontologie SIREXT étend l'ontologie de base SIRENE dérivée des termes créés par l'INSEE pour l'exploitation et la publication du fichier SIRENE."@fr ;
-cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-vann:preferredNamespaceUri sirext: ;
-vann:preferredNamespacePrefix "sirext";
-rdfs:seeAlso sirene: ;
-rdfs:seeAlso <https://sireneld.io> .
+    dcterms:title "Extension de SIRENE" ;
+    dcterms:creator <http://colin.maudry.com/rdf/colin-maudry#me> ;
+    dcterms:created "2018-04-29"^^xs:date ;
+    dcterms:modified "2018-04-29"^^xs:date ;
+    dcterms:description "L'ontologie SIREXT étend l'ontologie de base SIRENE dérivée des termes créés par l'INSEE pour l'exploitation et la publication du fichier SIRENE."@fr ;
+    cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    vann:preferredNamespaceUri sirext: ;
+    vann:preferredNamespacePrefix "sirext";
+    rdfs:seeAlso sirene: ;
+    rdfs:seeAlso <https://sireneld.io> .
 
 <http://colin.maudry.com/rdf/colin-maudry#me> foaf:name "Colin Maudry" ;
     foaf:mbox <mailto:colin@maudry.com>  .
@@ -27,9 +27,9 @@ rdfs:seeAlso <https://sireneld.io> .
 # Classes
 
 sirext:Entreprise a rdfs:Class ;
-rdfs:comment "Entité identifiée par un numéro SIREN" ;
-rdfs:label "Entreprise" ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "Entité identifiée par un numéro SIREN" ;
+    rdfs:label "Entreprise" ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:PME rdfs:subClassOf sirext:Entreprise ;
 	rdfs:label "Petite ou Moyenne Entreprise" ;
@@ -47,14 +47,14 @@ sirext:GE rdfs:subClassOf sirext:Entreprise ;
 	rdfs:isDefinedBy sirext: .
 
 sirext:Etablissement a rdfs:Class ;
-rdfs:comment "Entité identifiée par un numéro SIRET" ;
-rdfs:label "Établissement" ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "Entité identifiée par un numéro SIRET" ;
+    rdfs:label "Établissement" ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:Siege rdfs:subClassOf sirext:Etablissement ;
-rdfs:comment "Un établissement qui est le siège de l'entreprise" ;
-rdfs:label "Siège" ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "Un établissement qui est le siège de l'entreprise" ;
+    rdfs:label "Siège" ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:CodeNomenclature a rdfs:Class ;
     rdfs:comment "Code issue d'une nomenclature officielle" ;
@@ -121,233 +121,228 @@ sirext:TCA rdfs:SubClassOf sirext:CodeNomenclature ;
     rdfs:label "Tranche de chiffre d'affaires (TCA)" ;
     rdfs:isDefinedBy sirext: .
 
-
-
 # Properties
 
 sirext:longitude a rdf:Property ;
-rdfs:comment "Longitude issue du géocodage" ;
-rdfs:label "Longitude" ;
-rdfs:range xs:string ;
-rdfs:domain sirene:Organisation ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "Longitude issue du géocodage" ;
+    rdfs:label "Longitude" ;
+    rdfs:range xs:string ;
+    rdfs:domain sirene:Organisation ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:latitude a rdf:Property ;
-rdfs:comment "Latitude issue du géocodage" ;
-rdfs:label "Latitude" ;
-rdfs:range xs:string ;
-rdfs:domain sirene:Organisation ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "Latitude issue du géocodage" ;
+    rdfs:label "Latitude" ;
+    rdfs:range xs:string ;
+    rdfs:domain sirene:Organisation ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:geo_score a rdf:Property ;
-rdfs:comment "Score de la qualité du géocode" ;
-rdfs:label "Géoscore" ;
-rdfs:range xs:string ;
-rdfs:domain sirene:Organisation ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "Score de la qualité du géocode" ;
+    rdfs:label "Géoscore" ;
+    rdfs:range xs:string ;
+    rdfs:domain sirene:Organisation ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:geo_type a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "geo_type" ;
-rdfs:range xs:string ;
-rdfs:domain sirene:Organisation ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "" ;
+    rdfs:label "geo_type" ;
+    rdfs:range xs:string ;
+    rdfs:domain sirene:Organisation ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:geo_adresse a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "geo_adresse" ;
-rdfs:range xs:string ;
-rdfs:domain sirene:Organisation ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "" ;
+    rdfs:label "geo_adresse" ;
+    rdfs:range xs:string ;
+    rdfs:domain sirene:Organisation ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:geo_id a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "geo_id" ;
-rdfs:range xs:string ;
-rdfs:domain sirene:Organisation ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "" ;
+    rdfs:label "geo_id" ;
+    rdfs:range xs:string ;
+    rdfs:domain sirene:Organisation ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:geo_ligne a rdf:Property ;
-rdfs:comment "" ;
-rdfs:label "geo_ligne" ;
-rdfs:range xs:string ;
-rdfs:domain sirene:Organisation ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "" ;
+    rdfs:label "geo_ligne" ;
+    rdfs:range xs:string ;
+    rdfs:domain sirene:Organisation ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:siret a rdf:Property ;
-rdfs:comment "Combinaison du SIREN et du NIC de l'établissement" ;
-rdfs:label "SIRET" ;
-rdfs:range xs:string ;
-rdfs:domain sirext:Etablissement ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "Combinaison du SIREN et du NIC de l'établissement" ;
+    rdfs:label "SIRET" ;
+    rdfs:range xs:string ;
+    rdfs:domain sirext:Etablissement ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:etablissement a rdf:Property ;
-rdfs:comment "Un établissement de l'entreprise" ;
-rdfs:label "Établissement" ;
-rdfs:range sirext:Etablissement ;
-rdfs:domain sirext:Entreprise ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "Un établissement de l'entreprise" ;
+    rdfs:label "Établissement" ;
+    rdfs:range sirext:Etablissement ;
+    rdfs:domain sirext:Entreprise ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:siege rdfs:subPropertyOf sirext:etablissement ;
-rdfs:comment "Établissement siège de l'entreprise" ;
-rdfs:label "Siège" ;
-rdfs:range sirext:Siege ;
-rdfs:domain sirext:Entreprise ;
-rdfs:isDefinedBy sirext: .
+    rdfs:comment "Établissement siège de l'entreprise" ;
+    rdfs:label "Siège" ;
+    rdfs:range sirext:Siege ;
+    rdfs:domain sirext:Entreprise ;
+    rdfs:isDefinedBy sirext: .
 
 sirext:codeNomenclature a rdf:Property ;
-rdfs:comment "Code issu d'une nomenclature officielle" ;
-rdfs:label "Code nomenclature" ;
-rdfs:range sirext:CodeNomenclature ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Code issu d'une nomenclature officielle" ;
+	rdfs:label "Code nomenclature" ;
+	rdfs:range sirext:CodeNomenclature ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:commune rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Commune identifiée par un code commune" ;
-rdfs:label "Commune" ;
-rdfs:range xs:string ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Commune identifiée par un code commune" ;
+	rdfs:label "Commune" ;
+	rdfs:range xs:string ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:tef rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Tranche d'effectif salarié (TEF). Cette variable correspond à la tranche d'effectif salarié de l'entreprise ou de l'établissement. C'est une variable statistique, millésimée au 31/12 d'une année donnée, majoritairement l'année n-2. Elle est à rapprocher de sa date de validité, c'est-à-dire de la date de mise à jour de l'effectif salarié de l'entreprise ou de l'établissement." ;
-rdfs:label "Tranche d'effectif salarié (TEF)" ;
-rdfs:range sirext:TEF ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Tranche d'effectif salarié (TEF). Cette variable correspond à la tranche d'effectif salarié de l'entreprise ou de l'établissement. C'est une variable statistique, millésimée au 31/12 d'une année donnée, majoritairement l'année n-2. Elle est à rapprocher de sa date de validité, c'est-à-dire de la date de mise à jour de l'effectif salarié de l'entreprise ou de l'établissement." ;
+	rdfs:label "Tranche d'effectif salarié (TEF)" ;
+	rdfs:range sirext:TEF ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:tcd rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Tranche de commune détaillée (TCD). Cette variable désigne la tranche de population de la commune de localisation de l'établissement." ;
-rdfs:label "Tranche de commune détaillée (TCD)" ;
-rdfs:range sirext:TCD ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Tranche de commune détaillée (TCD). Cette variable désigne la tranche de population de la commune de localisation de l'établissement." ;
+	rdfs:label "Tranche de commune détaillée (TCD)" ;
+	rdfs:range sirext:TCD ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:natetab rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Nature de l'établissement d'un entrepreneur individuel (NATETAB)" ;
-rdfs:label "Nature de l'établissement d'un entrepreneur individuel (NATETAB)" ;
-rdfs:range sirext:NATETAB ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Nature de l'établissement d'un entrepreneur individuel (NATETAB)" ;
+	rdfs:label "Nature de l'établissement d'un entrepreneur individuel (NATETAB)" ;
+	rdfs:range sirext:NATETAB ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:origine rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Cette variable rappelle l'origine déclarée de l'établissement (création, reprise...)." ;
-rdfs:label "Origine" ;
-rdfs:range sirext:Origine ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Cette variable rappelle l'origine déclarée de l'établissement (création, reprise...)." ;
+	rdfs:label "Origine" ;
+	rdfs:range sirext:Origine ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:activnat rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Nature de l'activité de l'établissement (ACTIVNAT). Cette variable apporte un complément d'information sur l'activité excercée de l'établissement (transport, commerce de détail, services etc)." ;
-rdfs:label "Nature de l'activité (ACTIVNAT)" ;
-rdfs:range sirext:ACTIVNAT ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Nature de l'activité de l'établissement (ACTIVNAT). Cette variable apporte un complément d'information sur l'activité excercée de l'établissement (transport, commerce de détail, services etc)." ;
+	rdfs:label "Nature de l'activité (ACTIVNAT)" ;
+	rdfs:range sirext:ACTIVNAT ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:lieuact rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "C'est le lieu de l'activité de l'établissement déclaré lors de sa création (bureau, usine...)." ;
-rdfs:label "Lieu de l'activité (LIEUACT)" ;
-rdfs:range sirext:LIEUACT ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "C'est le lieu de l'activité de l'établissement déclaré lors de sa création (bureau, usine...)." ;
+	rdfs:label "Lieu de l'activité (LIEUACT)" ;
+	rdfs:range sirext:LIEUACT ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:actisurf rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Cette variable indique, selon la surface déclarée à la création, à quel type de magasin correspond l'établissement." ;
-rdfs:label "Type de magasin (ACTISURF)" ;
-rdfs:domain sirext:Etablissement ;
-rdfs:range sirext:ACTISURF ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Cette variable indique, selon la surface déclarée à la création, à quel type de magasin correspond l'établissement." ;
+	rdfs:label "Type de magasin (ACTISURF)" ;
+	rdfs:domain sirext:Etablissement ;
+	rdfs:range sirext:ACTISURF ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:saisonat rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Cette variable indique si l'établissement a une activité permanente ou saisonnière. Elle est saisonnière si chaque année l'établissement cesse totalement ses activités plus de trois mois consécutifs." ;
-rdfs:label "Caractère saisonnier ou non de l'activité (SAISONAT)" ;
-rdfs:domain sirext:Etablissement ;
-rdfs:range sirext:SAISONAT ;
-rdfs:isDefinedBy sirext: .
-
-
-
+	rdfs:comment "Cette variable indique si l'établissement a une activité permanente ou saisonnière. Elle est saisonnière si chaque année l'établissement cesse totalement ses activités plus de trois mois consécutifs." ;
+	rdfs:label "Caractère saisonnier ou non de l'activité (SAISONAT)" ;
+	rdfs:domain sirext:Etablissement ;
+	rdfs:range sirext:SAISONAT ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:monoact rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Indice de monoactivité de l'entreprise (MONOACT). L'indice de monoactivité de l'entreprise permet de qualifier, pour les entreprises pluri-établissements, l'homogénéité des activités exercées dans ceux-ci." ;
-rdfs:label "Indice de monoactivité (MONOACT)" ;
-rdfs:range sirext:MONOACT ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Indice de monoactivité de l'entreprise (MONOACT). L'indice de monoactivité de l'entreprise permet de qualifier, pour les entreprises pluri-établissements, l'homogénéité des activités exercées dans ceux-ci." ;
+	rdfs:label "Indice de monoactivité (MONOACT)" ;
+	rdfs:range sirext:MONOACT ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:mod rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Modalité de l'activité principale de l'établissement ou de l'entreprise - MOD. Cette variable est une information complémentaire sur l'activité de l'entreprise ou de l'établissement. Exemples : donneur d'ordre, montage etc. C'est un code complémentaire à l'APEN qui complète une activité principale. Il précise certains aspects de cette activité." ;
-rdfs:label "Modalité de l'activité principale (MOD)" ;
-rdfs:range sirext:MOD ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Modalité de l'activité principale de l'établissement ou de l'entreprise - MOD. Cette variable est une information complémentaire sur l'activité de l'entreprise ou de l'établissement. Exemples : donneur d'ordre, montage etc. C'est un code complémentaire à l'APEN qui complète une activité principale. Il précise certains aspects de cette activité." ;
+	rdfs:label "Modalité de l'activité principale (MOD)" ;
+	rdfs:range sirext:MOD ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:prodpart rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Cette variable, de niveau établissement, permet de définir si un établissement participe d'une manière particulière à la production. Exemples : loueur ou locataire de fond de commerce, prestataire de personnel..." ;
-rdfs:label "Participation particulière à la production (PRODPART)" ;
-rdfs:range sirext:PRODPART ;
-rdfs:domain sirext:Etablissement ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Cette variable, de niveau établissement, permet de définir si un établissement participe d'une manière particulière à la production. Exemples : loueur ou locataire de fond de commerce, prestataire de personnel..." ;
+	rdfs:label "Participation particulière à la production (PRODPART)" ;
+	rdfs:range sirext:PRODPART ;
+	rdfs:domain sirext:Etablissement ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:tca rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Tranche de chiffre d'affaires pour les entreprises enquêtées par l'ESA (TCA). Cette variable est une information complémentaire sur l'activité de l'entreprise ou de l'établissement. Exemples : donneur d'ordre, montage etc. C'est un code complémentaire à l'APEN qui complète une activité principale. Il précise certains aspects de cette activité." ;
-rdfs:label "Tranche de chiffre d'affaires (TCA)" ;
-rdfs:range sirext:TCA ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Tranche de chiffre d'affaires pour les entreprises enquêtées par l'ESA (TCA). Cette variable est une information complémentaire sur l'activité de l'entreprise ou de l'établissement. Exemples : donneur d'ordre, montage etc. C'est un code complémentaire à l'APEN qui complète une activité principale. Il précise certains aspects de cette activité." ;
+	rdfs:label "Tranche de chiffre d'affaires (TCA)" ;
+	rdfs:range sirext:TCA ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:dcr rdfs:subProperty dcterms:created ;
-rdfs:comment "Date de création de l'entreprise ou de l'établissement" ;
-rdfs:label "Date de création" ;
-rdfs:range xs:date ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Date de création de l'entreprise ou de l'établissement" ;
+	rdfs:label "Date de création" ;
+	rdfs:range xs:date ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:amintr a rdf:Property ;
-rdfs:comment "Année et mois d'introduction de l'entreprise ou de l'établissement dans la base de diffusion" ;
-rdfs:label "Mois d'introduction dans la base" ;
-rdfs:range xs:gYearMonth ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Année et mois d'introduction de l'entreprise ou de l'établissement dans la base de diffusion" ;
+	rdfs:label "Mois d'introduction dans la base" ;
+	rdfs:range xs:gYearMonth ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:ddebact a rdf:Property ;
-rdfs:comment "Date à partir de laquelle l’établissement a été actif sans discontinuité." ;
-rdfs:label "Date de début d'activité" ;
-rdfs:domain xs:Etablissement ;
-rdfs:range xs:date ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Date à partir de laquelle l’établissement a été actif sans discontinuité." ;
+	rdfs:label "Date de début d'activité" ;
+	rdfs:domain xs:Etablissement ;
+	rdfs:range xs:date ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:dateess a rdf:Property ;
-rdfs:comment "Date du statut d’appartenance au champ de l’économie sociale et solidaire (ESS)." ;
-rdfs:label "Date du statut ESS" ;
-rdfs:domain xs:Entreprise ;
-rdfs:range xs:date ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Date du statut d’appartenance au champ de l’économie sociale et solidaire (ESS)." ;
+	rdfs:label "Date du statut ESS" ;
+	rdfs:domain xs:Entreprise ;
+	rdfs:range xs:date ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:ape rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Code d'activité principale exercée (APE)" ;
-rdfs:label "Activité principale de l'entreprise (APE)" ;
-rdfs:range skos:Concept ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Code d'activité principale exercée (APE)" ;
+	rdfs:label "Activité principale de l'entreprise (APE)" ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:esaapen rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Cette variable désigne l'Activité Principale Exercée de l'entreprise issue de l'Enquête Sectorielle Annuelle (ESA). Elle est codifiée selon la Nomenclature d'Activités Française." ;
-rdfs:label "Activité principale de l'entreprise déclarée dans l'ESA (ESAAPEN)" ;
-rdfs:domain sx:Entreprise ;
-rdfs:range skos:Concept ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Cette variable désigne l'Activité Principale Exercée de l'entreprise issue de l'Enquête Sectorielle Annuelle (ESA). Elle est codifiée selon la Nomenclature d'Activités Française." ;
+	rdfs:label "Activité principale de l'entreprise déclarée dans l'ESA (ESAAPEN)" ;
+	rdfs:domain sx:Entreprise ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:esasec1n rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Cette variable désigne la première activité secondaire de l'entreprise déclarée dans l'Enquête Sectorielle Annuelle (ESA); cette activité générant le montant le plus élevé de chiffre d'affaire." ;
-rdfs:label "Première activité secondaire déclarée dans l'ESA (ESASEC1N)" ;
-rdfs:domain sx:Entreprise ;
-rdfs:range skos:Concept ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Cette variable désigne la première activité secondaire de l'entreprise déclarée dans l'Enquête Sectorielle Annuelle (ESA); cette activité générant le montant le plus élevé de chiffre d'affaire." ;
+	rdfs:label "Première activité secondaire déclarée dans l'ESA (ESASEC1N)" ;
+	rdfs:domain sx:Entreprise ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:esasec2n rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Cette variable désigne la deuxième activité secondaire de l'entreprise déclarée dans l'Enquête Sectorielle Annuelle (ESA); cette activité générant le second montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
-rdfs:label "Deuxième activité secondaire déclarée dans l'ESA (ESASEC2N)" ;
-rdfs:domain sx:Entreprise ;
-rdfs:range skos:Concept ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Cette variable désigne la deuxième activité secondaire de l'entreprise déclarée dans l'Enquête Sectorielle Annuelle (ESA); cette activité générant le second montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
+	rdfs:label "Deuxième activité secondaire déclarée dans l'ESA (ESASEC2N)" ;
+	rdfs:domain sx:Entreprise ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:esasec3n rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Cette variable désigne la troisième activité secondaire de l'entreprise déclarée dans l' Enquête Sectorielle Annuelle (ESA); cette activité générant le troisième montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
-rdfs:label "Troisième activité secondaire déclarée dans l'ESA (ESASEC3N)" ;
-rdfs:domain sx:Entreprise ;
-rdfs:range skos:Concept ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Cette variable désigne la troisième activité secondaire de l'entreprise déclarée dans l' Enquête Sectorielle Annuelle (ESA); cette activité générant le troisième montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
+	rdfs:label "Troisième activité secondaire déclarée dans l'ESA (ESASEC3N)" ;
+	rdfs:domain sx:Entreprise ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy sirext: .
 
 sirext:esasec4n rdfs:subPropertyOf sirext:codeNomenclature ;
-rdfs:comment "Cette variable désigne la troisième activité secondaire de l'entreprise déclarée dans l' Enquête Sectorielle Annuelle (ESA); cette activité générant le troisième montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
-rdfs:label "quatrième activité secondaire déclarée dans l'ESA (ESASEC4N)" ;
-rdfs:domain sx:Entreprise ;
-rdfs:range skos:Concept ;
-rdfs:isDefinedBy sirext: .
+	rdfs:comment "Cette variable désigne la troisième activité secondaire de l'entreprise déclarée dans l' Enquête Sectorielle Annuelle (ESA); cette activité générant le troisième montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
+	rdfs:label "quatrième activité secondaire déclarée dans l'ESA (ESASEC4N)" ;
+	rdfs:domain sx:Entreprise ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy sirext: .
