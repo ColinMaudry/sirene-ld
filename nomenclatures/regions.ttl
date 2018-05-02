@@ -1,0 +1,449 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo:   <http://id.insee.fr/geo/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix igeo:  <http://id.insee.fr/def/geo#> .
+@prefix sirext: <https://sireneld.io/vocab/sirext#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+
+
+<http://id.insee.fr/geo/region/91>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/34172> ;
+        igeo:codeINSEE              "91"^^xs:token ;
+        igeo:codeRegion             "91"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3200> , <http://id.insee.fr/geo/mouvements/3184> ;
+        igeo:nom                    "Languedoc-Roussillon"@fr ;
+        igeo:nomCharniereClair      "Languedoc-Roussillon"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/34172> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/91> .
+
+<http://id.insee.fr/geo/region/44>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/67482> ;
+        igeo:codeINSEE              "44"^^xs:token ;
+        igeo:codeRegion             "44"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3195> , <http://id.insee.fr/geo/mouvements/3045> ;
+        igeo:nom                    "Grand Est"@fr ;
+        igeo:nomCharniereClair      "Grand Est"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/67482> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/44> .
+
+<http://id.insee.fr/geo/region/72>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/33063> ;
+        igeo:codeINSEE              "72"^^xs:token ;
+        igeo:codeRegion             "72"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3199> , <http://id.insee.fr/geo/mouvements/3179> ;
+        igeo:nom                    "Aquitaine"@fr ;
+        igeo:nomCharniereClair      "Aquitaine"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/33063> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc1> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/72> .
+
+<http://id.insee.fr/geo/region/25>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/14118> ;
+        igeo:codeINSEE              "25"^^xs:token ;
+        igeo:codeRegion             "25"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3170> , <http://id.insee.fr/geo/mouvements/3197> ;
+        igeo:nom                    "Basse-Normandie"@fr ;
+        igeo:nomCharniereClair      "Basse-Normandie"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/14118> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/25> .
+
+<http://id.insee.fr/geo/region/53>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/35238> ;
+        igeo:codeINSEE              "53"^^xs:token ;
+        igeo:codeRegion             "53"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3177> ;
+        igeo:nom                    "Bretagne"@fr ;
+        igeo:nomCharniereClair      "Bretagne"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/35238> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/53> .
+
+<http://id.insee.fr/geo/region/06>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97608> ;
+        igeo:codeINSEE              "06"^^xs:token ;
+        igeo:codeRegion             "06"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3188> ;
+        igeo:nom                    "Mayotte"@fr ;
+        igeo:nomCharniereClair      "Mayotte"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/97608> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/06> .
+
+<http://id.insee.fr/geo/region/43>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/25056> ;
+        igeo:codeINSEE              "43"^^xs:token ;
+        igeo:codeRegion             "43"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3198> , <http://id.insee.fr/geo/mouvements/3175> ;
+        igeo:nom                    "Franche-Comté"@fr ;
+        igeo:nomCharniereClair      "Franche-Comté"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/25056> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/43> .
+
+<http://id.insee.fr/geo/region/24>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/45234> ;
+        igeo:codeINSEE              "24"^^xs:token ;
+        igeo:codeRegion             "24"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3169> , <http://id.insee.fr/geo/mouvements/3202> ;
+        igeo:nom                    "Centre-Val de Loire"@fr ;
+        igeo:nomCharniereClair      "Centre-Val de Loire"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/45234> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/24> .
+
+<http://id.insee.fr/geo/region/52>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/44109> ;
+        igeo:codeINSEE              "52"^^xs:token ;
+        igeo:codeRegion             "52"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3176> ;
+        igeo:nom                    "Pays de la Loire"@fr ;
+        igeo:nomCharniereClair      "Pays de la Loire"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/44109> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/52> .
+
+<http://id.insee.fr/geo/region/42>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/67482> ;
+        igeo:codeINSEE              "42"^^xs:token ;
+        igeo:codeRegion             "42"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3195> , <http://id.insee.fr/geo/mouvements/3174> ;
+        igeo:nom                    "Alsace"@fr ;
+        igeo:nomCharniereClair      "Alsace"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/67482> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc1> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/42> .
+
+<http://id.insee.fr/geo/region/76>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/31555> ;
+        igeo:codeINSEE              "76"^^xs:token ;
+        igeo:codeRegion             "76"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3200> , <http://id.insee.fr/geo/mouvements/3047> ;
+        igeo:nom                    "Occitanie"@fr ;
+        igeo:nomCharniereClair      "Occitanie"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/31555> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc1> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/76> .
+
+<http://id.insee.fr/geo/region/23>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/76540> ;
+        igeo:codeINSEE              "23"^^xs:token ;
+        igeo:codeRegion             "23"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3197> , <http://id.insee.fr/geo/mouvements/3168> ;
+        igeo:nom                    "Haute-Normandie"@fr ;
+        igeo:nomCharniereClair      "Haute-Normandie"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/76540> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/23> .
+
+<http://id.insee.fr/geo/region/04>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97411> ;
+        igeo:codeINSEE              "04"^^xs:token ;
+        igeo:codeRegion             "04"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3164> ;
+        igeo:nom                    "La Réunion"@fr ;
+        igeo:nomCharniereClair      "La Réunion"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/97411> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/04> .
+
+<http://id.insee.fr/geo/region/32>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/59350> ;
+        igeo:codeINSEE              "32"^^xs:token ;
+        igeo:codeRegion             "32"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3044> , <http://id.insee.fr/geo/mouvements/3196> ;
+        igeo:nom                    "Hauts-de-France"@fr ;
+        igeo:nomCharniereClair      "Hauts-de-France"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/59350> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/32> .
+
+<http://id.insee.fr/geo/region/94>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/2A004> ;
+        igeo:codeINSEE              "94"^^xs:token ;
+        igeo:codeRegion             "94"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3186> ;
+        igeo:nom                    "Corse"@fr ;
+        igeo:nomCharniereClair      "Corse"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/2A004> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/94> .
+
+<http://id.insee.fr/geo/region/41>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/57463> ;
+        igeo:codeINSEE              "41"^^xs:token ;
+        igeo:codeRegion             "41"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3173> , <http://id.insee.fr/geo/mouvements/3195> ;
+        igeo:nom                    "Lorraine"@fr ;
+        igeo:nomCharniereClair      "Lorraine"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/57463> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/41> .
+
+<http://id.insee.fr/geo/region/22>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/80021> ;
+        igeo:codeINSEE              "22"^^xs:token ;
+        igeo:codeRegion             "22"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3167> , <http://id.insee.fr/geo/mouvements/3196> ;
+        igeo:nom                    "Picardie"@fr ;
+        igeo:nomCharniereClair      "Picardie"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/80021> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/22> .
+
+<http://id.insee.fr/geo/region/75>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/33063> ;
+        igeo:codeINSEE              "75"^^xs:token ;
+        igeo:codeRegion             "75"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3199> , <http://id.insee.fr/geo/mouvements/3046> ;
+        igeo:nom                    "Nouvelle-Aquitaine"@fr ;
+        igeo:nomCharniereClair      "Nouvelle-Aquitaine"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/33063> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/75> .
+
+<http://id.insee.fr/geo/region/28>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/76540> ;
+        igeo:codeINSEE              "28"^^xs:token ;
+        igeo:codeRegion             "28"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3197> , <http://id.insee.fr/geo/mouvements/3043> ;
+        igeo:nom                    "Normandie"@fr ;
+        igeo:nomCharniereClair      "Normandie"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/76540> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/28> .
+
+<http://id.insee.fr/geo/region/03>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97302> ;
+        igeo:codeINSEE              "03"^^xs:token ;
+        igeo:codeRegion             "03"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3163> ;
+        igeo:nom                    "Guyane"@fr ;
+        igeo:nomCharniereClair      "Guyane"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/97302> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/03> .
+
+<http://id.insee.fr/geo/region/84>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/69123> ;
+        igeo:codeINSEE              "84"^^xs:token ;
+        igeo:codeRegion             "84"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3048> , <http://id.insee.fr/geo/mouvements/3201> ;
+        igeo:nom                    "Auvergne-Rhône-Alpes"@fr ;
+        igeo:nomCharniereClair      "Auvergne-Rhône-Alpes"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/69123> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc1> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/84> .
+
+<http://id.insee.fr/geo/region/31>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/59350> ;
+        igeo:codeINSEE              "31"^^xs:token ;
+        igeo:codeRegion             "31"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3196> , <http://id.insee.fr/geo/mouvements/3172> ;
+        igeo:nom                    "Nord-Pas-de-Calais"@fr ;
+        igeo:nomCharniereClair      "Nord-Pas-de-Calais"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/59350> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/31> .
+
+<http://id.insee.fr/geo/region/93>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/13055> ;
+        igeo:codeINSEE              "93"^^xs:token ;
+        igeo:codeRegion             "93"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3185> ;
+        igeo:nom                    "Provence-Alpes-Côte d'Azur"@fr ;
+        igeo:nomCharniereClair      "Provence-Alpes-Côte d'Azur"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/13055> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/93> .
+
+<http://id.insee.fr/geo/region/74>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/87085> ;
+        igeo:codeINSEE              "74"^^xs:token ;
+        igeo:codeRegion             "74"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3181> , <http://id.insee.fr/geo/mouvements/3199> ;
+        igeo:nom                    "Limousin"@fr ;
+        igeo:nomCharniereClair      "Limousin"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/87085> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/74> .
+
+<http://id.insee.fr/geo/region/21>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/51108> ;
+        igeo:codeINSEE              "21"^^xs:token ;
+        igeo:codeRegion             "21"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3195> , <http://id.insee.fr/geo/mouvements/3166> ;
+        igeo:nom                    "Champagne-Ardenne"@fr ;
+        igeo:nomCharniereClair      "Champagne-Ardenne"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/51108> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/21> .
+
+<http://id.insee.fr/geo/region/27>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/21231> ;
+        igeo:codeINSEE              "27"^^xs:token ;
+        igeo:codeRegion             "27"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3198> , <http://id.insee.fr/geo/mouvements/3042> ;
+        igeo:nom                    "Bourgogne-Franche-Comté"@fr ;
+        igeo:nomCharniereClair      "Bourgogne-Franche-Comté"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/21231> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/27> .
+
+<http://id.insee.fr/geo/region/02>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97209> ;
+        igeo:codeINSEE              "02"^^xs:token ;
+        igeo:codeRegion             "02"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3162> ;
+        igeo:nom                    "Martinique"@fr ;
+        igeo:nomCharniereClair      "Martinique"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/97209> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/02> .
+
+<http://id.insee.fr/geo/region/83>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/63113> ;
+        igeo:codeINSEE              "83"^^xs:token ;
+        igeo:codeRegion             "83"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3183> , <http://id.insee.fr/geo/mouvements/3201> ;
+        igeo:nom                    "Auvergne"@fr ;
+        igeo:nomCharniereClair      "Auvergne"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/63113> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc1> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/83> .
+
+<http://id.insee.fr/geo/region/11>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/75056> ;
+        igeo:codeINSEE              "11"^^xs:token ;
+        igeo:codeRegion             "11"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3165> ;
+        igeo:nom                    "Île-de-France"@fr ;
+        igeo:nomCharniereClair      "Île-de-France"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/75056> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc1> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/11> .
+
+<http://id.insee.fr/geo/region/73>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/31555> ;
+        igeo:codeINSEE              "73"^^xs:token ;
+        igeo:codeRegion             "73"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3200> , <http://id.insee.fr/geo/mouvements/3180> ;
+        igeo:nom                    "Midi-Pyrénées"@fr ;
+        igeo:nomCharniereClair      "Midi-Pyrénées"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/31555> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/73> .
+
+<http://id.insee.fr/geo/region/26>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/21231> ;
+        igeo:codeINSEE              "26"^^xs:token ;
+        igeo:codeRegion             "26"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3198> , <http://id.insee.fr/geo/mouvements/3171> ;
+        igeo:nom                    "Bourgogne"@fr ;
+        igeo:nomCharniereClair      "Bourgogne"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/21231> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/26> .
+
+<http://id.insee.fr/geo/region/54>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/86194> ;
+        igeo:codeINSEE              "54"^^xs:token ;
+        igeo:codeRegion             "54"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3199> , <http://id.insee.fr/geo/mouvements/3178> ;
+        igeo:nom                    "Poitou-Charentes"@fr ;
+        igeo:nomCharniereClair      "Poitou-Charentes"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/86194> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/54> .
+
+<http://id.insee.fr/geo/region/01>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97105> ;
+        igeo:codeINSEE              "01"^^xs:token ;
+        igeo:codeRegion             "01"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3161> ;
+        igeo:nom                    "Guadeloupe"@fr ;
+        igeo:nomCharniereClair      "Guadeloupe"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/97105> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/01> .
+
+<http://id.insee.fr/geo/region/82>
+        a                           igeo:Region ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/69123> ;
+        igeo:codeINSEE              "82"^^xs:token ;
+        igeo:codeRegion             "82"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3182> , <http://id.insee.fr/geo/mouvements/3201> ;
+        igeo:nom                    "Rhône-Alpes"@fr ;
+        igeo:nomCharniereClair      "Rhône-Alpes"@fr ;
+        igeo:prefectureDeRegion     <http://id.insee.fr/geo/commune/69123> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/region/82> .
