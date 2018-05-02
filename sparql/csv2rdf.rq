@@ -1,112 +1,181 @@
 PREFIX sn: <https://sireneld.io/vocab/sirene#>
 PREFIX sx: <https://sireneld.io/vocab/sirext#>
-PREFIX st: <httpsn://sireneld.io/siret/>
-PREFIX rdfsn: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
-PREFIX org: <http://www.w3.org/ns/org#>
 
 CONSTRUCT {
-	?etablissement a sx:Etablissement ;
-		sn:SIREN ?SIREN ;
-		sn:NIC ?NIC ;
-		sn:L1_NORMALISEE ?L1_NORMALISEE ;
-		sn:L2_NORMALISEE ?L2_NORMALISEE ;
-		sn:L3_NORMALISEE ?L3_NORMALISEE ;
-		sn:L4_NORMALISEE ?L4_NORMALISEE ;
-		sn:L5_NORMALISEE ?L5_NORMALISEE ;
-		sn:L6_NORMALISEE ?L6_NORMALISEE ;
-		sn:L7_NORMALISEE ?L7_NORMALISEE ;
-		sn:L1_DECLAREE ?L1_DECLAREE ;
-		sn:L2_DECLAREE ?L2_DECLAREE ;
-		sn:L3_DECLAREE ?L3_DECLAREE ;
-		sn:L4_DECLAREE ?L4_DECLAREE ;
-		sn:L5_DECLAREE ?L5_DECLAREE ;
-		sn:L6_DECLAREE ?L6_DECLAREE ;
-		sn:L7_DECLAREE ?L7_DECLAREE ;
-		sn:NUMVOIE ?NUMVOIE ;
-		sn:INDREP ?INDREP ;
-		sn:TYPVOIE ?TYPVOIE ;
-		sn:LIBVOIE ?LIBVOIE ;
-		sn:CODPOS ?CODPOS ;
-		sn:CEDEX ?CEDEX ;
-		sn:DEPET ?DEPET ;
-		sn:COMET ?COMET ;
-		sn:TCD ?TCD ;
-		sn:SIEGE ?SIEGE ;
-		sn:ENSEIGNE ?ENSEIGNE ;
-		sn:IND_PUBLIPO ?IND_PUBLIPO ;
-		sn:DIFFCOM ?DIFFCOM ;
-		sn:AMINTRET ?AMINTRET ;
-		sn:NATETAB ?NATETAB ;
-		sn:APET700 ?APET700 ;
-		sn:DAPET ?DAPET ;
-		sn:TEFET ?TEFET ;
-		sn:EFETCENT ?EFETCENT ;
-		sn:DEFET ?DEFET ;
-		sn:ORIGINE ?ORIGINE ;
-		sn:DCRET ?DCRET ;
-		sn:DDEBACT ?DDEBACT ;
-		sn:ACTIVNAT ?ACTIVNAT ;
-		sn:LIEUACT ?LIEUACT ;
-		sn:ACTISURF ?ACTISURF ;
-		sn:SAISONAT ?SAISONAT ;
-		sn:MODET ?MODET ;
-		sn:PRODET ?PRODET ;
-		sn:PRODPART ?PRODPART ;
-		sn:AUXILT ?AUXILT ;
-		sn:NOMEN_LONG ?NOMEN_LONG ;
-		sn:NOM ?NOM ;
+
+    ?entreprise a ?categorie_class ;
+        a ?nj_class ;
+        sn:SIREN ?SIREN ;
+        sn:NOMEN_LONG ?NOMEN_LONG ;
+        sn:SIGLE ?SIGLE ;
+        sn:NOM ?NOM ;
         sn:PRENOM ?PRENOM ;
         sn:CIVILITE ?CIVILITE ;
-		sn:RNA ?RNA ;
-		sn:NICSIEGE ?NICSIEGE ;
-		sn:RPEN ?RPEN ;
-		sn:DEPCOMEN ?DEPCOMEN ;
+        sn:RNA ?RNA ;
+        sn:NICSIEGE ?NICSIEGE ;
+        sn:RPEN ?RPEN ;
+        sn:DEPCOMEN ?DEPCOMEN ;
         sn:ADR_MAIL ?ADR_MAIL ;
-		sn:NJ ?NJ ;
-		sn:APEN700 ?APEN700 ;
-		sn:DAPEN ?DAPEN ;
-		sn:APRM ?APRM ;
-		sn:ESS ?ESS ;
-		sn:DATEESS ?DATEESS ;
-		sn:TEFEN ?TEFEN ;
-		sn:EFENCENT ?EFENCENT ;
-		sn:DEFEN ?DEFEN ;
-		sn:CATEGORIE ?CATEGORIE ;
-		sn:DCREN ?DCREN ;
-		sn:AMINTREN ?AMINTREN ;
-		sn:MONOACT ?MONOACT ;
-		sn:MODEN ?MODEN ;
-		sn:PRODEN ?PRODEN ;
-		sn:ESAANN ?ESAANN ;
-		sn:TCA ?TCA ;
-		sn:ESAAPEN ?ESAAPEN ;
-		sn:ESASEC1N ?ESASEC1N ;
-		sn:ESASEC2N ?ESASEC2N ;
-		sn:ESASEC3N ?ESASEC3N ;
-		sn:ESASEC4N ?ESASEC4N ;
-		sn:VMAJ ?VMAJ ;
-		sn:VMAJ1 ?VMAJ1 ;
-		sn:VMAJ2 ?VMAJ2 ;
-		sn:VMAJ3 ?VMAJ3 ;
-		sn:DATEMAJ ?DATEMAJ_dateTime ;
-		sn:longitude ?longitude_double ;
-		sn:latitude ?latitude_double ;
-		sn:geo_score ?geo_score_double ;
-		sn:geo_type ?geo_type ;
-		sn:geo_adresse ?geo_adresse ;
-		sn:geo_id ?geo_id ;
-		sn:geo_ligne ?geo_ligne ;
-        sn:siret ?siret
-        .
+        sn:NJ ?NJ ;
+        sn:APEN700 ?APEN700 ;
+        sn:DAPEN ?DAPEN ;
+        sn:APRM ?APRM ;
+        sn:ESS ?ESS ;
+        sn:DATEESS ?DATEESS ;
+        sn:TEFEN ?TEFEN ;
+        sn:EFENCENT ?EFENCENT_integer ;
+        sn:DEFEN ?DEFEN_year ;
+        sn:CATEGORIE ?CATEGORIE ;
+        sn:DCREN ?DCREN ;
+        sn:AMINTREN ?AMINTREN ;
+        sn:MONOACT ?MONOACT ;
+        sn:MODEN ?MODEN ;
+        sn:PRODEN ?PRODEN ;
+        sn:ESAANN ?ESAANN_year ;
+        sn:TCA ?TCA ;
+        sn:ESAAPEN ?ESAAPEN ;
+        sn:ESASEC1N ?ESASEC1N ;
+        sn:ESASEC2N ?ESASEC2N ;
+        sn:ESASEC3N ?ESASEC3N ;
+        sn:ESASEC4N ?ESASEC4N ;
+        sx:etablissement ?etablissement ;
+        sx:siege ?etablissementSiege ;
+        sx:tef ?tefen_uri ;
+        sx:monoact ?monoact_uri ;
+        sx:mod ?moden_uri ;
+        sx:tca ?tca_uri ;
+        sx:dcr ?DCREN_date ;
+        sx:amintr ?AMINTREN_yearmonth ;
+        sx:dateess ?DATEESS_date ;
+        sx:esaapen ?esaapen_uri ;
+        sx:esasec1n ?esasec1n_uri ;
+        sx:esasec2n ?esasec2n_uri ;
+        sx:esasec3n ?esasec3n_uri ;
+        sx:esasec4n ?esasec4n_uri ;
+        sx:ape ?apen_uri .
+
+	?etablissement a sx:Etablissement ;
+        sn:NIC ?NIC ;
+        sn:L1_NORMALISEE ?L1_NORMALISEE ;
+        sn:L2_NORMALISEE ?L2_NORMALISEE ;
+        sn:L3_NORMALISEE ?L3_NORMALISEE ;
+        sn:L4_NORMALISEE ?L4_NORMALISEE ;
+        sn:L5_NORMALISEE ?L5_NORMALISEE ;
+        sn:L6_NORMALISEE ?L6_NORMALISEE ;
+        sn:L7_NORMALISEE ?L7_NORMALISEE ;
+        sn:L1_DECLAREE ?L1_DECLAREE ;
+        sn:L2_DECLAREE ?L2_DECLAREE ;
+        sn:L3_DECLAREE ?L3_DECLAREE ;
+        sn:L4_DECLAREE ?L4_DECLAREE ;
+        sn:L5_DECLAREE ?L5_DECLAREE ;
+        sn:L6_DECLAREE ?L6_DECLAREE ;
+        sn:L7_DECLAREE ?L7_DECLAREE ;
+        sn:NUMVOIE ?NUMVOIE ;
+        sn:INDREP ?INDREP ;
+        sn:TYPVOIE ?TYPVOIE ;
+        sn:LIBVOIE ?LIBVOIE ;
+        sn:CODPOS ?CODPOS ;
+        sn:CEDEX ?CEDEX ;
+        sn:DEPET ?DEPET ;
+        sn:COMET ?COMET ;
+        sn:TCD ?TCD ;
+        sn:SIEGE ?SIEGE ;
+        sn:ENSEIGNE ?ENSEIGNE ;
+        sn:IND_PUBLIPO ?IND_PUBLIPO ;
+        sn:DIFFCOM ?DIFFCOM ;
+        sn:AMINTRET ?AMINTRET ;
+        sn:NATETAB ?NATETAB ;
+        sn:APET700 ?APET700 ;
+        sn:DAPET ?DAPET ;
+        sn:TEFET ?TEFET ;
+        sn:EFETCENT ?EFETCENT_integer ;
+        sn:DEFET ?DEFET_year ;
+        sn:ORIGINE ?ORIGINE ;
+        sn:DCRET ?DCRET ;
+        sn:DDEBACT ?DDEBACT ;
+        sn:ACTIVNAT ?ACTIVNAT ;
+        sn:LIEUACT ?LIEUACT ;
+        sn:ACTISURF ?ACTISURF ;
+        sn:SAISONAT ?SAISONAT ;
+        sn:MODET ?MODET ;
+        sn:PRODET ?PRODET ;
+        sn:PRODPART ?PRODPART ;
+        sn:AUXILT ?AUXILT ;
+        sn:DATEMAJ ?DATEMAJ_dateTime ;
+        sx:longitude ?longitude_double ;
+        sx:latitude ?latitude_double ;
+        sx:geo_score ?geo_score_double ;
+        sx:geo_type ?geo_type ;
+        sx:geo_adresse ?geo_adresse ;
+        sx:geo_id ?geo_id ;
+        sx:geo_ligne ?geo_ligne ;
+        sx:siret ?siret ;
+        sx:commune ?commune ;
+        sx:tef ?tefet_uri ;
+        sx:tcd ?tcd_uri ;
+        sx:natetab ?natetab_uri ;
+        sx:origine ?origine_uri ;
+        sx:activnat ?activnat_uri ;
+        sx:lieuact ?lieuact_uri ;
+        sx:actisurf ?actisurf_uri ;
+        sx:saisonat ?saisonat_uri ;
+        sx:mod ?modet_uri ;
+        sx:prodpart ?prodpart_uri ;
+        sx:dcr ?DCRET_date ;
+        sx:amintr ?AMINTRET_yearmonth ;
+        sx:ddebact ?DDEBACT_date ;
+        sx:ape ?apet_uri .
 }
  WHERE {
     bind(concat(?SIREN,?NIC) as ?siret)
-    bind(uri(concat("httpsn://sireneld.io/siret/",?siret)) as ?etablissement)
+    bind(uri(concat("https://sireneld.io/siren/",?SIREN)) as ?entreprise)
+    bind(uri(concat("https://sireneld.io/siret/",?siret)) as ?etablissement)
+    bind(uri(concat("https://sireneld.io/siret/",?SIREN,?NICSIEGE)) as ?etablissementSiege)
+    bind(concat(?DEPET,?COMET) as ?commune)
+    bind(uri(concat("https://sireneld.io/tcd/",?TCD)) as ?tcd_uri)
+    bind(uri(concat("https://sireneld.io/nanetab/",?NATETAB)) as ?natetab_uri)
+    bind(uri(concat("https://sireneld.io/tef/",?TEFET)) as ?tefet_uri)
+    bind(uri(concat("https://sireneld.io/tef/",?TEFEN)) as ?tefen_uri)
+    bind(uri(concat("https://sireneld.io/origine/",?ORIGINE)) as ?origine_uri)
+    bind(uri(concat("https://sireneld.io/activnat/",?ACTIVNAT)) as ?activnat_uri)
+    bind(uri(concat("https://sireneld.io/lieuact/",?LIEUACT)) as ?lieuact_uri)
+    bind(uri(concat("https://sireneld.io/actisurf/",?ACTISURF)) as ?actisurf_uri)
+    bind(uri(concat("https://sireneld.io/saisonat/",?SAISONAT)) as ?saisonat_uri)
+    bind(uri(concat("https://sireneld.io/monoact/",?MONOACT)) as ?monoact_uri)
+    bind(uri(concat("https://sireneld.io/mod/",?MODEN)) as ?moden_uri)
+    bind(uri(concat("https://sireneld.io/mod/",?MODET)) as ?modet_uri)
+    bind(uri(concat("https://sireneld.io/mod/",?PRODPART)) as ?prodpart_uri)
+    bind(uri(concat("https://sireneld.io/tca/",?TCA)) as ?tca_uri)
+
+    bind(uri(concat("https://sireneld.io/vocab/sirext#",?CATEGORIE)) as ?categorie_class)
+    bind(uri(concat("https://sireneld.io/vocab/sirecj#",?NJ)) as ?nj_class)
+
+
+    bind(uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/",replace(?APEN700,"^(\\d\\d)","$1.","i"))) as ?apen_uri)
+    bind(uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/",replace(?APET700,"^(\\d\\d)","$1.","i"))) as ?apet_uri)
+    bind(uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/",replace(?ESAAPEN,"^(\\d\\d)","$1.","i"))) as ?esaapen_uri)
+    bind(uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/",replace(?ESASEC1N,"^(\\d\\d)","$1.","i"))) as ?esasec1n_uri)
+    bind(uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/",replace(?ESASEC2N,"^(\\d\\d)","$1.","i"))) as ?esasec2n_uri)
+    bind(uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/",replace(?ESASEC3N,"^(\\d\\d)","$1.","i"))) as ?esasec3n_uri)
+    bind(uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/",replace(?ESASEC4N,"^(\\d\\d)","$1.","i"))) as ?esasec4n_uri)
+
     bind(xs:double(?geo_score) as ?geo_score_double)
     bind(xs:double(?latitude) as ?latitude_double)
     bind(xs:double(?longitude) as ?longitude_double)
     bind(xs:dateTime(?DATEMAJ) as ?DATEMAJ_dateTime)
+    bind(xs:integer(?EFETCENT) as ?EFETCENT_integer)
+    bind(xs:integer(?EFENCENT) as ?EFENCENT_integer)
+    bind(xs:gYear(?DEFET) as ?DEFET_year)
+    bind(xs:gYear(?DEFEN) as ?DEFEN_year)
+    bind(xs:gYear(?ESAANN) as ?ESAANN_year)
 
 
+    bind(xs:gYearMonth(replace(?AMINTRET,"(\\d\\d\\d\\d)(\\d\\d)","$1-$2")) as ?AMINTRET_yearmonth)
+    bind(xs:gYearMonth(replace(?AMINTREN,"(\\d\\d\\d\\d)(\\d\\d)","$1-$2")) as ?AMINTREN_yearmonth)
+    bind(xs:date(replace(?DCRET,"(\\d\\d\\d\\d)(\\d\\d)(\\d\\d)","$1-$2-$3")) as ?DCRET_date)
+    bind(xs:date(replace(?DCREN,"(\\d\\d\\d\\d)(\\d\\d)(\\d\\d)","$1-$2-$3")) as ?DCREN_date)
+    bind(xs:date(replace(?DDEBACT,"(\\d\\d\\d\\d)(\\d\\d)(\\d\\d)","$1-$2-$3")) as ?DDEBACT_date)
+    bind(xs:date(replace(?DATEESS,"(\\d\\d\\d\\d)(\\d\\d)(\\d\\d)","$1-$2-$3")) as ?DATEESS_date)
 }
