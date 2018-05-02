@@ -5,5 +5,5 @@ Ces échantillons ont été produits à partir de geo-sirene_35_small.csv, un ex
 Le fichier .ttl est un fichier [Turtle](https://fr.wikipedia.org/wiki/Turtle_(syntaxe)) et le produit de l'exécution de [Tarql](https://github.com/tarql/tarql) avec une requête SPARQL en paramètre :
 
 ```shell
-tarql -v sparql/csv2rdf.rq échantillons/geo-sirene_35_small.csv  > échantillons/sirene_35.ttl
+tarql -e UTF-8 sparql/csv2rdf.rq échantillons/geo-sirene_35_small.csv  > échantillons/geo-sirene_35_small.ttl
 ```
