@@ -8,6 +8,7 @@
 @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 sirext: a owl:Ontology ;
     dcterms:title "Extension de SIRENE" ;
@@ -81,7 +82,7 @@ sirext:Origine rdfs:SubClassOf sirext:CodeNomenclature ;
     rdfs:label "Origine" ;
     rdfs:isDefinedBy sirext: .
 
-ssirext:ACTIVNAT rdfs:SubClassOf sirext:CodeNomenclature ;
+sirext:ACTIVNAT rdfs:SubClassOf sirext:CodeNomenclature ;
     rdfs:comment "Cette variable apporte un complément d'information sur l'activité excercée de l'établissement (transport, commerce de détail, services etc)" ;
     rdfs:label "Nature de l'activité (ACTIVNAT)" ;
     rdfs:isDefinedBy sirext: .
@@ -315,7 +316,7 @@ sirext:ape rdfs:subPropertyOf sirext:codeNomenclature ;
 sirext:esaapen rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:comment "Cette variable désigne l'Activité Principale Exercée de l'entreprise issue de l'Enquête Sectorielle Annuelle (ESA). Elle est codifiée selon la Nomenclature d'Activités Française." ;
 	rdfs:label "Activité principale de l'entreprise déclarée dans l'ESA (ESAAPEN)" ;
-	rdfs:domain sx:Entreprise ;
+	rdfs:domain sirext:Entreprise ;
 	rdfs:range skos:Concept ;
 	rdfs:isDefinedBy sirext: .
 

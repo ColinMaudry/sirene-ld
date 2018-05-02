@@ -8,6 +8,7 @@
 @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
 sirene: a owl:Ontology ;
@@ -82,7 +83,7 @@ sirene:L6_NORMALISEE a rdf:Property ;
 	rdfs:domain sirext:Etablissement ;
 	rdfs:isDefinedBy sirene: .
 
-sirene:sirene:L7_NORMALISEE a rdf:Property ;
+sirene:L7_NORMALISEE a rdf:Property ;
 	rdfs:comment "Septième ligne de l’adressage de l’établissement" ;
 	rdfs:label "Adresse normalisée (l7)" ;
 	rdfs:range xs:string ;
