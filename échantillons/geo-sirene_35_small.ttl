@@ -5,6 +5,7 @@
 
 <https://sireneld.io/siren/006280234>
         rdfs:type         sx:ETI ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#5710> ;
         sn:SIREN          "006280234" ;
         sn:NOMEN_LONG     "LE GAL" ;
         sn:NICSIEGE       "00094" ;
@@ -85,7 +86,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/3> ;
         sx:activnat       <https://sireneld.io/activnat/99> ;
-        sx:lieuact        <https://sireneld.io/activnat/05> ;
+        sx:lieuact        <https://sireneld.io/lieuact/05> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "2012-06-18"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -94,6 +96,7 @@
 
 <https://sireneld.io/siren/007080773>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#5710> ;
         sn:SIREN          "007080773" ;
         sn:NOMEN_LONG     "CARRIERS MEN ARVOR" ;
         sn:NICSIEGE       "00018" ;
@@ -178,7 +181,8 @@
         sx:tef            <https://sireneld.io/tef/02> ;
         sx:tcd            <https://sireneld.io/tcd/13> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1900-01-01"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -187,6 +191,7 @@
 
 <https://sireneld.io/siren/007080773>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#5710> ;
         sn:SIREN          "007080773" ;
         sn:NOMEN_LONG     "CARRIERS MEN ARVOR" ;
         sn:NICSIEGE       "00018" ;
@@ -277,7 +282,8 @@
         sx:tcd            <https://sireneld.io/tcd/31> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1995-05-01"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -286,6 +292,7 @@
 
 <https://sireneld.io/siren/007080773>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#5710> ;
         sn:SIREN          "007080773" ;
         sn:NOMEN_LONG     "CARRIERS MEN ARVOR" ;
         sn:NICSIEGE       "00018" ;
@@ -375,7 +382,8 @@
         sx:tcd            <https://sireneld.io/tcd/15> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "2005-02-01"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -384,6 +392,7 @@
 
 <https://sireneld.io/siren/007280191>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#5599> ;
         sn:SIREN          "007280191" ;
         sn:NOMEN_LONG     "VINOUZE" ;
         sn:NICSIEGE       "00037" ;
@@ -454,6 +463,7 @@
         sx:tef            <https://sireneld.io/tef/00> ;
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "2006-12-27"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -462,6 +472,7 @@
 
 <https://sireneld.io/siren/009731712>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009731712" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00015" ;
@@ -537,7 +548,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -545,6 +557,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009732900>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009732900" ;
         sn:NOMEN_LONG     "SYND DE COPROPRIETE" ;
         sn:NICSIEGE       "00015" ;
@@ -619,7 +632,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -627,6 +641,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009732918>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009732918" ;
         sn:NOMEN_LONG     "COPRO IM AR STEREDEN" ;
         sn:NICSIEGE       "00017" ;
@@ -701,7 +716,8 @@
         sx:tcd            <https://sireneld.io/tcd/44> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -710,6 +726,7 @@
 
 <https://sireneld.io/siren/009733122>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733122" ;
         sn:NOMEN_LONG     "COPRO IM RES ARMORICAINE" ;
         sn:NICSIEGE       "00015" ;
@@ -786,7 +803,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -795,6 +813,7 @@
 
 <https://sireneld.io/siren/009733189>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733189" ;
         sn:NOMEN_LONG     "COPRO IM MERMOZ" ;
         sn:NICSIEGE       "00014" ;
@@ -870,7 +889,8 @@
         sx:tcd            <https://sireneld.io/tcd/31> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -878,6 +898,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733205>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733205" ;
         sn:NOMEN_LONG     "COPRO IM RES BEAUVALLON" ;
         sn:NICSIEGE       "00018" ;
@@ -948,7 +969,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -956,6 +978,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733312>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733312" ;
         sn:NOMEN_LONG     "COPRO IM NEPTUNE" ;
         sn:NICSIEGE       "00012" ;
@@ -1029,7 +1052,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1038,6 +1062,7 @@
 
 <https://sireneld.io/siren/009733759>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733759" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -1113,7 +1138,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1121,6 +1147,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733767>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733767" ;
         sn:NOMEN_LONG     "COPRO IM HOUSSAYE" ;
         sn:NICSIEGE       "00017" ;
@@ -1194,7 +1221,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1203,6 +1231,7 @@
 
 <https://sireneld.io/siren/009733833>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733833" ;
         sn:NOMEN_LONG     "COPRO IM CRYSTAL" ;
         sn:NICSIEGE       "00017" ;
@@ -1280,7 +1309,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1289,6 +1319,7 @@
 
 <https://sireneld.io/siren/009733841>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733841" ;
         sn:NOMEN_LONG     "COPRO IM GALLIC" ;
         sn:NICSIEGE       "00010" ;
@@ -1364,7 +1395,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1373,6 +1405,7 @@
 
 <https://sireneld.io/siren/009733932>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733932" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE IMM. DE LA RONCERAY" ;
         sn:NICSIEGE       "00017" ;
@@ -1447,7 +1480,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1456,6 +1490,7 @@
 
 <https://sireneld.io/siren/009733981>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733981" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -1531,7 +1566,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1540,6 +1576,7 @@
 
 <https://sireneld.io/siren/009734005>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734005" ;
         sn:NOMEN_LONG     "COPRO IM SAULES" ;
         sn:NICSIEGE       "00011" ;
@@ -1614,7 +1651,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1622,6 +1660,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009734013>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734013" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00015" ;
@@ -1695,7 +1734,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1704,6 +1744,7 @@
 
 <https://sireneld.io/siren/009734237>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734237" ;
         sn:NOMEN_LONG     "COPRO IM AV FRANC LIBRES" ;
         sn:NICSIEGE       "00010" ;
@@ -1779,7 +1820,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1788,6 +1830,7 @@
 
 <https://sireneld.io/siren/009734377>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734377" ;
         sn:NOMEN_LONG     "COPRO IM R FOUGERES" ;
         sn:NICSIEGE       "00014" ;
@@ -1863,7 +1906,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1872,6 +1916,7 @@
 
 <https://sireneld.io/siren/009734385>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734385" ;
         sn:NOMEN_LONG     "COPRO IM CORNES DE CERF" ;
         sn:NICSIEGE       "00017" ;
@@ -1949,7 +1994,8 @@
         sx:tcd            <https://sireneld.io/tcd/32> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -1958,6 +2004,7 @@
 
 <https://sireneld.io/siren/009734849>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734849" ;
         sn:NOMEN_LONG     "COPRO IM CONCORDE" ;
         sn:NICSIEGE       "00012" ;
@@ -2033,7 +2080,8 @@
         sx:tcd            <https://sireneld.io/tcd/44> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2042,6 +2090,7 @@
 
 <https://sireneld.io/siren/009735127>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735127" ;
         sn:NOMEN_LONG     "COPRO IM PROMENADES" ;
         sn:NICSIEGE       "00012" ;
@@ -2119,7 +2168,8 @@
         sx:tcd            <https://sireneld.io/tcd/32> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2128,6 +2178,7 @@
 
 <https://sireneld.io/siren/009735721>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735721" ;
         sn:NOMEN_LONG     "COPRO IM RES PRES" ;
         sn:NICSIEGE       "00012" ;
@@ -2206,7 +2257,8 @@
         sx:tcd            <https://sireneld.io/tcd/32> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2214,6 +2266,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009735838>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735838" ;
         sn:NOMEN_LONG     "ASS COPRO SQUARE DES CLOTEAUX" ;
         sn:NICSIEGE       "00014" ;
@@ -2290,7 +2343,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2299,6 +2353,7 @@
 
 <https://sireneld.io/siren/009735895>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735895" ;
         sn:NOMEN_LONG     "COPRO IM R ARGENTRE" ;
         sn:NICSIEGE       "00014" ;
@@ -2375,7 +2430,8 @@
         sx:tcd            <https://sireneld.io/tcd/18> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2383,6 +2439,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009735937>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735937" ;
         sn:NOMEN_LONG     "COPRO IM EMERAUDE" ;
         sn:NICSIEGE       "00014" ;
@@ -2456,7 +2513,8 @@
         sx:tcd            <https://sireneld.io/tcd/18> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2465,6 +2523,7 @@
 
 <https://sireneld.io/siren/009735952>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735952" ;
         sn:NOMEN_LONG     "COPRO IMM LE GALLION" ;
         sn:NICSIEGE       "00013" ;
@@ -2540,7 +2599,8 @@
         sx:tcd            <https://sireneld.io/tcd/22> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2548,6 +2608,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009736208>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009736208" ;
         sn:NOMEN_LONG     "COPRO IM PARC DE COULON" ;
         sn:NICSIEGE       "00019" ;
@@ -2620,7 +2681,8 @@
         sx:tcd            <https://sireneld.io/tcd/21> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2629,6 +2691,7 @@
 
 <https://sireneld.io/siren/009736216>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009736216" ;
         sn:NOMEN_LONG     "COPRO IM RES BELLEVUE" ;
         sn:NICSIEGE       "00012" ;
@@ -2705,7 +2768,8 @@
         sx:tcd            <https://sireneld.io/tcd/21> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2713,6 +2777,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009736935>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009736935" ;
         sn:NOMEN_LONG     "COPRO IM ST THOMAS" ;
         sn:NICSIEGE       "00017" ;
@@ -2784,7 +2849,8 @@
         sx:tcd            <https://sireneld.io/tcd/18> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2793,6 +2859,7 @@
 
 <https://sireneld.io/siren/009737123>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737123" ;
         sn:NOMEN_LONG     "COPRO IM R DUGUESCLIN" ;
         sn:NICSIEGE       "00019" ;
@@ -2868,7 +2935,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2876,6 +2944,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009737149>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737149" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -2949,7 +3018,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -2957,6 +3027,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009737156>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737156" ;
         sn:NOMEN_LONG     "COPRO IM R CHALOTAIS" ;
         sn:NICSIEGE       "00019" ;
@@ -3031,7 +3102,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3040,6 +3112,7 @@
 
 <https://sireneld.io/siren/009737172>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737172" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00016" ;
@@ -3115,7 +3188,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3124,6 +3198,7 @@
 
 <https://sireneld.io/siren/009737180>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737180" ;
         sn:NOMEN_LONG     "COPRO IM BD LIBERTE" ;
         sn:NICSIEGE       "00019" ;
@@ -3199,7 +3274,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3207,6 +3283,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009737230>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737230" ;
         sn:NOMEN_LONG     "COPRO IM Q LAMENNAIS" ;
         sn:NICSIEGE       "00012" ;
@@ -3281,7 +3358,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3290,6 +3368,7 @@
 
 <https://sireneld.io/siren/009738741>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009738741" ;
         sn:NOMEN_LONG     "COPROPRIETE ODET" ;
         sn:NICSIEGE       "00017" ;
@@ -3365,7 +3444,8 @@
         sx:tcd            <https://sireneld.io/tcd/44> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3373,6 +3453,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009738832>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009738832" ;
         sn:NOMEN_LONG     "COPRO IM R FEUTERIES" ;
         sn:NICSIEGE       "00014" ;
@@ -3447,7 +3528,8 @@
         sx:tcd            <https://sireneld.io/tcd/41> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3456,6 +3538,7 @@
 
 <https://sireneld.io/siren/009739020>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739020" ;
         sn:NOMEN_LONG     "COPRO IM R CHARCOT" ;
         sn:NICSIEGE       "00015" ;
@@ -3532,7 +3615,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3541,6 +3625,7 @@
 
 <https://sireneld.io/siren/009739038>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739038" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00017" ;
@@ -3616,7 +3701,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3625,6 +3711,7 @@
 
 <https://sireneld.io/siren/009739046>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739046" ;
         sn:NOMEN_LONG     "COPRO IM BD JEANNE D ARC" ;
         sn:NICSIEGE       "00010" ;
@@ -3701,7 +3788,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3710,6 +3798,7 @@
 
 <https://sireneld.io/siren/009739061>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739061" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -3785,7 +3874,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3793,6 +3883,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739095>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739095" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00017" ;
@@ -3867,7 +3958,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3875,6 +3967,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739400>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739400" ;
         sn:NOMEN_LONG     "COPRO IM AV BRIAND" ;
         sn:NICSIEGE       "00019" ;
@@ -3949,7 +4042,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -3958,6 +4052,7 @@
 
 <https://sireneld.io/siren/009739418>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739418" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00011" ;
@@ -4033,7 +4128,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4042,6 +4138,7 @@
 
 <https://sireneld.io/siren/009739764>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739764" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00018" ;
@@ -4117,7 +4214,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4126,6 +4224,7 @@
 
 <https://sireneld.io/siren/009739772>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739772" ;
         sn:NOMEN_LONG     "ASS COPRO 19 & 21 RUE DE LA CROIX CARREE" ;
         sn:NICSIEGE       "00011" ;
@@ -4203,7 +4302,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4212,6 +4312,7 @@
 
 <https://sireneld.io/siren/009739780>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739780" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -4287,7 +4388,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4296,6 +4398,7 @@
 
 <https://sireneld.io/siren/009739822>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739822" ;
         sn:NOMEN_LONG     "COPRO IM R BALZAC" ;
         sn:NICSIEGE       "00014" ;
@@ -4371,7 +4474,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4380,6 +4484,7 @@
 
 <https://sireneld.io/siren/009740382>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740382" ;
         sn:NOMEN_LONG     "COPRO IM AV LIBRES FRANCAIS" ;
         sn:NICSIEGE       "00016" ;
@@ -4457,7 +4562,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4466,6 +4572,7 @@
 
 <https://sireneld.io/siren/009740390>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740390" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00019" ;
@@ -4541,7 +4648,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4550,6 +4658,7 @@
 
 <https://sireneld.io/siren/009740408>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740408" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00019" ;
@@ -4625,7 +4734,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4634,6 +4744,7 @@
 
 <https://sireneld.io/siren/009740416>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740416" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00012" ;
@@ -4709,7 +4820,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4718,6 +4830,7 @@
 
 <https://sireneld.io/siren/009740424>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740424" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00016" ;
@@ -4793,7 +4906,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4802,6 +4916,7 @@
 
 <https://sireneld.io/siren/009740432>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740432" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -4877,7 +4992,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4886,6 +5002,7 @@
 
 <https://sireneld.io/siren/009740440>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740440" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00012" ;
@@ -4961,7 +5078,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -4970,6 +5088,7 @@
 
 <https://sireneld.io/siren/009740457>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740457" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00016" ;
@@ -5045,7 +5164,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5054,6 +5174,7 @@
 
 <https://sireneld.io/siren/009740465>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740465" ;
         sn:NOMEN_LONG     "COPROPRIETE IMPASSE DU COUEDIC" ;
         sn:NICSIEGE       "00019" ;
@@ -5129,7 +5250,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1995-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5138,6 +5260,7 @@
 
 <https://sireneld.io/siren/009740473>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740473" ;
         sn:NOMEN_LONG     "COPRO IM AV JANVIER" ;
         sn:NICSIEGE       "00013" ;
@@ -5213,7 +5336,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5222,6 +5346,7 @@
 
 <https://sireneld.io/siren/009740481>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740481" ;
         sn:NOMEN_LONG     "COPRO IM PL ST GERMAIN" ;
         sn:NICSIEGE       "00016" ;
@@ -5299,7 +5424,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5308,6 +5434,7 @@
 
 <https://sireneld.io/siren/009740507>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740507" ;
         sn:NOMEN_LONG     "COPRO IM R ST MELAINE" ;
         sn:NICSIEGE       "00018" ;
@@ -5384,7 +5511,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5393,6 +5521,7 @@
 
 <https://sireneld.io/siren/009740523>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740523" ;
         sn:NOMEN_LONG     "COPRO IM BD LIBERTE" ;
         sn:NICSIEGE       "00015" ;
@@ -5468,7 +5597,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5477,6 +5607,7 @@
 
 <https://sireneld.io/siren/009740531>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740531" ;
         sn:NOMEN_LONG     "COPRO IM R MICHELET" ;
         sn:NICSIEGE       "00018" ;
@@ -5554,7 +5685,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5563,6 +5695,7 @@
 
 <https://sireneld.io/siren/009740556>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740556" ;
         sn:NOMEN_LONG     "COPROPRIETE IMM. R ALMA ACACIAS" ;
         sn:NICSIEGE       "00015" ;
@@ -5638,7 +5771,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1995-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5647,6 +5781,7 @@
 
 <https://sireneld.io/siren/009740598>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740598" ;
         sn:NOMEN_LONG     "COPRO IM R SACHER" ;
         sn:NICSIEGE       "00017" ;
@@ -5722,7 +5857,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5731,6 +5867,7 @@
 
 <https://sireneld.io/siren/009740630>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740630" ;
         sn:NOMEN_LONG     "COPRO IM BD ROOSEVELT" ;
         sn:NICSIEGE       "00018" ;
@@ -5806,7 +5943,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5815,6 +5953,7 @@
 
 <https://sireneld.io/siren/009740648>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740648" ;
         sn:NOMEN_LONG     "COPROPRIETE IMMEUBLE R ST ALPHONSE" ;
         sn:NICSIEGE       "00010" ;
@@ -5890,7 +6029,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1995-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5899,6 +6039,7 @@
 
 <https://sireneld.io/siren/009740655>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740655" ;
         sn:NOMEN_LONG     "ASS COPRO 2 & 4 R DE LA CROIX CARREE" ;
         sn:NICSIEGE       "00015" ;
@@ -5974,7 +6115,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1995-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -5983,6 +6125,7 @@
 
 <https://sireneld.io/siren/009740663>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740663" ;
         sn:NOMEN_LONG     "COPROPRIETE IMM. CASTEL ST MARTIN" ;
         sn:NICSIEGE       "00019" ;
@@ -6056,7 +6199,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1995-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6065,6 +6209,7 @@
 
 <https://sireneld.io/siren/009740671>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740671" ;
         sn:NOMEN_LONG     "COPRO IM AV LIBRES FRANCAIS" ;
         sn:NICSIEGE       "00012" ;
@@ -6141,7 +6286,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6150,6 +6296,7 @@
 
 <https://sireneld.io/siren/009740697>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740697" ;
         sn:NOMEN_LONG     "COPRO IM CHATEAU DE MAUREPA" ;
         sn:NICSIEGE       "00017" ;
@@ -6226,7 +6373,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6235,6 +6383,7 @@
 
 <https://sireneld.io/siren/009740713>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740713" ;
         sn:NOMEN_LONG     "COPROPRIETE IMM. R BARBES" ;
         sn:NICSIEGE       "00012" ;
@@ -6310,7 +6459,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1995-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6319,6 +6469,7 @@
 
 <https://sireneld.io/siren/009740721>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740721" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00015" ;
@@ -6394,7 +6545,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6403,6 +6555,7 @@
 
 <https://sireneld.io/siren/009740754>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740754" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00016" ;
@@ -6478,7 +6631,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6487,6 +6641,7 @@
 
 <https://sireneld.io/siren/009740770>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740770" ;
         sn:NOMEN_LONG     "COPRO IM SULLY" ;
         sn:NICSIEGE       "00012" ;
@@ -6563,7 +6718,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6572,6 +6728,7 @@
 
 <https://sireneld.io/siren/009740804>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740804" ;
         sn:NOMEN_LONG     "COPRO IM AV LIBRES FRANCAIS" ;
         sn:NICSIEGE       "00019" ;
@@ -6647,7 +6804,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6656,6 +6814,7 @@
 
 <https://sireneld.io/siren/009740812>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740812" ;
         sn:NOMEN_LONG     "COPRO IM BD METZ" ;
         sn:NICSIEGE       "00012" ;
@@ -6731,7 +6890,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6740,6 +6900,7 @@
 
 <https://sireneld.io/siren/009740820>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740820" ;
         sn:NOMEN_LONG     "COPRO IM R MARGUERITE" ;
         sn:NICSIEGE       "00015" ;
@@ -6815,7 +6976,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6824,6 +6986,7 @@
 
 <https://sireneld.io/siren/009740838>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740838" ;
         sn:NOMEN_LONG     "COPRO IM TAMARIS" ;
         sn:NICSIEGE       "00017" ;
@@ -6901,7 +7064,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6910,6 +7074,7 @@
 
 <https://sireneld.io/siren/009740853>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740853" ;
         sn:NOMEN_LONG     "COPROPRIETE IMM. POINTEAU RONCERAY" ;
         sn:NICSIEGE       "00016" ;
@@ -6985,7 +7150,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1995-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -6994,6 +7160,7 @@
 
 <https://sireneld.io/siren/009740861>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740861" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -7071,7 +7238,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7080,6 +7248,7 @@
 
 <https://sireneld.io/siren/009740879>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740879" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00011" ;
@@ -7157,7 +7326,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7166,6 +7336,7 @@
 
 <https://sireneld.io/siren/009740887>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740887" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -7243,7 +7414,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7252,6 +7424,7 @@
 
 <https://sireneld.io/siren/009740895>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740895" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00017" ;
@@ -7327,7 +7500,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7336,6 +7510,7 @@
 
 <https://sireneld.io/siren/009740903>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740903" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -7411,7 +7586,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7420,6 +7596,7 @@
 
 <https://sireneld.io/siren/009740911>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740911" ;
         sn:NOMEN_LONG     "COPRO IM AV BRIAND" ;
         sn:NICSIEGE       "00012" ;
@@ -7495,7 +7672,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7504,6 +7682,7 @@
 
 <https://sireneld.io/siren/009740937>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740937" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00017" ;
@@ -7582,7 +7761,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7591,6 +7771,7 @@
 
 <https://sireneld.io/siren/009740952>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740952" ;
         sn:NOMEN_LONG     "COPRO IM RES SERRES" ;
         sn:NICSIEGE       "00016" ;
@@ -7666,7 +7847,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7675,6 +7857,7 @@
 
 <https://sireneld.io/siren/009740960>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740960" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -7752,7 +7935,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7761,6 +7945,7 @@
 
 <https://sireneld.io/siren/009740978>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740978" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00011" ;
@@ -7838,7 +8023,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7847,6 +8033,7 @@
 
 <https://sireneld.io/siren/009740986>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740986" ;
         sn:NOMEN_LONG     "COPRO IM R DUVAL" ;
         sn:NICSIEGE       "00014" ;
@@ -7922,7 +8109,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -7931,6 +8119,7 @@
 
 <https://sireneld.io/siren/009740994>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740994" ;
         sn:NOMEN_LONG     "COPRO IM ARC JEANNE" ;
         sn:NICSIEGE       "00018" ;
@@ -8006,7 +8195,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -8014,6 +8204,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009741000>
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009741000" ;
         sn:NOMEN_LONG     "COPRO IM R ST MELAINE" ;
         sn:NICSIEGE       "00013" ;
@@ -8088,7 +8279,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -8097,6 +8289,7 @@
 
 <https://sireneld.io/siren/009741018>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009741018" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00015" ;
@@ -8174,7 +8367,8 @@
         sx:tcd            <https://sireneld.io/tcd/31> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -8183,6 +8377,7 @@
 
 <https://sireneld.io/siren/009741026>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009741026" ;
         sn:NOMEN_LONG     "COPRO IM R JOFFRE" ;
         sn:NICSIEGE       "00018" ;
@@ -8259,7 +8454,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
@@ -8268,6 +8464,7 @@
 
 <https://sireneld.io/siren/009741034>
         rdfs:type         sx:PME ;
+        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009741034" ;
         sn:NOMEN_LONG     "COPRO IM BD POINCARE" ;
         sn:NICSIEGE       "00012" ;
@@ -8343,7 +8540,8 @@
         sx:tcd            <https://sireneld.io/tcd/71> ;
         sx:origine        <https://sireneld.io/origine/1> ;
         sx:activnat       <https://sireneld.io/activnat/NR> ;
-        sx:lieuact        <https://sireneld.io/activnat/99> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
         sx:mod            <https://sireneld.io/mod/S> ;
         sx:dcr            "1994-12-25"^^xs:date ;
         sx:amintr         "2012-09"^^xs:gYearMonth ;
