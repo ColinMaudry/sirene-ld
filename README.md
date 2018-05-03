@@ -37,7 +37,28 @@ Si vous souhaitez en savoir plus sur le Linked Data, je vous conseille chaudemen
 
 - Vous trouverez des échantillons de données (CSV source et résultats de transformation) dans `[échantillons](https://github.com/ColinMaudry/sirene-ld/tree/master/échantillons)`
 
-## Domaines et structure des URI
+## Stats en vrac
+
+*Au 3 mai 2018*
+
+### Taille
+
+| Quoi ?                                                    | Taille                     | Zippé  |
+| --------------------------------------------------------- | -------------------------- | ------ |
+| Le SIRENE géo-codé (CSV)                                  | 7,7 Go / 10 970 267 lignes | 1,5 Go |
+| Le SIRENE géo-codé de l'Ille-et-Vilaine (35) (CSV)        | 106 Mo / 152 835 lignes    |        |
+| Le SIRENE géo-codé de l'Ille-et-Vilaine (35) (Turtle RDF) | 560 Mo                     |        |
+|                                                           |                            |        |
+
+
+### Temps
+
+Le temps est mesuré avec [time](https://fr.wikipedia.org/wiki/Time_(Unix)).
+
+| Quoi ?                                                       | Temps          |
+| ------------------------------------------------------------ | -------------- |
+| Conversion du SIRENE géo-codé de l'Ille-et-Vilaine en Turtle | 1 min. 30 sec. |
+|                                                              |                |
 
 ## Soutien
 
