@@ -40,6 +40,10 @@ echo "> Conversion du CSV en RDF (Turtle)..."
 time tarql -e UTF-8 sparql/csv2rdf.rq $csv > $ttl
 
 echo ""
+echo "Deleting CSV in order to save space on my small disk..."
+rm $csv
+
+echo ""
 echo "> Conversion du RDF en HDT..."
 
 time rdf2hdt $ttl $hdt
