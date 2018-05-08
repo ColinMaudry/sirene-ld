@@ -10,6 +10,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+
 sirext: a owl:Ontology ;
     dcterms:title "Extension de SIRENE" ;
     dcterms:creator <http://colin.maudry.com/rdf/colin-maudry#me> ;
@@ -323,27 +324,27 @@ sirext:esaapen rdfs:subPropertyOf sirext:codeNomenclature ;
 sirext:esasec1n rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:comment "Cette variable désigne la première activité secondaire de l'entreprise déclarée dans l'Enquête Sectorielle Annuelle (ESA); cette activité générant le montant le plus élevé de chiffre d'affaire." ;
 	rdfs:label "Première activité secondaire déclarée dans l'ESA (ESASEC1N)" ;
-	rdfs:domain sx:Entreprise ;
+	rdfs:domain sirext:Entreprise ;
 	rdfs:range skos:Concept ;
 	rdfs:isDefinedBy sirext: .
 
 sirext:esasec2n rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:comment "Cette variable désigne la deuxième activité secondaire de l'entreprise déclarée dans l'Enquête Sectorielle Annuelle (ESA); cette activité générant le second montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
 	rdfs:label "Deuxième activité secondaire déclarée dans l'ESA (ESASEC2N)" ;
-	rdfs:domain sx:Entreprise ;
+	rdfs:domain sirext:Entreprise ;
 	rdfs:range skos:Concept ;
 	rdfs:isDefinedBy sirext: .
 
 sirext:esasec3n rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:comment "Cette variable désigne la troisième activité secondaire de l'entreprise déclarée dans l' Enquête Sectorielle Annuelle (ESA); cette activité générant le troisième montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
 	rdfs:label "Troisième activité secondaire déclarée dans l'ESA (ESASEC3N)" ;
-	rdfs:domain sx:Entreprise ;
+	rdfs:domain sirext:Entreprise ;
 	rdfs:range skos:Concept ;
 	rdfs:isDefinedBy sirext: .
 
 sirext:esasec4n rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:comment "Cette variable désigne la troisième activité secondaire de l'entreprise déclarée dans l' Enquête Sectorielle Annuelle (ESA); cette activité générant le troisième montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
 	rdfs:label "quatrième activité secondaire déclarée dans l'ESA (ESASEC4N)" ;
-	rdfs:domain sx:Entreprise ;
+	rdfs:domain sirext:Entreprise ;
 	rdfs:range skos:Concept ;
 	rdfs:isDefinedBy sirext: .
