@@ -1,11 +1,12 @@
-@prefix rdfs:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sn:  <https://sireneld.io/vocab/sirene#> .
 @prefix xs:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix sx:  <https://sireneld.io/vocab/sirext#> .
 
 <https://sireneld.io/siren/006280234>
-        rdfs:type         sx:ETI ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#5710> ;
+        rdf:type         sx:ETI ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#5710> ;
         sn:SIREN          "006280234" ;
         sn:NOMEN_LONG     "LE GAL" ;
         sn:NICSIEGE       "00094" ;
@@ -33,7 +34,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/43.99D> .
 
 <https://sireneld.io/siret/00628023400169>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00169" ;
         sn:L1_NORMALISEE  "LE GAL" ;
         sn:L2_NORMALISEE  "MARBRERIE DES PAYS DE VILAINE" ;
@@ -95,8 +96,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/23.70Z> .
 
 <https://sireneld.io/siren/007080773>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#5710> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#5710> ;
         sn:SIREN          "007080773" ;
         sn:NOMEN_LONG     "CARRIERS MEN ARVOR" ;
         sn:NICSIEGE       "00018" ;
@@ -137,7 +139,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/08.11Z> .
 
 <https://sireneld.io/siret/00708077300034>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00034" ;
         sn:L1_NORMALISEE  "CARRIERS MEN ARVOR" ;
         sn:L4_NORMALISEE  "LE VIEUX BOURG" ;
@@ -190,8 +192,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/23.70Z> .
 
 <https://sireneld.io/siren/007080773>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#5710> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#5710> ;
         sn:SIREN          "007080773" ;
         sn:NOMEN_LONG     "CARRIERS MEN ARVOR" ;
         sn:NICSIEGE       "00018" ;
@@ -232,7 +235,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/08.11Z> .
 
 <https://sireneld.io/siret/00708077300182>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00182" ;
         sn:L1_NORMALISEE  "CARRIERS MEN ARVOR" ;
         sn:L2_NORMALISEE  "DOLMEN RENNES PACE" ;
@@ -291,8 +294,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/46.73A> .
 
 <https://sireneld.io/siren/007080773>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#5710> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#5710> ;
         sn:SIREN          "007080773" ;
         sn:NOMEN_LONG     "CARRIERS MEN ARVOR" ;
         sn:NICSIEGE       "00018" ;
@@ -333,7 +337,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/08.11Z> .
 
 <https://sireneld.io/siret/00708077300281>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00281" ;
         sn:L1_NORMALISEE  "CARRIERS MEN ARVOR" ;
         sn:L2_NORMALISEE  "DOLMEN DINARD" ;
@@ -391,8 +395,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/46.73A> .
 
 <https://sireneld.io/siren/007280191>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#5599> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#5599> ;
         sn:SIREN          "007280191" ;
         sn:NOMEN_LONG     "VINOUZE" ;
         sn:NICSIEGE       "00037" ;
@@ -420,7 +425,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/68.20B> .
 
 <https://sireneld.io/siret/00728019100037>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00037" ;
         sn:L1_NORMALISEE  "VINOUZE" ;
         sn:L4_NORMALISEE  "7 CHEMIN DU THUET" ;
@@ -471,8 +476,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/68.20B> .
 
 <https://sireneld.io/siren/009731712>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009731712" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00015" ;
@@ -500,7 +506,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973171200015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "18 RUE MICHELET" ;
@@ -557,7 +563,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009732900>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009732900" ;
         sn:NOMEN_LONG     "SYND DE COPROPRIETE" ;
         sn:NICSIEGE       "00015" ;
@@ -584,7 +591,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973290000015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "SYND DE COPROPRIETE" ;
         sn:L4_NORMALISEE  "11 SQUARE DES HAUTES OURMES" ;
@@ -641,7 +648,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009732918>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009732918" ;
         sn:NOMEN_LONG     "COPRO IM AR STEREDEN" ;
         sn:NICSIEGE       "00017" ;
@@ -668,7 +676,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973291800017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "COPRO IM AR STEREDEN" ;
         sn:L4_NORMALISEE  "15 QUAI DUGUAY TROUIN" ;
@@ -725,8 +733,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733122>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733122" ;
         sn:NOMEN_LONG     "COPRO IM RES ARMORICAINE" ;
         sn:NICSIEGE       "00015" ;
@@ -754,7 +763,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973312200015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "COPRO IM RES ARMORICAINE" ;
         sn:L3_NORMALISEE  "RESIDENCE ARMORICAINE" ;
@@ -812,8 +821,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733189>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733189" ;
         sn:NOMEN_LONG     "COPRO IM MERMOZ" ;
         sn:NICSIEGE       "00014" ;
@@ -841,7 +851,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973318900014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "COPRO IM MERMOZ" ;
         sn:L4_NORMALISEE  "55 BOULEVARD JEAN MERMOZ" ;
@@ -898,7 +908,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733205>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733205" ;
         sn:NOMEN_LONG     "COPRO IM RES BEAUVALLON" ;
         sn:NICSIEGE       "00018" ;
@@ -925,7 +936,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973320500018>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00018" ;
         sn:L1_NORMALISEE  "COPRO IM RES BEAUVALLON" ;
         sn:L4_NORMALISEE  "CHE DE L HOTEL DE BEAUVALLON" ;
@@ -978,7 +989,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733312>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733312" ;
         sn:NOMEN_LONG     "COPRO IM NEPTUNE" ;
         sn:NICSIEGE       "00012" ;
@@ -1005,7 +1017,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973331200012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM NEPTUNE" ;
         sn:L4_NORMALISEE  "RUE SADI CARNOT" ;
@@ -1061,8 +1073,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733759>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733759" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -1090,7 +1103,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973375900014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "65 RUE DE SAINT ENOGAT" ;
@@ -1147,7 +1160,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733767>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733767" ;
         sn:NOMEN_LONG     "COPRO IM HOUSSAYE" ;
         sn:NICSIEGE       "00017" ;
@@ -1174,7 +1188,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973376700017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "COPRO IM HOUSSAYE" ;
         sn:L4_NORMALISEE  "RUE SAINT MICHEL" ;
@@ -1230,8 +1244,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733833>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733833" ;
         sn:NOMEN_LONG     "COPRO IM CRYSTAL" ;
         sn:NICSIEGE       "00017" ;
@@ -1259,7 +1274,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973383300017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "COPRO IM CRYSTAL" ;
         sn:L3_NORMALISEE  "RESIDENCE CRYSTAL" ;
@@ -1318,8 +1333,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733841>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733841" ;
         sn:NOMEN_LONG     "COPRO IM GALLIC" ;
         sn:NICSIEGE       "00010" ;
@@ -1347,7 +1363,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973384100010>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00010" ;
         sn:L1_NORMALISEE  "COPRO IM GALLIC" ;
         sn:L4_NORMALISEE  "2 BOULEVARD FEART" ;
@@ -1404,8 +1420,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733932>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733932" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE IMM. DE LA RONCERAY" ;
         sn:NICSIEGE       "00017" ;
@@ -1433,7 +1450,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973393200017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE IMM DE LA RONCERAY" ;
         sn:L4_NORMALISEE  "AVENUE DE LA VICOMTE" ;
@@ -1489,8 +1506,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009733981>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009733981" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -1518,7 +1536,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973398100014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "2 RUE DE BEAULIEU" ;
@@ -1575,8 +1593,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009734005>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734005" ;
         sn:NOMEN_LONG     "COPRO IM SAULES" ;
         sn:NICSIEGE       "00011" ;
@@ -1604,7 +1623,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973400500011>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00011" ;
         sn:L1_NORMALISEE  "COPRO IM SAULES" ;
         sn:L4_NORMALISEE  "RUE DES SAULES" ;
@@ -1660,7 +1679,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009734013>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734013" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00015" ;
@@ -1686,7 +1706,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973401300015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L2_NORMALISEE  "IMM BELLEVUE" ;
@@ -1743,8 +1763,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009734237>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734237" ;
         sn:NOMEN_LONG     "COPRO IM AV FRANC LIBRES" ;
         sn:NICSIEGE       "00010" ;
@@ -1772,7 +1793,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973423700010>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00010" ;
         sn:L1_NORMALISEE  "COPRO IM AV FRANC LIBRES" ;
         sn:L4_NORMALISEE  "20 AVENUE DES FRANCAIS LIBRES" ;
@@ -1829,8 +1850,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009734377>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734377" ;
         sn:NOMEN_LONG     "COPRO IM R FOUGERES" ;
         sn:NICSIEGE       "00014" ;
@@ -1858,7 +1880,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973437700014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "COPRO IM R FOUGERES" ;
         sn:L4_NORMALISEE  "81 RUE DE FOUGERES" ;
@@ -1915,8 +1937,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009734385>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734385" ;
         sn:NOMEN_LONG     "COPRO IM CORNES DE CERF" ;
         sn:NICSIEGE       "00017" ;
@@ -1944,7 +1967,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973438500017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "COPRO IM CORNES DE CERF" ;
         sn:L2_NORMALISEE  "CORNE DE CERF" ;
@@ -2003,8 +2026,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009734849>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009734849" ;
         sn:NOMEN_LONG     "COPRO IM CONCORDE" ;
         sn:NICSIEGE       "00012" ;
@@ -2032,7 +2056,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973484900012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM CONCORDE" ;
         sn:L4_NORMALISEE  "12 PLACE DU MARCHE AUX LEGUMES" ;
@@ -2089,8 +2113,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009735127>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735127" ;
         sn:NOMEN_LONG     "COPRO IM PROMENADES" ;
         sn:NICSIEGE       "00012" ;
@@ -2118,7 +2143,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973512700012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM PROMENADES" ;
         sn:L2_NORMALISEE  "LES PROMENADES" ;
@@ -2177,8 +2202,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009735721>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735721" ;
         sn:NOMEN_LONG     "COPRO IM RES PRES" ;
         sn:NICSIEGE       "00012" ;
@@ -2206,7 +2232,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973572100012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM RES PRES" ;
         sn:L2_NORMALISEE  "LES PRES" ;
@@ -2266,7 +2292,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009735838>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735838" ;
         sn:NOMEN_LONG     "ASS COPRO SQUARE DES CLOTEAUX" ;
         sn:NICSIEGE       "00014" ;
@@ -2293,7 +2320,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973583800014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "ASS COPRO SQUARE DES CLOTEAUX" ;
         sn:L2_NORMALISEE  "1 A 6" ;
@@ -2352,8 +2379,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009735895>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735895" ;
         sn:NOMEN_LONG     "COPRO IM R ARGENTRE" ;
         sn:NICSIEGE       "00014" ;
@@ -2381,7 +2409,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973589500014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "COPRO IM R ARGENTRE" ;
         sn:L2_NORMALISEE  "13" ;
@@ -2439,7 +2467,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009735937>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735937" ;
         sn:NOMEN_LONG     "COPRO IM EMERAUDE" ;
         sn:NICSIEGE       "00014" ;
@@ -2466,7 +2495,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973593700014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "COPRO IM EMERAUDE" ;
         sn:L4_NORMALISEE  "RUE JEAN MARIE DE LA MENNAIS" ;
@@ -2522,8 +2551,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009735952>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009735952" ;
         sn:NOMEN_LONG     "COPRO IMM LE GALLION" ;
         sn:NICSIEGE       "00013" ;
@@ -2551,7 +2581,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973595200013>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00013" ;
         sn:L1_NORMALISEE  "COPRO IMM LE GALLION" ;
         sn:L4_NORMALISEE  "7 RUE DE LA PIONNIERE" ;
@@ -2608,7 +2638,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009736208>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009736208" ;
         sn:NOMEN_LONG     "COPRO IM PARC DE COULON" ;
         sn:NICSIEGE       "00019" ;
@@ -2635,7 +2666,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973620800019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPRO IM PARC DE COULON" ;
         sn:L4_NORMALISEE  "PARC DE COULON" ;
@@ -2690,8 +2721,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009736216>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009736216" ;
         sn:NOMEN_LONG     "COPRO IM RES BELLEVUE" ;
         sn:NICSIEGE       "00012" ;
@@ -2719,7 +2751,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973621600012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM RES BELLEVUE" ;
         sn:L4_NORMALISEE  "RESIDENCE BELLEVUE" ;
@@ -2755,12 +2787,12 @@
         sn:PRODET         "N" ;
         sn:AUXILT         "0" ;
         sn:DATEMAJ        "2007-08-20T00:00:00"^^xs:dateTime ;
-        sx:longitude      "-1.957158"^^xs:double ;
-        sx:latitude       "48.137436"^^xs:double ;
-        sx:geo_score      "0.36"^^xs:double ;
+        sx:longitude      "-1.944949"^^xs:double ;
+        sx:latitude       "48.137552"^^xs:double ;
+        sx:geo_score      "0.42"^^xs:double ;
         sx:geo_type       "street" ;
-        sx:geo_adresse    "Rue de Belloir 35160 Montfort-sur-Meu" ;
-        sx:geo_id         "35188_0060_8c5653" ;
+        sx:geo_adresse    "Allée des Belettes 35160 Montfort-sur-Meu" ;
+        sx:geo_id         "35188_XXXX_2ab375" ;
         sx:geo_ligne      "G" ;
         sx:siret          "00973621600012" ;
         sx:commune        "35188" ;
@@ -2777,7 +2809,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009736935>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009736935" ;
         sn:NOMEN_LONG     "COPRO IM ST THOMAS" ;
         sn:NICSIEGE       "00017" ;
@@ -2804,7 +2837,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973693500017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "COPRO IM ST THOMAS" ;
         sn:L4_NORMALISEE  "RUE ETIENNE MOREL" ;
@@ -2858,8 +2891,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009737123>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737123" ;
         sn:NOMEN_LONG     "COPRO IM R DUGUESCLIN" ;
         sn:NICSIEGE       "00019" ;
@@ -2887,7 +2921,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973712300019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPRO IM R DUGUESCLIN" ;
         sn:L4_NORMALISEE  "2 RUE DU GUESCLIN" ;
@@ -2944,7 +2978,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009737149>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737149" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -2971,7 +3006,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973714900014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "ASS. COPROPRIETE" ;
         sn:L4_NORMALISEE  "13 PL SAINT HELIER" ;
@@ -3027,7 +3062,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009737156>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737156" ;
         sn:NOMEN_LONG     "COPRO IM R CHALOTAIS" ;
         sn:NICSIEGE       "00019" ;
@@ -3054,7 +3090,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973715600019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPRO IM R CHALOTAIS" ;
         sn:L4_NORMALISEE  "2 RUE DE LA CHALOTAIS" ;
@@ -3111,8 +3147,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009737172>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737172" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00016" ;
@@ -3140,7 +3177,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973717200016>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00016" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "18 RUE DE LA MONNAIE" ;
@@ -3197,8 +3234,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009737180>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737180" ;
         sn:NOMEN_LONG     "COPRO IM BD LIBERTE" ;
         sn:NICSIEGE       "00019" ;
@@ -3226,7 +3264,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973718000019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPRO IM BD LIBERTE" ;
         sn:L4_NORMALISEE  "24 BOULEVARD DE LA LIBERTE" ;
@@ -3283,7 +3321,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009737230>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009737230" ;
         sn:NOMEN_LONG     "COPRO IM Q LAMENNAIS" ;
         sn:NICSIEGE       "00012" ;
@@ -3310,7 +3349,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973723000012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM Q LAMENNAIS" ;
         sn:L4_NORMALISEE  "5 QUAI LAMENNAIS" ;
@@ -3367,8 +3406,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009738741>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009738741" ;
         sn:NOMEN_LONG     "COPROPRIETE ODET" ;
         sn:NICSIEGE       "00017" ;
@@ -3396,7 +3436,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973874100017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "COPROPRIETE ODET" ;
         sn:L4_NORMALISEE  "14 RUE DUPARQUIER" ;
@@ -3453,7 +3493,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009738832>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009738832" ;
         sn:NOMEN_LONG     "COPRO IM R FEUTERIES" ;
         sn:NICSIEGE       "00014" ;
@@ -3480,7 +3521,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973883200014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "COPRO IM R FEUTERIES" ;
         sn:L4_NORMALISEE  "33 RUE DES FEUTERIES" ;
@@ -3537,8 +3578,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739020>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739020" ;
         sn:NOMEN_LONG     "COPRO IM R CHARCOT" ;
         sn:NICSIEGE       "00015" ;
@@ -3566,7 +3608,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973902000015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "COPRO IM R CHARCOT" ;
         sn:L2_NORMALISEE  "N 42 44 46" ;
@@ -3624,8 +3666,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739038>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739038" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00017" ;
@@ -3653,7 +3696,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973903800017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "183 RUE DE FOUGERES" ;
@@ -3710,8 +3753,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739046>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739046" ;
         sn:NOMEN_LONG     "COPRO IM BD JEANNE D ARC" ;
         sn:NICSIEGE       "00010" ;
@@ -3739,7 +3783,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973904600010>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00010" ;
         sn:L1_NORMALISEE  "COPRO IM BD JEANNE D ARC" ;
         sn:L2_NORMALISEE  "N 1 1B 1T" ;
@@ -3797,8 +3841,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739061>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739061" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -3826,7 +3871,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973906100019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "46 BOULEVARD RAYMOND POINCARE" ;
@@ -3883,7 +3928,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739095>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739095" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00017" ;
@@ -3910,7 +3956,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973909500017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "57 RUE SAINT HELIER" ;
@@ -3967,7 +4013,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739400>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739400" ;
         sn:NOMEN_LONG     "COPRO IM AV BRIAND" ;
         sn:NICSIEGE       "00019" ;
@@ -3994,7 +4041,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973940000019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPRO IM AV BRIAND" ;
         sn:L4_NORMALISEE  "1 AVENUE ARISTIDE BRIAND" ;
@@ -4051,8 +4098,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739418>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739418" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00011" ;
@@ -4080,7 +4128,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973941800011>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00011" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "3 RUE JULES SIMON" ;
@@ -4137,8 +4185,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739764>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739764" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00018" ;
@@ -4166,7 +4215,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973976400018>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00018" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "1 RUE DE LA CRECHE" ;
@@ -4223,8 +4272,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739772>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739772" ;
         sn:NOMEN_LONG     "ASS COPRO 19 & 21 RUE DE LA CROIX CARREE" ;
         sn:NICSIEGE       "00011" ;
@@ -4252,7 +4302,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973977200011>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00011" ;
         sn:L1_NORMALISEE  "ASS COPRO 19 & 21 RUE DE LA CROIX CARR" ;
         sn:L2_NORMALISEE  "19 & 21" ;
@@ -4311,8 +4361,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739780>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739780" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -4340,7 +4391,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973978000014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "5 RUE DU DOCTEUR ROUX" ;
@@ -4397,8 +4448,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009739822>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009739822" ;
         sn:NOMEN_LONG     "COPRO IM R BALZAC" ;
         sn:NICSIEGE       "00014" ;
@@ -4426,7 +4478,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00973982200014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "COPRO IM R BALZAC" ;
         sn:L4_NORMALISEE  "3 RUE HONORE DE BALZAC" ;
@@ -4483,8 +4535,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740382>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740382" ;
         sn:NOMEN_LONG     "COPRO IM AV LIBRES FRANCAIS" ;
         sn:NICSIEGE       "00016" ;
@@ -4512,7 +4565,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974038200016>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00016" ;
         sn:L1_NORMALISEE  "COPRO IM AV LIBRES FRANCAIS" ;
         sn:L2_NORMALISEE  "3 13" ;
@@ -4571,8 +4624,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740390>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740390" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00019" ;
@@ -4600,7 +4654,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974039000019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPRO IM AV BARTHOU" ;
         sn:L4_NORMALISEE  "21 AVENUE LOUIS BARTHOU" ;
@@ -4657,8 +4711,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740408>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740408" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00019" ;
@@ -4686,7 +4741,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974040800019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPRO IM AV BARTHOU" ;
         sn:L4_NORMALISEE  "23 AVENUE LOUIS BARTHOU" ;
@@ -4743,8 +4798,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740416>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740416" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00012" ;
@@ -4772,7 +4828,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974041600012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM AV BARTHOU" ;
         sn:L4_NORMALISEE  "8 AVENUE LOUIS BARTHOU" ;
@@ -4829,8 +4885,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740424>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740424" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00016" ;
@@ -4858,7 +4915,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974042400016>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00016" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "26 RUE SAINT HELIER" ;
@@ -4915,8 +4972,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740432>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740432" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -4944,7 +5002,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974043200019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "77 RUE SAINT HELIER" ;
@@ -5001,8 +5059,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740440>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740440" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00012" ;
@@ -5030,7 +5089,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974044000012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "17 RUE PAUL BERT" ;
@@ -5087,8 +5146,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740457>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740457" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00016" ;
@@ -5116,7 +5176,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974045700016>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00016" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "22 RUE PAUL BERT" ;
@@ -5173,8 +5233,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740465>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740465" ;
         sn:NOMEN_LONG     "COPROPRIETE IMPASSE DU COUEDIC" ;
         sn:NICSIEGE       "00019" ;
@@ -5202,7 +5263,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974046500019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPROPRIETE IMPASSE DU COUEDIC" ;
         sn:L4_NORMALISEE  "1 PASSAGE DU COUEDIC" ;
@@ -5259,8 +5320,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740473>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740473" ;
         sn:NOMEN_LONG     "COPRO IM AV JANVIER" ;
         sn:NICSIEGE       "00013" ;
@@ -5288,7 +5350,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974047300013>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00013" ;
         sn:L1_NORMALISEE  "COPRO IM AV JANVIER" ;
         sn:L4_NORMALISEE  "24 AVENUE JEAN JANVIER" ;
@@ -5345,8 +5407,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740481>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740481" ;
         sn:NOMEN_LONG     "COPRO IM PL ST GERMAIN" ;
         sn:NICSIEGE       "00016" ;
@@ -5374,7 +5437,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974048100016>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00016" ;
         sn:L1_NORMALISEE  "COPRO IM PL ST GERMAIN" ;
         sn:L2_NORMALISEE  "7 S GERMAIN" ;
@@ -5433,8 +5496,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740507>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740507" ;
         sn:NOMEN_LONG     "COPRO IM R ST MELAINE" ;
         sn:NICSIEGE       "00018" ;
@@ -5462,7 +5526,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974050700018>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00018" ;
         sn:L1_NORMALISEE  "COPRO IM R ST MELAINE" ;
         sn:L2_NORMALISEE  "7 9 11" ;
@@ -5520,8 +5584,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740523>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740523" ;
         sn:NOMEN_LONG     "COPRO IM BD LIBERTE" ;
         sn:NICSIEGE       "00015" ;
@@ -5549,7 +5614,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974052300015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "COPRO IM BD LIBERTE" ;
         sn:L4_NORMALISEE  "4 BOULEVARD DE LA LIBERTE" ;
@@ -5606,8 +5671,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740531>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740531" ;
         sn:NOMEN_LONG     "COPRO IM R MICHELET" ;
         sn:NICSIEGE       "00018" ;
@@ -5635,7 +5701,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974053100018>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00018" ;
         sn:L1_NORMALISEE  "COPRO IM R MICHELET" ;
         sn:L3_NORMALISEE  "17 RUE MICHELET" ;
@@ -5694,8 +5760,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740556>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740556" ;
         sn:NOMEN_LONG     "COPROPRIETE IMM. R ALMA ACACIAS" ;
         sn:NICSIEGE       "00015" ;
@@ -5723,7 +5790,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974055600015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "COPROPRIETE IMM R ALMA ACACIAS" ;
         sn:L4_NORMALISEE  "120 RUE DE L ALMA" ;
@@ -5780,8 +5847,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740598>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740598" ;
         sn:NOMEN_LONG     "COPRO IM R SACHER" ;
         sn:NICSIEGE       "00017" ;
@@ -5809,7 +5877,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974059800017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "COPRO IM R SACHER" ;
         sn:L4_NORMALISEE  "14 RUE FREDERIC SACHER" ;
@@ -5866,8 +5934,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740630>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740630" ;
         sn:NOMEN_LONG     "COPRO IM BD ROOSEVELT" ;
         sn:NICSIEGE       "00018" ;
@@ -5895,7 +5964,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974063000018>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00018" ;
         sn:L1_NORMALISEE  "COPRO IM BD ROOSEVELT" ;
         sn:L4_NORMALISEE  "56 BOULEVARD FRANKLIN ROOSEVELT" ;
@@ -5952,8 +6021,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740648>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740648" ;
         sn:NOMEN_LONG     "COPROPRIETE IMMEUBLE R ST ALPHONSE" ;
         sn:NICSIEGE       "00010" ;
@@ -5981,7 +6051,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974064800010>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00010" ;
         sn:L1_NORMALISEE  "COPROPRIETE IMMEUBLE R ST ALPHONSE" ;
         sn:L4_NORMALISEE  "1 RUE SAINT ALPHONSE" ;
@@ -6038,8 +6108,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740655>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740655" ;
         sn:NOMEN_LONG     "ASS COPRO 2 & 4 R DE LA CROIX CARREE" ;
         sn:NICSIEGE       "00015" ;
@@ -6067,7 +6138,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974065500015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "ASS COPRO 2 & 4 R DE LA CROIX CARREE" ;
         sn:L4_NORMALISEE  "2 RUE DE LA CROIX CARREE" ;
@@ -6124,8 +6195,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740663>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740663" ;
         sn:NOMEN_LONG     "COPROPRIETE IMM. CASTEL ST MARTIN" ;
         sn:NICSIEGE       "00019" ;
@@ -6153,7 +6225,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974066300019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPROPRIETE IMM. CASTEL ST MARTIN" ;
         sn:L4_NORMALISEE  "4 CASTEL ST MARTIN" ;
@@ -6186,12 +6258,12 @@
         sn:PRODET         "N" ;
         sn:AUXILT         "0" ;
         sn:DATEMAJ        "2016-01-05T00:00:00"^^xs:dateTime ;
-        sx:longitude      "-1.676468"^^xs:double ;
-        sx:latitude       "48.11917"^^xs:double ;
-        sx:geo_score      "0.44"^^xs:double ;
-        sx:geo_type       "street" ;
-        sx:geo_adresse    "Ruelle du Moulin Saint-Martin 35700 Rennes" ;
-        sx:geo_id         "35238_XXXX_821c6e" ;
+        sx:longitude      "-1.685767"^^xs:double ;
+        sx:latitude       "48.110905"^^xs:double ;
+        sx:geo_score      "0.31"^^xs:double ;
+        sx:geo_type       "housenumber" ;
+        sx:geo_adresse    "4 Quai Saint-Cast 35000 Rennes" ;
+        sx:geo_id         "ADRNIVX_0000000262173947" ;
         sx:geo_ligne      "G" ;
         sx:siret          "00974066300019" ;
         sx:commune        "35238" ;
@@ -6208,8 +6280,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740671>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740671" ;
         sn:NOMEN_LONG     "COPRO IM AV LIBRES FRANCAIS" ;
         sn:NICSIEGE       "00012" ;
@@ -6237,7 +6310,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974067100012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM AV LIBRES FRANCAIS" ;
         sn:L2_NORMALISEE  "6 ET 8" ;
@@ -6295,8 +6368,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740697>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740697" ;
         sn:NOMEN_LONG     "COPRO IM CHATEAU DE MAUREPA" ;
         sn:NICSIEGE       "00017" ;
@@ -6324,7 +6398,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974069700017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "COPRO IM CHATEAU DE MAUREPA" ;
         sn:L3_NORMALISEE  "CHATEAU DE MAUREPAS" ;
@@ -6382,8 +6456,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740713>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740713" ;
         sn:NOMEN_LONG     "COPROPRIETE IMM. R BARBES" ;
         sn:NICSIEGE       "00012" ;
@@ -6411,7 +6486,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974071300012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPROPRIETE IMM R BARBES" ;
         sn:L4_NORMALISEE  "6 RUE ARMAND BARBES" ;
@@ -6468,8 +6543,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740721>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740721" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00015" ;
@@ -6497,7 +6573,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974072100015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "COPRO IM AV BARTHOU" ;
         sn:L4_NORMALISEE  "10 AVENUE LOUIS BARTHOU" ;
@@ -6554,8 +6630,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740754>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740754" ;
         sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
         sn:NICSIEGE       "00016" ;
@@ -6583,7 +6660,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974075400016>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00016" ;
         sn:L1_NORMALISEE  "COPRO IM AV BARTHOU" ;
         sn:L4_NORMALISEE  "19 AVENUE LOUIS BARTHOU" ;
@@ -6640,8 +6717,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740770>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740770" ;
         sn:NOMEN_LONG     "COPRO IM SULLY" ;
         sn:NICSIEGE       "00012" ;
@@ -6669,7 +6747,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974077000012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM SULLY" ;
         sn:L3_NORMALISEE  "LE SULLY" ;
@@ -6727,8 +6805,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740804>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740804" ;
         sn:NOMEN_LONG     "COPRO IM AV LIBRES FRANCAIS" ;
         sn:NICSIEGE       "00019" ;
@@ -6756,7 +6835,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974080400019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "COPRO IM AV LIBRES FRANCAIS" ;
         sn:L4_NORMALISEE  "1 AVENUE DES FRANCAIS LIBRES" ;
@@ -6813,8 +6892,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740812>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740812" ;
         sn:NOMEN_LONG     "COPRO IM BD METZ" ;
         sn:NICSIEGE       "00012" ;
@@ -6842,7 +6922,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974081200012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM BD METZ" ;
         sn:L4_NORMALISEE  "108 BOULEVARD DE METZ" ;
@@ -6899,8 +6979,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740820>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740820" ;
         sn:NOMEN_LONG     "COPRO IM R MARGUERITE" ;
         sn:NICSIEGE       "00015" ;
@@ -6928,7 +7009,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974082000015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "COPRO IM R MARGUERITE" ;
         sn:L4_NORMALISEE  "57 RUE DU GENERAL MARGUERITTE" ;
@@ -6985,8 +7066,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740838>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740838" ;
         sn:NOMEN_LONG     "COPRO IM TAMARIS" ;
         sn:NICSIEGE       "00017" ;
@@ -7014,7 +7096,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974083800017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "COPRO IM TAMARIS" ;
         sn:L2_NORMALISEE  "LES TAMARIS" ;
@@ -7073,8 +7155,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740853>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740853" ;
         sn:NOMEN_LONG     "COPROPRIETE IMM. POINTEAU RONCERAY" ;
         sn:NICSIEGE       "00016" ;
@@ -7102,7 +7185,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974085300016>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00016" ;
         sn:L1_NORMALISEE  "COPROPRIETE IMM POINTEAU RONCERAY" ;
         sn:L4_NORMALISEE  "8 RUE POINTEAU DU RONCERAY" ;
@@ -7159,8 +7242,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740861>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740861" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -7188,7 +7272,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974086100019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L2_NORMALISEE  "IMM R BOUCHARD" ;
@@ -7247,8 +7331,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740879>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740879" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00011" ;
@@ -7276,7 +7361,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974087900011>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00011" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L2_NORMALISEE  "RESIDENCE ST MARTIN" ;
@@ -7335,8 +7420,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740887>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740887" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00014" ;
@@ -7364,7 +7450,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974088700014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L2_NORMALISEE  "IMM R GAMBETTA" ;
@@ -7423,8 +7509,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740895>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740895" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00017" ;
@@ -7452,7 +7539,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974089500017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "5 PLACE DE BRETAGNE" ;
@@ -7509,8 +7596,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740903>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740903" ;
         sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -7538,7 +7626,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974090300019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L4_NORMALISEE  "9 RUE DE BERTRAND" ;
@@ -7595,8 +7683,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740911>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740911" ;
         sn:NOMEN_LONG     "COPRO IM AV BRIAND" ;
         sn:NICSIEGE       "00012" ;
@@ -7624,7 +7713,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974091100012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM AV BRIAND" ;
         sn:L4_NORMALISEE  "31 AVENUE ARISTIDE BRIAND" ;
@@ -7681,8 +7770,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740937>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740937" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00017" ;
@@ -7710,7 +7800,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974093700017>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00017" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L2_NORMALISEE  "IMM QUAI ZOLA" ;
@@ -7770,8 +7860,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740952>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740952" ;
         sn:NOMEN_LONG     "COPRO IM RES SERRES" ;
         sn:NICSIEGE       "00016" ;
@@ -7799,7 +7890,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974095200016>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00016" ;
         sn:L1_NORMALISEE  "COPRO IM RES SERRES" ;
         sn:L4_NORMALISEE  "1 RUE OLIVIER DE SERRES" ;
@@ -7856,8 +7947,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740960>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740960" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00019" ;
@@ -7885,7 +7977,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974096000019>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00019" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L2_NORMALISEE  "IMM RESIDENCE JOFFRE" ;
@@ -7944,8 +8036,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740978>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740978" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00011" ;
@@ -7973,7 +8066,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974097800011>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00011" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L2_NORMALISEE  "IMM CHEMIN VERT" ;
@@ -8032,8 +8125,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740986>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740986" ;
         sn:NOMEN_LONG     "COPRO IM R DUVAL" ;
         sn:NICSIEGE       "00014" ;
@@ -8061,7 +8155,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974098600014>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00014" ;
         sn:L1_NORMALISEE  "COPRO IM R DUVAL" ;
         sn:L4_NORMALISEE  "41 RUE ALEXANDRE DUVAL" ;
@@ -8118,8 +8212,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009740994>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009740994" ;
         sn:NOMEN_LONG     "COPRO IM ARC JEANNE" ;
         sn:NICSIEGE       "00018" ;
@@ -8147,7 +8242,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974099400018>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00018" ;
         sn:L1_NORMALISEE  "COPRO IM ARC JEANNE" ;
         sn:L4_NORMALISEE  "2 BOULEVARD JEANNE D ARC" ;
@@ -8204,7 +8299,8 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009741000>
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009741000" ;
         sn:NOMEN_LONG     "COPRO IM R ST MELAINE" ;
         sn:NICSIEGE       "00013" ;
@@ -8231,7 +8327,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974100000013>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00013" ;
         sn:L1_NORMALISEE  "COPRO IM R ST MELAINE" ;
         sn:L4_NORMALISEE  "30 RUE SAINT MELAINE" ;
@@ -8288,8 +8384,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009741018>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009741018" ;
         sn:NOMEN_LONG     "ASS COPROPRIETE" ;
         sn:NICSIEGE       "00015" ;
@@ -8317,7 +8414,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974101800015>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00015" ;
         sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
         sn:L2_NORMALISEE  "IMM RUE DE NANTES" ;
@@ -8376,8 +8473,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009741026>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009741026" ;
         sn:NOMEN_LONG     "COPRO IM R JOFFRE" ;
         sn:NICSIEGE       "00018" ;
@@ -8405,7 +8503,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974102600018>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00018" ;
         sn:L1_NORMALISEE  "COPRO IM R JOFFRE" ;
         sn:L4_NORMALISEE  "24 B RUE MARECHAL JOFFRE" ;
@@ -8463,8 +8561,9 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siren/009741034>
-        rdfs:type         sx:PME ;
-        rdfs:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
         sn:SIREN          "009741034" ;
         sn:NOMEN_LONG     "COPRO IM BD POINCARE" ;
         sn:NICSIEGE       "00012" ;
@@ -8492,7 +8591,7 @@
         sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
 
 <https://sireneld.io/siret/00974103400012>
-        rdfs:type         sx:Etablissement ;
+        rdf:type         sx:Etablissement ;
         sn:NIC            "00012" ;
         sn:L1_NORMALISEE  "COPRO IM BD POINCARE" ;
         sn:L4_NORMALISEE  "6 BOULEVARD RAYMOND POINCARE" ;
@@ -8535,6 +8634,356 @@
         sx:geo_id         "ADRNIVX_0000000262155952" ;
         sx:geo_ligne      "G" ;
         sx:siret          "00974103400012" ;
+        sx:commune        "35238" ;
+        sx:tef            <https://sireneld.io/tef/01> ;
+        sx:tcd            <https://sireneld.io/tcd/71> ;
+        sx:origine        <https://sireneld.io/origine/1> ;
+        sx:activnat       <https://sireneld.io/activnat/NR> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
+        sx:mod            <https://sireneld.io/mod/S> ;
+        sx:dcr            "1994-12-25"^^xs:date ;
+        sx:amintr         "2012-09"^^xs:gYearMonth ;
+        sx:ddebact        "1994-12-25"^^xs:date ;
+        sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
+
+<https://sireneld.io/siren/009741067>
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        sn:SIREN          "009741067" ;
+        sn:NOMEN_LONG     "COPRO IM R VINCENNES" ;
+        sn:NICSIEGE       "00012" ;
+        sn:RPEN           "53" ;
+        sn:DEPCOMEN       "35238" ;
+        sn:NJ             "9110" ;
+        sn:APEN700        "8110Z" ;
+        sn:DAPEN          "2008" ;
+        sn:TEFEN          "00" ;
+        sn:EFENCENT       0 ;
+        sn:DEFEN          "2015"^^xs:gYear ;
+        sn:CATEGORIE      "PME" ;
+        sn:DCREN          "19941225" ;
+        sn:AMINTREN       "201209" ;
+        sn:MONOACT        "1" ;
+        sn:MODEN          "S" ;
+        sn:PRODEN         "N" ;
+        sx:etablissement  <https://sireneld.io/siret/00974106700012> ;
+        sx:siege          <https://sireneld.io/siret/00974106700012> ;
+        sx:tef            <https://sireneld.io/tef/00> ;
+        sx:monoact        <https://sireneld.io/monoact/1> ;
+        sx:mod            <https://sireneld.io/mod/S> ;
+        sx:dcr            "1994-12-25"^^xs:date ;
+        sx:amintr         "2012-09"^^xs:gYearMonth ;
+        sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
+
+<https://sireneld.io/siret/00974106700012>
+        rdf:type         sx:Etablissement ;
+        sn:NIC            "00012" ;
+        sn:L1_NORMALISEE  "COPRO IM R VINCENNES" ;
+        sn:L2_NORMALISEE  "LE VINCENNES" ;
+        sn:L4_NORMALISEE  "5 RUE DE VINCENNES" ;
+        sn:L6_NORMALISEE  "35700 RENNES" ;
+        sn:L7_NORMALISEE  "FRANCE" ;
+        sn:L1_DECLAREE    "COPRO IM R VINCENNES" ;
+        sn:L3_DECLAREE    "LE VINCENNES" ;
+        sn:L4_DECLAREE    "5 RUE DE VINCENNES" ;
+        sn:L6_DECLAREE    "35700 RENNES" ;
+        sn:NUMVOIE        "5" ;
+        sn:TYPVOIE        "RUE" ;
+        sn:LIBVOIE        "DE VINCENNES" ;
+        sn:CODPOS         "35700" ;
+        sn:DEPET          "35" ;
+        sn:COMET          "238" ;
+        sn:TCD            "71" ;
+        sn:SIEGE          "1" ;
+        sn:IND_PUBLIPO    "0" ;
+        sn:DIFFCOM        "O" ;
+        sn:AMINTRET       "201209" ;
+        sn:APET700        "8110Z" ;
+        sn:DAPET          "2008" ;
+        sn:TEFET          "00" ;
+        sn:EFETCENT       0 ;
+        sn:DEFET          "2015"^^xs:gYear ;
+        sn:ORIGINE        "1" ;
+        sn:DCRET          "19941225" ;
+        sn:DDEBACT        "19941225" ;
+        sn:ACTIVNAT       "NR" ;
+        sn:LIEUACT        "99" ;
+        sn:SAISONAT       "P" ;
+        sn:MODET          "S" ;
+        sn:PRODET         "N" ;
+        sn:AUXILT         "0" ;
+        sn:DATEMAJ        "2016-02-26T00:00:00"^^xs:dateTime ;
+        sx:longitude      "-1.675114"^^xs:double ;
+        sx:latitude       "48.117995"^^xs:double ;
+        sx:geo_score      "0.94"^^xs:double ;
+        sx:geo_type       "housenumber" ;
+        sx:geo_adresse    "5 Rue de Vincennes 35700 Rennes" ;
+        sx:geo_id         "ADRNIVX_0000000262161955" ;
+        sx:geo_ligne      "G" ;
+        sx:siret          "00974106700012" ;
+        sx:commune        "35238" ;
+        sx:tef            <https://sireneld.io/tef/00> ;
+        sx:tcd            <https://sireneld.io/tcd/71> ;
+        sx:origine        <https://sireneld.io/origine/1> ;
+        sx:activnat       <https://sireneld.io/activnat/NR> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
+        sx:mod            <https://sireneld.io/mod/S> ;
+        sx:dcr            "1994-12-25"^^xs:date ;
+        sx:amintr         "2012-09"^^xs:gYearMonth ;
+        sx:ddebact        "1994-12-25"^^xs:date ;
+        sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
+
+<https://sireneld.io/siren/009741075>
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        sn:SIREN          "009741075" ;
+        sn:NOMEN_LONG     "ASS. COPROPRIETE" ;
+        sn:NICSIEGE       "00015" ;
+        sn:RPEN           "53" ;
+        sn:DEPCOMEN       "35238" ;
+        sn:NJ             "9110" ;
+        sn:APEN700        "8110Z" ;
+        sn:DAPEN          "2008" ;
+        sn:TEFEN          "01" ;
+        sn:EFENCENT       1 ;
+        sn:DEFEN          "2016"^^xs:gYear ;
+        sn:CATEGORIE      "PME" ;
+        sn:DCREN          "19941225" ;
+        sn:AMINTREN       "201209" ;
+        sn:MONOACT        "1" ;
+        sn:MODEN          "S" ;
+        sn:PRODEN         "N" ;
+        sx:etablissement  <https://sireneld.io/siret/00974107500015> ;
+        sx:siege          <https://sireneld.io/siret/00974107500015> ;
+        sx:tef            <https://sireneld.io/tef/01> ;
+        sx:monoact        <https://sireneld.io/monoact/1> ;
+        sx:mod            <https://sireneld.io/mod/S> ;
+        sx:dcr            "1994-12-25"^^xs:date ;
+        sx:amintr         "2012-09"^^xs:gYearMonth ;
+        sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
+
+<https://sireneld.io/siret/00974107500015>
+        rdf:type         sx:Etablissement ;
+        sn:NIC            "00015" ;
+        sn:L1_NORMALISEE  "ASS COPROPRIETE" ;
+        sn:L4_NORMALISEE  "6 PLACE DE BRETAGNE" ;
+        sn:L6_NORMALISEE  "35000 RENNES" ;
+        sn:L7_NORMALISEE  "FRANCE" ;
+        sn:L1_DECLAREE    "ASS. COPROPRIETE" ;
+        sn:L4_DECLAREE    "6 PL DE BRETAGNE" ;
+        sn:L6_DECLAREE    "35000 RENNES" ;
+        sn:NUMVOIE        "6" ;
+        sn:TYPVOIE        "PL" ;
+        sn:LIBVOIE        "DE BRETAGNE" ;
+        sn:CODPOS         "35000" ;
+        sn:DEPET          "35" ;
+        sn:COMET          "238" ;
+        sn:TCD            "71" ;
+        sn:SIEGE          "1" ;
+        sn:IND_PUBLIPO    "0" ;
+        sn:DIFFCOM        "O" ;
+        sn:AMINTRET       "201209" ;
+        sn:APET700        "8110Z" ;
+        sn:DAPET          "2008" ;
+        sn:TEFET          "01" ;
+        sn:EFETCENT       1 ;
+        sn:DEFET          "2016"^^xs:gYear ;
+        sn:ORIGINE        "1" ;
+        sn:DCRET          "19941225" ;
+        sn:DDEBACT        "19941225" ;
+        sn:ACTIVNAT       "NR" ;
+        sn:LIEUACT        "99" ;
+        sn:SAISONAT       "P" ;
+        sn:MODET          "S" ;
+        sn:PRODET         "N" ;
+        sn:AUXILT         "0" ;
+        sn:DATEMAJ        "2016-03-09T00:00:00"^^xs:dateTime ;
+        sx:longitude      "-1.684697"^^xs:double ;
+        sx:latitude       "48.109005"^^xs:double ;
+        sx:geo_score      "0.83"^^xs:double ;
+        sx:geo_type       "housenumber" ;
+        sx:geo_adresse    "6 Place de Bretagne 35000 Rennes" ;
+        sx:geo_id         "ADRNIVX_0000000262177703" ;
+        sx:geo_ligne      "G" ;
+        sx:siret          "00974107500015" ;
+        sx:commune        "35238" ;
+        sx:tef            <https://sireneld.io/tef/01> ;
+        sx:tcd            <https://sireneld.io/tcd/71> ;
+        sx:origine        <https://sireneld.io/origine/1> ;
+        sx:activnat       <https://sireneld.io/activnat/NR> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
+        sx:mod            <https://sireneld.io/mod/S> ;
+        sx:dcr            "1994-12-25"^^xs:date ;
+        sx:amintr         "2012-09"^^xs:gYearMonth ;
+        sx:ddebact        "1994-12-25"^^xs:date ;
+        sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
+
+<https://sireneld.io/siren/009741083>
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        sn:SIREN          "009741083" ;
+        sn:NOMEN_LONG     "COPRO IM R CHATEAURENAULT 3" ;
+        sn:NICSIEGE       "00019" ;
+        sn:RPEN           "53" ;
+        sn:DEPCOMEN       "35238" ;
+        sn:NJ             "9110" ;
+        sn:APEN700        "8110Z" ;
+        sn:DAPEN          "2008" ;
+        sn:TEFEN          "00" ;
+        sn:EFENCENT       0 ;
+        sn:DEFEN          "2014"^^xs:gYear ;
+        sn:CATEGORIE      "PME" ;
+        sn:DCREN          "19941225" ;
+        sn:AMINTREN       "201209" ;
+        sn:MONOACT        "1" ;
+        sn:MODEN          "S" ;
+        sn:PRODEN         "N" ;
+        sx:etablissement  <https://sireneld.io/siret/00974108300019> ;
+        sx:siege          <https://sireneld.io/siret/00974108300019> ;
+        sx:tef            <https://sireneld.io/tef/00> ;
+        sx:monoact        <https://sireneld.io/monoact/1> ;
+        sx:mod            <https://sireneld.io/mod/S> ;
+        sx:dcr            "1994-12-25"^^xs:date ;
+        sx:amintr         "2012-09"^^xs:gYearMonth ;
+        sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
+
+<https://sireneld.io/siret/00974108300019>
+        rdf:type         sx:Etablissement ;
+        sn:NIC            "00019" ;
+        sn:L1_NORMALISEE  "COPRO IM R CHATEAURENAULT 3" ;
+        sn:L4_NORMALISEE  "3 RUE CHATEAURENAULT" ;
+        sn:L6_NORMALISEE  "35000 RENNES" ;
+        sn:L7_NORMALISEE  "FRANCE" ;
+        sn:L1_DECLAREE    "COPRO IM R CHATEAURENAULT 3" ;
+        sn:L4_DECLAREE    "3 RUE CHATEAU-RENAULT" ;
+        sn:L6_DECLAREE    "35000 RENNES" ;
+        sn:NUMVOIE        "3" ;
+        sn:TYPVOIE        "RUE" ;
+        sn:LIBVOIE        "CHATEAU-RENAULT" ;
+        sn:CODPOS         "35000" ;
+        sn:DEPET          "35" ;
+        sn:COMET          "238" ;
+        sn:TCD            "71" ;
+        sn:SIEGE          "1" ;
+        sn:IND_PUBLIPO    "0" ;
+        sn:DIFFCOM        "O" ;
+        sn:AMINTRET       "201209" ;
+        sn:APET700        "8110Z" ;
+        sn:DAPET          "2008" ;
+        sn:TEFET          "00" ;
+        sn:EFETCENT       0 ;
+        sn:DEFET          "2014"^^xs:gYear ;
+        sn:ORIGINE        "1" ;
+        sn:DCRET          "19941225" ;
+        sn:DDEBACT        "19941225" ;
+        sn:ACTIVNAT       "NR" ;
+        sn:LIEUACT        "99" ;
+        sn:SAISONAT       "P" ;
+        sn:MODET          "S" ;
+        sn:PRODET         "N" ;
+        sn:AUXILT         "0" ;
+        sn:DATEMAJ        "2004-12-22T00:00:00"^^xs:dateTime ;
+        sx:longitude      "-1.66105"^^xs:double ;
+        sx:latitude       "48.110822"^^xs:double ;
+        sx:geo_score      "0.56"^^xs:double ;
+        sx:geo_type       "housenumber" ;
+        sx:geo_adresse    "3 Rue Jean Malo Renault 35000 Rennes" ;
+        sx:geo_id         "ADRNIVX_0000002009885410" ;
+        sx:geo_ligne      "G" ;
+        sx:siret          "00974108300019" ;
+        sx:commune        "35238" ;
+        sx:tef            <https://sireneld.io/tef/00> ;
+        sx:tcd            <https://sireneld.io/tcd/71> ;
+        sx:origine        <https://sireneld.io/origine/1> ;
+        sx:activnat       <https://sireneld.io/activnat/NR> ;
+        sx:lieuact        <https://sireneld.io/lieuact/99> ;
+        sx:saisonat       <https://sireneld.io/saisonat/P> ;
+        sx:mod            <https://sireneld.io/mod/S> ;
+        sx:dcr            "1994-12-25"^^xs:date ;
+        sx:amintr         "2012-09"^^xs:gYearMonth ;
+        sx:ddebact        "1994-12-25"^^xs:date ;
+        sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
+
+<https://sireneld.io/siren/009741091>
+        rdf:type         sx:PME ;
+        rdf:type         sx:Entreprise ;
+        rdf:type         <https://sireneld.io/vocab/sirecj#9110> ;
+        sn:SIREN          "009741091" ;
+        sn:NOMEN_LONG     "COPRO IM AV BARTHOU" ;
+        sn:NICSIEGE       "00012" ;
+        sn:RPEN           "53" ;
+        sn:DEPCOMEN       "35238" ;
+        sn:NJ             "9110" ;
+        sn:APEN700        "8110Z" ;
+        sn:DAPEN          "2008" ;
+        sn:TEFEN          "01" ;
+        sn:EFENCENT       1 ;
+        sn:DEFEN          "2016"^^xs:gYear ;
+        sn:CATEGORIE      "PME" ;
+        sn:DCREN          "19941225" ;
+        sn:AMINTREN       "201209" ;
+        sn:MONOACT        "1" ;
+        sn:MODEN          "S" ;
+        sn:PRODEN         "N" ;
+        sx:etablissement  <https://sireneld.io/siret/00974109100012> ;
+        sx:siege          <https://sireneld.io/siret/00974109100012> ;
+        sx:tef            <https://sireneld.io/tef/01> ;
+        sx:monoact        <https://sireneld.io/monoact/1> ;
+        sx:mod            <https://sireneld.io/mod/S> ;
+        sx:dcr            "1994-12-25"^^xs:date ;
+        sx:amintr         "2012-09"^^xs:gYearMonth ;
+        sx:ape            <http://id.insee.fr/codes/nafr2/sousClasse/81.10Z> .
+
+<https://sireneld.io/siret/00974109100012>
+        rdf:type         sx:Etablissement ;
+        sn:NIC            "00012" ;
+        sn:L1_NORMALISEE  "COPRO IM AV BARTHOU" ;
+        sn:L4_NORMALISEE  "6 AVENUE LOUIS BARTHOU" ;
+        sn:L6_NORMALISEE  "35000 RENNES" ;
+        sn:L7_NORMALISEE  "FRANCE" ;
+        sn:L1_DECLAREE    "COPRO IM AV BARTHOU" ;
+        sn:L4_DECLAREE    "6 AV LOUIS BARTHOU" ;
+        sn:L6_DECLAREE    "35000 RENNES" ;
+        sn:NUMVOIE        "6" ;
+        sn:TYPVOIE        "AV" ;
+        sn:LIBVOIE        "LOUIS BARTHOU" ;
+        sn:CODPOS         "35000" ;
+        sn:DEPET          "35" ;
+        sn:COMET          "238" ;
+        sn:TCD            "71" ;
+        sn:SIEGE          "1" ;
+        sn:IND_PUBLIPO    "0" ;
+        sn:DIFFCOM        "O" ;
+        sn:AMINTRET       "201209" ;
+        sn:APET700        "8110Z" ;
+        sn:DAPET          "2008" ;
+        sn:TEFET          "01" ;
+        sn:EFETCENT       1 ;
+        sn:DEFET          "2016"^^xs:gYear ;
+        sn:ORIGINE        "1" ;
+        sn:DCRET          "19941225" ;
+        sn:DDEBACT        "19941225" ;
+        sn:ACTIVNAT       "NR" ;
+        sn:LIEUACT        "99" ;
+        sn:SAISONAT       "P" ;
+        sn:MODET          "S" ;
+        sn:PRODET         "N" ;
+        sn:AUXILT         "0" ;
+        sn:DATEMAJ        "2016-03-09T00:00:00"^^xs:dateTime ;
+        sx:longitude      "-1.670902"^^xs:double ;
+        sx:latitude       "48.10639"^^xs:double ;
+        sx:geo_score      "0.84"^^xs:double ;
+        sx:geo_type       "housenumber" ;
+        sx:geo_adresse    "6 Avenue Louis Barthou 35000 Rennes" ;
+        sx:geo_id         "ADRNIVX_0000000262185554" ;
+        sx:geo_ligne      "G" ;
+        sx:siret          "00974109100012" ;
         sx:commune        "35238" ;
         sx:tef            <https://sireneld.io/tef/01> ;
         sx:tcd            <https://sireneld.io/tcd/71> ;

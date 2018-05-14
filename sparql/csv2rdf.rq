@@ -1,11 +1,12 @@
 PREFIX sn: <https://sireneld.io/vocab/sirene#>
 PREFIX sx: <https://sireneld.io/vocab/sirext#>
-PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
 
 CONSTRUCT {
 
     ?entreprise a ?categorie_class ;
+        a sx:Entreprise ;
         a ?nj_class ;
         sn:SIREN ?SIREN ;
         sn:NOMEN_LONG ?NOMEN_LONG ;
