@@ -2,6 +2,7 @@ PREFIX sn: <https://sireneld.io/vocab/sirene#>
 PREFIX sx: <https://sireneld.io/vocab/sirext#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+PREFIX geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 
 CONSTRUCT {
 
@@ -58,6 +59,7 @@ CONSTRUCT {
         sx:ape ?apen_uri .
 
 	?etablissement a sx:Etablissement ;
+        a geo-pos:SpatialThing ;
         sn:NIC ?NIC ;
         sn:L1_NORMALISEE ?L1_NORMALISEE ;
         sn:L2_NORMALISEE ?L2_NORMALISEE ;
@@ -105,8 +107,8 @@ CONSTRUCT {
         sn:PRODPART ?PRODPART ;
         sn:AUXILT ?AUXILT ;
         sn:DATEMAJ ?DATEMAJ_dateTime ;
-        sx:longitude ?longitude_double ;
-        sx:latitude ?latitude_double ;
+        geo-pos:long ?longitude_double ;
+        geo-pos:lat ?latitude_double ;
         sx:geo_score ?geo_score_double ;
         sx:geo_type ?geo_type ;
         sx:geo_adresse ?geo_adresse ;
