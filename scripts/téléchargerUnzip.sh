@@ -2,17 +2,17 @@
 
 departement=$1
 
-if [ $departement = "tout"  ]
+if [[ $departement = "tout" || -z $departement ]]
 then
-	filename=geo_sirene
+	filename=StockEtablissement_utf8_geo
 	csv=$filename.csv
 	zip=$csv.gz
 	unzip="gzip -d"
 else
-	filename=geo-sirene_$1
+	filename=geo_siret_$1
         csv=$filename.csv
-        zip=$csv.7z
-	unzip="p7zip -d"
+        zip=$csv.gz
+	unzip="gzip -d"
 
 echo "Code département : $departement"
 echo ""
@@ -27,7 +27,7 @@ rm $filename*
 
 echo "> Téléchargement du fichier compressé..."
 
-wget http://data.cquest.org/geo_sirene/last/$zip
+wget http://data.cquest.org/geo_sirene/v2019/last/$zip
 
 echo ""
 echo "> Extraction du fichier compressé..."
