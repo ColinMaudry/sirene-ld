@@ -1,0 +1,101 @@
+Champ 2018,Champ stock établissements,Champ stock unités légales,Commentaire
+SIREN,siren,siren,
+NIC,nic,,
+L1_NORMALISEE,,,Vous pouvez tester complementAdresseEtablissement dans fichier établissements
+L2_NORMALISEE,,,Ce champ n’est plus publié par l’INSEE
+L3_NORMALISEE,,,Ce champ n’est plus publié par l’INSEE
+L4_NORMALISEE,,,Ce champ n’est plus publié par l’INSEE
+L5_NORMALISEE,,,Ce champ n’est plus publié par l’INSEE
+L6_NORMALISEE,,,Ce champ n’est plus publié par l’INSEE
+L7_NORMALISEE,,,Ce champ n’est plus publié par l’INSEE
+L1_DECLAREE,,,Vous pouvez tester complementAdresseEtablissement dans fichier établissements
+L2_DECLAREE,,,Ce champ n’est plus publié par l’INSEE
+L3_DECLAREE,,,Ce champ n’est plus publié par l’INSEE
+L4_DECLAREE,,,Ce champ n’est plus publié par l’INSEE
+L5_DECLAREE,,,Ce champ n’est plus publié par l’INSEE
+L6_DECLAREE,,,Ce champ n’est plus publié par l’INSEE
+L7_DECLAREE,,,Ce champ n’est plus publié par l’INSEE
+NUMVOIE,numeroVoieEtablissement,,
+INDREP,indiceRepetitionEtablissement,,
+TYPVOIE,typeVoieEtablissement,,
+LIBVOIE,libelleVoieEtablissement,,
+CODPOS,codePostalEtablissement,,
+CEDEX,libelleCedexEtablissement,,
+RPET,,,Ce champ n’est plus publié par l’INSEE
+LIBREG,,,Ce champ n’est plus publié par l’INSEE
+DEPET,codeCommuneEtablissement,,DEPET et COMET sont fusionnées dans codeCommuneEtablissement
+ARRONET,,,Ce champ n’est plus publié par l’INSEE
+CTONET,,,Ce champ n’est plus publié par l’INSEE
+COMET,codeCommuneEtablissement,,DEPET et COMET sont fusionnées dans codeCommuneEtablissement
+LIBCOM,libelleCommuneEtablissement,,
+DU,,,Ce champ n’est plus publié par l’INSEE
+TU,,,Ce champ n’est plus publié par l’INSEE
+UU,,,Ce champ n’est plus publié par l’INSEE
+EPCI,,,Ce champ n’est plus publié par l’INSEE
+TCD,,,Ce champ n’est plus publié par l’INSEE
+ZEMET,,,Ce champ n’est plus publié par l’INSEE
+SIEGE,etablissementSiege,,Valeurs possibles : true ou false
+ENSEIGNE,enseigne1Etablissement,,Trois champs sont proposés pour l’enseigne : enseigne1Etablissement enseigne2Etablissement enseigne3Etablissement
+IND_PUBLIPO,,,Ce champ n’est plus publié par l’INSEE
+DIFFCOM,statutDiffusionEtablissement,statutDiffusionUniteLegale,
+AMINTRET,,,Ce champ n’est plus publié par l’INSEE
+NATETAB,,,Ce champ n’est plus publié par l’INSEE
+LIBNATETAB,,,Ce champ n’est plus publié par l’INSEE
+APET700,activitePrincipaleEtablissement,,
+LIBAPET,,,Ce champ n’est plus publié par l’INSEE
+DAPET,,,Ce champ n’est plus publié par l’INSEE
+TEFET,trancheEffectifsEtablissement,,
+LIBTEFET,,,Ce champ n’est plus publié par l’INSEE
+EFETCENT,,,Ce champ n’est plus publié par l’INSEE
+DEFET,anneeEffectifsEtablissement,,
+ORIGINE,,,Ce champ n’est plus publié par l’INSEE
+DCRET,dateCreationEtablissement,,2018: AAAAMMJJ 2019 : AAAA-MM-JJ
+DDEBACT,,,Ce champ n’est plus publié par l’INSEE
+ACTIVNAT,,,Ce champ n’est plus publié par l’INSEE
+LIEUACT,,,Ce champ n’est plus publié par l’INSEE
+ACTISURF,,,Ce champ n’est plus publié par l’INSEE
+SAISONAT,,,Ce champ n’est plus publié par l’INSEE
+MODET,,,Ce champ n’est plus publié par l’INSEE
+PRODET,,,Ce champ n’est plus publié par l’INSEE
+PRODPART,,,Ce champ n’est plus publié par l’INSEE
+AUXILT,,,Ce champ n’est plus publié par l’INSEE
+NOMEN_LONG,,denominationUniteLegale,
+SIGLE,,sigleUniteLegale,
+NOM,,nomUniteLegale,Le nom d’usage est également publié (nomUsageUniteLegale)
+PRENOM,,prenom1UniteLegale,Sont également publiés prenomUsuelUniteLegale prenom2UniteLegale prenom3UniteLegale prenom4UniteLegale
+CIVILITE,,,Vous pouvez tester sexeUniteLegale
+RNA,,identifiantAssociationUniteLegale,
+NICSIEGE,,nicSiegeUniteLegale,
+RPEN,,,Ce champ n’est plus publié par l’INSEE
+DEPCOMEN,,,Ce champ n’est plus publié par l’INSEE
+ADR_MAIL,,,Ce champ n’est plus publié par l’INSEE
+NJ,,categorieJuridiqueUniteLegale,
+LIBNJ,,,Ce champ n’est plus publié par l’INSEE
+APEN700,,activitePrincipaleUniteLegale,
+LIBAPEN,,,Ce champ n’est plus publié par l’INSEE
+DAPEN,,,Ce champ n’est plus publié par l’INSEE
+APRM,activitePrincipaleRegistreMetiersEtablissement,,Cette variable est maintenant publiée au niveau de l’établissement
+ESS,,economieSocialeSolidaireUniteLegale,
+DATEESS,,,Ce champ n’est plus publié par l’INSEE
+TEFEN,,trancheEffectifsUniteLegale,
+LIBTEFEN,,,Ce champ n’est plus publié par l’INSEE
+EFENCENT,,,Ce champ n’est plus publié par l’INSEE
+DEFEN,,anneeEffectifsUniteLegale,
+CATEGORIE,,categorieEntreprise,
+DCREN,,dateCreationUniteLegale,2018: AAAAMMJJ 2019 : AAAA-MM-JJ
+AMINTREN,,,Ce champ n’est plus publié par l’INSEE
+MONOACT,,,Ce champ n’est plus publié par l’INSEE
+MODEN,,,Ce champ n’est plus publié par l’INSEE
+PRODEN,,,Ce champ n’est plus publié par l’INSEE
+ESAANN,,,Ce champ n’est plus publié par l’INSEE
+TCA,,,Ce champ n’est plus publié par l’INSEE
+ESAAPEN,,,Ce champ n’est plus publié par l’INSEE
+ESASEC1N,,,Ce champ n’est plus publié par l’INSEE
+ESASEC2N,,,Ce champ n’est plus publié par l’INSEE
+ESASEC3N,,,Ce champ n’est plus publié par l’INSEE
+ESASEC4N,,,Ce champ n’est plus publié par l’INSEE
+VMAJ,,,Ce champ n’est plus publié par l’INSEE
+VMAJ1,,,Ce champ n’est plus publié par l’INSEE
+VMAJ2,,,Ce champ n’est plus publié par l’INSEE
+VMAJ3,,,Ce champ n’est plus publié par l’INSEE
+DATEMAJ,dateDernierTraitementEtablissement,dateDernierTraitementUniteLegale,2018: AAAA-MM-JJTHH:MM:SS 2019 : AAAA-MM-JJ
