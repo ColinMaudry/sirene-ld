@@ -38,11 +38,11 @@ SIEGE,etablissementSiege,,Valeurs possibles : true ou false
 ENSEIGNE,enseigne1Etablissement,,Trois champs sont proposés pour l’enseigne : enseigne1Etablissement enseigne2Etablissement enseigne3Etablissement
 IND_PUBLIPO,,,Ce champ n’est plus publié par l’INSEE
 DIFFCOM,statutDiffusionEtablissement,statutDiffusionUniteLegale,
-AMINTRET,,,Ce champ n’est plus publié par l’INSEE
+AMINTRET,dateDebut,,
 NATETAB,,,Ce champ n’est plus publié par l’INSEE
 LIBNATETAB,,,Ce champ n’est plus publié par l’INSEE
 APET700,activitePrincipaleEtablissement,,
-LIBAPET,,,Ce champ n’est plus publié par l’INSEE
+LIBAPET,,,libellé disponible par l'API "Nomenclature"
 DAPET,,,Ce champ n’est plus publié par l’INSEE
 TEFET,trancheEffectifsEtablissement,,
 LIBTEFET,,,Ce champ n’est plus publié par l’INSEE
@@ -59,7 +59,7 @@ MODET,,,Ce champ n’est plus publié par l’INSEE
 PRODET,,,Ce champ n’est plus publié par l’INSEE
 PRODPART,,,Ce champ n’est plus publié par l’INSEE
 AUXILT,,,Ce champ n’est plus publié par l’INSEE
-NOMEN_LONG,,denominationUniteLegale,
+NOMEN_LONG,,denominationUniteLegale,à reconstituer pour les personnes physiques à partir de nomUniteLegal + prenoms...
 SIGLE,,sigleUniteLegale,
 NOM,,nomUniteLegale,Le nom d’usage est également publié (nomUsageUniteLegale)
 PRENOM,,prenom1UniteLegale,Sont également publiés prenomUsuelUniteLegale prenom2UniteLegale prenom3UniteLegale prenom4UniteLegale
@@ -67,12 +67,12 @@ CIVILITE,,,Vous pouvez tester sexeUniteLegale
 RNA,,identifiantAssociationUniteLegale,
 NICSIEGE,,nicSiegeUniteLegale,
 RPEN,,,Ce champ n’est plus publié par l’INSEE
-DEPCOMEN,,,Ce champ n’est plus publié par l’INSEE
+DEPCOMEN,,,à reprendre depuis le codeCommuneEtablissement de l'établissement siège
 ADR_MAIL,,,Ce champ n’est plus publié par l’INSEE
 NJ,,categorieJuridiqueUniteLegale,
-LIBNJ,,,Ce champ n’est plus publié par l’INSEE
+LIBNJ,,,libellé disponible par l'API "Nomenclature"
 APEN700,,activitePrincipaleUniteLegale,
-LIBAPEN,,,Ce champ n’est plus publié par l’INSEE
+LIBAPEN,,,libellé disponible par l'API "Nomenclature"
 DAPEN,,,Ce champ n’est plus publié par l’INSEE
 APRM,activitePrincipaleRegistreMetiersEtablissement,,Cette variable est maintenant publiée au niveau de l’établissement
 ESS,,economieSocialeSolidaireUniteLegale,
@@ -83,7 +83,7 @@ EFENCENT,,,Ce champ n’est plus publié par l’INSEE
 DEFEN,,anneeEffectifsUniteLegale,
 CATEGORIE,,categorieEntreprise,
 DCREN,,dateCreationUniteLegale,2018: AAAAMMJJ 2019 : AAAA-MM-JJ
-AMINTREN,,,Ce champ n’est plus publié par l’INSEE
+AMINTREN,,dateDebut,
 MONOACT,,,Ce champ n’est plus publié par l’INSEE
 MODEN,,,Ce champ n’est plus publié par l’INSEE
 PRODEN,,,Ce champ n’est plus publié par l’INSEE
