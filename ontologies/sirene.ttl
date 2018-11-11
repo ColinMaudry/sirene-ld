@@ -28,8 +28,8 @@ sirene: a owl:Ontology ;
     foaf:mbox <mailto:colin@maudry.com>  .
 
 sirene:siren a rdf:Property ;
-    rdfs:comment "Identifiant de l'entreprise" ;
-    rdfs:label "SIREN" ;
+    rdfs:comment "Un numéro d’identité de l’unité légale est attribué par l’Insee à toutes les personnes physiques ou morales inscrites au répertoire ainsi qu’à leurs établissements : le numéro Siren. Ce numéro unique est « attribué soit à l’occasion des demandes d’immatriculation au registre du commerce et des sociétés ou des déclarations effectuées au répertoire des métiers, soit à la demande d’administrations » (article R123-224 du code de commerce). Lors de sa création, une unité légale se voit attribuer un numéro Siren de 9 chiffres." ;
+    rdfs:label "Numéro Siren" ;
     rdfs:range xs:string ;
     rdfs:domain sirext:UniteLegale ;
     rdfs:isDefinedBy sirene: .
@@ -162,8 +162,8 @@ sirene:enseigne3Etablissement a rdf:Property ;
     rdfs:isDefinedBy sirene: .
 
 sirene:statutDiffusionEtablissement a rdf:Property ;
-	rdfs:comment "Statut de diffusion de l'établissement" ;
-	rdfs:label "Statut de diffusion" ;
+	rdfs:comment "Seuls les établissements diffusibles sont accessibles à tout public (statutDiffusionEtablissement=O)." ;
+	rdfs:label "Statut de diffusion de l'établissement" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:Etablissement ;
 	rdfs:isDefinedBy sirene: .
@@ -204,71 +204,71 @@ sirene:dateCreationEtablissement a rdf:Property ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:denominationUniteLegale a rdf:Property ;
-	rdfs:comment "Nom ou raison sociale de l'unité légale" ;
+	rdfs:comment "Cette variable désigne la raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale. Cette variable est à null pour les personnes physiques." ;
 	rdfs:label "Nom ou raison sociale" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:sigleUniteLegale a rdf:Property ;
-	rdfs:comment "Sigle de l'entreprise" ;
-	rdfs:label "Sigle" ;
+	rdfs:comment "Un sigle est une forme réduite de la raison sociale ou de la dénomination d'une personne morale ou d'un organisme public. Cette variable est à null pour les personnes physiques." ;
+	rdfs:label "Sigle de l’unité légale" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:nomUniteLegale a rdf:Property ;
-	rdfs:comment "Nom de naissance" ;
-	rdfs:label "Nom de naissance" ;
+	rdfs:comment "Cette variable indique le libellé le nom de naissance pour une personne physique. Cette variable est à null pour les personnes morales. Le répertoire Sirene gère des caractères majuscules non accentués et les seuls caractères spéciaux tiret (-) et apostrophe.Le nom peut être à null (cas des unités purgées, première date de début du nom postérieure à la première date de début d'une autre variable historisée)." ;
+	rdfs:label "Nom de naissance de la personne physique" ;
 	rdfs:range xs:string ;
-	rdfs:domain sirext:Etablissement ;
+	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:nomUsageUniteLegale a rdf:Property ;
-	rdfs:comment "Nom d'usage" ;
-	rdfs:label "Nom d'usage'" ;
+	rdfs:comment "Le nom d’usage est celui que la personne physique a choisi d’utiliser. Cette variable est à null pour les personnes morales. Elle peut être également à null pour les personnes physiques." ;
+	rdfs:label "Nom d’usage de la personne physique" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:Etablissement ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:prenom1UniteLegale a rdf:Property ;
-	rdfs:comment "Premier prénom" ;
+	rdfs:comment "Premier prénom déclaré" ;
 	rdfs:label "Prénom 1" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:prenom2UniteLegale a rdf:Property ;
-	rdfs:comment "deuxième prénom" ;
+	rdfs:comment "Deuxième prénom déclaré" ;
 	rdfs:label "Prénom 2" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:prenom3UniteLegale a rdf:Property ;
-	rdfs:comment "Troisième prénom" ;
+	rdfs:comment "Troisième prénom déclaré" ;
 	rdfs:label "Prénom 3" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:prenom4UniteLegale a rdf:Property ;
-	rdfs:comment "Quatrièm prénom" ;
+	rdfs:comment "Quatrième prénom déclaré" ;
 	rdfs:label "Prénom 4" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:sexeUniteLegale a rdf:Property ;
-	rdfs:comment "Quatrièm prénom" ;
-	rdfs:label "Prénom 4" ;
+	rdfs:comment "Cette variable est à null pour les personnes morales. La variable sexeUniteLegale est également non renseignée pour quelques personnes physiques." ;
+	rdfs:label "Caractère féminin ou masculin de la personne physique" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:prenomUsuelUniteLegale a rdf:Property ;
-	rdfs:comment "Prénom usuel" ;
-	rdfs:label "Prénom usuel" ;
+	rdfs:comment "Le prénom usuel est le prénom par lequel une personne choisit de se faire appeler dans la vie courante, parmi l'ensemble de ceux qui lui ont été donnés à sa naissance et qui sont inscrits à l'état civil. Il correspond généralement au prenom1UniteLegale. Cette variable est à null pour les personnes morales." ;
+	rdfs:label "Prénom usuel de la personne physique" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
@@ -281,14 +281,14 @@ sirene:sexeUniteLegale a rdf:Property ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:identifiantAssociationUniteLegale a rdf:Property ;
-	rdfs:comment "Numéro d’identification au répertoire national des associations" ;
-	rdfs:label "Numéro d’identification au répertoire national des associations" ;
+	rdfs:comment "Lors de sa déclaration en préfecture, l’association reçoit automatiquement un numéro d’inscription au RNA. Elle doit en outre demander son immatriculation au répertoire Sirene lorsqu'elle souhaite demander des subventions auprès de l'État ou des collectivités territoriales, lorsqu'elle emploie des salariés ou lorsqu'elle exerce des activités qui conduisent au paiement de la TVA ou de l'impôt sur les sociétés." ;
+	rdfs:label "Numéro au Répertoire National des Associations (RNA)" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:nicSiegeUniteLegale a rdf:Property ;
-	rdfs:comment "Numéro interne de classement de l'établissement siège" ;
+	rdfs:comment "Le siège d’une unité légale est le lieu où sont centralisées l’administration et la direction effective de l’unité légale. À un instant donné, chaque unité légale a un seul siège." ;
 	rdfs:label "Numéro interne de classement de l'établissement siège" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
@@ -302,8 +302,8 @@ sirene:categorieJuridiqueUniteLegale a rdf:Property ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:activitePrincipaleUniteLegale a rdf:Property ;
-	rdfs:comment "Activité principale de l'unité légale" ;
-	rdfs:label "Activité principale" ;
+	rdfs:comment "Lors de son inscription au répertoire, l’Insee attribue à toute unité légale un code dit « APE » sur la base de la description de l’activité principale faite par le déclarant. Ce code est modifiable au cours de la vie de l’unité légale en fonction des déclarations de l’exploitant." ;
+	rdfs:label "Activité principale de l’unité légale" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
@@ -323,14 +323,14 @@ sirene:economieSocialeSolidaireUniteLegale a rdf:Property ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:trancheEffectifsUniteLegale a rdf:Property ;
-	rdfs:comment "Tranche d'effectif salarié de l'unité légale" ;
+	rdfs:comment "Il s’agit d’une variable statistique, millésimée au 31/12 d’une année donnée (voir variable anneeEffectifsUniteLegale)." ;
 	rdfs:label "Tranche d'effectif salarié" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:anneeEffectifsUniteLegale a rdf:Property ;
-	rdfs:comment "Année de validité de l'effectif salarié de l'entreprise" ;
+	rdfs:comment "Seule la dernière année de mise à jour de l’effectif salarié de l’unité légale est donnée si celle-ci est inférieure ou égale à l’année d’interrogation-3. Ainsi une interrogation en 2018 ne renverra la dernière année de mise à jour de l’effectif que si cette année est supérieure ou égale à 2015." ;
 	rdfs:label "Année de validité de l'effectif salarié" ;
 	rdfs:range xs:gYear ;
 	rdfs:domain sirext:UniteLegale ;
@@ -362,14 +362,14 @@ sirene:dateDebutUniteLegale a rdf:Property ;
 sirene:dateDernierTraitementUniteLegale a rdf:Property ;
 	rdfs:comment "Date du dernier traitement de l’unité légale dans le répertoire Sirene. Cette date peut concerner des mises à jour de données du répertoire Sirene qui ne sont pas diffusées." ;
 	rdfs:label "Date de traitement de la dernière mise à jour" ;
-	rdfs:range xs:string ;
+	rdfs:range xs:date ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:dateDernierTraitementEtablissement a rdf:Property ;
 	rdfs:comment "Date du dernier traitement de l’établissement dans le répertoire Sirene. Cette date peut concerner des mises à jour de données du répertoire Sirene qui ne sont pas diffusées." ;
 	rdfs:label "Date de traitement de la dernière mise à jour" ;
-	rdfs:range xs:string ;
+	rdfs:range xs:date ;
 	rdfs:domain sirext:Etablissement ;
 	rdfs:isDefinedBy sirene: .
 
@@ -523,4 +523,81 @@ sirene:siret a rdf:Property ;
 	rdfs:label "Numéro Siret" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:Etablissement ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:anneeCategorieEntreprise a rdf:Property ;
+	rdfs:comment "Cette variable désigne l’année de validité correspondant à la catégorie d'entreprise diffusée." ;
+	rdfs:label "Année de validité de la catégorie d’entreprise" ;
+	rdfs:range xs:gYear ;
+	rdfs:domain sirext:UniteLegale ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:caractereEmployeurUniteLegale a rdf:Property ;
+	rdfs:comment "Lors de sa formalité de création, le déclarant indique si l’unité légale aura ou non des employés. Par la suite, le déclarant peut également faire des déclarations de prise d’emploi et de fin d’emploi. La prise en compte d’une déclaration de prise d’emploi bascule immédiatement l’unité légale en « Employeuse ». Inversement, lorsqu’une déclaration de fin d’emploi est traitée, l’unité légale devient « Non employeuse ».." ;
+	rdfs:label "Caractère employeur de l’unité légale" ;
+	rdfs:range xs:string ;
+	rdfs:domain sirext:boolean ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:denominationUsuelle1UniteLegale a rdf:Property ;
+	rdfs:comment "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008." ;
+	rdfs:label "Dénomination usuelle de l’unité légale" ;
+	rdfs:range xs:string ;
+	rdfs:domain sirext:UniteLegale ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:denominationUsuelle2UniteLegale a rdf:Property ;
+	rdfs:comment "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008." ;
+	rdfs:label "Dénomination usuelle de l’unité légale - deuxième champ" ;
+	rdfs:range xs:string ;
+	rdfs:domain sirext:UniteLegale ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:denominationUsuelle3UniteLegale a rdf:Property ;
+	rdfs:comment "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008." ;
+	rdfs:label "Dénomination usuelle de l’unité légale - troisième champ" ;
+	rdfs:range xs:string ;
+	rdfs:domain sirext:UniteLegale ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:etatAdministratifUniteLegale a rdf:Property ;
+	rdfs:comment "Le passage à l’état « Cessée » découle de la prise en compte d’une déclaration de cessation administrative. Pour les personnes morales, cela correspond au dépôt de la déclaration de disparition de la personne morale. Pour les personnes physiques, cela correspond soit à la prise en compte de la déclaration de cessation d’activité déposée par l’exploitant soit au décès de l’exploitant conformément à la réglementation. En dehors de ces cas, l’unité légale est toujours à l’état administratif « Active »." ;
+	rdfs:label "État administratif de l’unité légale" ;
+	rdfs:range xs:string ;
+	rdfs:domain sirext:UniteLegale ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:nombrePeriodesUniteLegale a rdf:Property ;
+	rdfs:comment "Cette variable donne le nombre de périodes [dateDebut,dateFin] de l’unité légale. Chaque période correspond à l’intervalle de temps pendant lequel la totalité des variables historisées de l’unité légale n’ont pas été modifiées. Les dates de ces périodes sont des dates d’effet (et non des dates de traitement)." ;
+	rdfs:label "Nombre de périodes de l’unité légale" ;
+	rdfs:range xs:int ;
+	rdfs:domain sirext:UniteLegale ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:nomenclatureActivitePrincipaleUniteLegale a rdf:Property ;
+	rdfs:comment "Cette variable indique la nomenclature d’activité correspondant à la variable activitePrincipaleUniteLegale (NAFRev2, NAFRev1, NAF1993, NAP)" ;
+	rdfs:label "Nomenclature d’activité" ;
+	rdfs:range xs:string ;
+	rdfs:domain sirext:UniteLegale ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:pseudonymeUniteLegale a rdf:Property ;
+	rdfs:comment "Cette variable correspond au nom qu’une personne utilise pour se désigner dans l’exercice de son activité, généralement littéraire ou artistique." ;
+	rdfs:label "Pseudonyme de la personne physique" ;
+	rdfs:range xs:string ;
+	rdfs:domain sirext:UniteLegale ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:statutDiffusionUniteLegale a rdf:Property ;
+	rdfs:comment "Seules les unités légales diffusibles sont accessibles à tout public (statutDiffusionUniteLegale=O)." ;
+	rdfs:label "Statut de diffusion de l’unité légale" ;
+	rdfs:range xs:string ;
+	rdfs:domain sirext:UniteLegale ;
+	rdfs:isDefinedBy sirene: .
+
+sirene:unitePurgeeUniteLegale a rdf:Property ;
+	rdfs:comment "Cette variable indique si l'unité légale a été purgée. Pour des raisons de capacité de stockage des données, les données concernant les entreprises cessées avant le 31/12/2002 ont été purgées." ;
+	rdfs:label "Unité légale purgée" ;
+	rdfs:range xs:string ;
+	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
