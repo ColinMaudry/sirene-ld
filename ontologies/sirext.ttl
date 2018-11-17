@@ -28,9 +28,9 @@ sirext: a owl:Ontology ;
 
 # Classes
 
-sirext:Entreprise a rdfs:Class ;
+sirext:UniteLegale a rdfs:Class ;
     rdfs:comment "Entité identifiée par un numéro SIREN" ;
-    rdfs:label "Entreprise" ;
+    rdfs:label "Unité légale" ;
     rdfs:isDefinedBy sirext: .
 
 sirext:PME rdfs:subClassOf sirext:Entreprise ;
@@ -54,7 +54,7 @@ sirext:Etablissement a rdfs:Class ;
     rdfs:isDefinedBy sirext: .
 
 sirext:Siege rdfs:subClassOf sirext:Etablissement ;
-    rdfs:comment "Un établissement qui est le siège de l'entreprise" ;
+    rdfs:comment "Un établissement qui est le siège de l'unité légale" ;
     rdfs:label "Siège" ;
     rdfs:isDefinedBy sirext: .
 
@@ -182,14 +182,14 @@ sirext:siret a rdf:Property ;
     rdfs:isDefinedBy sirext: .
 
 sirext:etablissement a rdf:Property ;
-    rdfs:comment "Un établissement de l'entreprise" ;
+    rdfs:comment "Un établissement de l'unité légale" ;
     rdfs:label "Établissement" ;
     rdfs:range sirext:Etablissement ;
     rdfs:domain sirext:Entreprise ;
     rdfs:isDefinedBy sirext: .
 
 sirext:siege rdfs:subPropertyOf sirext:etablissement ;
-    rdfs:comment "Établissement siège de l'entreprise" ;
+    rdfs:comment "Établissement siège de l'unité légale" ;
     rdfs:label "Siège" ;
     rdfs:range sirext:Siege ;
     rdfs:domain sirext:Entreprise ;
