@@ -1,0 +1,83 @@
+PREFIX sn: <https://sireneld.io/vocab/sirene#>
+PREFIX sx: <https://sireneld.io/vocab/sirext#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+PREFIX geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+construct {
+    ?etablissement a sx:Etablissement ;
+        a geo-pos:SpatialThing ;
+        a ?siegeClass ;
+        sn:siren ?siren ;
+        sx:uniteLegale ?uniteLegale ;
+        sn:nic ?nic ;
+        sn:siret ?siret ;
+        sn:statutdiffusionetablissement ?statutdiffusionetablissement ;
+        sn:datecreationetablissement ?datecreationetablissement_date ;
+        sn:trancheeffectifsetablissement ?trancheeffectifsetablissement ;
+        sn:anneeeffectifsetablissement ?anneeeffectifsetablissement_year ;
+        sn:activiteprincipaleregistremetiersetablissement ?activiteprincipaleregistremetiersetablissement ;
+        sn:etablissementsiege ?etablissementsiege ;
+        sn:nombreperiodesetablissement ?nombreperiodesetablissement_integer ;
+        sn:complementadresseetablissement ?complementadresseetablissement ;
+        sn:numerovoieetablissement ?numerovoieetablissement ;
+        sn:indicerepetitionetablissement ?indicerepetition2etablissement ;
+        sn:typevoieetablissement ?typevoieetablissement ;
+        sn:libellevoieetablissement ?libellevoieetablissement ;
+        sn:codepostaletablissement ?codePostalEtablissement ;
+        sn:libellecommuneetablissement ?libellecommuneetablissement ;
+        sn:distributionspecialeetablissement ?distributionspecialeetablissement ;
+        sn:codecommuneetablissement ?codecommuneetablissement ;
+        sn:codecedexetablissement ?codecedexetablissement ;
+        sn:libellecedexetablissement ?libellecedexetablissement ;
+        sn:codepaysetrangeretablissement ?codepaysetrangeretablissement ;
+        sn:libellepaysetrangeretablissement ?libellepaysetrangeretablissement ;
+        sn:numerovoie2etablissement ?numerovoie2etablissement ;
+        sn:indicerepetition2etablissement ?indicerepetition2etablissement ;
+        sn:typevoiee2tablissement ?typevoiee2tablissement ;
+        sn:libellevoie2etablissement ?libellevoie2etablissement ;
+        sn:codepostal2etablissement ?codepostal2etablissement ;
+        sn:libellecommune2etablissement ?libellecommune2etablissement ;
+        sn:distributionspeciale2etablissement ?distributionspeciale2etablissement ;
+        sn:codecommune2etablissement ?codecommune2etablissement ;
+        sn:codecedex2etablissement ?codecedex2etablissement ;
+        sn:libellecedex2etablissement ?libellecedex2etablissement ;
+        sn:codepaysetranger2etablissement ?codepaysetranger2etablissement ;
+        sn:libellepaysetranger2etablissement ?libellepaysetranger2etablissement ;
+        sn:datedebut ?datedebut_date ;
+        sn:etatadministratifetablissement ?etatadministratifetablissement ;
+
+
+        sn:activiteprincipaleetablissement ?activiteprincipaleetablissement ;
+        sn:nomenclatureactiviteprincipaleetablissement ?nomenclatureactiviteprincipaleetablissement ;
+        sn:activiteprincipaleregistremetiersetablissement ?activiteprincipaleregistremetiersetablissement ;
+        sn:datederniertraitementetablissement ?datederniertraitementetablissement_date ;
+
+
+        sn:numerovoieetablissement ?numeroVoieEtablissement ;
+
+
+        sx:trancheEffectifsEtablissement ?trancheeffectifsetablissement_uri ;
+        sx:activitePrincipale ?activiteprincipaleetablissement_uri .
+
+
+
+
+
+
+
+}
+where {
+    bind(uri(concat("https://sireneld.io/siret/",?siret)) as ?etablissement)
+    bind(uri(concat("https://sireneld.io/siren/",?siren)) as ?uniteLegale)
+    bind(uri(concat("https://sireneld.io/tef/",?trancheeffectifsetablissement)) as ?trancheeffectifsetablissement_uri)
+    bind(if(?etablissementsiege = "true",<https://sireneld.io/vocab/sirext#Siege>,?null) as ?siegeClass)
+    bind(if(?nomenclatureactiviteprincipaleetablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activiteprincipaleetablissement)),?null) as ?activiteprincipaleetablissement_uri)
+
+
+    bind(xs:date(?datecreationetablissement) as ?datecreationetablissement_date)
+    bind(xs:gYear(?anneeeffectifsetablissement) as ?anneeeffectifsetablissement_year)
+    bind(xs:date(?datederniertraitementetablissement) as ?datederniertraitementetablissement_date)
+    bind(xs:integer(?nombreperiodesetablissement) as ?nombreperiodesetablissement_integer)
+    bind(xs:date(?datedebut) as ?datedebut_date)
+}
