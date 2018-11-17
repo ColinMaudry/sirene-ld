@@ -73,56 +73,6 @@ sirext:EtatAdministratif rdfs:SubClassOf sirext:CodeNomenclature ;
     rdfs:label "État administratif" ;
     rdfs:isDefinedBy sirext: .
 
-sirext:NATETAB rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Nature de l'établissement d'un entrepreneur individuel (NATETAB)" ;
-    rdfs:label "NATETAB" ;
-    rdfs:isDefinedBy sirext: .
-
-sirext:Origine rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Origine de la création de l'établissement" ;
-    rdfs:label "Origine" ;
-    rdfs:isDefinedBy sirext: .
-
-sirext:ACTIVNAT rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Cette variable apporte un complément d'information sur l'activité excercée de l'établissement (transport, commerce de détail, services etc)" ;
-    rdfs:label "Nature de l'activité (ACTIVNAT)" ;
-    rdfs:isDefinedBy sirext: .
-
-sirext:LIEUACT rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "C'est le lieu de l'activité de l'établissement déclaré lors de sa création (bureau, usine...)." ;
-    rdfs:label "Lieu de l'activité (LIEUACT)" ;
-    rdfs:isDefinedBy sirext: .
-
-sirext:ACTISURF rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Cette variable indique, selon la surface déclarée à la création, à quel type de magasin correspond l'établissement." ;
-    rdfs:label "Type de magasin (ACTISURF)" ;
-    rdfs:isDefinedBy sirext: .
-
-sirext:SAISONAT rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Cette variable indique si l'établissement a une activité permanente ou saisonnière. Elle est saisonnière si chaque année l'établissement cesse totalement ses activités plus de trois mois consécutifs." ;
-    rdfs:label "Caractère saisonnier ou non de l'activité (SAISONAT)" ;
-    rdfs:isDefinedBy sirext: .
-
-sirext:MONOACT rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Indice de monoactivité de l'entreprise (MONOACT). L'indice de monoactivité de l'entreprise permet de qualifier, pour les entreprises pluri-établissements, l'homogénéité des activités exercées dans ceux-ci." ;
-    rdfs:label "MONOACT" ;
-    rdfs:isDefinedBy sirext: .
-
-sirext:MOD rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Modalité de l'activité principale de l'établissement ou de l'entreprise - MOD. Cette variable est une information complémentaire sur l'activité de l'entreprise ou de l'établissement. Exemples : donneur d'ordre, montage etc. C'est un code complémentaire à l'APEN qui complète une activité principale. Il précise certains aspects de cette activité." ;
-    rdfs:label "Modalité de l'activité principale (MOD)" ;
-    rdfs:isDefinedBy sirext: .
-
-sirext:PRODPART rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Cette variable, de niveau établissement, permet de définir si un établissement participe d'une manière particulière à la production. Exemples : loueur ou locataire de fond de commerce, prestataire de personnel..." ;
-    rdfs:label "Participation particulière à la production (PRODPART)" ;
-    rdfs:isDefinedBy sirext: .
-
-sirext:TCA rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Tranche de chiffre d'affaires pour les entreprises enquêtées par l'ESA (TCA). Cette variable est une information complémentaire sur l'activité de l'entreprise ou de l'établissement. Exemples : donneur d'ordre, montage etc. C'est un code complémentaire à l'APEN qui complète une activité principale. Il précise certains aspects de cette activité." ;
-    rdfs:label "Tranche de chiffre d'affaires (TCA)" ;
-    rdfs:isDefinedBy sirext: .
-
 # Properties
 
 sirext:longitude a rdf:Property ;
@@ -213,69 +163,6 @@ sirext:trancheEffectifs rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:range sirext:TrancheEffectifs ;
 	rdfs:isDefinedBy sirext: .
 
-sirext:tcd rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Tranche de commune détaillée (TCD). Cette variable désigne la tranche de population de la commune de localisation de l'établissement." ;
-	rdfs:label "Tranche de commune détaillée (TCD)" ;
-	rdfs:range sirext:TCD ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:natetab rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Nature de l'établissement d'un entrepreneur individuel (NATETAB)" ;
-	rdfs:label "Nature de l'établissement d'un entrepreneur individuel (NATETAB)" ;
-	rdfs:range sirext:NATETAB ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:origine rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Cette variable rappelle l'origine déclarée de l'établissement (création, reprise...)." ;
-	rdfs:label "Origine" ;
-	rdfs:range sirext:Origine ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:activnat rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Nature de l'activité de l'établissement (ACTIVNAT). Cette variable apporte un complément d'information sur l'activité excercée de l'établissement (transport, commerce de détail, services etc)." ;
-	rdfs:label "Nature de l'activité (ACTIVNAT)" ;
-	rdfs:range sirext:ACTIVNAT ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:lieuact rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "C'est le lieu de l'activité de l'établissement déclaré lors de sa création (bureau, usine...)." ;
-	rdfs:label "Lieu de l'activité (LIEUACT)" ;
-	rdfs:range sirext:LIEUACT ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:actisurf rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Cette variable indique, selon la surface déclarée à la création, à quel type de magasin correspond l'établissement." ;
-	rdfs:label "Type de magasin (ACTISURF)" ;
-	rdfs:domain sirext:Etablissement ;
-	rdfs:range sirext:ACTISURF ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:saisonat rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Cette variable indique si l'établissement a une activité permanente ou saisonnière. Elle est saisonnière si chaque année l'établissement cesse totalement ses activités plus de trois mois consécutifs." ;
-	rdfs:label "Caractère saisonnier ou non de l'activité (SAISONAT)" ;
-	rdfs:domain sirext:Etablissement ;
-	rdfs:range sirext:SAISONAT ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:monoact rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Indice de monoactivité de l'entreprise (MONOACT). L'indice de monoactivité de l'entreprise permet de qualifier, pour les entreprises pluri-établissements, l'homogénéité des activités exercées dans ceux-ci." ;
-	rdfs:label "Indice de monoactivité (MONOACT)" ;
-	rdfs:range sirext:MONOACT ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:mod rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Modalité de l'activité principale de l'établissement ou de l'entreprise - MOD. Cette variable est une information complémentaire sur l'activité de l'entreprise ou de l'établissement. Exemples : donneur d'ordre, montage etc. C'est un code complémentaire à l'APEN qui complète une activité principale. Il précise certains aspects de cette activité." ;
-	rdfs:label "Modalité de l'activité principale (MOD)" ;
-	rdfs:range sirext:MOD ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:prodpart rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Cette variable, de niveau établissement, permet de définir si un établissement participe d'une manière particulière à la production. Exemples : loueur ou locataire de fond de commerce, prestataire de personnel..." ;
-	rdfs:label "Participation particulière à la production (PRODPART)" ;
-	rdfs:range sirext:PRODPART ;
-	rdfs:domain sirext:Etablissement ;
-	rdfs:isDefinedBy sirext: .
-
 sirext:tca rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:comment "Tranche de chiffre d'affaires pour les unité légales enquêtées par l'ESA (TCA). Cette variable est une information complémentaire sur l'activité de l'unité légale ou de l'établissement. Exemples : donneur d'ordre, montage etc. C'est un code complémentaire à l'APEN qui complète une activité principale. Il précise certains aspects de cette activité." ;
 	rdfs:label "Tranche de chiffre d'affaires (TCA)" ;
@@ -294,57 +181,9 @@ sirext:amintr a rdf:Property ;
 	rdfs:range xs:gYearMonth ;
 	rdfs:isDefinedBy sirext: .
 
-sirext:ddebact a rdf:Property ;
-	rdfs:comment "Date à partir de laquelle l’établissement a été actif sans discontinuité." ;
-	rdfs:label "Date de début d'activité" ;
-	rdfs:domain xs:Etablissement ;
-	rdfs:range xs:date ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:dateess a rdf:Property ;
-	rdfs:comment "Date du statut d’appartenance au champ de l’économie sociale et solidaire (ESS)." ;
-	rdfs:label "Date du statut ESS" ;
-	rdfs:domain xs:Entreprise ;
-	rdfs:range xs:date ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:ape rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Code d'activité principale exercée (APE)" ;
-	rdfs:label "Activité principale de l'entreprise (APE)" ;
+sirext:activitePrincipale rdfs:subPropertyOf sirext:codeNomenclature ;
+	rdfs:comment "Code d'activité principale exercée selon la nomenclature NAFRev2." ;
+	rdfs:label "Activité principale (NAFRev2)" ;
 	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:esaapen rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Cette variable désigne l'Activité Principale Exercée de l'entreprise issue de l'Enquête Sectorielle Annuelle (ESA). Elle est codifiée selon la Nomenclature d'Activités Française." ;
-	rdfs:label "Activité principale de l'entreprise déclarée dans l'ESA (ESAAPEN)" ;
-	rdfs:domain sirext:Entreprise ;
-	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:esasec1n rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Cette variable désigne la première activité secondaire de l'entreprise déclarée dans l'Enquête Sectorielle Annuelle (ESA); cette activité générant le montant le plus élevé de chiffre d'affaire." ;
-	rdfs:label "Première activité secondaire déclarée dans l'ESA (ESASEC1N)" ;
-	rdfs:domain sirext:Entreprise ;
-	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:esasec2n rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Cette variable désigne la deuxième activité secondaire de l'entreprise déclarée dans l'Enquête Sectorielle Annuelle (ESA); cette activité générant le second montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
-	rdfs:label "Deuxième activité secondaire déclarée dans l'ESA (ESASEC2N)" ;
-	rdfs:domain sirext:Entreprise ;
-	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:esasec3n rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Cette variable désigne la troisième activité secondaire de l'entreprise déclarée dans l' Enquête Sectorielle Annuelle (ESA); cette activité générant le troisième montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
-	rdfs:label "Troisième activité secondaire déclarée dans l'ESA (ESASEC3N)" ;
-	rdfs:domain sirext:Entreprise ;
-	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy sirext: .
-
-sirext:esasec4n rdfs:subPropertyOf sirext:codeNomenclature ;
-	rdfs:comment "Cette variable désigne la troisième activité secondaire de l'entreprise déclarée dans l' Enquête Sectorielle Annuelle (ESA); cette activité générant le troisième montant le plus élevé de chiffre d'affaire par ordre décroissant." ;
-	rdfs:label "quatrième activité secondaire déclarée dans l'ESA (ESASEC4N)" ;
-	rdfs:domain sirext:Entreprise ;
-	rdfs:range skos:Concept ;
+    rdfs:seeAlso <https://www.insee.fr/fr/information/3281579> ;
 	rdfs:isDefinedBy sirext: .
