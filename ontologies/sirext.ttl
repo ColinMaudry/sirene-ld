@@ -68,9 +68,9 @@ sirext:TrancheEffectifs rdfs:SubClassOf sirext:CodeNomenclature ;
     rdfs:label "Tranche d'effectif salarié (TEF)" ;
     rdfs:isDefinedBy sirext: .
 
-sirext:TCD rdfs:SubClassOf sirext:CodeNomenclature ;
-    rdfs:comment "Tranche de commune détaillée (TCD)" ;
-    rdfs:label "TCD" ;
+sirext:EtatAdministratif rdfs:SubClassOf sirext:CodeNomenclature ;
+    rdfs:comment "Le passage à l’état « Cessée » découle de la prise en compte d’une déclaration de cessation administrative. Pour les personnes morales, cela correspond au dépôt de la déclaration de disparition de la personne morale. Pour les personnes physiques, cela correspond soit à la prise en compte de la déclaration de cessation d’activité déposée par l’exploitant soit au décès de l’exploitant conformément à la réglementation. En dehors de ces cas, l’unité légale est toujours à l’état administratif « Active ». Pour les personnes morales, la cessation administrative est, en théorie, définitive, l’état administratif « Cessée » est irréversible." ;
+    rdfs:label "État administratif" ;
     rdfs:isDefinedBy sirext: .
 
 sirext:NATETAB rdfs:SubClassOf sirext:CodeNomenclature ;
