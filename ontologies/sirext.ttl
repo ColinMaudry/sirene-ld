@@ -97,7 +97,7 @@ sirext:geo_score a rdf:Property ;
     rdfs:isDefinedBy sirext: .
 
 sirext:geo_type a rdf:Property ;
-    rdfs:comment "" ;
+    rdfs:comment "'housenumber' si les coordonnées géographiques correspondent à la combinaison rue + numéro, 'street' si les coordonnées géographiques ne correspondant qu'à la rue." ;
     rdfs:label "geo_type" ;
     rdfs:range xs:string ;
     rdfs:domain sirene:Organisation ;
@@ -159,6 +159,12 @@ sirext:codeCommune rdfs:subPropertyOf sirext:codeNomenclature ;
 
 sirext:trancheEffectifs rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:comment "Tranche d'effectif salarié (TEF). Cette variable correspond à la tranche d'effectif salarié de l'unité légale ou de l'établissement. C'est une variable statistique, millésimée au 31/12 d'une année donnée, majoritairement l'année n-2. Elle est à rapprocher de sa date de validité, c'est-à-dire de la date de mise à jour de l'effectif salarié de l'unité légale ou de l'établissement." ;
+	rdfs:label "Tranche d'effectif salarié (TEF)" ;
+	rdfs:range sirext:TrancheEffectifs ;
+	rdfs:isDefinedBy sirext: .
+
+sirext:etatAdministratif rdfs:subPropertyOf sirext:codeNomenclature ;
+	rdfs:comment "Un nouvel établissement est toujours Actif. Un établissement fermé peut être rouvert. WXXXXXXXXXXX" ;
 	rdfs:label "Tranche d'effectif salarié (TEF)" ;
 	rdfs:range sirext:TrancheEffectifs ;
 	rdfs:isDefinedBy sirext: .
