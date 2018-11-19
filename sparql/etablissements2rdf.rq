@@ -50,21 +50,10 @@ construct {
 
         sn:activiteprincipaleetablissement ?activiteprincipaleetablissement ;
         sn:nomenclatureactiviteprincipaleetablissement ?nomenclatureactiviteprincipaleetablissement ;
-        sn:activiteprincipaleregistremetiersetablissement ?activiteprincipaleregistremetiersetablissement ;
-        sn:datederniertraitementetablissement ?datederniertraitementetablissement_date ;
-
-
-        sn:numerovoieetablissement ?numeroVoieEtablissement ;
-
+        sn:caractereemployeuretablissement ?caractereemployeuretablissement ;
 
         sx:trancheEffectifsEtablissement ?trancheeffectifsetablissement_uri ;
         sx:activitePrincipale ?activiteprincipaleetablissement_uri .
-
-
-
-
-
-
 
 }
 where {
