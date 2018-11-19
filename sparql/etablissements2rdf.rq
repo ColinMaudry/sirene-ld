@@ -17,6 +17,7 @@ construct {
         sn:trancheeffectifsetablissement ?trancheeffectifsetablissement ;
         sn:anneeeffectifsetablissement ?anneeeffectifsetablissement_year ;
         sn:activiteprincipaleregistremetiersetablissement ?activiteprincipaleregistremetiersetablissement ;
+        sn:datederniertraitementetablissement ?datederniertraitementetablissement_date ;
         sn:etablissementsiege ?etablissementsiege ;
         sn:nombreperiodesetablissement ?nombreperiodesetablissement_integer ;
         sn:complementadresseetablissement ?complementadresseetablissement ;
@@ -46,13 +47,16 @@ construct {
         sn:libellepaysetranger2etablissement ?libellepaysetranger2etablissement ;
         sn:datedebut ?datedebut_date ;
         sn:etatadministratifetablissement ?etatadministratifetablissement ;
-
-
+        sn:enseigne1etablissement ?enseigne1etablissement ;
+        sn:enseigne2etablissement ?enseigne2etablissement ;
+        sn:enseigne3etablissement ?enseigne3etablissement ;
+        sn:denominationusuelleetablissement ?denominationusuelleetablissement ;
         sn:activiteprincipaleetablissement ?activiteprincipaleetablissement ;
         sn:nomenclatureactiviteprincipaleetablissement ?nomenclatureactiviteprincipaleetablissement ;
         sn:caractereemployeuretablissement ?caractereemployeuretablissement ;
 
         sx:trancheEffectifsEtablissement ?trancheeffectifsetablissement_uri ;
+        sx:etatAdministratif ?etatadministratifetablissement_uri ;
         sx:activitePrincipale ?activiteprincipaleetablissement_uri .
 
 }
@@ -62,6 +66,7 @@ where {
     bind(uri(concat("https://sireneld.io/tef/",?trancheeffectifsetablissement)) as ?trancheeffectifsetablissement_uri)
     bind(if(?etablissementsiege = "true",<https://sireneld.io/vocab/sirext#Siege>,?null) as ?siegeClass)
     bind(if(?nomenclatureactiviteprincipaleetablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activiteprincipaleetablissement)),?null) as ?activiteprincipaleetablissement_uri)
+    bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatadministratifetablissement)) as ?etatadministratifetablissement_uri)
 
 
     bind(xs:date(?datecreationetablissement) as ?datecreationetablissement_date)
