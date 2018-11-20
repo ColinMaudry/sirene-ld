@@ -1,23 +1,21 @@
 #!/bin/bash
 
+types=("Etablissement" "UniteLegale")
+
 for type in $types
 do
 
-	filename=Stock$type_utf8
+	filename=Stock${type}_utf8
 	csv=$filename.csv
-	zip=$csv.zip
-	unzip="unzip"
+	zip=$filename.zip
+	unzip="unzip -o"
 
 nt=$filename.nt
 hdt=$filename.hdt
 
-types=("Etablissement" "UniteLegale")
-
-
 # rm $filename*
 
 echo "> Téléchargement des fichiers compressés..."
-
 
 wget http://files.data.gouv.fr/insee-sirene/$zip
 
@@ -29,7 +27,7 @@ $unzip $zip
 echo ""
 echo "> Conversion du CSV établissement en RDF (N-triples)..."
 
-time tarql -e UTF-8 --ntriples sparql/etablissements2rdf.rq $csv > $nt
+time tarql -e UTF-8 --ntriples sparql/${type}2rdf.rq $csv > $nt
 
 echo ""
 echo "Deleting CSV in order to save space on my small disk..."
@@ -39,7 +37,7 @@ echo "Deleting CSV in order to save space on my small disk..."
 echo ""
 echo "> Conversion du RDF en HDT..."
 
-time rdf2hdt $ttl $hdt
+time rdf2hdt $nt $hdt
 
 echo ""
 echo ">> Terminé"
