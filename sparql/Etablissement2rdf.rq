@@ -55,7 +55,7 @@ construct {
         sn:nomenclatureactiviteprincipaleetablissement ?nomenclatureactiviteprincipaleetablissement ;
         sn:caractereemployeuretablissement ?caractereemployeuretablissement ;
 
-        sx:trancheEffectifsEtablissement ?trancheeffectifsetablissement_uri ;
+        sx:trancheEffectifs ?trancheeffectifsetablissement_uri ;
         sx:etatAdministratif ?etatadministratifetablissement_uri ;
         # geo-pos:lat ?latitude_double ;
         # geo-pos:long ?longitude_double ;
