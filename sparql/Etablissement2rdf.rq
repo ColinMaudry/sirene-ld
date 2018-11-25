@@ -77,7 +77,7 @@ where {
     bind(xs:date(?datecreationetablissement) as ?datecreationetablissement_date)
     bind(xs:gYear(?anneeeffectifsetablissement) as ?anneeeffectifsetablissement_year)
     bind(xs:date(?datederniertraitementetablissement) as ?datederniertraitementetablissement_date)
-    bind(xs:integer(?nombreperiodesetablissement) as ?nombreperiodesetablissement_integer)
+    bind(xs:int(?nombreperiodesetablissement) as ?nombreperiodesetablissement_integer)
     bind(xs:date(?datedebut) as ?datedebut_date)
     # bind(xs:double(?latitude) as ?latitude_double)
     # bind(xs:double(?longitude) as ?longitude_double)

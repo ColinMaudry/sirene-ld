@@ -9,6 +9,7 @@ CONSTRUCT {
     a sx:UniteLegale ;
     a ?categoriejuridiqueunitelegale_class ;
 
+    sn:siren ?siren ;
     sn:statutdiffusionunitelegale ?statutdiffusionunitelegale ;
     sn:unitepurgeeunitelegale ?unitepurgeeunitelegale ;
     sn:datecreationunitelegale ?datecreationunitelegale_date ;
@@ -61,7 +62,7 @@ WHERE {
     bind(xs:date(?datecreationunitelegale) as ?datecreationunitelegale_date)
     bind(xs:gYear(?anneeeffectifsunitelegale) as ?anneeeffectifsunitelegale_year)
     bind(xs:date(?datederniertraitementunitelegale) as ?datederniertraitementunitelegale_date)
-    bind(xs:integer(?nombreperiodesunitelegale) as ?nombreperiodesunitelegale_integer)
+    bind(xs:int(?nombreperiodesunitelegale) as ?nombreperiodesunitelegale_integer)
     bind(xs:gYear(?anneecategorieentreprise) as ?anneecategorieentreprise_year)
     bind(xs:date(?datedebut) as ?datedebut_date)
 }
