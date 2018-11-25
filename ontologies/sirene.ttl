@@ -370,7 +370,7 @@ sirene:datederniertraitementetablissement a rdf:Property ;
 sirene:caractereemployeuretablissement a rdf:Property ;
 	rdfs:comment "Lors de sa formalité d’ouverture, le déclarant indique si l’établissement aura ou non des employés. Par la suite, le déclarant peut également faire des déclarations de prise d’emploi et de fin d’emploi. La prise en compte d’une déclaration de prise d’emploi bascule immédiatement l’établissement en « employeur »." ;
 	rdfs:label "Caractère employeur de l’établissement" ;
-	rdfs:range xs:boolean ;
+	rdfs:range xs:string ;
 	rdfs:domain sirext:Etablissement ;
 	rdfs:isDefinedBy sirene: .
 
