@@ -272,13 +272,6 @@ sirene:prenomusuelunitelegale a rdf:Property ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
-sirene:sexeunitelegale a rdf:Property ;
-	rdfs:comment "Cette variable est à null pour les personnes morales. La variable sexeUniteLegale est également non renseignée pour quelques personnes physiques." ;
-	rdfs:label "Caractère féminin ou masculin de la personne physique" ;
-	rdfs:range xs:string ;
-	rdfs:domain sirext:Etablissement ;
-	rdfs:isDefinedBy sirene: .
-
 sirene:identifiantassociationunitelegale a rdf:Property ;
 	rdfs:comment "Lors de sa déclaration en préfecture, l’association reçoit automatiquement un numéro d’inscription au RNA. Elle doit en outre demander son immatriculation au répertoire Sirene lorsqu'elle souhaite demander des subventions auprès de l'État ou des collectivités territoriales, lorsqu'elle emploie des salariés ou lorsqu'elle exerce des activités qui conduisent au paiement de la TVA ou de l'impôt sur les sociétés." ;
 	rdfs:label "Numéro au Répertoire National des Associations (RNA)" ;
