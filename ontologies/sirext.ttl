@@ -124,13 +124,6 @@ sirext:geo_ligne a rdf:Property ;
     rdfs:domain sirene:Organisation ;
     rdfs:isDefinedBy sirext: .
 
-sirext:siret a rdf:Property ;
-    rdfs:comment "Combinaison du SIREN et du NIC de l'établissement" ;
-    rdfs:label "SIRET" ;
-    rdfs:range xs:string ;
-    rdfs:domain sirext:Etablissement ;
-    rdfs:isDefinedBy sirext: .
-
 sirext:etablissement a rdf:Property ;
     rdfs:comment "Un établissement de l'unité légale" ;
     rdfs:label "Établissement" ;
