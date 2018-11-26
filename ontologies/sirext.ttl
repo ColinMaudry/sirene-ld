@@ -174,12 +174,6 @@ sirext:dateCreation rdfs:subProperty dcterms:created ;
 	rdfs:range xs:date ;
 	rdfs:isDefinedBy sirext: .
 
-sirext:amintr a rdf:Property ;
-	rdfs:comment "Année et mois d'introduction de l'unité légale ou de l'établissement dans la base de diffusion" ;
-	rdfs:label "Mois d'introduction dans la base" ;
-	rdfs:range xs:gYearMonth ;
-	rdfs:isDefinedBy sirext: .
-
 sirext:activitePrincipale rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:comment "Code d'activité principale exercée selon la nomenclature NAFRev2." ;
 	rdfs:label "Activité principale (NAFRev2)" ;
