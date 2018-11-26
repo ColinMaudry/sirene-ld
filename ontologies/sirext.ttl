@@ -169,13 +169,13 @@ sirext:etatAdministratif rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:range sirext:TrancheEffectifs ;
 	rdfs:isDefinedBy sirext: .
 
-sirext:tca rdfs:subPropertyOf sirext:codeNomenclature ;
+sirext:trancheCA rdfs:subPropertyOf sirext:codeNomenclature ;
 	rdfs:comment "Tranche de chiffre d'affaires pour les unité légales enquêtées par l'ESA (TCA). Cette variable est une information complémentaire sur l'activité de l'unité légale ou de l'établissement. Exemples : donneur d'ordre, montage etc. C'est un code complémentaire à l'APEN qui complète une activité principale. Il précise certains aspects de cette activité." ;
 	rdfs:label "Tranche de chiffre d'affaires (TCA)" ;
 	rdfs:range sirext:TCA ;
 	rdfs:isDefinedBy sirext: .
 
-sirext:dcr rdfs:subProperty dcterms:created ;
+sirext:dateCreation rdfs:subProperty dcterms:created ;
 	rdfs:comment "Date de création de l'unité légale ou de l'établissement" ;
 	rdfs:label "Date de création" ;
 	rdfs:range xs:date ;
