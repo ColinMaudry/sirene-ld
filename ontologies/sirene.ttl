@@ -344,11 +344,10 @@ sirene:datecreationunitelegale a rdf:Property ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
-sirene:datedebutunitelegale a rdf:Property ;
-	rdfs:comment "Date de début de la période au cours de laquelle toutes les variables historisées de l'entreprise restent inchangées." ;
+sirene:datedebut a rdf:Property ;
+	rdfs:comment "Date de début de la période au cours de laquelle toutes les variables historisées de l'unité légale ou de l'établissement restent inchangées." ;
 	rdfs:label "Date de début d'une période d'historique d'une unité légale" ;
 	rdfs:range xs:string ;
-	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
 sirene:datederniertraitementunitelegale a rdf:Property ;
