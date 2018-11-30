@@ -45,7 +45,7 @@ function transformPublish() {
     echo ""
     echo "ntSize:............$triples"
     echo "nbTotalTriples:....$nbTotalTriples"
-    echo "avgNbTriples:......$avgNbTriples ($session sessions)"
+    echo "avgNbTriples:......$avgNbTriples ($((session + 1)) sessions)"
 
     echo ""
     echo "Téléversement vers $repository..."
@@ -57,13 +57,13 @@ function transformPublish() {
     -u $apikey:
 }
 
+echo "Comptage des lignes dans $csv..."
+echo ""
 nbLines=`cat $csv | wc -l`
 
 # Number of actual records (lines, minus the header row)
 nbRecords=$(( nbLines - 1 ))
-
-echo "nbRecords: $nbRecords"
-echo "header: $header"
+header=`head -n 1 $csv`
 
 if [[ -n $maxChunkSize && $nbRecords -gt $maxChunkSize ]]; then
     # The number of records is bigger than the max chunk size, we must split the file
@@ -81,6 +81,9 @@ if [[ -n $maxChunkSize && $nbRecords -gt $maxChunkSize ]]; then
 
     if [[ $nbRecordsRemainder -gt 0 ]]; then
         echo $header > $csv.temp
+
+        echo "Création du fichier d'enregistrements restants (remainder)..."
+        echo ""
         tail -n $nbRecords $csv | head -n $nbRecordsRemainder >> $csv.temp
 
         transformPublish "$csv.temp" $type "remainder_$nbRecordsRemainder"
@@ -96,6 +99,7 @@ if [[ -n $maxChunkSize && $nbRecords -gt $maxChunkSize ]]; then
         tail=$((nbChunksRemaining * maxChunkSize))
         echo "lignes restantes: $tail"
 
+        echo "Création du fichier CSV temporaire..."
         echo $header > $csv.temp
         tail -n $tail $csv | head -n $maxChunkSize >> $csv.temp
 
