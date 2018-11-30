@@ -29,12 +29,16 @@ function transformPublish() {
     echo "> Conversion du CSV $typeTemp en RDF vers $nt..."
 
     tarql -e UTF-8 --ntriples sparql/${typeTemp}2rdf.rq $csvTemp > $nt
-    gzip -fk -9 $nt
+
+    # The number of triples in the chunk
+    triples=`cat $nt | wc -l`
+
+    # Gzip the .nt, the .nt is deleted to save spac e
+    gzip -f -9 $nt
 
     echo ""
     echo ">> Converti"
 
-    triples=`cat $nt | wc -l`
     nbTotalTriples=$((triples + nbTotalTriples))
     avgNbTriples=$((nbTotalTriples / (session + 1)))
 
@@ -46,11 +50,11 @@ function transformPublish() {
     echo ""
     echo "Téléversement vers $repository..."
 
-    # curl -L --url "$repository" --data-binary @"$nt.gz" \
-    # -H "Content-type: application/n-triples" \
-    # -H "Content-encoding: gzip" \
-    # -H "Accept-asynchronous: notify" \
-    # -u $apikey:
+    curl -L --url "$repository" --data-binary @"$nt.gz" \
+    -H "Content-type: application/n-triples" \
+    -H "Content-encoding: gzip" \
+    -H "Accept-asynchronous: notify" \
+    -u $apikey:
 }
 
 nbLines=`cat $csv | wc -l`
