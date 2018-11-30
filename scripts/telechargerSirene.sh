@@ -1,7 +1,12 @@
 #/bin/bash
 
+date=`date +%Y-%m-%d`
+heure=`date +%H:%M:%S`
+
 tailleMax=$1
 types=("Etablissement" "UniteLegale")
+
+echo "Début du processus : $date $heure"
 
 for type in $types
 do
@@ -27,3 +32,8 @@ do
     fi
 
 done
+
+date=`date +%Y-%m-%d`
+heure=`date +%H:%M:%S`
+
+echo "Fin du processus : $date $heure"

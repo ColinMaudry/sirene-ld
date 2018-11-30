@@ -91,9 +91,11 @@ if [[ -n $maxChunkSize && $nbRecords -gt $maxChunkSize ]]; then
 
     for (( c=1; c<=$nbChunksFloored; c++ ))
     do
+        heure=`date +%H:%M:%S`
+
         echo ""
         echo "*************************************************"
-        echo ""
+        echo "$heure"
         echo "chunk: $c"
 
         tail=$((nbChunksRemaining * maxChunkSize))
