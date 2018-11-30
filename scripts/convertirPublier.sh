@@ -63,6 +63,7 @@ nbLines=`cat $csv | wc -l`
 
 # Number of actual records (lines, minus the header row)
 nbRecords=$(( nbLines - 1 ))
+halfTotal=$(( nbRecords / 2 ))
 header=`head -n 1 $csv`
 
 if [[ -n $maxChunkSize && $nbRecords -gt $maxChunkSize ]]; then
@@ -84,7 +85,7 @@ if [[ -n $maxChunkSize && $nbRecords -gt $maxChunkSize ]]; then
 
         echo "Création du fichier d'enregistrements restants (remainder)..."
         echo ""
-        tail -n $nbRecords $csv | head -n $nbRecordsRemainder >> $csv.temp
+        head -n $(($nbRecordsRemainder + 1)) $csv | tail -n $nbRecordsRemainder >> $csv.temp
 
         transformPublish "$csv.temp" $type "remainder_$nbRecordsRemainder"
     fi
@@ -97,13 +98,25 @@ if [[ -n $maxChunkSize && $nbRecords -gt $maxChunkSize ]]; then
         echo "*************************************************"
         echo "$heure"
         echo "chunk: $c"
+        echo ""
 
-        tail=$((nbChunksRemaining * maxChunkSize))
-        echo "lignes restantes: $tail"
+        processedRecords=$((((c - 1) * maxChunkSize) + nbRecordsRemainder))
+        remainingRecords=$((nbChunksRemaining * maxChunkSize))
+
+        echo "lignes traitées:......$processedRecords"
+        echo "lignes restantes:.....$remainingRecords"
+        echo ""
 
         echo "Création du fichier CSV temporaire..."
+
         echo $header > $csv.temp
-        tail -n $tail $csv | head -n $maxChunkSize >> $csv.temp
+
+        # If less than half of the records remain to be processed, tail is faster than head
+        if [[ $remainingRecords -lt $halfTotal ]]; then
+            tail -n $remainingRecords $csv | head -n $maxChunkSize >> $csv.temp
+        else
+            head -n $(($processedRecords + 1)) $csv | tail -n $maxChunkSize >> $csv.temp
+        fi
 
         transformPublish "$csv.temp" $type $c
 
