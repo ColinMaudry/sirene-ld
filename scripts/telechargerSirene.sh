@@ -11,7 +11,7 @@ do
     unzip="unzip -o"
 
     if [[ -s $csv ]]; then
-        ./scripts/convertirPublier.sh $csv $type $tailleMax
+        time ./scripts/convertirPublier.sh $csv $type $tailleMax
     else
 
         echo "> Téléchargement des fichiers compressés..."
@@ -23,7 +23,7 @@ do
 
         $unzip $zip
 
-        ./scripts/convertirPublier.sh $csv $type $tailleMax
+        time ./scripts/convertirPublier.sh $csv $type $tailleMax
     fi
 
 done
