@@ -8,7 +8,11 @@ sirecj: a owl:Ontology ;
 
 
 sirecj:CJ a rdfs:Class ;
-	rdfs:label "Artisan-commerçant " ;
+	rdfs:label "Catégorie juridique" ;
+	rdfs:isDefinedBy sirecj: .
+
+sirecj:1000 rdfs:subClassOf sirecj:CJ ;
+	rdfs:label "Personne physique " ;
 	rdfs:isDefinedBy sirecj: .
 
 sirecj:1100 rdfs:subClassOf sirecj:CJ ;
