@@ -8,16 +8,19 @@ source ./scripts/televersementConfig.sh
 if [[ -n $3 ]]; then
     maxChunkSize=$3
 else
-    maxChunkSize=50000
+    maxChunkSize=25000
 fi
+
+nbTotalTriples=0
 
 
 function transformPublish() {
     csvTemp=$1
     typeTemp=$2
+    session=$3
 
-    if [[ -n $3 ]]; then
-        nt=${csvTemp}_${3}.nt
+    if [[ -n $session ]]; then
+        nt=${csvTemp}_${session}.nt
     else
         nt=$csvTemp.nt
     fi
@@ -25,14 +28,20 @@ function transformPublish() {
     echo ""
     echo "> Conversion du CSV $typeTemp en RDF vers $nt..."
 
-    time tarql -e UTF-8 --ntriples sparql/${typeTemp}2rdf.rq $csvTemp > $nt
+    tarql -e UTF-8 --ntriples sparql/${typeTemp}2rdf.rq $csvTemp > $nt
+    gzip -fk -9 $nt
 
     echo ""
     echo ">> Converti"
 
-    ntSize=`cat $nt | wc -l`
+    triples=`cat $nt | wc -l`
+    nbTotalTriples=$((triples + nbTotalTriples))
+    avgNbTriples=$((nbTotalTriples / (session + 1)))
+
     echo ""
-    echo "ntSize: $ntSize triples"
+    echo "ntSize:............$triples"
+    echo "nbTotalTriples:....$nbTotalTriples"
+    echo "avgNbTriples:......$avgNbTriples ($session sessions)"
 
     echo ""
     echo "Téléversement vers $repository..."
@@ -48,8 +57,6 @@ nbLines=`cat $csv | wc -l`
 
 # Number of actual records (lines, minus the header row)
 nbRecords=$(( nbLines - 1 ))
-
-header=`head -n 1 $csv`
 
 echo "nbRecords: $nbRecords"
 echo "header: $header"
