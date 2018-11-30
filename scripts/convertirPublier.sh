@@ -37,10 +37,11 @@ function transformPublish() {
     echo ""
     echo "Téléversement vers $repository..."
 
-    curl -vL --url "$repository" --data-binary @"$nt" \
-    -H "Content-type: application/n-triples" \
-    -H "Accept-asynchronous: notify" \
-    -u $apikey:
+    # curl -L --url "$repository" --data-binary @"$nt.gz" \
+    # -H "Content-type: application/n-triples" \
+    # -H "Content-encoding: gzip" \
+    # -H "Accept-asynchronous: notify" \
+    # -u $apikey:
 }
 
 nbLines=`cat $csv | wc -l`
