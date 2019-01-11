@@ -33,8 +33,15 @@ function transformPublish() {
     # The number of triples in the chunk
     triples=`cat $nt | wc -l`
 
-    # Gzip the .nt, the .nt is deleted to save spac e
-    gzip -f -9 $nt
+    #If it's Dydra, gzip the .nt, the .nt is deleted to save space
+    if [[ $repository = *"dydra"* ]]; then
+        gzip -f -9 $nt
+
+        curlOptions= --data-binary @"./$nt.gz" -H "Content-type: application/n-triples" -H "Content-encoding: gzip" -H "Accept-asynchronous: notify" -u $apikey:
+    else
+        curlOptions=' --data-binary @./$nt -H "Content-type: application/n-triples" -u $user:$apikey'
+
+    fi
 
     echo ""
     echo ">> Converti"
@@ -48,13 +55,9 @@ function transformPublish() {
     echo "avgNbTriples:......$avgNbTriples ($((session + 1)) sessions)"
 
     echo ""
-    echo "Téléversement vers $repository..."
+    echo "Téléversement vers $repository avec $curlOptions..."
 
-    curl -L --url "$repository" --data-binary @"$nt.gz" \
-    -H "Content-type: application/n-triples" \
-    -H "Content-encoding: gzip" \
-    -H "Accept-asynchronous: notify" \
-    -u $apikey:
+    curl -v --url "$repository" --data-binary @./$nt -H "Content-type: application/n-triples" -u $user:$apikey
 }
 
 echo "Comptage des lignes dans $csv..."

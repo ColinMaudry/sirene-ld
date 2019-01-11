@@ -4,7 +4,8 @@ date=`date +%Y-%m-%d`
 heure=`date +%H:%M:%S`
 
 tailleMax=$1
-types=("Etablissement" "UniteLegale")
+declare -a types=("Etablissement" "UniteLegale")
+echo $types
 
 echo "Début du processus : $date $heure"
 
