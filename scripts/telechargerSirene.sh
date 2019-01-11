@@ -9,23 +9,26 @@ echo $types
 
 echo "Début du processus : $date $heure"
 
-for type in $types
+for type in "UniteLegale" "Etablissement"
 do
+
     filename=Stock${type}_utf8
     zip=$filename.zip
     csv=$filename.csv
     unzip="unzip -o"
 
     if [[ -s $csv ]]; then
+
+	echo "> $csv déjà présent"
         time ./scripts/convertirPublier.sh $csv $type $tailleMax
     else
 
-        echo "> Téléchargement des fichiers compressés..."
+        echo "> Téléchargement de $zip..."
 
         wget http://files.data.gouv.fr/insee-sirene/$zip
 
         echo ""
-        echo "> Extraction du fichier compressé..."
+        echo "> Extraction de $zip..."
 
         $unzip $zip
 
