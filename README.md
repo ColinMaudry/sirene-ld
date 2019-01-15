@@ -1,4 +1,4 @@
-# SIRENE LD
+# SIRENE LD 1.0.0
 
 Transformation du répertoire SIRENE (CSV) au format RDF pour publication en [Linked Data](https://fr.wikipedia.org/wiki/Web_des_donn%C3%A9es#Principes).
 
@@ -38,6 +38,13 @@ Si vous souhaitez en savoir plus sur le Linked Data, je vous conseille chaudemen
 - Vous trouverez des échantillons de données (CSV source et résultats de transformation) dans `[échantillons](https://github.com/ColinMaudry/sirene-ld/tree/master/échantillons)`
 
 
+## Notes de version
+
+*1.0.0* (15 janvier 2019)
+
+- conversion du SIRENE vers RDF
+- ontologies
+- chargement dans le triple store par fragments
 
 ## Soutien
 
