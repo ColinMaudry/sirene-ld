@@ -57,9 +57,11 @@ function transformPublish() {
     echo "avgNbTriples:......$avgNbTriples ($((session + 1)) sessions)"
 
     echo ""
-    echo "Téléversement vers $repository avec $curlOptions..."
+    echo "Téléversement vers $repositoryWithGraph..."
 
     curl -v --url "$repositoryWithGraph" --data-binary @./$nt -H "Content-type: application/n-triples" -u $user:$apikey
+
+    rm $nt
 }
 
 echo "Comptage des lignes dans $csv..."
