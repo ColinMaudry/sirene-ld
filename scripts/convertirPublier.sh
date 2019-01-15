@@ -43,6 +43,8 @@ function transformPublish() {
 
     fi
 
+    repositoryWithGraph=${repository}?graph=urn%3Asireneld%3Asirene%3A$type
+
     echo ""
     echo ">> Converti"
 
@@ -57,7 +59,7 @@ function transformPublish() {
     echo ""
     echo "Téléversement vers $repository avec $curlOptions..."
 
-    curl -v --url "$repository" --data-binary @./$nt -H "Content-type: application/n-triples" -u $user:$apikey
+    curl -v --url "$repositoryWithGraph" --data-binary @./$nt -H "Content-type: application/n-triples" -u $user:$apikey
 }
 
 echo "Comptage des lignes dans $csv..."
