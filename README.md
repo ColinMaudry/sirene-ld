@@ -1,4 +1,4 @@
-# SIRENE LD 1.0.0
+# SIRENE LD 1.1.0
 
 Transformation du répertoire SIRENE (CSV) au format RDF pour publication en [Linked Data](https://fr.wikipedia.org/wiki/Web_des_donn%C3%A9es#Principes).
 
@@ -39,6 +39,10 @@ Si vous souhaitez en savoir plus sur le Linked Data, je vous conseille chaudemen
 
 
 ## Notes de version
+
+*1.1.0* (15 janvier 2019)
+
+- suppression des .nt téléversés pour économiser de l'espace disque
 
 *1.0.0* (15 janvier 2019)
 
