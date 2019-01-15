@@ -1,0 +1,68 @@
+PREFIX sn: <https://sireneld.io/vocab/sirene#>
+PREFIX sx: <https://sireneld.io/vocab/sirext#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+
+    ?entreprise a ?categorie_class ;
+    a sx:UniteLegale ;
+    a ?categoriejuridiqueunitelegale_class ;
+
+    sn:siren ?siren ;
+    sn:statutdiffusionunitelegale ?statutdiffusionunitelegale ;
+    sn:unitepurgeeunitelegale ?unitepurgeeunitelegale ;
+    sn:datecreationunitelegale ?datecreationunitelegale_date ;
+    sn:sigleunitelegale ?sigleunitelegale ;
+    sn:sexeunitelegale ?sexeunitelegale ;
+    sn:prenom1UniteLegale ?prenom1UniteLegale ;
+    sn:prenom2UniteLegale ?prenom2UniteLegale ;
+    sn:prenom3UniteLegale ?prenom3UniteLegale ;
+    sn:prenom4UniteLegale ?prenom4UniteLegale ;
+    sn:prenomusuelunitelegale ?prenomusuelunitelegale ;
+    sn:pseudonymeunitelegale ?pseudonymeunitelegale ;
+    sn:identifiantassociationunitelegale ?identifiantassociationunitelegale ;
+    sn:trancheeffectifsunitelegale ?trancheeffectifsunitelegale ;
+    sn:anneeeffectifsunitelegale ?anneeeffectifsunitelegale_year ;
+    sn:datederniertraitementunitelegale ?datederniertraitementunitelegale_date ;
+    sn:nombreperiodesunitelegale ?nombreperiodesunitelegale_integer ;
+    sn:categorieentreprise ?categorieentreprise ;
+    sn:anneecategorieentreprise ?anneecategorieentreprise_year ;
+    sn:datedebut ?datedebut_date ;
+    sn:etatadministratifunitelegale ?etatadministratifunitelegale ;
+    sn:nomunitelegale ?nomunitelegale ;
+    sn:nomusageunitelegale ?nomusageunitelegale ;
+    sn:denominationunitelegale ?denominationunitelegale ;
+    sn:denominationusuelle1unitelegale ?denominationusuelle1unitelegale ;
+    sn:denominationusuelle2unitelegale ?denominationusuelle2unitelegale ;
+    sn:denominationusuelle3unitelegale ?denominationusuelle3unitelegale ;
+    sn:categoriejuridiqueunitelegale ?categoriejuridiqueunitelegale ;
+    sn:activiteprincipaleunitelegale ?activiteprincipaleunitelegale ;
+    sn:nomenclatureactiviteprincipaleunitelegale ?nomenclatureactiviteprincipaleunitelegale ;
+    sn:nicsiegeunitelegale ?nicsiegeunitelegale ;
+    sn:economiesocialesolidaireunitelegale ?economiesocialesolidaireunitelegale ;
+    sn:caractereemployeurunitelegale ?caractereemployeurunitelegale ;
+
+
+    sx:trancheEffectifs ?trancheeffectifsunitelegale_uri ;
+    sx:etatAdministratif ?etatadministratifunitelegale_uri ;
+    sx:activitePrincipale ?activiteprincipaleunitelegale_uri ;
+    sx:siege ?nicsiegeunitelegale_uri .
+}
+
+WHERE {
+    bind(uri(concat("https://sireneld.io/vocab/sirext#",?categorieentreprise)) as ?categorie_class)
+    bind(uri(concat("https://sireneld.io/vocab/sirecj#",?categoriejuridiqueunitelegale)) as ?nj_class)
+    bind(uri(concat("https://sireneld.io/siren/",?siren)) as ?entreprise)
+    bind(uri(concat("https://sireneld.io/tef/",?trancheeffectifsunitelegale)) as ?trancheeffectifsunitelegale_uri)
+    bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatadministratifunitelegale)) as ?etatadministratifunitelegale_uri)
+    bind(if(?nomenclatureactiviteprincipaleunitelegale = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activiteprincipaleunitelegale)),?null) as ?activiteprincipaleunitelegale_uri)
+    bind(uri(concat("https://sireneld.io/siret/",?siren,?nicsiegeunitelegale)) as ?nicsiegeunitelegale_uri)
+
+    bind(xs:date(?datecreationunitelegale) as ?datecreationunitelegale_date)
+    bind(xs:gYear(?anneeeffectifsunitelegale) as ?anneeeffectifsunitelegale_year)
+    bind(xs:date(?datederniertraitementunitelegale) as ?datederniertraitementunitelegale_date)
+    bind(xs:int(?nombreperiodesunitelegale) as ?nombreperiodesunitelegale_integer)
+    bind(xs:gYear(?anneecategorieentreprise) as ?anneecategorieentreprise_year)
+    bind(xs:date(?datedebut) as ?datedebut_date)
+}

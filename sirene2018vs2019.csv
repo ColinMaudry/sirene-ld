@@ -20,7 +20,7 @@ INDREP,indiceRepetitionEtablissement,,
 TYPVOIE,typeVoieEtablissement,,
 LIBVOIE,libelleVoieEtablissement,,
 CODPOS,codePostalEtablissement,,
-CEDEX,libelleCedexEtablissement,,
+CEDEX,libelleCedexEtablissement,,Voir également codeCedexEtablissement
 RPET,,,Ce champ n’est plus publié par l’INSEE
 LIBREG,,,Ce champ n’est plus publié par l’INSEE
 DEPET,codeCommuneEtablissement,,DEPET et COMET sont fusionnées dans codeCommuneEtablissement
@@ -42,7 +42,7 @@ AMINTRET,dateDebut,,
 NATETAB,,,Ce champ n’est plus publié par l’INSEE
 LIBNATETAB,,,Ce champ n’est plus publié par l’INSEE
 APET700,activitePrincipaleEtablissement,,
-LIBAPET,,,libellé disponible par l'API Nomenclature
+LIBAPET,,,"libellé disponible par l'API ""Nomenclature"""
 DAPET,,,Ce champ n’est plus publié par l’INSEE
 TEFET,trancheEffectifsEtablissement,,
 LIBTEFET,,,Ce champ n’est plus publié par l’INSEE
@@ -59,7 +59,7 @@ MODET,,,Ce champ n’est plus publié par l’INSEE
 PRODET,,,Ce champ n’est plus publié par l’INSEE
 PRODPART,,,Ce champ n’est plus publié par l’INSEE
 AUXILT,,,Ce champ n’est plus publié par l’INSEE
-NOMEN_LONG,,denominationUniteLegale,à reconstituer pour les personnes physiques à partir de nomUniteLegal + prenoms...
+NOMEN_LONG,,denominationUniteLegale,À reconstituer pour les personnes physiques à partir de nomUniteLegal + prenoms...
 SIGLE,,sigleUniteLegale,
 NOM,,nomUniteLegale,Le nom d’usage est également publié (nomUsageUniteLegale)
 PRENOM,,prenom1UniteLegale,Sont également publiés prenomUsuelUniteLegale prenom2UniteLegale prenom3UniteLegale prenom4UniteLegale
@@ -70,9 +70,9 @@ RPEN,,,Ce champ n’est plus publié par l’INSEE
 DEPCOMEN,,,à reprendre depuis le codeCommuneEtablissement de l'établissement siège
 ADR_MAIL,,,Ce champ n’est plus publié par l’INSEE
 NJ,,categorieJuridiqueUniteLegale,
-LIBNJ,,,libellé disponible par l'API Nomenclature
+LIBNJ,,,"libellé disponible par l'API ""Nomenclature"""
 APEN700,,activitePrincipaleUniteLegale,
-LIBAPEN,,,libellé disponible par l'API Nomenclature
+LIBAPEN,,,"libellé disponible par l'API ""Nomenclature"""
 DAPEN,,,Ce champ n’est plus publié par l’INSEE
 APRM,activitePrincipaleRegistreMetiersEtablissement,,Cette variable est maintenant publiée au niveau de l’établissement
 ESS,,economieSocialeSolidaireUniteLegale,

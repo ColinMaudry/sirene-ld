@@ -5,48 +5,52 @@
 
 #TEF
 
-<https://sireneld.io/tef/01> a sirext:TEF ;
+<https://sireneld.io/tef/01> a sirext:TrancheEffectifs ;
 	dcterms:identifier "01" ;
 	rdfs:label "1 ou 2 salariés" .
-<https://sireneld.io/tef/02> a sirext:TEF ;
+<https://sireneld.io/tef/02> a sirext:TrancheEffectifs ;
 	dcterms:identifier "02" ;
 	rdfs:label "3 à 5 salariés" .
-<https://sireneld.io/tef/03> a sirext:TEF ;
+<https://sireneld.io/tef/03> a sirext:TrancheEffectifs ;
 	dcterms:identifier "03" ;
 	rdfs:label "6 à 9 salariés" .
-<https://sireneld.io/tef/11> a sirext:TEF ;
+<https://sireneld.io/tef/11> a sirext:TrancheEffectifs ;
 	dcterms:identifier "11" ;
 	rdfs:label "10 à 19 salariés" .
-<https://sireneld.io/tef/12> a sirext:TEF ;
+<https://sireneld.io/tef/12> a sirext:TrancheEffectifs ;
 	dcterms:identifier "12" ;
 	rdfs:label "20 à 49 salariés" .
-<https://sireneld.io/tef/21> a sirext:TEF ;
+<https://sireneld.io/tef/21> a sirext:TrancheEffectifs ;
 	dcterms:identifier "21" ;
 	rdfs:label "50 à 99 salariés" .
-<https://sireneld.io/tef/22> a sirext:TEF ;
+<https://sireneld.io/tef/22> a sirext:TrancheEffectifs ;
 	dcterms:identifier "22" ;
 	rdfs:label "100 à 199 salariés" .
-<https://sireneld.io/tef/31> a sirext:TEF ;
+<https://sireneld.io/tef/31> a sirext:TrancheEffectifs ;
 	dcterms:identifier "31" ;
 	rdfs:label "200 à 249 salariés" .
-<https://sireneld.io/tef/32> a sirext:TEF ;
+<https://sireneld.io/tef/32> a sirext:TrancheEffectifs ;
 	dcterms:identifier "32" ;
 	rdfs:label "250 à 499 salariés" .
-<https://sireneld.io/tef/41> a sirext:TEF ;
+<https://sireneld.io/tef/41> a sirext:TrancheEffectifs ;
 	dcterms:identifier "41" ;
 	rdfs:label "500 à 999 salariés" .
-<https://sireneld.io/tef/42> a sirext:TEF ;
+<https://sireneld.io/tef/42> a sirext:TrancheEffectifs ;
 	dcterms:identifier "42" ;
 	rdfs:label "1 000 à 1 999 salariés" .
-<https://sireneld.io/tef/51> a sirext:TEF ;
+<https://sireneld.io/tef/51> a sirext:TrancheEffectifs ;
 	dcterms:identifier "51" ;
 	rdfs:label "2 000 à 4 999 salariés" .
-<https://sireneld.io/tef/52> a sirext:TEF ;
+<https://sireneld.io/tef/52> a sirext:TrancheEffectifs ;
 	dcterms:identifier "52" ;
 	rdfs:label "5 000 à 9 999 salariés" .
-<https://sireneld.io/tef/53> a sirext:TEF ;
+<https://sireneld.io/tef/53> a sirext:TrancheEffectifs ;
 	dcterms:identifier "53" ;
 	rdfs:label "10 000 salariés et plus" .
+<https://sireneld.io/tef/NN> a sirext:TrancheEffectifs ;
+	dcterms:identifier "NN" ;
+	rdfs:label "Etablissement non employeur" .
+
 
 #TCD
 
@@ -148,250 +152,6 @@
 	rdfs:label "Communes de 1 500 000 habitants ou +" .
 
 
-#NATETAB
-
-<https://sireneld.io/natetab/1> a sirext:NATETAB ;
-	dcterms:identifier "1" ;
-	rdfs:label "Artisan-commerçant" .
-<https://sireneld.io/natetab/2> a sirext:NATETAB ;
-	dcterms:identifier "2" ;
-	rdfs:label "Commerçant" .
-<https://sireneld.io/natetab/3> a sirext:NATETAB ;
-	dcterms:identifier "3" ;
-	rdfs:label "Artisan" .
-<https://sireneld.io/natetab/5> a sirext:NATETAB ;
-	dcterms:identifier "5" ;
-	rdfs:label "Profession libérale" .
-<https://sireneld.io/natetab/6> a sirext:NATETAB ;
-	dcterms:identifier "6" ;
-	rdfs:label "Exploitant agricole" .
-<https://sireneld.io/natetab/9> a sirext:NATETAB ;
-	dcterms:identifier "9" ;
-	rdfs:label "Autre entrepreneur individuel" .
-
-#Origine
-
-<https://sireneld.io/natetab/1> a sirext:Origine ;
-	dcterms:identifier "1" ;
-	rdfs:label "Création (pour tout type de déclaration)" .
-<https://sireneld.io/natetab/2> a sirext:Origine ;
-	dcterms:identifier "2" ;
-	rdfs:label "Achat (pour les déclarations non agricoles)" .
-<https://sireneld.io/natetab/3> a sirext:Origine ;
-	dcterms:identifier "3" ;
-	rdfs:label "Transfert d'activité (valeur dépréciée)" .
-<https://sireneld.io/natetab/4> a sirext:Origine ;
-	dcterms:identifier "4" ;
-	rdfs:label "Apport (pour les déclarations non agricoles)" .
-<https://sireneld.io/natetab/5> a sirext:Origine ;
-	dcterms:identifier "5" ;
-	rdfs:label "Reprise (valeur dépréciée)" .
-<https://sireneld.io/natetab/6> a sirext:Origine ;
-	dcterms:identifier "6" ;
-	rdfs:label "Prise en location gérance (pour les déclarations non agricoles)" .
-<https://sireneld.io/natetab/7> a sirext:Origine ;
-	dcterms:identifier "7" ;
-	rdfs:label "Partage (pour les déclarations non agricoles)" .
-<https://sireneld.io/natetab/8> a sirext:Origine ;
-	dcterms:identifier "8" ;
-	rdfs:label "Reprise (pour les déclarations non agricoles)" .
-<https://sireneld.io/natetab/9> a sirext:Origine ;
-	dcterms:identifier "9" ;
-	rdfs:label "Autre (pour les déclarations non agricoles)" .
-<https://sireneld.io/natetab/A> a sirext:Origine ;
-	dcterms:identifier "A" ;
-	rdfs:label "Reprise globale d'une exploitation (pour les déclarations agricoles)" .
-<https://sireneld.io/natetab/B> a sirext:Origine ;
-	dcterms:identifier "B" ;
-	rdfs:label "Poursuite de l'exploitation par le conjoint (pour les déclarations agricoles)" .
-<https://sireneld.io/natetab/C> a sirext:Origine ;
-	dcterms:identifier "C" ;
-	rdfs:label "Transfert de propriété (pour les déclarations agricoles)" .
-<https://sireneld.io/natetab/D> a sirext:Origine ;
-	dcterms:identifier "D" ;
-	rdfs:label "Apport d'exploitation(s) individuelle(s) (pour les déclarations agricoles)" .
-<https://sireneld.io/natetab/E> a sirext:Origine ;
-	dcterms:identifier "E" ;
-	rdfs:label "Reprise totale ou partielle d'exploitation individuelle (déclarations agricoles)" .
-<https://sireneld.io/natetab/F> a sirext:Origine ;
-	dcterms:identifier "F" ;
-	rdfs:label "Gérance - mandat" .
-<https://sireneld.io/natetab/NR> a sirext:Origine ;
-	dcterms:identifier "NR" ;
-	rdfs:label "Non renseigné" .
-
-#ACTIVNAT
-
-<https://sireneld.io/activnat/03> a sirext:ACTIVNAT ;
-	dcterms:identifier "03" ;
-	rdfs:label "Extraction" .
-<https://sireneld.io/activnat/04> a sirext:ACTIVNAT ;
-	dcterms:identifier "04" ;
-	rdfs:label "Fabrication, production" .
-<https://sireneld.io/activnat/05> a sirext:ACTIVNAT ;
-	dcterms:identifier "05" ;
-	rdfs:label "Montage, installation" .
-<https://sireneld.io/activnat/06> a sirext:ACTIVNAT ;
-	dcterms:identifier "06" ;
-	rdfs:label "Réparation" .
-<https://sireneld.io/activnat/07> a sirext:ACTIVNAT ;
-	dcterms:identifier "07" ;
-	rdfs:label "Transport" .
-<https://sireneld.io/activnat/08> a sirext:ACTIVNAT ;
-	dcterms:identifier "08" ;
-	rdfs:label "Import, export" .
-<https://sireneld.io/activnat/09> a sirext:ACTIVNAT ;
-	dcterms:identifier "09" ;
-	rdfs:label "Commerce de gros ou intermédiaire du commerce" .
-<https://sireneld.io/activnat/10> a sirext:ACTIVNAT ;
-	dcterms:identifier "10" ;
-	rdfs:label "Commerce de détail" .
-<https://sireneld.io/activnat/11> a sirext:ACTIVNAT ;
-	dcterms:identifier "11" ;
-	rdfs:label "Profession libérale" .
-<https://sireneld.io/activnat/12> a sirext:ACTIVNAT ;
-	dcterms:identifier "12" ;
-	rdfs:label "Services" .
-<https://sireneld.io/activnat/13> a sirext:ACTIVNAT ;
-	dcterms:identifier "13" ;
-	rdfs:label "Location de meublés" .
-<https://sireneld.io/activnat/14> a sirext:ACTIVNAT ;
-	dcterms:identifier "14" ;
-	rdfs:label "Bâtiments, travaux publics" .
-<https://sireneld.io/activnat/15> a sirext:ACTIVNAT ;
-	dcterms:identifier "15" ;
-	rdfs:label "Services aux entreprises" .
-<https://sireneld.io/activnat/20> a sirext:ACTIVNAT ;
-	dcterms:identifier "20" ;
-	rdfs:label "Donneur d'ordre" .
-<https://sireneld.io/activnat/99> a sirext:ACTIVNAT ;
-	dcterms:identifier "99" ;
-	rdfs:label "Autre" .
-<https://sireneld.io/activnat/NR> a sirext:ACTIVNAT ;
-	dcterms:identifier "NR" ;
-	rdfs:label "Non renseigné" .
-
-#LIEUACT
-
-<https://sireneld.io/lieuact/01> a sirext:LIEUACT ;
-	dcterms:identifier "01" ;
-	rdfs:label "Exploitation agricole" .
-<https://sireneld.io/lieuact/02> a sirext:LIEUACT ;
-	dcterms:identifier "02" ;
-	rdfs:label "Mine, carrière" .
-<https://sireneld.io/lieuact/03> a sirext:LIEUACT ;
-	dcterms:identifier "03" ;
-	rdfs:label "Usine, atelier" .
-<https://sireneld.io/lieuact/04> a sirext:LIEUACT ;
-	dcterms:identifier "04" ;
-	rdfs:label "Dépôt, entrepôt" .
-<https://sireneld.io/lieuact/05> a sirext:LIEUACT ;
-	dcterms:identifier "05" ;
-	rdfs:label "Magasin" .
-<https://sireneld.io/lieuact/07> a sirext:LIEUACT ;
-	dcterms:identifier "07" ;
-	rdfs:label "Bureau, cabinet" .
-<https://sireneld.io/lieuact/08> a sirext:LIEUACT ;
-	dcterms:identifier "08" ;
-	rdfs:label "Usine" .
-<https://sireneld.io/lieuact/09> a sirext:LIEUACT ;
-	dcterms:identifier "09" ;
-	rdfs:label "Atelier" .
-<https://sireneld.io/lieuact/91> a sirext:LIEUACT ;
-	dcterms:identifier "91" ;
-	rdfs:label "Sur chantier" .
-<https://sireneld.io/lieuact/92> a sirext:LIEUACT ;
-	dcterms:identifier "92" ;
-	rdfs:label "Sur marché" .
-<https://sireneld.io/lieuact/93> a sirext:LIEUACT ;
-	dcterms:identifier "93" ;
-	rdfs:label "En clientèle" .
-<https://sireneld.io/lieuact/99> a sirext:LIEUACT ;
-	dcterms:identifier "99" ;
-	rdfs:label "Autre" ;
-    rdfs:comment "La valeur 99 est renseignée quand l'unité déclarante ne peut remplir la rubrique des autres modalités. Exemple : pour la variable ACTIVNAT, 99 est renseigné si l'unité n'a aucune activité d'extraction de fabrication, etc." .
-<https://sireneld.io/lieuact/NR> a sirext:LIEUACT ;
-	dcterms:identifier "NR" ;
-    rdfs:label "Non renseigné" .
-
-#ACTISURF
-
-<https://sireneld.io/actisurf/1> a sirext:ACTISURF ;
-	dcterms:identifier "1" ;
-	rdfs:label "Moins de 300 m²" .
-<https://sireneld.io/actisurf/2> a sirext:ACTISURF ;
-	dcterms:identifier "2" ;
-	rdfs:label "De 300 m² à moins de 400 m²" .
-<https://sireneld.io/actisurf/3> a sirext:ACTISURF ;
-	dcterms:identifier "3" ;
-	rdfs:label "De 400 m² à moins de 2 500 m²" .
-<https://sireneld.io/actisurf/4> a sirext:ACTISURF ;
-	dcterms:identifier "4" ;
-	rdfs:label "2 500 m² ou plus" .
-
-# SAISONAT
-
-<https://sireneld.io/saisonat/P> a sirext:SAISONAT ;
-	dcterms:identifier "P" ;
-	rdfs:label "Permanente" .
-<https://sireneld.io/saisonat/S> a sirext:SAISONAT ;
-	dcterms:identifier "S" ;
-	rdfs:label "Saisonnière" .
-<https://sireneld.io/saisonat/NR> a sirext:SAISONAT ;
-	dcterms:identifier "NR" ;
-	rdfs:label "Non renseigné" .
-
-#MONOACT
-
-<https://sireneld.io/monoact/1> a sirext:MONOACT ;
-	dcterms:identifier "1" ;
-	rdfs:label "Entreprise dont tous les établissements ont la même activité principale " .
-<https://sireneld.io/monoact/2> a sirext:MONOACT ;
-	dcterms:identifier "2" ;
-	rdfs:label "Entreprise à établissements multiples dont les activités principales se répartissent dans plusieurs divisions de la NAF, l'une de ces activités regroupant de 80 à 99% des effectifs" .
-<https://sireneld.io/monoact/3> a sirext:MONOACT ;
-	dcterms:identifier "3" ;
-	rdfs:label "Entreprise à établissements multiples dont les activités principales se répartissent dans plusieurs divisions de la NAF, l'une de ces activités regroupant de 50 à 80% des effectifs" .
-<https://sireneld.io/monoact/4> a sirext:MONOACT ;
-	dcterms:identifier "4" ;
-	rdfs:label "Entreprise à établissements multiples dont les activités principales se répartissent dans plusieurs divisions de la NAF, aucune ne regroupant plus de 50% des effectifs" .
-<https://sireneld.io/monoact/5> a sirext:MONOACT ;
-	dcterms:identifier "5" ;
-	rdfs:label "Entreprise à établissements multiples dont les activités principales se répartissent dans plusieurs divisions de la NAF, l'une de ces activités regroupant plus de 80% des établissements" .
-<https://sireneld.io/monoact/6> a sirext:MONOACT ;
-	dcterms:identifier "6" ;
-	rdfs:label "Entreprise à établissements multiples dont les activités principales se répartissent dans plusieurs divisions de la NAF, l'une de ces activités regroupant de 50 à 80% des établissements" .
-<https://sireneld.io/monoact/7> a sirext:MONOACT ;
-	dcterms:identifier "7" ;
-	rdfs:label "Entreprise à établissements multiples dont les activités principales se répartissent dans plusieurs divisions de la NAF, aucune ne regroupant plus de 50% des établissements" .
-
-#MOD
-
-<https://sireneld.io/mod/D> a sirext:MOD ;
-	dcterms:identifier "D" ;
-	rdfs:label "Donneur d'ordre" .
-<https://sireneld.io/mod/M> a sirext:MOD ;
-	dcterms:identifier "M" ;
-	rdfs:label "Montage, installation" .
-<https://sireneld.io/mod/R> a sirext:MOD ;
-	dcterms:identifier "R" ;
-	rdfs:label "Réparation" .
-<https://sireneld.io/mod/S> a sirext:MOD ;
-	dcterms:identifier "S" ;
-	rdfs:label "Activité simple" .
-
-#PRODPART
-
-<https://sireneld.io/prodpart/1> a sirext:PRODPART ;
-	dcterms:identifier "1" ;
-	rdfs:label "Locataire d'un fond de commerce" .
-<https://sireneld.io/prodpart/2> a sirext:PRODPART ;
-	dcterms:identifier "2" ;
-	rdfs:label "Loueur d'un fond de commerce" .
-<https://sireneld.io/prodpart/3> a sirext:PRODPART ;
-	dcterms:identifier "3" ;
-	rdfs:label "Prestataire de personnel" .
-
 #TCA
 
 <https://sireneld.io/tca/0> a sirext:TCA ;
@@ -424,3 +184,15 @@
 <https://sireneld.io/tca/9> a sirext:TCA ;
 	dcterms:identifier "9" ;
 	rdfs:label "200 millions d'euros ou plus" .
+
+# État administratif
+
+<https://sireneld.io/etatAdministratif/A> a sirext:EtatAdministratif ;
+	dcterms:identifier "A" ;
+	rdfs:label "Actif" .
+<https://sireneld.io/etatAdministratif/F> a sirext:EtatAdministratif ;
+	dcterms:identifier "F" ;
+	rdfs:label "Fermé" .
+<https://sireneld.io/etatAdministratif/C> a sirext:EtatAdministratif ;
+	dcterms:identifier "C" ;
+	rdfs:label "Activité cessée" .
