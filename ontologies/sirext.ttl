@@ -15,7 +15,7 @@ sirext: a owl:Ontology ;
     dcterms:title "Extension de SIRENE" ;
     dcterms:creator <http://colin.maudry.com/rdf/colin-maudry#me> ;
     dcterms:created "2018-04-29"^^xs:date ;
-    dcterms:modified "2018-04-29"^^xs:date ;
+    dcterms:modified "2018-11-11"^^xs:date ;
     dcterms:description "L'ontologie SIREXT étend l'ontologie de base SIRENE dérivée des termes créés par l'INSEE pour l'exploitation et la publication du fichier SIRENE."@fr ;
     cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     vann:preferredNamespaceUri sirext: ;
