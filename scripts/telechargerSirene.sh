@@ -4,8 +4,6 @@ date=`date +%Y-%m-%d`
 heure=`date +%H:%M:%S`
 
 tailleMax=$1
-declare -a types=("Etablissement" "UniteLegale")
-echo $types
 
 echo "Début du processus : $date $heure"
 
@@ -19,7 +17,7 @@ do
 
     if [[ -s $csv ]]; then
 
-	echo "> $csv déjà présent"
+	echo "> $csv déjà présent : pas de téléchargement"
         time ./scripts/convertirPublier.sh $csv $type $tailleMax
     else
 
