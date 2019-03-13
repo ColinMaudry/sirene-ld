@@ -140,37 +140,12 @@ function processCsv () {
     fi
 }
 
-if [[ $lightdata -eq "yes" ]]
-then
+function reduceData() {
 
-    activecsv=Stock${type}_utf8_active.csv
-    inactivecsv=Stock${type}_utf8_inactive.csv
+    col=$1
+    colPreserved=$2
+    keyvalue=$3
 
-    if [[ $type -eq "UniteLegale" ]]
-    then
-        #Numéro de la colonne contenant l'état administratif
-        col=`awk -v RS=, '/etatadministratifunitelegale/{print NR; exit}' $csv`
-
-        # Les colonnes que l'on souhaite conserver pour les inactifs
-        colPreserved="siren,etatadministratifunitelegale,nomunitelegale,denominationunitelegale"
-        echo $type $colPreserved
-
-        # La valeur de l'état administratif pour les éléments inactifs
-        keyvalue=C
-
-    fi
-    if [[ $type -eq "Etablissement" ]]
-    then
-        # Numéro de la colonne contenant l'état administratif
-        col=`awk -v RS=, '/etatadministratifetablissement/{print NR; exit}' $csv`
-
-        # Les colonnes que l'on souhaite conserver pour les inactifs
-        colPreserved="siren,etatadministratifetablissement,nic,siret"
-        echo $type $colPreserved
-
-        # La valeur de l'état administratif pour les éléments inactifs
-        keyvalue=F
-    fi
     echo $type $colPreserved $col $keyvalue
 
     echo "Extraction des colonnes d'intérêt pour les $type inactifs vers $inactivecsv.temp..."
@@ -189,6 +164,48 @@ then
     do
         processCsv $csv
     done
+
+}
+
+if [[ $lightdata -eq "yes" ]]
+then
+
+    activecsv=Stock${type}_utf8_active.csv
+    inactivecsv=Stock${type}_utf8_inactive.csv
+
+
+case $type in
+
+    UniteLegale)
+    #Numéro de la colonne contenant l'état administratif
+    col=`awk -v RS=, '/etatadministratifunitelegale/{print NR; exit}' $csv`
+
+    # Les colonnes que l'on souhaite conserver pour les inactifs
+    colPreserved="siren,etatadministratifunitelegale,nomunitelegale,denominationunitelegale"
+    echo $type $colPreserved
+
+    # La valeur de l'état administratif pour les éléments inactifs
+    keyvalue=C
+
+    reduceData $col $colPreserved $keyvalue
+    ;;
+
+    Etablissement)
+    # Numéro de la colonne contenant l'état administratif
+    col=`awk -v RS=, '/etatadministratifetablissement/{print NR; exit}' $csv`
+
+    # Les colonnes que l'on souhaite conserver pour les inactifs
+    colPreserved="siren,etatadministratifetablissement,nic,siret"
+    echo $type $colPreserved
+
+    # La valeur de l'état administratif pour les éléments inactifs
+    keyvalue=F
+
+    reduceData $col $colPreserved $keyvalue
+    ;;
+esac
+
+
 else
     processCsv $csv
 fi
