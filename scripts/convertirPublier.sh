@@ -14,7 +14,7 @@ fi
 nbTotalTriples=0
 
 
-function transformPublish() {
+function transformPublishRdf() {
     csvTemp=$1
     typeTemp=$2
     session=$3
@@ -64,74 +64,131 @@ function transformPublish() {
     rm $nt
 }
 
-echo "Comptage des lignes dans $csv..."
-echo ""
-nbLines=`cat $csv | wc -l`
+function processCsv () {
+    csv=$1
 
-# Number of actual records (lines, minus the header row)
-nbRecords=$(( nbLines - 1 ))
-halfTotal=$(( nbRecords / 2 ))
-header=`head -n 1 $csv`
+    echo "Comptage des lignes dans $csv..."
+    echo ""
+    nbLines=`cat $csv | wc -l`
 
-if [[ -n $maxChunkSize && $nbRecords -gt $maxChunkSize ]]; then
-    # The number of records is bigger than the max chunk size, we must split the file
+    # Number of actual records (lines, minus the header row)
+    nbRecords=$(( nbLines - 1 ))
+    halfTotal=$(( nbRecords / 2 ))
+    header=`head -n 1 $csv`
 
-    # Number of chunks with max size
-    nbChunksFloored=$(( nbRecords / maxChunkSize ))
+    if [[ -n $maxChunkSize && $nbRecords -gt $maxChunkSize ]]; then
+        # The number of records is bigger than the max chunk size, we must split the file
 
-    # Records remaining from the division
-    nbRecordsRemainder=$(( nbRecords % maxChunkSize ))
+        # Number of chunks with max size
+        nbChunksFloored=$(( nbRecords / maxChunkSize ))
 
-    # Number of chunks to be processed
-    nbChunksRemaining=$nbChunksFloored
+        # Records remaining from the division
+        nbRecordsRemainder=$(( nbRecords % maxChunkSize ))
 
-    echo "nbRecords: $nbRecords nbChunksFloored: $nbChunksFloored nbRecordsRemainder: $nbRecordsRemainder"
+        # Number of chunks to be processed
+        nbChunksRemaining=$nbChunksFloored
 
-    if [[ $nbRecordsRemainder -gt 0 ]]; then
-        echo $header > $csv.temp
+        echo "nbRecords: $nbRecords nbChunksFloored: $nbChunksFloored nbRecordsRemainder: $nbRecordsRemainder"
 
-        echo "Création du fichier d'enregistrements restants (remainder)..."
-        echo ""
-        head -n $(($nbRecordsRemainder + 1)) $csv | tail -n $nbRecordsRemainder >> $csv.temp
+        if [[ $nbRecordsRemainder -gt 0 ]]; then
+            echo $header > $csv.temp
 
-        transformPublish "$csv.temp" $type "remainder_$nbRecordsRemainder"
-    fi
+            echo "Création du fichier d'enregistrements restants (remainder)..."
+            echo ""
+            head -n $(($nbRecordsRemainder + 1)) $csv | tail -n $nbRecordsRemainder >> $csv.temp
 
-    for (( c=1; c<=$nbChunksFloored; c++ ))
-    do
-        heure=`date +%H:%M:%S`
-
-        echo ""
-        echo "*************************************************"
-        echo "$heure"
-        echo "chunk: $c"
-        echo ""
-
-        processedRecords=$((((c - 1) * maxChunkSize) + nbRecordsRemainder))
-        remainingRecords=$((nbChunksRemaining * maxChunkSize))
-
-        echo "lignes traitées:......$processedRecords"
-        echo "lignes restantes:.....$remainingRecords"
-        echo ""
-
-        echo "Création du fichier CSV temporaire..."
-
-        echo $header > $csv.temp
-
-        # If less than half of the records remain to be processed, tail is faster than head
-        if [[ $remainingRecords -lt $halfTotal ]]; then
-            tail -n $remainingRecords $csv | head -n $maxChunkSize >> $csv.temp
-        else
-            head -n $(($processedRecords + 1)) $csv | tail -n $maxChunkSize >> $csv.temp
+            transformPublishRdf "$csv.temp" $type "remainder_$nbRecordsRemainder"
         fi
 
-        transformPublish "$csv.temp" $type $c
+        for (( c=1; c<=$nbChunksFloored; c++ ))
+        do
+            heure=`date +%H:%M:%S`
 
-        nbChunksRemaining=$((nbChunksRemaining - 1))
+            echo ""
+            echo "*************************************************"
+            echo "$heure"
+            echo "chunk: $c"
+            echo ""
 
+            processedRecords=$((((c - 1) * maxChunkSize) + nbRecordsRemainder))
+            remainingRecords=$((nbChunksRemaining * maxChunkSize))
+
+            echo "lignes traitées:......$processedRecords"
+            echo "lignes restantes:.....$remainingRecords"
+            echo ""
+
+            echo "Création du fichier CSV temporaire..."
+
+            echo $header > $csv.temp
+
+            # If less than half of the records remain to be processed, tail is faster than head
+            if [[ $remainingRecords -lt $halfTotal ]]; then
+                tail -n $remainingRecords $csv | head -n $maxChunkSize >> $csv.temp
+            else
+                head -n $(($processedRecords + 1)) $csv | tail -n $maxChunkSize >> $csv.temp
+            fi
+
+            transformPublishRdf "$csv.temp" $type $c
+
+            nbChunksRemaining=$((nbChunksRemaining - 1))
+
+        done
+    else
+
+        # The number of records is smaller than the max chunk size, no chunking
+        transformPublishRdf $csv $type
+    fi
+}
+
+if [[ $lightdata -eq "yes" ]]
+then
+
+    activecsv=Stock${type}_utf8_active.csv
+    inactivecsv=Stock${type}_utf8_inactive.csv
+
+    if [[ $type -eq "UniteLegale" ]]
+    then
+        #Numéro de la colonne contenant l'état administratif
+        col=`awk -v RS=, '/etatadministratifunitelegale/{print NR; exit}' $csv`
+
+        # Les colonnes que l'on souhaite conserver pour les inactifs
+        colPreserved="siren,etatadministratifunitelegale,nomunitelegale,denominationunitelegale"
+        echo $type $colPreserved
+
+        # La valeur de l'état administratif pour les éléments inactifs
+        keyvalue=C
+
+    fi
+    if [[ $type -eq "Etablissement" ]]
+    then
+        # Numéro de la colonne contenant l'état administratif
+        col=`awk -v RS=, '/etatadministratifetablissement/{print NR; exit}' $csv`
+
+        # Les colonnes que l'on souhaite conserver pour les inactifs
+        colPreserved="siren,etatadministratifetablissement,nic,siret"
+        echo $type $colPreserved
+
+        # La valeur de l'état administratif pour les éléments inactifs
+        keyvalue=F
+    fi
+    echo $type $colPreserved $col $keyvalue
+
+    echo "Extraction des colonnes d'intérêt pour les $type inactifs vers $inactivecsv.temp..."
+    time csvcut -d "," -c $colPreserved $csv > $inactivecsv.temp
+
+    echo "Extraction des $type inactifs vers $inactivecsv..."
+    head -n 1 $inactivecsv.temp > $inactivecsv
+    time awk -F, -v val=$keyvalue '$2 ~ val {print}' $inactivecsv.temp >> $inactivecsv
+    rm $inactivecsv.temp
+
+    echo "Extraction des $type actifs vers $activecsv..."
+    head -n 1 $csv > $activecsv
+    awk -F, -v col=$col '$col ~ /A/ {print}' $csv >> $activecsv
+
+    for csv in $activecsv $inactivecsv
+    do
+        processCsv $csv
     done
 else
-
-    # The number of records is smaller than the max chunk size, no chunking
-    transformPublish $csv $type
+    processCsv $csv
 fi
