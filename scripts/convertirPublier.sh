@@ -33,6 +33,20 @@ function transformPublishRdf() {
     # The number of triples in the chunk
     triples=`cat $nt | wc -l`
 
+    case $target in
+        triplestore)
+            publishToTriplestore $nt
+        ;;
+        hdt)
+            convertToHdt $nt
+        ;;
+    esac
+
+    rm $nt
+}
+
+function publishToTriplestore () {
+    nt=$1
     #If it's Dydra, gzip the .nt, the .nt is deleted to save space
     if [[ $repository = *"dydra"* ]]; then
         gzip -f -9 $nt
@@ -138,6 +152,12 @@ function processCsv () {
         # The number of records is smaller than the max chunk size, no chunking
         transformPublishRdf $csv $type
     fi
+}
+
+function convertToHdt () {
+    nt=$1
+
+    rdf2hdt -i -f ntriples -p $nt $nt.hdt
 }
 
 function reduceData() {
