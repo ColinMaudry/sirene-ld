@@ -5,7 +5,11 @@ type=$2
 
 source ./scripts/televersementConfig.sh
 
-if [[ -n $3 ]]; then
+if [[ "$target" -eq "hdt" ]]
+then
+    maxChunkSize=
+elif [[ -n $3 ]]
+then
     maxChunkSize=$3
 else
     maxChunkSize=25000
@@ -74,8 +78,6 @@ function publishToTriplestore () {
     echo "Téléversement vers $repositoryWithGraph..."
 
     curl -v --url "$repositoryWithGraph" --data-binary @./$nt -H "Content-type: application/n-triples" -u $user:$apikey
-
-    rm $nt
 }
 
 function processCsv () {
@@ -187,7 +189,7 @@ function reduceData() {
 
 }
 
-if [[ $lightdata -eq "yes" ]]
+if [[ "$lightdata" -eq "yes" && ! "$target" -eq "hdt" ]]
 then
 
     activecsv=Stock${type}_utf8_active.csv
