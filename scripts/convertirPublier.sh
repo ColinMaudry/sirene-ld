@@ -23,16 +23,29 @@ function transformPublishRdf() {
     typeTemp=$2
     session=$3
 
+
+    case $target in
+        hdt)
+        rdfFormat=--turtle
+        ext=ttl
+        ;;
+        *)
+        rdfFormat=--n-triples
+        ext=nt
+        ;;
+    esac
+
     if [[ -n $session ]]; then
-        nt=${csvTemp}_${session}.nt
+        nt=${csvTemp}_${session}.$ext
     else
-        nt=$csvTemp.nt
+        nt=$csvTemp.$ext
     fi
+
 
     echo ""
     echo "> Conversion du CSV $typeTemp en RDF vers $nt..."
 
-    tarql -e UTF-8 --ntriples sparql/${typeTemp}2rdf.rq $csvTemp > $nt
+    tarql -e UTF-8 ${rdfFormat} sparql/${typeTemp}2rdf.rq $csvTemp > $nt
 
     # The number of triples in the chunk
     triples=`cat $nt | wc -l`
