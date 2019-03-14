@@ -17,53 +17,53 @@ fi
 
 nbTotalTriples=0
 
-
 function transformPublishRdf() {
     csvTemp=$1
     typeTemp=$2
     session=$3
 
-
     case $target in
+
         hdt)
-        rdfFormat=--turtle
-        ext=ttl
+        nt=$csvTemp.ttl
         ;;
+
         *)
-        rdfFormat=--n-triples
         ext=nt
+        rdfFormat="--ntriples"
+
+        if [[ -n $session ]]; then
+            nt=${csvTemp}_${session}.$ext
+        else
+            nt=$csvTemp.$ext
+        fi
         ;;
     esac
-
-    if [[ -n $session ]]; then
-        nt=${csvTemp}_${session}.$ext
-    else
-        nt=$csvTemp.$ext
-    fi
-
 
     echo ""
     echo "> Conversion du CSV $typeTemp en RDF vers $nt..."
 
-    tarql -e UTF-8 ${rdfFormat} sparql/${typeTemp}2rdf.rq $csvTemp > $nt
-
-    # The number of triples in the chunk
-    triples=`cat $nt | wc -l`
+    # Conversion streamée vers RDF
+    tarql -e UTF-8 $rdfFormat sparql/${typeTemp}2rdf.rq $csvTemp > $nt
 
     case $target in
         triplestore)
             publishToTriplestore $nt
+            rm $nt
         ;;
+
         hdt)
             convertToHdt $nt
         ;;
     esac
 
-    rm $nt
 }
 
 function publishToTriplestore () {
     nt=$1
+
+    # The number of triples in the chunk
+    triples=`cat $nt | wc -l`
     #If it's Dydra, gzip the .nt, the .nt is deleted to save space
     if [[ $repository = *"dydra"* ]]; then
         gzip -f -9 $nt
@@ -99,6 +99,7 @@ function processCsv () {
     echo "Comptage des lignes dans $csv..."
     echo ""
     nbLines=`cat $csv | wc -l`
+    echo $nbLines
 
     # Number of actual records (lines, minus the header row)
     nbRecords=$(( nbLines - 1 ))
@@ -172,7 +173,8 @@ function processCsv () {
 function convertToHdt () {
     nt=$1
 
-    rdf2hdt -i -f ntriples -p $nt $nt.hdt
+    rm $nt.hdt.index.v1-1
+    rdf2hdt -i -f turtle -p $nt $nt.hdt
 }
 
 function reduceData() {
@@ -208,7 +210,6 @@ then
     activecsv=Stock${type}_utf8_active.csv
     inactivecsv=Stock${type}_utf8_inactive.csv
 
-
 case $type in
 
     UniteLegale)
@@ -239,7 +240,6 @@ case $type in
     reduceData $col $colPreserved $keyvalue
     ;;
 esac
-
 
 else
     processCsv $csv
