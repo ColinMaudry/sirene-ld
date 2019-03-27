@@ -25,7 +25,8 @@ function transformPublishRdf() {
     case $target in
 
         hdt)
-        nt=$csvTemp.ttl
+        ext=trig
+        nt=$csvTemp.$ext
         ;;
 
         *)
