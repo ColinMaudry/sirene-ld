@@ -41,22 +41,39 @@ function transformPublishRdf() {
         ;;
     esac
 
-    echo ""
-    echo "> Conversion du CSV $typeTemp en RDF vers $nt..."
+    if [[ ! -f $nt ]]
+    then
+        echo ""
+        echo "> Conversion du CSV $typeTemp en RDF vers $nt..."
 
-    # Conversion streamée vers RDF
-    tarql -e UTF-8 $rdfFormat sparql/${typeTemp}2rdf.rq $csvTemp > $nt
+        # Conversion streamée vers RDF
+        tarql -e UTF-8 $rdfFormat sparql/${typeTemp}2rdf.rq $csvTemp > $nt
 
-    case $target in
-        triplestore)
-            publishToTriplestore $nt
-            rm $nt
-        ;;
+        if [[ $ext -eq "trig" ]]
+        then
 
-        hdt)
-            convertToHdt $nt
-        ;;
-    esac
+        # Ajout du nom de graphe
+        graphname=${graphBaseUri}$typeTemp
+
+        sed -i -r "0,/(^<http)/{s/(^<http)/<${graphname}> {\n\1/}" $nt
+        echo "}" >> $nt
+        fi
+
+    fi
+
+    if [[ ! -f $nt.hdt ]]
+    then
+        case $target in
+            triplestore)
+                publishToTriplestore $nt
+                rm $nt
+            ;;
+
+            hdt)
+                convertToHdt $nt
+            ;;
+        esac
+    fi
 
 }
 

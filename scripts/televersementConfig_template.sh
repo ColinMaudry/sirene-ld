@@ -20,3 +20,4 @@ lightdata=no
 #- désactive le chunking (la division du CSV source en morceaux de n lignes)
 
 target=triplestore
+graphBaseUri=urn:graph:sirene:
