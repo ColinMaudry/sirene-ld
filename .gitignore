@@ -3,3 +3,6 @@ televersementConfig.sh
 *.nt
 !sirene2018vs2019.csv
 *.gz
+*.hdt*
+*.trig
+*.ttl
