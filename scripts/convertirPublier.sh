@@ -26,7 +26,8 @@ function transformPublishRdf() {
 
         hdt)
         ext=trig
-        nt=$csvTemp.$ext
+        rdf=$csvTemp.$ext
+        rdfFormat=
         ;;
 
         *)
@@ -34,43 +35,59 @@ function transformPublishRdf() {
         rdfFormat="--ntriples"
 
         if [[ -n $session ]]; then
-            nt=${csvTemp}_${session}.$ext
+            rdf=${csvTemp}_${session}.$ext
         else
-            nt=$csvTemp.$ext
+            rdf=$csvTemp.$ext
         fi
         ;;
     esac
 
-    if [[ ! -f $nt ]]
+    if [[ ! -f $rdf ]]
     then
-        echo ""
-        echo "> Conversion du CSV $typeTemp en RDF vers $nt..."
 
-        # Conversion streamée vers RDF
-        tarql -e UTF-8 $rdfFormat sparql/${typeTemp}2rdf.rq $csvTemp > $nt
+        tarqlCmd="tarql -e UTF-8 $rdfFormat sparql/${typeTemp}2rdf.rq $csvTemp"
 
-        if [[ $ext -eq "trig" ]]
-        then
+        case $ext in
 
-        # Ajout du nom de graphe
-        graphname=${graphBaseUri}$typeTemp
+            trig)
+                graphname="<${graphBaseUri}$typeTemp>"
 
-        sed -i -r "0,/(^<http)/{s/(^<http)/<${graphname}> {\n\1/}" $nt
-        echo "}" >> $nt
-        fi
+                # Récupération des déclarations de préfixes et création d'un header
+                grep "PREFIX" sparql/${typeTemp}2rdf.rq | sed "s/PREFIX/@prefix/" | sed -r "s/(.*)/\1 ./" > $rdf
 
+                # Ajout du nom de graphe
+                echo -e "\n$graphname {" >> $rdf
+
+                # Conversion streamée vers RDF en omettant les déclarations de préfixes
+                echo ""
+                echo "> Conversion du CSV $typeTemp en RDF vers $rdf (graphe : $graphname)..."
+                time $tarqlCmd | grep -v '^@' >> $rdf
+
+                # Clôture du graphe
+                echo "}" >> $rdf
+
+            ;;
+            *)
+                # Conversion streamée vers RDF
+                echo ""
+                echo "> Conversion du CSV $typeTemp en RDF vers $rdf..."
+                time $tarqlCmd > $rdf
+            ;;
+        esac
+    else
+        echo "Fichier RDF déjà présent, pas de transformation."
     fi
 
-    if [[ ! -f $nt.hdt ]]
+    if [[ ! -f $rdf.hdt ]]
     then
         case $target in
             triplestore)
-                publishToTriplestore $nt
-                rm $nt
+                publishToTriplestore $rdf
+                rm $rdf
             ;;
 
             hdt)
-                convertToHdt $nt
+                convertToHdt $rdf
             ;;
         esac
     fi
@@ -78,17 +95,17 @@ function transformPublishRdf() {
 }
 
 function publishToTriplestore () {
-    nt=$1
+    rdf=$1
 
     # The number of triples in the chunk
-    triples=`cat $nt | wc -l`
+    triples=`cat $rdf | wc -l`
     #If it's Dydra, gzip the .nt, the .nt is deleted to save space
     if [[ $repository = *"dydra"* ]]; then
-        gzip -f -9 $nt
+        gzip -f -9 $rdf
 
-        curlOptions= --data-binary @"./$nt.gz" -H "Content-type: application/n-triples" -H "Content-encoding: gzip" -H "Accept-asynchronous: notify" -u $apikey:
+        curlOptions= --data-binary @"./$rdf.gz" -H "Content-type: application/n-triples" -H "Content-encoding: gzip" -H "Accept-asynchronous: notify" -u $apikey:
     else
-        curlOptions=' --data-binary @./$nt -H "Content-type: application/n-triples" -u $user:$apikey'
+        curlOptions=' --data-binary @./$rdf -H "Content-type: application/n-triples" -u $user:$apikey'
 
     fi
 
@@ -108,7 +125,7 @@ function publishToTriplestore () {
     echo ""
     echo "Téléversement vers $repositoryWithGraph..."
 
-    curl -v --url "$repositoryWithGraph" --data-binary @./$nt -H "Content-type: application/n-triples" -u $user:$apikey
+    curl -v --url "$repositoryWithGraph" --data-binary @./$rdf -H "Content-type: application/n-triples" -u $user:$apikey
 }
 
 function processCsv () {
@@ -189,10 +206,10 @@ function processCsv () {
 }
 
 function convertToHdt () {
-    nt=$1
+    rdf=$1
 
-    rm $nt.hdt.index.v1-1
-    rdf2hdt -i -f turtle -p $nt $nt.hdt
+    rm $rdf.hdt.index.v1-1
+    rdf2hdt -i -f turtle -p $rdf $rdf.hdt
 }
 
 function reduceData() {
