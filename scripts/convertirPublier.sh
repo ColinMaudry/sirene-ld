@@ -25,7 +25,11 @@ function transformPublishRdf() {
     case $target in
 
         hdt)
-        ext=trig
+        if [[ ! -z $graphBaseUri ]]; then
+            ext=trig
+        else
+            ext=ttl
+        fi
         rdf=$csvTemp.$ext
         rdfFormat=
         ;;
