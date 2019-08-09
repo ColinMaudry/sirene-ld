@@ -68,17 +68,17 @@ construct {
 where {
     bind(uri(concat("https://sireneld.io/siret/",?siret)) as ?etablissement)
     bind(uri(concat("https://sireneld.io/siren/",?siren)) as ?uniteLegale)
-    # bind(uri(concat("https://sireneld.io/tef/",?trancheEffectifsEtablissement)) as ?trancheEffectifsEtablissement_uri)
+    bind(uri(concat("https://sireneld.io/tef/",?trancheEffectifsEtablissement)) as ?trancheEffectifsEtablissement_uri)
     bind(if(?etablissementSiege = "true",<https://sireneld.io/vocab/sirext#Siege>,?null) as ?siegeClass)
     bind(if(?nomenclatureActivitePrincipaleEtablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activiteprincipaleetablissement)),?null) as ?activitePrincipaleEtablissement_uri)
     bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatAdministratifEtablissement)) as ?etatAdministratifEtablissement_uri)
 
 
-    # bind(xs:date(?dateCreationEtablissement) as ?dateCreationEtablissement_date)
-    # bind(xs:gYear(?anneeEffectifsEtablissement) as ?anneeEffectifsEtablissement_year)
-    # bind(xs:date(?dateDernierTraitementEtablissement) as ?dateDernierTraitementEtablissement_date)
-    # bind(xs:int(?nombrePeriodesEtablissement) as ?nombrePeriodesEtablissement_integer)
-    # bind(xs:date(?datedebut) as ?dateDebut_date)
-    # # bind(xs:double(?latitude) as ?latitude_double)
-    # # bind(xs:double(?longitude) as ?longitude_double)
+    bind(xs:date(?dateCreationEtablissement) as ?dateCreationEtablissement_date)
+    bind(xs:gYear(?anneeEffectifsEtablissement) as ?anneeEffectifsEtablissement_year)
+    bind(xs:date(?dateDernierTraitementEtablissement) as ?dateDernierTraitementEtablissement_date)
+    bind(xs:int(?nombrePeriodesEtablissement) as ?nombrePeriodesEtablissement_integer)
+    bind(xs:date(?datedebut) as ?dateDebut_date)
+    # bind(xs:double(?latitude) as ?latitude_double)
+    # bind(xs:double(?longitude) as ?longitude_double)
 }
