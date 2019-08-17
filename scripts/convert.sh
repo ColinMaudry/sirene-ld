@@ -44,13 +44,13 @@ fi
 echo "Converting $lightfull $type data..."
 for csv in `ls`
 do
-    tarql -e UTF-8 --ntriples $basePath/sparql/${lightfull}${type}2rdf.rq $csv >> $basePath/rdf/${lightfull}${type}.nt
+    tarql -e UTF-8 --ntriples $basePath/sparql/${lightfull}${type}2rdf.rq $csv | gzip -9 > $basePath/rdf/${lightfull}${type}.nt.gz
 done
 
 
 date=`date +%Y-%m-%d`
 time=`date +%H:%M:%S`
 
-echo "Conversion $type ended: $date $time"
+echo "Conversion $lightfull $type ended: $date $time"
 echo "***** Convert **********"
 echo ""
