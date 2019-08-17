@@ -81,6 +81,10 @@ cd ../..
 # Unite Legale
 # -----------------------------------------
 
+if [[ ! -d csv/Etablissement/full ]]; then
+    mkdir -p csv/Etablissement/full
+fi
+
 cd csv/UniteLegale
 
 echo "Downloading UniteLegale data from https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip..."
@@ -103,6 +107,13 @@ then
     unzip StockUniteLegale_utf8.zip
 else
     echo "File StockUniteLegale_utf8.csv already exists!"
+fi
+
+basePath=`pwd`
+
+if [[ ! -h full/StockUniteLegale_utf8.csv ]]
+then
+    ln -s $basePath/StockUniteLegale_utf8.csv full/
 fi
 
 echo "done"
