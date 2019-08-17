@@ -81,8 +81,8 @@ cd ../..
 # Unite Legale
 # -----------------------------------------
 
-if [[ ! -d csv/Etablissement/full ]]; then
-    mkdir -p csv/Etablissement/full
+if [[ ! -d csv/UniteLegale/full ]]; then
+    mkdir -p csv/UniteLegale/full
 fi
 
 cd csv/UniteLegale
