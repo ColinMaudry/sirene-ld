@@ -2,20 +2,20 @@ config ?= config.sh
 include $(config)
 
 
-# publish: stats
-# 	./convert-$(FORMAT).sh
-#
-# stats: convert
-# 	echo "Give stats"
-#
-# convert: convertLight convertFull
-# 	echo "shortdata $(FORMAT)" && echo "fulldata $(FORMAT)"
-#
-# convertLight: download
-# 	echo "Make sireneCompact.ttl"
-#
-# convertFull: download
-# 	echo "Make sireneFull.ttl"
+publish: convert
+	databasePath=$(DATABASEPATH) ./scripts/publish.sh
+
+convert: convertEtablissementLight convertEtablissement convertUniteLegale
+	echo "Conversion done."
+
+convertEtablissement: download
+	./scripts/convert.sh Etablissement full
+
+convertEtablissementLight: download
+	./scripts/convert.sh Etablissement light
+
+convertUniteLegale: download
+	./scripts/convert.sh UniteLegale full
 
 download:
 	departements=$(DEPARTEMENTS) ./scripts/download.sh
