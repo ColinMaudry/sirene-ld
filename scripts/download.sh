@@ -2,15 +2,14 @@
 
 # fail on error
 set -e
-
-echo "Format : $format"
-
 source config.sh
-IFS=',' read -ra ADDR <<< "$departements"
-for dep in "${ADDR[@]}"
-do
-    echo $dep
 
+containsElement () {
+  local e match="$1"
+  shift
+  for e; do [[ "$e" == "$match" ]] && return 0; done
+  return 1
+}
 
 date=`date +%Y-%m-%d`
 time=`date +%H:%M:%S`
@@ -18,42 +17,96 @@ time=`date +%H:%M:%S`
 echo "***** Download **********"
 echo "Download and extraction started: $date $time"
 
+
+# -----------------------------------------
+# Etablissement
+# -----------------------------------------
+
+if [[ ! -d csv/Etablissement/full ]]; then
+    mkdir -p csv/Etablissement/full
+fi
+if [[ ! -d csv/Etablissement/light ]]; then
+    mkdir -p csv/Etablissement/light
+fi
+
+cd csv/Etablissement
+
+echo "Downloading Etablissement data from http://data.cquest.org/geo_sirene/v2019/last/dep/..."
+
+wget -r -q -np -nc -nd -A "gz" http://data.cquest.org/geo_sirene/v2019/last/dep/
+
+echo "done"
 echo ""
-echo "Downloading departements..."
 
-baseUrl="http://data.cquest.org/geo_sirene/v2019/last/dep/"
+echo "Extracting... "
 
+set +e
+# gzip seems to exit with error 2 when it doesn't overwrite some file
+gzip -dkv *.gz
+set -e
 
+echo "done"
+echo ""
 
-# Dep exemple : http://data.cquest.org/geo_sirene/v2019/last/dep/geo_siret_35.csv.gz
+echo "Creating symbolic links of csvs to csv/Etablissement/full and csv/Etablissement/light directories..."
 
+basePath=`pwd`
 
-filename=geo_siret_${dep}.csv
-zip=$filename.gz
-csv=$filename
-unzip="gzip -d"
+for csv in `ls *.csv`
+do
+    # Check that the symbolic link doesn't exist yet
+    if [[ ! -h light/$csv ]]
+    then
+        ln -s $basePath/$csv light/
+    fi
+done
 
-if [[ -s csv/$csv ]]; then
+IFS=',' read -ra arrayDep <<< "$departements"
+for dep in "${arrayDep[@]}"
+do
+    # Check that the symbolic link doesn't exist yet
+    if [[ ! -h full/geo_siret_$dep.csv ]]
+    then
+        ln -s $basePath/geo_siret_$dep.csv full/
+        rm light/geo_siret_$dep.csv
+    fi
+done
 
-echo "> csv/$csv déjà présent : pas de téléchargement"
+echo "done"
+echo ""
+
+cd ../..
+
+# -----------------------------------------
+# Unite Legale
+# -----------------------------------------
+
+cd csv/UniteLegale
+
+echo "Downloading UniteLegale data from https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip..."
+
+if [[ ! -f StockUniteLegale_utf8.zip ]]
+then
+    wget -q https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip
 
 else
-
-    if [[ ! -d csv ]]; then
-        mkdir csv
-    fi
-
-    echo "> Téléchargement de $zip..."
-
-    wget $baseUrl$zip -O csv/$zip
-
-    echo ""
-    echo "> Extraction de $zip..."
-
-    $unzip csv/$zip
-
+    echo "Already downloaded, not downloading again."
 fi
-done
+
+echo "done"
+echo ""
+
+echo "Extracting... "
+
+if [[ ! -f StockUniteLegale_utf8.csv ]]
+then
+    unzip StockUniteLegale_utf8.zip
+else
+    echo "File StockUniteLegale_utf8.csv already exists!"
+fi
+
+echo "done"
+echo ""
 
 date=`date +%Y-%m-%d`
 time=`date +%H:%M:%S`
