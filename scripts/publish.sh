@@ -7,4 +7,4 @@ source config.sh
 
 rdfs=`ls rdf/*`
 
-time tdb2.tdbloader -v --loc $databasePath --loader "sequential" $rdfs
+time tdb2.tdbloader -v --loc $databasePath --loader "phased" $rdfs
