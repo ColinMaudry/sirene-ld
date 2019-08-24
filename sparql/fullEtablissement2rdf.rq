@@ -62,7 +62,8 @@ construct {
         # sx:geo_type ?geo_type ;
         # sx:adresseNormalisee1 ?geo_l4 ;
         # sx:adresseNormalisee2 ?geo_l5 ;
-        sx:activitePrincipale ?activitePrincipaleEtablissement_uri .
+        sx:activitePrincipale ?activitePrincipaleEtablissement_uri ;
+        sx:communeEtablisement ?communeEtablisement_uri .
 
 }
 where {
@@ -72,6 +73,7 @@ where {
     bind(if(?etablissementSiege = "true",<https://sireneld.io/vocab/sirext#Siege>,?null) as ?siegeClass)
     bind(if(?nomenclatureActivitePrincipaleEtablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activiteprincipaleetablissement)),?null) as ?activitePrincipaleEtablissement_uri)
     bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatAdministratifEtablissement)) as ?etatAdministratifEtablissement_uri)
+    bind(uri(concat("http://id.insee.fr/geo/commune/",?codeCommuneEtablissement)) as ?communeEtablisement_uri)
 
 
     bind(xs:date(?dateCreationEtablissement) as ?dateCreationEtablissement_date)
