@@ -61,16 +61,23 @@ do
     fi
 done
 
-IFS=',' read -ra arrayDep <<< "$departements"
-for dep in "${arrayDep[@]}"
-do
-    # Check that the symbolic link doesn't exist yet
-    if [[ ! -h full/geo_siret_$dep.csv ]]
-    then
-        ln -s $basePath/geo_siret_$dep.csv full/
-        rm light/geo_siret_$dep.csv
-    fi
-done
+if [[ $departements -eq "all" ]]
+then
+    echo mv light/ full/
+else
+
+    IFS=',' read -ra arrayDep <<< "$departements"
+    for dep in "${arrayDep[@]}"
+    do
+        # Check that the symbolic link doesn't exist yet
+        if [[ ! -h full/geo_siret_$dep.csv ]]
+        then
+            ln -s $basePath/geo_siret_$dep.csv full/
+            rm light/geo_siret_$dep.csv
+        fi
+    done
+
+fi
 
 echo "done"
 echo ""
