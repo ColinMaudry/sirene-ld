@@ -1,7 +1,7 @@
 televersementConfig.sh
 config.sh
 *.csv
-*.nt
+./*.nt
 !sirene2018vs2019.csv
 *.gz
 *.hdt*
