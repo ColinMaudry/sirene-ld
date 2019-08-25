@@ -11,10 +11,10 @@ CONSTRUCT {
     a ?categoriejuridiqueUniteLegale_class ;
 
     sn:siren ?siren ;
-    sn:statutDiffusionUniteLegale ?statutdiffusionUniteLegale ;
+    sn:statutDiffusionUniteLegale ?statutDiffusionUniteLegale ;
     sn:unitePurgeeUniteLegale ?unitePurgeeUniteLegale ;
     sn:dateCreationUniteLegale ?dateCreationUniteLegale_date ;
-    sn:siglenitelegale ?sigleUniteLegale ;
+    sn:sigleUniteLegale ?sigleUniteLegale ;
     sn:sexeUniteLegale ?sexeUniteLegale ;
     sn:prenom1UniteLegale ?prenom1UniteLegale ;
     sn:prenom2UniteLegale ?prenom2UniteLegale ;
@@ -32,7 +32,7 @@ CONSTRUCT {
     sn:dateDebut ?dateDebut_date ;
     sn:etatAdministratifUniteLegale ?etatAdministratifUniteLegale ;
     sn:nomUniteLegale ?nomUniteLegale ;
-    sn:nomUsageUniteLegale ?nomusageUniteLegale ;
+    sn:nomUsageUniteLegale ?nomUsageUniteLegale ;
     sn:denominationUniteLegale ?denominationUniteLegale ;
     sn:denominationUsuelle1UniteLegale ?denominationUsuelle1UniteLegale ;
     sn:denominationUsuelle2UniteLegale ?denominationUsuelle2UniteLegale ;
@@ -40,7 +40,7 @@ CONSTRUCT {
     sn:categorieJuridiqueUniteLegale ?categorieJuridiqueUniteLegale ;
     sn:activitePrincipaleUniteLegale ?activitePrincipaleUniteLegale ;
     sn:nomenclatureActivitePrincipaleUniteLegale ?nomenclatureActivitePrincipaleUniteLegale ;
-    sn:nicsiegeUniteLegale ?nicsiegeUniteLegale ;
+    sn:nicSiegeUniteLegale ?nicSiegeUniteLegale ;
     sn:economieSocialeSolidaireUniteLegale ?economieSocialeSolidaireUniteLegale ;
     sn:caractereEmployeurUniteLegale ?caractereEmployeurUniteLegale ;
 

@@ -11,10 +11,10 @@ CONSTRUCT {
     a ?categoriejuridiqueUniteLegale_class ;
 
     sn:siren ?siren ;
-    sn:statutDiffusionUniteLegale ?statutdiffusionUniteLegale ;
+    sn:statutDiffusionUniteLegale ?statutDiffusionUniteLegale ;
     sn:unitePurgeeUniteLegale ?unitePurgeeUniteLegale ;
     sn:dateCreationUniteLegale ?dateCreationUniteLegale_date ;
-    sn:siglenitelegale ?sigleUniteLegale ;
+    sn:sigleUnitelegale ?sigleUniteLegale ;
     sn:sexeUniteLegale ?sexeUniteLegale ;
     sn:prenom1UniteLegale ?prenom1UniteLegale ;
     sn:prenom2UniteLegale ?prenom2UniteLegale ;

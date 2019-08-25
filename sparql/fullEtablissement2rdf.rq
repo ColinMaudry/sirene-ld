@@ -12,7 +12,7 @@ construct {
         sx:uniteLegale ?uniteLegale ;
         sn:nic ?nic ;
         sn:siret ?siret ;
-        sn:statutDiffusionDtablissement ?statutDiffusionEtablissement ;
+        sn:statutDiffusionEtablissement ?statutDiffusionEtablissement ;
         sn:dateCreationEtablissement ?dateCreationEtablissement_date ;
         sn:trancheEffectifsEtablissement ?trancheEffectifsEtablissement ;
         sn:anneeEffectifsEtablissement ?anneeEffectifsEtablissement_year ;
@@ -41,7 +41,7 @@ construct {
         sn:libelleCommune2Etablissement ?libelleCommune2Etablissement ;
         sn:distributionSpeciale2Etablissement ?distributionSpeciale2Etablissement ;
         sn:codeCommune2Etablissement ?codeCommune2Etablissement ;
-        sn:codecedex2etablissement ?codecedex2etablissement ;
+        sn:codeCedex2Etablissement ?codeCedex2Etablissement ;
         sn:libelleCedex2Etablissement ?libelleCedex2Etablissement ;
         sn:codePaysEtranger2Etablissement ?codePaysEtranger2Etablissement ;
         sn:libellePaysEtranger2Etablissement ?libellePaysEtranger2Etablissement ;
