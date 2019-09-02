@@ -46,8 +46,8 @@ CONSTRUCT {
 
 
     # sx:trancheEffectifs ?trancheeffectifsUniteLegale_uri ;
-    sx:etatAdministratif ?etatadministratifUniteLegale_uri ;
-    sx:activitePrincipale ?activiteprincipaleUniteLegale_uri ;
+    sx:etatAdministratif ?etatAdministratifUniteLegale_uri ;
+    sx:activitePrincipale ?activitePrincipaleUniteLegale_uri ;
     sx:siege ?nicSiegeUniteLegale_uri .
 }
 
@@ -58,7 +58,7 @@ WHERE {
     # bind(uri(concat("https://sireneld.io/tef/",?trancheEffectifsUniteLegale)) as ?trancheEffectifsUniteLegale_uri)
     bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatAdministratifUniteLegale)) as ?etatAdministratifUniteLegale_uri)
     # bind(if(?nomenclatureActivitePrincipaleUniteLegale = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activitePrincipaleUniteLegale)),?null) as ?activitePrincipaleUniteLegale_uri)
-    bind(uri(concat("https://sireneld.io/siret/",?siren,?nicSiegeUniteLegale)) as ?nicsiegeUniteLegale_uri)
+    bind(uri(concat("https://sireneld.io/siret/",?siren,?nicSiegeUniteLegale)) as ?nicSiegeUniteLegale_uri)
 
     # bind(xs:date(?dateCreationUniteLegale) as ?dateCreationUniteLegale_date)
     # bind(xs:gYear(?anneeEffectifsUniteLegale) as ?anneeEffectifsUniteLegale_year)
