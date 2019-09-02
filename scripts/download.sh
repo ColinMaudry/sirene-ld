@@ -33,7 +33,7 @@ cd csv/Etablissement
 
 echo "Downloading Etablissement data from http://data.cquest.org/geo_sirene/v2019/last/dep/..."
 
-wget -r -q -np -nc -nd -A "gz" http://data.cquest.org/geo_sirene/v2019/last/dep/
+wget -N -c -r -q -np -nc -nd -A "gz" http://data.cquest.org/geo_sirene/v2019/last/dep/
 
 echo "done"
 echo ""
