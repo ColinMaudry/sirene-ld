@@ -70,7 +70,7 @@ where {
     bind(uri(concat("https://sireneld.io/siren/",?siren)) as ?uniteLegale)
     # bind(uri(concat("https://sireneld.io/tef/",?trancheEffectifsEtablissement)) as ?trancheEffectifsEtablissement_uri)
     bind(if(?etablissementSiege = "true",<https://sireneld.io/vocab/sirext#Siege>,?null) as ?siegeClass)
-    bind(if(?nomenclatureActivitePrincipaleEtablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activiteprincipaleetablissement)),?null) as ?activitePrincipaleEtablissement_uri)
+    bind(if(?nomenclatureActivitePrincipaleEtablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activitePrincipaleEtablissement)),?null) as ?activitePrincipaleEtablissement_uri)
     bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatAdministratifEtablissement)) as ?etatAdministratifEtablissement_uri)
 
 
