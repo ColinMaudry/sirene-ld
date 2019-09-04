@@ -168,7 +168,7 @@
 	rdfs:label "De 2 millions à moins de 5 millions d'euros" .
 <https://sireneld.io/tca/4> a sirext:TCA ;
 	dcterms:identifier "4" ;
-	rdfs:label "De 5 millions à moins de 10 millions d' euros" .
+	rdfs:label "De 5 millions à moins de 10 millions d'euros" .
 <https://sireneld.io/tca/5> a sirext:TCA ;
 	dcterms:identifier "5" ;
 	rdfs:label "De 10 millions à moins de 20 millions d'euros" .
