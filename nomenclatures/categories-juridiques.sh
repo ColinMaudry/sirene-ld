@@ -4,21 +4,22 @@ rdftype="<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
 rdfslabel="<http://www.w3.org/2000/01/rdf-schema#label>"
 subClassOf="<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
 
+echo "" > categories-juridiques.nt
 
-while IFS="£" read -r code label
+while IFS="£" read -r id label
 do
-    echo "<$prefix$code> $rdfslabel \"$label\"."
+    echo "<$prefix$id> $rdfslabel \"$label\"." >> categories-juridiques.nt
 
-    if [[ ${#code} -gt 1 ]]
+    if [[ ${#id} -gt 1 ]]
     then
-        echo "<$prefix$code> $subClassOf <$prefix${code:0:1}>."
+        echo "<$prefix$id> $subClassOf <$prefix${id:0:1}>." >> categories-juridiques.nt
     fi
-    if [[ ${#code} -gt 2 ]]
+    if [[ ${#id} -gt 2 ]]
     then
-        echo "<$prefix$code> $subClassOf <$prefix${code:0:2}>."
+        echo "<$prefix$id> $subClassOf <$prefix${id:0:2}>." >> categories-juridiques.nt
     fi
 
-done < "catégories-juridiques.tsv"
+done < "categories-juridiques.tsv"
 
 
 
