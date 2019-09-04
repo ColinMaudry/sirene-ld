@@ -3,13 +3,16 @@ include $(config)
 
 
 publish: convert publishData publishVocab
-	databasePath=$(DATABASEPATH) databaseSidecarPath=$(SIDECARBASEPATH) ./scripts/publish.sh
+	echo "Starting DB..." && $(STARTDB)
 
-publishData:
+publishData: stopdb
 	databasePath=$(DATABASEPATH) ./scripts/publish.sh data
 
-publishVocab:
+publishVocab: stopdb
 	databaseSidecarPath=$(SIDECARBASEPATH) ./scripts/publish.sh sidecar
+
+stopdb:
+	echo "Stopping DB and deleting data..." && $(STOPDB) && rm -rf $(DATABASEPATH) $(SIDECARBASEPATH)
 
 convert: convertEtablissementLight convertEtablissement convertUniteLegale
 	echo "Conversion done."
