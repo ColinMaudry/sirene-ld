@@ -36,16 +36,16 @@ fi
 
 cd csv/$type/$lightfull
 
-if [[ -f $basePath/rdf/${lightfull}${type}.nt ]]
+if [[ -f $basePath/rdf/${lightfull}${type}.nt.gz ]]
 then
-    rm $basePath/rdf/${lightfull}${type}.nt
+    rm $basePath/rdf/${lightfull}${type}.nt.gz
 fi
 
 echo "Converting $lightfull $type data..."
-for csv in `ls`
-do
-    tarql -e UTF-8 --ntriples $basePath/sparql/${lightfull}${type}2rdf.rq $csv | gzip -9 > $basePath/rdf/${lightfull}${type}.nt.gz
-done
+# for csv in `ls`
+# do
+    cat * | tarql -e UTF-8 --ntriples $basePath/sparql/${lightfull}${type}2rdf.rq | gzip -9 > $basePath/rdf/${lightfull}${type}.nt.gz
+# done
 
 
 date=`date +%Y-%m-%d`
