@@ -38,7 +38,10 @@ wget -N -c -r -q -np -nd -A "gz" http://data.cquest.org/geo_sirene/v2019/last/de
 echo "done"
 echo ""
 
-rm *.csv
+if [[ ! `ls *.csv` = "" ]]
+then
+    rm *.csv
+fi
 
 echo "Extracting... "
 
@@ -98,13 +101,7 @@ cd csv/UniteLegale
 
 echo "Downloading UniteLegale data from https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip..."
 
-if [[ ! -f StockUniteLegale_utf8.zip ]]
-then
-    wget -q https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip
-
-else
-    echo "Already downloaded, not downloading again."
-fi
+wget -N -q https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip
 
 echo "done"
 echo ""
