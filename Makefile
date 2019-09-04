@@ -2,8 +2,14 @@ config ?= config.sh
 include $(config)
 
 
-publish: convert
-	databasePath=$(DATABASEPATH) ./scripts/publish.sh
+publish: convert publishData publishVocab
+	databasePath=$(DATABASEPATH) databaseSidecarPath=$(SIDECARBASEPATH) ./scripts/publish.sh
+
+publishData:
+	databasePath=$(DATABASEPATH) ./scripts/publish.sh data
+
+publishVocab:
+	databaseSidecarPath=$(SIDECARBASEPATH) ./scripts/publish.sh sidecar
 
 convert: convertEtablissementLight convertEtablissement convertUniteLegale
 	echo "Conversion done."
