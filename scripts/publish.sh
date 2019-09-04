@@ -22,7 +22,7 @@ nomenclaturesTtl=`ls nomenclatures/*.ttl`
 ontologies=`ls ontologies/*.ttl`
 
 echo "Loading ontology and reference data..."
-time tdb2.tdbloader -v --loc $databaseSidecarPath --loader "parallel" $nomenclaturesNt $nomenclaturesTtl
+time tdb2.tdbloader -v --loc $databaseSidecarPath --loader "parallel" $nomenclaturesNt $nomenclaturesTtl $ontologies
 
     ;;
 
