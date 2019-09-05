@@ -45,15 +45,15 @@ CONSTRUCT {
     sn:caractereEmployeurUniteLegale ?caractereEmployeurUniteLegale ;
 
 
-    sx:trancheEffectifs ?trancheeffectifsUniteLegale_uri ;
-    sx:etatAdministratif ?etatadministratifUniteLegale_uri ;
-    sx:activitePrincipale ?activiteprincipaleUniteLegale_uri ;
+    sx:trancheEffectifs ?trancheEffectifsUniteLegale_uri ;
+    sx:etatAdministratif ?etatAdministratifUniteLegale_uri ;
+    sx:activitePrincipale ?activitePrincipaleUniteLegale_uri ;
     sx:siege ?nicSiegeUniteLegale_uri .
 }
 
 WHERE {
     bind(uri(concat("https://sireneld.io/vocab/sirext#",?categorieEntreprise)) as ?categorie_class)
-    bind(uri(concat("https://sireneld.io/vocab/sirecj#",?categorieJuridiqueUniteLegale)) as ?categoriejuridiqueUniteLegale_class)
+    bind(uri(concat("https://sireneld.io/vocab/sirecj#",?categorieJuridiqueUniteLegale)) as ?categorieJuridiqueUniteLegale_class)
     bind(uri(concat("https://sireneld.io/siren/",?siren)) as ?entreprise)
     bind(uri(concat("https://sireneld.io/tef/",?trancheEffectifsUniteLegale)) as ?trancheEffectifsUniteLegale_uri)
     bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatAdministratifUniteLegale)) as ?etatAdministratifUniteLegale_uri)
