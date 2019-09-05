@@ -1,7 +1,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sirext: <https://sireneld.io/vocab/sirext#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 
 #TEF
 
