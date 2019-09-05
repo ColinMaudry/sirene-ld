@@ -21,6 +21,7 @@ construct {
         sn:etablissementSiege ?etablissementSiege ;
         sn:nombrePeriodesEtablissement ?nombrePeriodesEtablissement_integer ;
         sn:complementAdresseEtablissement ?complementAdresseEtablissement ;
+        sn:complementAdresse2Etablissement ?complementAdresse2Etablissement ;
         sn:numeroVoieEtablissement ?numeroVoieEtablissement ;
         sn:indiceRepetitionEtablissement ?indiceRepetitionEtablissement ;
         sn:typeVoieEtablissement ?typeVoieEtablissement ;
@@ -39,6 +40,8 @@ construct {
         sn:libelleVoie2Etablissement ?libelleVoie2Etablissement ;
         sn:codePostal2Etablissement ?codePostal2Etablissement ;
         sn:libelleCommune2Etablissement ?libelleCommune2Etablissement ;
+        sn:libelleCommuneEtrangerEtablissement ?libelleCommuneEtrangerEtablissement ;
+        sn:libelleCommuneEtranger2Etablissement ?libelleCommuneEtranger2Etablissement ;
         sn:distributionSpeciale2Etablissement ?distributionSpeciale2Etablissement ;
         sn:codeCommune2Etablissement ?codeCommune2Etablissement ;
         sn:codeCedex2Etablissement ?codeCedex2Etablissement ;
