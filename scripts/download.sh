@@ -38,16 +38,17 @@ wget -N -c -r -q -np -nd -A "gz" http://data.cquest.org/geo_sirene/v2019/last/de
 echo "done"
 echo ""
 
-if [[ ! `ls *.csv` = "" ]]
-then
-    rm *.csv
-fi
-
 echo "Extracting... "
 
 set +e
 # gzip seems to exit with error 2 when it doesn't overwrite some file
-gzip -dkv *.gz
+for gz in `ls *.gz`
+do
+    csv=${gz::-3}
+    if [ ! -f $csv -o -f $csv -a $gz -nt $csv ]
+    then
+        gzip -dkfv $gz
+    fi
 set -e
 
 echo "done"
@@ -68,7 +69,7 @@ done
 
 if [[ $departements -eq "all" ]]
 then
-    echo mv light/ full/
+    mv light/ full/
 else
 
     IFS=',' read -ra arrayDep <<< "$departements"
@@ -78,10 +79,12 @@ else
         if [[ ! -h full/geo_siret_$dep.csv ]]
         then
             ln -s $basePath/geo_siret_$dep.csv full/
+        fi
+        if [[ -h light/geo_siret_$dep.csv ]]
+        then
             rm light/geo_siret_$dep.csv
         fi
     done
-
 fi
 
 echo "done"
