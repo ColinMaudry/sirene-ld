@@ -14,3 +14,7 @@ DATABASEPATH="/home/joe/fuseki/run/databases/db"
 
 # The directory where you want tdb2.tdbloader create the database for the ontologies and reference data (see https://jena.apache.org/documentation/tdb2/tdb2_cmds.html)
 SIDECARBASEPATH="/home/joe/fuseki/run/databases/onto"
+
+# Commands that start and stop your database, in order to enable the modification of the data
+STARTDB="systemctl start fuseki.service"
+STOPDB="systemctl stop fuseki.service"
