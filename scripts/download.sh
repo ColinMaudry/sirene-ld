@@ -49,6 +49,7 @@ do
     then
         gzip -dkfv $gz
     fi
+done
 set -e
 
 echo "done"
