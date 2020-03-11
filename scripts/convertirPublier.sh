@@ -27,8 +27,10 @@ function transformPublishRdf() {
         hdt)
         if [[ ! -z $graphBaseUri ]]; then
             ext=trig
+            rdfFormat=trig
         else
             ext=ttl
+            rdfFormat=turtle
         fi
         rdf=$csvTemp.$ext
         rdfFormat=
@@ -211,9 +213,12 @@ function processCsv () {
 
 function convertToHdt () {
     rdf=$1
+    if [[ -f $rdf.hdt.index.v1-1 ]]
+    then
+        rm $rdf.hdt.index.v1-1
+    fi
 
-    rm $rdf.hdt.index.v1-1
-    rdf2hdt -i -f turtle -p $rdf $rdf.hdt
+    rdf2hdt -i -f $rdfFormat -p $rdf $rdf.hdt
 }
 
 function reduceData() {
