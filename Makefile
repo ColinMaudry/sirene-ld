@@ -1,33 +1,24 @@
-config ?= config.sh
+config ?= config/config.sh
 include $(config)
+home=`pwd`
 
-
-publish: convert publishData publishVocab
-	echo "Starting DB..." && eval $(STARTDB)
-
-publishData: stopdb
-	databasePath=$(DATABASEPATH) ./scripts/publish.sh data
-
-publishVocab: stopdb
-	databaseSidecarPath=$(SIDECARBASEPATH) ./scripts/publish.sh sidecar
-
-stopdb:
-	echo "Stopping DB and deleting data..." && eval $(STOPDB) && rm -rf $(DATABASEPATH) $(SIDECARBASEPATH)
-
-convert: convertEtablissementLight convertEtablissement convertUniteLegale
+convert: download convertOnly
 	echo "Conversion done."
 
-convertEtablissement: download
-	./scripts/convert.sh Etablissement full
-
-convertEtablissementLight: download
-	./scripts/convert.sh Etablissement light
-
-convertUniteLegale: download
-	./scripts/convert.sh UniteLegale full
+convertOnly:
+	./scripts/rdf.sh $type
 
 download:
 	departements=$(DEPARTEMENTS) ./scripts/download.sh
 
-clean:
-	rm -r csv rdf
+clean: cleanCsv cleanRdf cleanHdt
+	echo "Cleaned RDF, CSV and HDT..."
+
+cleanCsv:
+	rm -rf csv
+
+cleanRdf:
+	rm -rf rdf
+
+cleanHdt:
+	rm -rf hdt
