@@ -5,7 +5,11 @@ config.sh
 !sirene2018vs2019.csv
 *.gz
 *.hdt*
-*.trig
-*.ttl
+/*.trig
+/*.ttl
+/*.nt
 rdf
 csv
+*.save
+*.zip
+*.log
