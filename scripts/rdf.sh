@@ -2,7 +2,7 @@
 
 type=$1
 root=`pwd`
-rdf="$root/rdf/rdf.trig"
+rdf="$root/rdf/sireneld.trig"
 
 if [[ ! -d rdf ]]
 then
