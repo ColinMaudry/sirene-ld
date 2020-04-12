@@ -1,0 +1,1513 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo:   <http://id.insee.fr/geo/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix igeo:  <http://id.insee.fr/def/geo#> .
+@prefix sirext: <https://sireneld.io/vocab/sirext#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.insee.fr/geo/departement/63>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/63113> ;
+        igeo:codeDepartement        "63"^^xs:token ;
+        igeo:codeINSEE              "63"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/63D> ;
+        igeo:nom                    "Puy-de-Dôme"@fr ;
+        igeo:nomCharniereClair      "Puy-de-Dôme"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/63113> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/63> .
+
+<http://id.insee.fr/geo/departement/35>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/35238> ;
+        igeo:codeDepartement        "35"^^xs:token ;
+        igeo:codeINSEE              "35"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/154> , <http://id.insee.fr/geo/mouvements/194> , <http://id.insee.fr/geo/mouvements/544> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/35D> ;
+        igeo:nom                    "Ille-et-Vilaine"@fr ;
+        igeo:nomCharniereClair      "Ille-et-Vilaine"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/35238> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/53> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc1> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/35> .
+
+<http://id.insee.fr/geo/departement/07>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/07186> ;
+        igeo:codeDepartement        "07"^^xs:token ;
+        igeo:codeINSEE              "07"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1255> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/07D> ;
+        igeo:nom                    "Ardèche"@fr ;
+        igeo:nomCharniereClair      "Ardèche"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/07186> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/07> .
+
+<http://id.insee.fr/geo/departement/76>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/76540> ;
+        igeo:codeDepartement        "76"^^xs:token ;
+        igeo:codeINSEE              "76"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/528> , <http://id.insee.fr/geo/mouvements/813> , <http://id.insee.fr/geo/mouvements/22> , <http://id.insee.fr/geo/mouvements/589> , <http://id.insee.fr/geo/mouvements/909> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/76D> ;
+        igeo:nom                    "Seine-Maritime"@fr ;
+        igeo:nomCharniereClair      "Seine-Maritime"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/76540> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/28> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/76> .
+
+<http://id.insee.fr/geo/departement/48>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/48095> ;
+        igeo:codeDepartement        "48"^^xs:token ;
+        igeo:codeINSEE              "48"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/48D> ;
+        igeo:nom                    "Lozère"@fr ;
+        igeo:nomCharniereClair      "Lozère"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/48095> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/48> .
+
+<http://id.insee.fr/geo/departement/89>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/89024> ;
+        igeo:codeDepartement        "89"^^xs:token ;
+        igeo:codeINSEE              "89"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1706> , <http://id.insee.fr/geo/mouvements/281> , <http://id.insee.fr/geo/mouvements/1252> , <http://id.insee.fr/geo/mouvements/1023> , <http://id.insee.fr/geo/mouvements/794> , <http://id.insee.fr/geo/mouvements/1641> , <http://id.insee.fr/geo/mouvements/337> , <http://id.insee.fr/geo/mouvements/1105> , <http://id.insee.fr/geo/mouvements/1856> , <http://id.insee.fr/geo/mouvements/1128> , <http://id.insee.fr/geo/mouvements/1898> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/89D> ;
+        igeo:nom                    "Yonne"@fr ;
+        igeo:nomCharniereClair      "Yonne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/89024> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/27> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/89> .
+
+<http://id.insee.fr/geo/departement/01>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/01053> ;
+        igeo:codeDepartement        "01"^^xs:token ;
+        igeo:codeINSEE              "01"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/01D> ;
+        igeo:nom                    "Ain"@fr ;
+        igeo:nomCharniereClair      "Ain"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/01053> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/01> .
+
+<http://id.insee.fr/geo/departement/70>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/70550> ;
+        igeo:codeDepartement        "70"^^xs:token ;
+        igeo:codeINSEE              "70"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1210> , <http://id.insee.fr/geo/mouvements/514> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/70D> ;
+        igeo:nom                    "Haute-Saône"@fr ;
+        igeo:nomCharniereClair      "Haute-Saône"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/70550> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/27> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/70> .
+
+<http://id.insee.fr/geo/departement/972>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97209> ;
+        igeo:codeDepartement        "972"^^xs:token ;
+        igeo:codeINSEE              "972"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/972> ;
+        igeo:nom                    "Martinique"@fr ;
+        igeo:nomCharniereClair      "Martinique"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/97209> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/02> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/972> .
+
+<http://id.insee.fr/geo/departement/42>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/42218> ;
+        igeo:codeDepartement        "42"^^xs:token ;
+        igeo:codeINSEE              "42"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1569> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/42D> ;
+        igeo:nom                    "Loire"@fr ;
+        igeo:nomCharniereClair      "Loire"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/42218> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/42> .
+
+<http://id.insee.fr/geo/departement/14>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/14118> ;
+        igeo:codeDepartement        "14"^^xs:token ;
+        igeo:codeINSEE              "14"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2816> , <http://id.insee.fr/geo/mouvements/208> , <http://id.insee.fr/geo/mouvements/1859> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/14D> ;
+        igeo:nom                    "Calvados"@fr ;
+        igeo:nomCharniereClair      "Calvados"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/14118> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/28> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/14> .
+
+<http://id.insee.fr/geo/departement/83>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/83137> ;
+        igeo:codeDepartement        "83"^^xs:token ;
+        igeo:codeINSEE              "83"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2460> , <http://id.insee.fr/geo/mouvements/247> , <http://id.insee.fr/geo/mouvements/1763> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/83D> ;
+        igeo:nom                    "Var"@fr ;
+        igeo:nomCharniereClair      "Var"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/83137> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/93> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/83> .
+
+<http://id.insee.fr/geo/departement/55>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/55029> ;
+        igeo:codeDepartement        "55"^^xs:token ;
+        igeo:codeINSEE              "55"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/80> , <http://id.insee.fr/geo/mouvements/806> , <http://id.insee.fr/geo/mouvements/1106> , <http://id.insee.fr/geo/mouvements/1860> , <http://id.insee.fr/geo/mouvements/486> , <http://id.insee.fr/geo/mouvements/1643> , <http://id.insee.fr/geo/mouvements/679> , <http://id.insee.fr/geo/mouvements/232> , <http://id.insee.fr/geo/mouvements/1256> , <http://id.insee.fr/geo/mouvements/1589> , <http://id.insee.fr/geo/mouvements/1024> , <http://id.insee.fr/geo/mouvements/949> , <http://id.insee.fr/geo/mouvements/1980> , <http://id.insee.fr/geo/mouvements/1348> , <http://id.insee.fr/geo/mouvements/1821> , <http://id.insee.fr/geo/mouvements/805> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/55D> ;
+        igeo:nom                    "Meuse"@fr ;
+        igeo:nomCharniereClair      "Meuse"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/55029> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/55> .
+
+<http://id.insee.fr/geo/departement/27>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/27229> ;
+        igeo:codeDepartement        "27"^^xs:token ;
+        igeo:codeINSEE              "27"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1464> , <http://id.insee.fr/geo/mouvements/3208> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/27D> ;
+        igeo:nom                    "Eure"@fr ;
+        igeo:nomCharniereClair      "Eure"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/27229> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/28> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/27> .
+
+<http://id.insee.fr/geo/departement/68>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/68066> ;
+        igeo:codeDepartement        "68"^^xs:token ;
+        igeo:codeINSEE              "68"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/68D> ;
+        igeo:nom                    "Haut-Rhin"@fr ;
+        igeo:nomCharniereClair      "Haut-Rhin"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/68066> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/68> .
+
+<http://id.insee.fr/geo/departement/21>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/21231> ;
+        igeo:codeDepartement        "21"^^xs:token ;
+        igeo:codeINSEE              "21"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/507> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/21D> ;
+        igeo:nom                    "Côte-d'Or"@fr ;
+        igeo:nomCharniereClair      "Côte-d'Or"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/21231> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/27> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/21> .
+
+<http://id.insee.fr/geo/departement/90>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/90010> ;
+        igeo:codeDepartement        "90"^^xs:token ;
+        igeo:codeINSEE              "90"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2051> , <http://id.insee.fr/geo/mouvements/588> , <http://id.insee.fr/geo/mouvements/746> , <http://id.insee.fr/geo/mouvements/1983> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/90D> ;
+        igeo:nom                    "Territoire de Belfort"@fr ;
+        igeo:nomCharniereClair      "Territoire de Belfort"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/90010> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/27> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/90> .
+
+<http://id.insee.fr/geo/departement/2B>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/2B033> ;
+        igeo:codeDepartement        "2B"^^xs:token ;
+        igeo:codeINSEE              "2B"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3193> , <http://id.insee.fr/geo/mouvements/1955> , <http://id.insee.fr/geo/mouvements/3192> , <http://id.insee.fr/geo/mouvements/2180> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/2BD> ;
+        igeo:nom                    "Haute-Corse"@fr ;
+        igeo:nomCharniereClair      "Haute-Corse"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/2B033> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/94> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/2B> .
+
+<http://id.insee.fr/geo/departement/62>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/62041> ;
+        igeo:codeDepartement        "62"^^xs:token ;
+        igeo:codeINSEE              "62"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1004> , <http://id.insee.fr/geo/mouvements/1048> , <http://id.insee.fr/geo/mouvements/424> , <http://id.insee.fr/geo/mouvements/30> , <http://id.insee.fr/geo/mouvements/2827> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/62D> ;
+        igeo:nom                    "Pas-de-Calais"@fr ;
+        igeo:nomCharniereClair      "Pas-de-Calais"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/62041> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/32> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/62> .
+
+<http://id.insee.fr/geo/departement/34>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/34172> ;
+        igeo:codeDepartement        "34"^^xs:token ;
+        igeo:codeINSEE              "34"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1686> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/34D> ;
+        igeo:nom                    "Hérault"@fr ;
+        igeo:nomCharniereClair      "Hérault"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/34172> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/34> .
+
+<http://id.insee.fr/geo/departement/06>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/06088> ;
+        igeo:codeDepartement        "06"^^xs:token ;
+        igeo:codeINSEE              "06"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3194> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/06D> ;
+        igeo:nom                    "Alpes-Maritimes"@fr ;
+        igeo:nomCharniereClair      "Alpes-Maritimes"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/06088> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/93> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/06> .
+
+<http://id.insee.fr/geo/departement/75>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/75056> ;
+        igeo:codeDepartement        "75"^^xs:token ;
+        igeo:codeINSEE              "75"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3189> , <http://id.insee.fr/geo/mouvements/2855> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/75D> ;
+        igeo:nom                    "Paris"@fr ;
+        igeo:nomCharniereClair      "Paris"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/75056> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/11> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/75> .
+
+<http://id.insee.fr/geo/departement/47>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/47001> ;
+        igeo:codeDepartement        "47"^^xs:token ;
+        igeo:codeINSEE              "47"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/721> , <http://id.insee.fr/geo/mouvements/1148> , <http://id.insee.fr/geo/mouvements/1751> , <http://id.insee.fr/geo/mouvements/1147> , <http://id.insee.fr/geo/mouvements/396> , <http://id.insee.fr/geo/mouvements/24> , <http://id.insee.fr/geo/mouvements/1200> , <http://id.insee.fr/geo/mouvements/640> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/47D> ;
+        igeo:nom                    "Lot-et-Garonne"@fr ;
+        igeo:nomCharniereClair      "Lot-et-Garonne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/47001> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/47> .
+
+<http://id.insee.fr/geo/departement/19>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/19272> ;
+        igeo:codeDepartement        "19"^^xs:token ;
+        igeo:codeINSEE              "19"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/839> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/19D> ;
+        igeo:nom                    "Corrèze"@fr ;
+        igeo:nomCharniereClair      "Corrèze"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/19272> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/19> .
+
+<http://id.insee.fr/geo/departement/88>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/88160> ;
+        igeo:codeDepartement        "88"^^xs:token ;
+        igeo:codeINSEE              "88"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1733> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/88D> ;
+        igeo:nom                    "Vosges"@fr ;
+        igeo:nomCharniereClair      "Vosges"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/88160> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/88> .
+
+<http://id.insee.fr/geo/departement/971>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97105> ;
+        igeo:codeDepartement        "971"^^xs:token ;
+        igeo:codeINSEE              "971"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3207> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/971> ;
+        igeo:nom                    "Guadeloupe"@fr ;
+        igeo:nomCharniereClair      "Guadeloupe"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/97105> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/01> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/971> .
+
+<http://id.insee.fr/geo/departement/41>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/41018> ;
+        igeo:codeDepartement        "41"^^xs:token ;
+        igeo:codeINSEE              "41"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/41D> ;
+        igeo:nom                    "Loir-et-Cher"@fr ;
+        igeo:nomCharniereClair      "Loir-et-Cher"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/41018> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/24> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/41> .
+
+<http://id.insee.fr/geo/departement/13>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/13055> ;
+        igeo:codeDepartement        "13"^^xs:token ;
+        igeo:codeINSEE              "13"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2939> , <http://id.insee.fr/geo/mouvements/1755> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/13D> ;
+        igeo:nom                    "Bouches-du-Rhône"@fr ;
+        igeo:nomCharniereClair      "Bouches-du-Rhône"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/13055> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/93> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/13> .
+
+<http://id.insee.fr/geo/departement/82>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/82121> ;
+        igeo:codeDepartement        "82"^^xs:token ;
+        igeo:codeINSEE              "82"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/82D> ;
+        igeo:nom                    "Tarn-et-Garonne"@fr ;
+        igeo:nomCharniereClair      "Tarn-et-Garonne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/82121> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/82> .
+
+<http://id.insee.fr/geo/departement/54>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/54395> ;
+        igeo:codeDepartement        "54"^^xs:token ;
+        igeo:codeINSEE              "54"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2287> , <http://id.insee.fr/geo/mouvements/341> , <http://id.insee.fr/geo/mouvements/1613> , <http://id.insee.fr/geo/mouvements/1548> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/54D> ;
+        igeo:nom                    "Meurthe-et-Moselle"@fr ;
+        igeo:nomCharniereClair      "Meurthe-et-Moselle"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/54395> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/54> .
+
+<http://id.insee.fr/geo/departement/26>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/26362> ;
+        igeo:codeDepartement        "26"^^xs:token ;
+        igeo:codeINSEE              "26"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1002> , <http://id.insee.fr/geo/mouvements/1382> , <http://id.insee.fr/geo/mouvements/206> , <http://id.insee.fr/geo/mouvements/494> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/26D> ;
+        igeo:nom                    "Drôme"@fr ;
+        igeo:nomCharniereClair      "Drôme"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/26362> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/26> .
+
+<http://id.insee.fr/geo/departement/95>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/95500> ;
+        igeo:codeDepartement        "95"^^xs:token ;
+        igeo:codeINSEE              "95"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3190> , <http://id.insee.fr/geo/mouvements/103> , <http://id.insee.fr/geo/mouvements/2861> , <http://id.insee.fr/geo/mouvements/3189> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/95D> ;
+        igeo:nom                    "Val-d'Oise"@fr ;
+        igeo:nomCharniereClair      "Val-d'Oise"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/95500> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/11> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/95> .
+
+<http://id.insee.fr/geo/departement/67>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/67482> ;
+        igeo:codeDepartement        "67"^^xs:token ;
+        igeo:codeINSEE              "67"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/531> , <http://id.insee.fr/geo/mouvements/166> , <http://id.insee.fr/geo/mouvements/2053> , <http://id.insee.fr/geo/mouvements/238> , <http://id.insee.fr/geo/mouvements/880> , <http://id.insee.fr/geo/mouvements/1862> , <http://id.insee.fr/geo/mouvements/1861> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/67D> ;
+        igeo:nom                    "Bas-Rhin"@fr ;
+        igeo:nomCharniereClair      "Bas-Rhin"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/67482> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/67> .
+
+<http://id.insee.fr/geo/departement/39>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/39300> ;
+        igeo:codeDepartement        "39"^^xs:token ;
+        igeo:codeINSEE              "39"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1067> , <http://id.insee.fr/geo/mouvements/530> , <http://id.insee.fr/geo/mouvements/971> , <http://id.insee.fr/geo/mouvements/840> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/39D> ;
+        igeo:nom                    "Jura"@fr ;
+        igeo:nomCharniereClair      "Jura"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/39300> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/27> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/39> .
+
+<http://id.insee.fr/geo/departement/20>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/20004> ;
+        igeo:codeDepartement        "20"^^xs:token ;
+        igeo:codeINSEE              "20"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3193> ;
+        igeo:nom                    "Corse"@fr ;
+        igeo:nomCharniereClair      "Corse"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/20004> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/93> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 false ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/20> .
+
+<http://id.insee.fr/geo/departement/2A>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/2A004> ;
+        igeo:codeDepartement        "2A"^^xs:token ;
+        igeo:codeINSEE              "2A"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2179> , <http://id.insee.fr/geo/mouvements/3193> , <http://id.insee.fr/geo/mouvements/3192> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/2AD> ;
+        igeo:nom                    "Corse-du-Sud"@fr ;
+        igeo:nomCharniereClair      "Corse-du-Sud"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/2A004> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/94> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/2A> .
+
+<http://id.insee.fr/geo/departement/61>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/61001> ;
+        igeo:codeDepartement        "61"^^xs:token ;
+        igeo:codeINSEE              "61"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/61D> ;
+        igeo:nom                    "Orne"@fr ;
+        igeo:nomCharniereClair      "Orne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/61001> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/28> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/61> .
+
+<http://id.insee.fr/geo/departement/33>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/33063> ;
+        igeo:codeDepartement        "33"^^xs:token ;
+        igeo:codeINSEE              "33"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/463> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/33D> ;
+        igeo:nom                    "Gironde"@fr ;
+        igeo:nomCharniereClair      "Gironde"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/33063> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/33> .
+
+<http://id.insee.fr/geo/departement/05>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/05061> ;
+        igeo:codeDepartement        "05"^^xs:token ;
+        igeo:codeINSEE              "05"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/286> , <http://id.insee.fr/geo/mouvements/728> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/05D> ;
+        igeo:nom                    "Hautes-Alpes"@fr ;
+        igeo:nomCharniereClair      "Hautes-Alpes"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/05061> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/93> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/05> .
+
+<http://id.insee.fr/geo/departement/976>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97608> ;
+        igeo:codeDepartement        "976"^^xs:token ;
+        igeo:codeINSEE              "976"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3187> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/976> ;
+        igeo:nom                    "Mayotte"@fr ;
+        igeo:nomCharniereClair      "Mayotte"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/97608> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/06> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/976> .
+
+<http://id.insee.fr/geo/departement/74>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/74010> ;
+        igeo:codeDepartement        "74"^^xs:token ;
+        igeo:codeINSEE              "74"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/860> , <http://id.insee.fr/geo/mouvements/1642> , <http://id.insee.fr/geo/mouvements/699> , <http://id.insee.fr/geo/mouvements/900> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/74D> ;
+        igeo:nom                    "Haute-Savoie"@fr ;
+        igeo:nomCharniereClair      "Haute-Savoie"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/74010> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/74> .
+
+<http://id.insee.fr/geo/departement/46>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/46042> ;
+        igeo:codeDepartement        "46"^^xs:token ;
+        igeo:codeINSEE              "46"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/418> , <http://id.insee.fr/geo/mouvements/546> , <http://id.insee.fr/geo/mouvements/409> , <http://id.insee.fr/geo/mouvements/1760> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/46D> ;
+        igeo:nom                    "Lot"@fr ;
+        igeo:nomCharniereClair      "Lot"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/46042> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/46> .
+
+<http://id.insee.fr/geo/departement/18>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/18033> ;
+        igeo:codeDepartement        "18"^^xs:token ;
+        igeo:codeINSEE              "18"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/18D> ;
+        igeo:nom                    "Cher"@fr ;
+        igeo:nomCharniereClair      "Cher"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/18033> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/24> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/18> .
+
+<http://id.insee.fr/geo/departement/87>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/87085> ;
+        igeo:codeDepartement        "87"^^xs:token ;
+        igeo:codeINSEE              "87"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/87D> ;
+        igeo:nom                    "Haute-Vienne"@fr ;
+        igeo:nomCharniereClair      "Haute-Vienne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/87085> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/87> .
+
+<http://id.insee.fr/geo/departement/59>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/59350> ;
+        igeo:codeDepartement        "59"^^xs:token ;
+        igeo:codeINSEE              "59"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1568> , <http://id.insee.fr/geo/mouvements/2168> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/59D> ;
+        igeo:nom                    "Nord"@fr ;
+        igeo:nomCharniereClair      "Nord"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/59350> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/32> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/59> .
+
+<http://id.insee.fr/geo/departement/40>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/40192> ;
+        igeo:codeDepartement        "40"^^xs:token ;
+        igeo:codeINSEE              "40"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/40D> ;
+        igeo:nom                    "Landes"@fr ;
+        igeo:nomCharniereClair      "Landes"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/40192> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/40> .
+
+<http://id.insee.fr/geo/departement/12>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/12202> ;
+        igeo:codeDepartement        "12"^^xs:token ;
+        igeo:codeINSEE              "12"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/126> , <http://id.insee.fr/geo/mouvements/2021> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/12D> ;
+        igeo:nom                    "Aveyron"@fr ;
+        igeo:nomCharniereClair      "Aveyron"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/12202> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/12> .
+
+<http://id.insee.fr/geo/departement/81>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/81004> ;
+        igeo:codeDepartement        "81"^^xs:token ;
+        igeo:codeINSEE              "81"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/141> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/81D> ;
+        igeo:nom                    "Tarn"@fr ;
+        igeo:nomCharniereClair      "Tarn"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/81004> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/81> .
+
+<http://id.insee.fr/geo/departement/53>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/53130> ;
+        igeo:codeDepartement        "53"^^xs:token ;
+        igeo:codeINSEE              "53"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1172> , <http://id.insee.fr/geo/mouvements/309> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/53D> ;
+        igeo:nom                    "Mayenne"@fr ;
+        igeo:nomCharniereClair      "Mayenne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/53130> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/52> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/53> .
+
+<http://id.insee.fr/geo/departement/25>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/25056> ;
+        igeo:codeDepartement        "25"^^xs:token ;
+        igeo:codeINSEE              "25"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1398> , <http://id.insee.fr/geo/mouvements/1173> , <http://id.insee.fr/geo/mouvements/485> , <http://id.insee.fr/geo/mouvements/628> , <http://id.insee.fr/geo/mouvements/2048> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/25D> ;
+        igeo:nom                    "Doubs"@fr ;
+        igeo:nomCharniereClair      "Doubs"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/25056> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/27> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/25> .
+
+<http://id.insee.fr/geo/departement/94>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/94028> ;
+        igeo:codeDepartement        "94"^^xs:token ;
+        igeo:codeINSEE              "94"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3190> , <http://id.insee.fr/geo/mouvements/3189> , <http://id.insee.fr/geo/mouvements/2860> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/94D> ;
+        igeo:nom                    "Val-de-Marne"@fr ;
+        igeo:nomCharniereClair      "Val-de-Marne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/94028> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/11> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/94> .
+
+<http://id.insee.fr/geo/departement/66>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/66136> ;
+        igeo:codeDepartement        "66"^^xs:token ;
+        igeo:codeINSEE              "66"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/646> , <http://id.insee.fr/geo/mouvements/1513> , <http://id.insee.fr/geo/mouvements/766> , <http://id.insee.fr/geo/mouvements/487> , <http://id.insee.fr/geo/mouvements/423> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/66D> ;
+        igeo:nom                    "Pyrénées-Orientales"@fr ;
+        igeo:nomCharniereClair      "Pyrénées-Orientales"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/66136> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/66> .
+
+<http://id.insee.fr/geo/departement/38>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/38185> ;
+        igeo:codeDepartement        "38"^^xs:token ;
+        igeo:codeINSEE              "38"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1254> , <http://id.insee.fr/geo/mouvements/881> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/38D> ;
+        igeo:nom                    "Isère"@fr ;
+        igeo:nomCharniereClair      "Isère"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/38185> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/38> .
+
+<http://id.insee.fr/geo/departement/79>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/79191> ;
+        igeo:codeDepartement        "79"^^xs:token ;
+        igeo:codeINSEE              "79"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/497> , <http://id.insee.fr/geo/mouvements/879> , <http://id.insee.fr/geo/mouvements/1557> , <http://id.insee.fr/geo/mouvements/42> , <http://id.insee.fr/geo/mouvements/807> , <http://id.insee.fr/geo/mouvements/466> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/79D> ;
+        igeo:nom                    "Deux-Sèvres"@fr ;
+        igeo:nomCharniereClair      "Deux-Sèvres"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/79191> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/79> .
+
+<http://id.insee.fr/geo/departement/60>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/60057> ;
+        igeo:codeDepartement        "60"^^xs:token ;
+        igeo:codeINSEE              "60"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/382> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/60D> ;
+        igeo:nom                    "Oise"@fr ;
+        igeo:nomCharniereClair      "Oise"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/60057> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/32> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/60> .
+
+<http://id.insee.fr/geo/departement/32>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/32013> ;
+        igeo:codeDepartement        "32"^^xs:token ;
+        igeo:codeINSEE              "32"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/119> , <http://id.insee.fr/geo/mouvements/704> , <http://id.insee.fr/geo/mouvements/1070> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/32D> ;
+        igeo:nom                    "Gers"@fr ;
+        igeo:nomCharniereClair      "Gers"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/32013> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/32> .
+
+<http://id.insee.fr/geo/departement/04>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/04070> ;
+        igeo:codeDepartement        "04"^^xs:token ;
+        igeo:codeINSEE              "04"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3222> , <http://id.insee.fr/geo/mouvements/2488> , <http://id.insee.fr/geo/mouvements/529> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/04D> ;
+        igeo:nom                    "Alpes-de-Haute-Provence"@fr ;
+        igeo:nomCharniereClair      "Alpes-de-Haute-Provence"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/04070> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/93> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/04> .
+
+<http://id.insee.fr/geo/departement/73>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/73065> ;
+        igeo:codeDepartement        "73"^^xs:token ;
+        igeo:codeINSEE              "73"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1601> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/73D> ;
+        igeo:nom                    "Savoie"@fr ;
+        igeo:nomCharniereClair      "Savoie"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/73065> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/73> .
+
+<http://id.insee.fr/geo/departement/45>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/45234> ;
+        igeo:codeDepartement        "45"^^xs:token ;
+        igeo:codeINSEE              "45"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/45D> ;
+        igeo:nom                    "Loiret"@fr ;
+        igeo:nomCharniereClair      "Loiret"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/45234> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/24> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/45> .
+
+<http://id.insee.fr/geo/departement/17>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/17300> ;
+        igeo:codeDepartement        "17"^^xs:token ;
+        igeo:codeINSEE              "17"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1001> , <http://id.insee.fr/geo/mouvements/1933> , <http://id.insee.fr/geo/mouvements/253> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/17D> ;
+        igeo:nom                    "Charente-Maritime"@fr ;
+        igeo:nomCharniereClair      "Charente-Maritime"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/17300> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/17> .
+
+<http://id.insee.fr/geo/departement/86>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/86194> ;
+        igeo:codeDepartement        "86"^^xs:token ;
+        igeo:codeINSEE              "86"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1704> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/86D> ;
+        igeo:nom                    "Vienne"@fr ;
+        igeo:nomCharniereClair      "Vienne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/86194> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/86> .
+
+<http://id.insee.fr/geo/departement/58>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/58194> ;
+        igeo:codeDepartement        "58"^^xs:token ;
+        igeo:codeINSEE              "58"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/58D> ;
+        igeo:nom                    "Nièvre"@fr ;
+        igeo:nomCharniereClair      "Nièvre"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/58194> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/27> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/58> .
+
+<http://id.insee.fr/geo/departement/11>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/11069> ;
+        igeo:codeDepartement        "11"^^xs:token ;
+        igeo:codeINSEE              "11"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1512> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/11D> ;
+        igeo:nom                    "Aude"@fr ;
+        igeo:nomCharniereClair      "Aude"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/11069> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/11> .
+
+<http://id.insee.fr/geo/departement/80>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/80021> ;
+        igeo:codeDepartement        "80"^^xs:token ;
+        igeo:codeINSEE              "80"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1102> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/80D> ;
+        igeo:nom                    "Somme"@fr ;
+        igeo:nomCharniereClair      "Somme"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/80021> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/32> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/80> .
+
+<http://id.insee.fr/geo/departement/52>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/52121> ;
+        igeo:codeDepartement        "52"^^xs:token ;
+        igeo:codeINSEE              "52"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1549> , <http://id.insee.fr/geo/mouvements/1645> , <http://id.insee.fr/geo/mouvements/1644> , <http://id.insee.fr/geo/mouvements/1735> , <http://id.insee.fr/geo/mouvements/1342> , <http://id.insee.fr/geo/mouvements/632> , <http://id.insee.fr/geo/mouvements/1488> , <http://id.insee.fr/geo/mouvements/1415> , <http://id.insee.fr/geo/mouvements/2050> , <http://id.insee.fr/geo/mouvements/1026> , <http://id.insee.fr/geo/mouvements/1669> , <http://id.insee.fr/geo/mouvements/1734> , <http://id.insee.fr/geo/mouvements/443> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/52D> ;
+        igeo:nom                    "Haute-Marne"@fr ;
+        igeo:nomCharniereClair      "Haute-Marne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/52121> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/52> .
+
+<http://id.insee.fr/geo/departement/24>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/24322> ;
+        igeo:codeDepartement        "24"^^xs:token ;
+        igeo:codeINSEE              "24"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/287> , <http://id.insee.fr/geo/mouvements/1694> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/24D> ;
+        igeo:nom                    "Dordogne"@fr ;
+        igeo:nomCharniereClair      "Dordogne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/24322> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/24> .
+
+<http://id.insee.fr/geo/departement/93>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/93008> ;
+        igeo:codeDepartement        "93"^^xs:token ;
+        igeo:codeINSEE              "93"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3189> , <http://id.insee.fr/geo/mouvements/2859> , <http://id.insee.fr/geo/mouvements/3190> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/93D> ;
+        igeo:nom                    "Seine-Saint-Denis"@fr ;
+        igeo:nomCharniereClair      "Seine-Saint-Denis"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/93008> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/11> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/93> .
+
+<http://id.insee.fr/geo/departement/65>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/65440> ;
+        igeo:codeDepartement        "65"^^xs:token ;
+        igeo:codeINSEE              "65"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2364> , <http://id.insee.fr/geo/mouvements/713> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/65D> ;
+        igeo:nom                    "Hautes-Pyrénées"@fr ;
+        igeo:nomCharniereClair      "Hautes-Pyrénées"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/65440> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/65> .
+
+<http://id.insee.fr/geo/departement/37>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/37261> ;
+        igeo:codeDepartement        "37"^^xs:token ;
+        igeo:codeINSEE              "37"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/37D> ;
+        igeo:nom                    "Indre-et-Loire"@fr ;
+        igeo:nomCharniereClair      "Indre-et-Loire"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/37261> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/24> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc1> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/37> .
+
+<http://id.insee.fr/geo/departement/09>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/09122> ;
+        igeo:codeDepartement        "09"^^xs:token ;
+        igeo:codeINSEE              "09"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/914> , <http://id.insee.fr/geo/mouvements/1530> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/09D> ;
+        igeo:nom                    "Ariège"@fr ;
+        igeo:nomCharniereClair      "Ariège"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/09122> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/09> .
+
+<http://id.insee.fr/geo/departement/78>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/78646> ;
+        igeo:codeDepartement        "78"^^xs:token ;
+        igeo:codeINSEE              "78"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3189> , <http://id.insee.fr/geo/mouvements/2734> , <http://id.insee.fr/geo/mouvements/2856> , <http://id.insee.fr/geo/mouvements/660> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/78D> ;
+        igeo:nom                    "Yvelines"@fr ;
+        igeo:nomCharniereClair      "Yvelines"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/78646> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/11> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/78> .
+
+<http://id.insee.fr/geo/departement/31>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/31555> ;
+        igeo:codeDepartement        "31"^^xs:token ;
+        igeo:codeINSEE              "31"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1108> , <http://id.insee.fr/geo/mouvements/169> , <http://id.insee.fr/geo/mouvements/14> , <http://id.insee.fr/geo/mouvements/2647> , <http://id.insee.fr/geo/mouvements/1997> , <http://id.insee.fr/geo/mouvements/2910> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/31D> ;
+        igeo:nom                    "Haute-Garonne"@fr ;
+        igeo:nomCharniereClair      "Haute-Garonne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/31555> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/31> .
+
+<http://id.insee.fr/geo/departement/03>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/03190> ;
+        igeo:codeDepartement        "03"^^xs:token ;
+        igeo:codeINSEE              "03"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/03D> ;
+        igeo:nom                    "Allier"@fr ;
+        igeo:nomCharniereClair      "Allier"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/03190> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/03> .
+
+<http://id.insee.fr/geo/departement/974>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97411> ;
+        igeo:codeDepartement        "974"^^xs:token ;
+        igeo:codeINSEE              "974"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/974> ;
+        igeo:nom                    "La Réunion"@fr ;
+        igeo:nomCharniereClair      "La Réunion"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/97411> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/04> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/974> .
+
+<http://id.insee.fr/geo/departement/72>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/72181> ;
+        igeo:codeDepartement        "72"^^xs:token ;
+        igeo:codeINSEE              "72"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/72D> ;
+        igeo:nom                    "Sarthe"@fr ;
+        igeo:nomCharniereClair      "Sarthe"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/72181> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/52> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/72> .
+
+<http://id.insee.fr/geo/departement/44>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/44109> ;
+        igeo:codeDepartement        "44"^^xs:token ;
+        igeo:codeINSEE              "44"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1052> , <http://id.insee.fr/geo/mouvements/202> , <http://id.insee.fr/geo/mouvements/19> , <http://id.insee.fr/geo/mouvements/519> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/44D> ;
+        igeo:nom                    "Loire-Atlantique"@fr ;
+        igeo:nomCharniereClair      "Loire-Atlantique"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/44109> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/52> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/44> .
+
+<http://id.insee.fr/geo/departement/16>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/16015> ;
+        igeo:codeDepartement        "16"^^xs:token ;
+        igeo:codeINSEE              "16"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/560> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/16D> ;
+        igeo:nom                    "Charente"@fr ;
+        igeo:nomCharniereClair      "Charente"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/16015> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/16> .
+
+<http://id.insee.fr/geo/departement/85>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/85191> ;
+        igeo:codeDepartement        "85"^^xs:token ;
+        igeo:codeINSEE              "85"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2003> , <http://id.insee.fr/geo/mouvements/680> , <http://id.insee.fr/geo/mouvements/934> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/85D> ;
+        igeo:nom                    "Vendée"@fr ;
+        igeo:nomCharniereClair      "Vendée"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/85191> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/52> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/85> .
+
+<http://id.insee.fr/geo/departement/57>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/57463> ;
+        igeo:codeDepartement        "57"^^xs:token ;
+        igeo:codeINSEE              "57"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1233> , <http://id.insee.fr/geo/mouvements/461> , <http://id.insee.fr/geo/mouvements/1340> , <http://id.insee.fr/geo/mouvements/1708> , <http://id.insee.fr/geo/mouvements/1657> , <http://id.insee.fr/geo/mouvements/1705> , <http://id.insee.fr/geo/mouvements/1135> , <http://id.insee.fr/geo/mouvements/630> , <http://id.insee.fr/geo/mouvements/480> , <http://id.insee.fr/geo/mouvements/1303> , <http://id.insee.fr/geo/mouvements/3129> , <http://id.insee.fr/geo/mouvements/600> , <http://id.insee.fr/geo/mouvements/520> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/57D> ;
+        igeo:nom                    "Moselle"@fr ;
+        igeo:nomCharniereClair      "Moselle"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/57463> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/57> .
+
+<http://id.insee.fr/geo/departement/29>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/29232> ;
+        igeo:codeDepartement        "29"^^xs:token ;
+        igeo:codeINSEE              "29"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2700> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/29D> ;
+        igeo:nom                    "Finistère"@fr ;
+        igeo:nomCharniereClair      "Finistère"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/29232> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/53> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/29> .
+
+<http://id.insee.fr/geo/departement/10>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/10387> ;
+        igeo:codeDepartement        "10"^^xs:token ;
+        igeo:codeINSEE              "10"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1005> , <http://id.insee.fr/geo/mouvements/1687> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/10D> ;
+        igeo:nom                    "Aube"@fr ;
+        igeo:nomCharniereClair      "Aube"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/10387> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/10> .
+
+<http://id.insee.fr/geo/departement/51>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/51108> ;
+        igeo:codeDepartement        "51"^^xs:token ;
+        igeo:codeINSEE              "51"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1043> , <http://id.insee.fr/geo/mouvements/3049> , <http://id.insee.fr/geo/mouvements/1013> , <http://id.insee.fr/geo/mouvements/788> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/51D> ;
+        igeo:nom                    "Marne"@fr ;
+        igeo:nomCharniereClair      "Marne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/51108> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/51> .
+
+<http://id.insee.fr/geo/departement/23>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/23096> ;
+        igeo:codeDepartement        "23"^^xs:token ;
+        igeo:codeINSEE              "23"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/23D> ;
+        igeo:nom                    "Creuse"@fr ;
+        igeo:nomCharniereClair      "Creuse"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/23096> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/23> .
+
+<http://id.insee.fr/geo/departement/92>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/92050> ;
+        igeo:codeDepartement        "92"^^xs:token ;
+        igeo:codeINSEE              "92"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3189> , <http://id.insee.fr/geo/mouvements/3190> , <http://id.insee.fr/geo/mouvements/2858> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/92D> ;
+        igeo:nom                    "Hauts-de-Seine"@fr ;
+        igeo:nomCharniereClair      "Hauts-de-Seine"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/92050> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/11> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/92> .
+
+<http://id.insee.fr/geo/departement/64>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/64445> ;
+        igeo:codeDepartement        "64"^^xs:token ;
+        igeo:codeINSEE              "64"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/631> , <http://id.insee.fr/geo/mouvements/656> , <http://id.insee.fr/geo/mouvements/2444> , <http://id.insee.fr/geo/mouvements/1511> , <http://id.insee.fr/geo/mouvements/759> , <http://id.insee.fr/geo/mouvements/444> , <http://id.insee.fr/geo/mouvements/1171> , <http://id.insee.fr/geo/mouvements/1480> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/64D> ;
+        igeo:nom                    "Pyrénées-Atlantiques"@fr ;
+        igeo:nomCharniereClair      "Pyrénées-Atlantiques"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/64445> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/75> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/64> .
+
+<http://id.insee.fr/geo/departement/36>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/36044> ;
+        igeo:codeDepartement        "36"^^xs:token ;
+        igeo:codeINSEE              "36"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/36D> ;
+        igeo:nom                    "Indre"@fr ;
+        igeo:nomCharniereClair      "Indre"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/36044> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/24> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/36> .
+
+<http://id.insee.fr/geo/departement/08>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/08105> ;
+        igeo:codeDepartement        "08"^^xs:token ;
+        igeo:codeINSEE              "08"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1458> , <http://id.insee.fr/geo/mouvements/488> , <http://id.insee.fr/geo/mouvements/123> , <http://id.insee.fr/geo/mouvements/845> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/08D> ;
+        igeo:nom                    "Ardennes"@fr ;
+        igeo:nomCharniereClair      "Ardennes"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/08105> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/44> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/08> .
+
+<http://id.insee.fr/geo/departement/77>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/77288> ;
+        igeo:codeDepartement        "77"^^xs:token ;
+        igeo:codeINSEE              "77"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/79> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/77D> ;
+        igeo:nom                    "Seine-et-Marne"@fr ;
+        igeo:nomCharniereClair      "Seine-et-Marne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/77288> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/11> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/77> .
+
+<http://id.insee.fr/geo/departement/49>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/49007> ;
+        igeo:codeDepartement        "49"^^xs:token ;
+        igeo:codeINSEE              "49"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2055> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/49D> ;
+        igeo:nom                    "Maine-et-Loire"@fr ;
+        igeo:nomCharniereClair      "Maine-et-Loire"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/49007> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/52> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/49> .
+
+<http://id.insee.fr/geo/departement/30>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/30189> ;
+        igeo:codeDepartement        "30"^^xs:token ;
+        igeo:codeINSEE              "30"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/458> , <http://id.insee.fr/geo/mouvements/1578> , <http://id.insee.fr/geo/mouvements/1553> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/30D> ;
+        igeo:nom                    "Gard"@fr ;
+        igeo:nomCharniereClair      "Gard"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/30189> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/76> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/30> .
+
+<http://id.insee.fr/geo/departement/02>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/02408> ;
+        igeo:codeDepartement        "02"^^xs:token ;
+        igeo:codeINSEE              "02"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/477> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/02D> ;
+        igeo:nom                    "Aisne"@fr ;
+        igeo:nomCharniereClair      "Aisne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/02408> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/32> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/02> .
+
+<http://id.insee.fr/geo/departement/973>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/97302> ;
+        igeo:codeDepartement        "973"^^xs:token ;
+        igeo:codeINSEE              "973"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/973> ;
+        igeo:nom                    "Guyane"@fr ;
+        igeo:nomCharniereClair      "Guyane"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/97302> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/03> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/973> .
+
+<http://id.insee.fr/geo/departement/71>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/71270> ;
+        igeo:codeDepartement        "71"^^xs:token ;
+        igeo:codeINSEE              "71"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1260> , <http://id.insee.fr/geo/mouvements/1291> , <http://id.insee.fr/geo/mouvements/118> , <http://id.insee.fr/geo/mouvements/13> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/71D> ;
+        igeo:nom                    "Saône-et-Loire"@fr ;
+        igeo:nomCharniereClair      "Saône-et-Loire"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/71270> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/27> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc0> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/71> .
+
+<http://id.insee.fr/geo/departement/43>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/43157> ;
+        igeo:codeDepartement        "43"^^xs:token ;
+        igeo:codeINSEE              "43"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/43D> ;
+        igeo:nom                    "Haute-Loire"@fr ;
+        igeo:nomCharniereClair      "Haute-Loire"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/43157> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/43> .
+
+<http://id.insee.fr/geo/departement/15>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/15014> ;
+        igeo:codeDepartement        "15"^^xs:token ;
+        igeo:codeINSEE              "15"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1915> , <http://id.insee.fr/geo/mouvements/1341> , <http://id.insee.fr/geo/mouvements/1992> , <http://id.insee.fr/geo/mouvements/3212> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/15D> ;
+        igeo:nom                    "Cantal"@fr ;
+        igeo:nomCharniereClair      "Cantal"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/15014> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/15> .
+
+<http://id.insee.fr/geo/departement/84>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/84007> ;
+        igeo:codeDepartement        "84"^^xs:token ;
+        igeo:codeINSEE              "84"^^xs:token ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/84D> ;
+        igeo:nom                    "Vaucluse"@fr ;
+        igeo:nomCharniereClair      "Vaucluse"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/84007> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/93> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/84> .
+
+<http://id.insee.fr/geo/departement/56>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/56260> ;
+        igeo:codeDepartement        "56"^^xs:token ;
+        igeo:codeINSEE              "56"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2264> , <http://id.insee.fr/geo/mouvements/357> , <http://id.insee.fr/geo/mouvements/2801> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/56D> ;
+        igeo:nom                    "Morbihan"@fr ;
+        igeo:nomCharniereClair      "Morbihan"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/56260> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/53> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/56> .
+
+<http://id.insee.fr/geo/departement/28>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/28085> ;
+        igeo:codeDepartement        "28"^^xs:token ;
+        igeo:codeINSEE              "28"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/605> , <http://id.insee.fr/geo/mouvements/890> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/28D> ;
+        igeo:nom                    "Eure-et-Loir"@fr ;
+        igeo:nomCharniereClair      "Eure-et-Loir"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/28085> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/24> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc1> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/28> .
+
+<http://id.insee.fr/geo/departement/69>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/69123> ;
+        igeo:codeDepartement        "69"^^xs:token ;
+        igeo:codeINSEE              "69"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/2202> , <http://id.insee.fr/geo/mouvements/3209> ;
+        igeo:nom                    "Rhône"@fr ;
+        igeo:nomCharniereClair      "Rhône"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/69123> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/84> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc2> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/69> .
+
+<http://id.insee.fr/geo/departement/50>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/50502> ;
+        igeo:codeDepartement        "50"^^xs:token ;
+        igeo:codeINSEE              "50"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/1101> , <http://id.insee.fr/geo/mouvements/1978> , <http://id.insee.fr/geo/mouvements/1981> , <http://id.insee.fr/geo/mouvements/1169> , <http://id.insee.fr/geo/mouvements/587> , <http://id.insee.fr/geo/mouvements/1646> , <http://id.insee.fr/geo/mouvements/678> , <http://id.insee.fr/geo/mouvements/1772> , <http://id.insee.fr/geo/mouvements/1771> , <http://id.insee.fr/geo/mouvements/859> , <http://id.insee.fr/geo/mouvements/948> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/50D> ;
+        igeo:nom                    "Manche"@fr ;
+        igeo:nomCharniereClair      "Manche"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/50502> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/28> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc3> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/50> .
+
+<http://id.insee.fr/geo/departement/22>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/22278> ;
+        igeo:codeDepartement        "22"^^xs:token ;
+        igeo:codeINSEE              "22"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/906> , <http://id.insee.fr/geo/mouvements/1391> , <http://id.insee.fr/geo/mouvements/1118> , <http://id.insee.fr/geo/mouvements/1979> , <http://id.insee.fr/geo/mouvements/2972> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/22D> ;
+        igeo:nom                    "Côtes-d'Armor"@fr ;
+        igeo:nomCharniereClair      "Côtes-d'Armor"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/22278> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/53> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc4> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/22> .
+
+<http://id.insee.fr/geo/departement/91>
+        a                           igeo:Departement ;
+        igeo:chefLieu               <http://id.insee.fr/geo/commune/91228> ;
+        igeo:codeDepartement        "91"^^xs:token ;
+        igeo:codeINSEE              "91"^^xs:token ;
+        igeo:estLieChangement       <http://id.insee.fr/geo/mouvements/3190> , <http://id.insee.fr/geo/mouvements/824> , <http://id.insee.fr/geo/mouvements/3189> , <http://id.insee.fr/geo/mouvements/2857> ;
+        igeo:memeTerritoire         <http://id.insee.fr/geo/collectiviteDepartementaleOuCollectiviteTerritorialeEquivalente/91D> ;
+        igeo:nom                    "Essonne"@fr ;
+        igeo:nomCharniereClair      "Essonne"@fr ;
+        igeo:prefecture             <http://id.insee.fr/geo/commune/91228> ;
+        igeo:subdivisionDe          <http://id.insee.fr/geo/region/11> ;
+        igeo:typeNomCharniereClair  <http://id.insee.fr/codes/geo/typeNomCharniereClair/tncc5> ;
+        igeo:vivant                 true ;
+        owl:sameAs                  <http://data.ign.fr/id/geofla/departement/91> .
