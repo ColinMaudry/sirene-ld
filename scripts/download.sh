@@ -4,13 +4,6 @@
 set -e
 source config.sh
 
-containsElement () {
-  local e match="$1"
-  shift
-  for e; do [[ "$e" == "$match" ]] && return 0; done
-  return 1
-}
-
 date=`date +%Y-%m-%d`
 time=`date +%H:%M:%S`
 
@@ -22,112 +15,93 @@ echo "Download and extraction started: $date $time"
 # Etablissement
 # -----------------------------------------
 
-if [[ ! -d csv/Etablissement/full ]]; then
-    mkdir -p csv/Etablissement/full
-fi
-if [[ ! -d csv/Etablissement/light ]]; then
-    mkdir -p csv/Etablissement/light
+if [[ ! -d csv/Etablissement ]]
+then
+    mkdir -p csv/Etablissement
 fi
 
 cd csv/Etablissement
 
 echo "Downloading Etablissement data from http://data.cquest.org/geo_sirene/v2019/last/dep/..."
 
-wget -N -c -r -q -np -nd -A "gz" http://data.cquest.org/geo_sirene/v2019/last/dep/
 
 echo "done"
 echo ""
 
 echo "Extracting... "
 
-set +e
-# gzip seems to exit with error 2 when it doesn't overwrite some file
-for gz in `ls *.gz`
-do
-    csv=${gz::-3}
-    if [ ! -f $csv -o -f $csv -a $gz -nt $csv ]
-    then
-        gzip -dkfv $gz
-    fi
-done
-set -e
-
-echo "done"
-echo ""
-
-echo "Creating symbolic links of csvs to csv/Etablissement/full and csv/Etablissement/light directories..."
-
-basePath=`pwd`
-
-for csv in `ls *.csv`
-do
-    # Check that the symbolic link doesn't exist yet
-    if [[ ! -h light/$csv ]]
-    then
-        ln -s $basePath/$csv light/
-    fi
-done
-
-if [[ $departements -eq "all" ]]
+if [[ ! $departements == "all" ]]
 then
-    mv light/ full/
-else
+    echo "Downloading and extracting only selected departements ($departements)..."
+
+    rm -rf tmpcsv
+    mkdir tmpcsv
 
     IFS=',' read -ra arrayDep <<< "$departements"
     for dep in "${arrayDep[@]}"
     do
-        # Check that the symbolic link doesn't exist yet
-        if [[ ! -h full/geo_siret_$dep.csv ]]
+        gz="geo_siret_${dep}.csv.gz"
+        csv="geo_siret_${dep}.csv"
+
+        if [[ ! -f $gz ]]
         then
-            ln -s $basePath/geo_siret_$dep.csv full/
+            echo "Downloading $gz..."
+            wget -N -c -q -np -nd "http://data.cquest.org/geo_sirene/v2019/last/dep/${gz}"
         fi
-        if [[ -h light/geo_siret_$dep.csv ]]
-        then
-            rm light/geo_siret_$dep.csv
-        fi
+
+        set +e
+        gzip -dkfv $gz
+        set -e
+
+        mv $csv tmpcsv
     done
+
+    echo "Removing unselected departement CSVs..."
+    rm -f *.csv
+    mv tmpcsv/*.csv .
+    rm -r tmpcsv
+
+    echo "done"
+    echo ""
 fi
-
-echo "done"
-echo ""
-
 cd ../..
 
 # -----------------------------------------
 # Unite Legale
 # -----------------------------------------
 
-if [[ ! -d csv/UniteLegale/full ]]; then
-    mkdir -p csv/UniteLegale/full
+if [[ ! -d csv/UniteLegale ]]; then
+    mkdir -p csv/UniteLegale
 fi
 
 cd csv/UniteLegale
 
-echo "Downloading UniteLegale data from https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip..."
 
-wget -N -q https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip
 
-echo "done"
-echo ""
+zip=StockUniteLegale_utf8.zip
+csv=StockUniteLegale_utf8.csv
 
-echo "Extracting... "
+if [[ ! -f $zip ]]
 
-if [[ ! -f StockUniteLegale_utf8.csv ]]
 then
-    unzip StockUniteLegale_utf8.zip
+    echo "Downloading UniteLegale data from https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip..."
+    wget -N -q https://files.data.gouv.fr/insee-sirene/$zip
+    echo "done"
+    echo ""
 else
-    echo "File StockUniteLegale_utf8.csv already exists!"
+    echo "$zip already downloaded."
 fi
 
-basePath=`pwd`
 
-if [[ ! -h full/StockUniteLegale_utf8.csv ]]
+if [[ ! -f $csv ]]
 then
-    ln -s $basePath/StockUniteLegale_utf8.csv full/
+    echo "Extracting... "
+    unzip $zip
+    echo "done"
+    echo ""
+else
+    echo "$csv already exists"
 fi
-
-echo "done"
-echo ""
 
 date=`date +%Y-%m-%d`
 time=`date +%H:%M:%S`
