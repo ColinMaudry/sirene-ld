@@ -67,5 +67,7 @@ case "$type" in
             $root/scripts/rdf.sh $type
         done
     ;;
-
 esac
+
+cd $root/rdf
+gzip -9 sireneld.trig

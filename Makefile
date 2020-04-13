@@ -1,11 +1,15 @@
-config ?= config/config.sh
-include $(config)
 home=`pwd`
 
-convert: download convertOnly
-	echo "Conversion done."
+hdt: rdf hdtOnly
+	echo "Download + RDF + HDT".
 
-convertOnly:
+hdtOnly:
+	./scripts/hdt.sh $(server)
+
+rdf: download convertOnly
+	echo "Download + RDF."
+
+rdfOnly:
 	./scripts/rdf.sh $type
 
 download:
