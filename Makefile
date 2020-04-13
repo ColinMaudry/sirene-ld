@@ -10,7 +10,7 @@ rdf: download convertOnly
 	echo "Download + RDF."
 
 rdfOnly:
-	./scripts/rdf.sh $type
+	./scripts/rdf.sh $(type)
 
 download:
 	departements=$(DEPARTEMENTS) ./scripts/download.sh

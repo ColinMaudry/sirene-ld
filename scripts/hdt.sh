@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [[ ! -z $2 ]]
+if [[ -z $2 ]]
 then
-    branch=$1
-    server=$2
-else
     branch=`git rev-parse --abbrev-ref HEAD`
     server=
+else
+    branch=$1
+    server=$2
 fi
 
 
@@ -40,7 +40,7 @@ case $name in
         name="hdt-cpp-server-$datetime"
 
         echo "Creating dedicated instance..."
-        scw exec -w $(scw start $(scw create --name "$name" --commercial-type="GP1-L" "hdt-cpp")) cd sirene-ld && git checkout $branch && git pull origin "$branch" && make hdtOnly hdt
+        scw exec -w $(scw start $(scw create --name "$name" --commercial-type="GP1-L" "hdt-cpp")) cd sirene-ld && git checkout $branch && git pull origin "$branch" && export server=hdt && make hdtOnly
         echo "Done, processing started..."
 
         # Clear cache (see bug in scw: https://github.com/scaleway/scaleway-cli/issues/531)
