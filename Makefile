@@ -4,7 +4,7 @@ hdt: rdf hdtOnly
 	echo "Download + RDF + HDT".
 
 hdtOnly:
-	./scripts/hdt.sh $(server)
+	./scripts/hdt.sh $(branch) $(server)
 
 rdf: download convertOnly
 	echo "Download + RDF."
