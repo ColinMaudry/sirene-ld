@@ -34,7 +34,7 @@ case $server in
         then
             mkdir rdf
         fi
-        curl https://sireneld.io/data/sireneld.trig.gz --output rdf/sireneld.trig.gz
+        curl https://sireneld.io/data/sirene/sireneld.trig.gz --output rdf/sireneld.trig.gz
         makeHdt > log
         mv log finished
 
@@ -45,7 +45,7 @@ case $server in
         name="hdt-cpp-server-$datetime"
 
         echo "Creating dedicated instance..."
-        scw exec -w $(scw start $(scw create --name "$name" --commercial-type="GP1-L" "hdt-cpp")) cd sirene-ld && git checkout "$branch" && git pull origin "$branch" && make hdtOnly branch="$branch" server="hdt"
+        scw exec -w $(scw start $(scw create --name "$name" --commercial-type="GP1-L" "hdt-cpp")) 'cd sirene-ld && git checkout "$branch" && git pull origin "$branch" && make hdtOnly branch="$branch" server="hdt"'
         echo "Done, processing started..."
 
         # Clear cache (see bug in scw: https://github.com/scaleway/scaleway-cli/issues/531)

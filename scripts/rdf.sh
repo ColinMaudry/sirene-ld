@@ -61,7 +61,8 @@ case "$type" in
     ;;
 
     *)
-        rm $root/rdf/rdf.trig
+        echo "No type provided, do them all..."
+        rm $rdf
         for type in Etablissement UniteLegale ontologies nomenclatures
         do
             $root/scripts/rdf.sh $type
