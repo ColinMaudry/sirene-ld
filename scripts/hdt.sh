@@ -30,8 +30,11 @@ function makeHdt {
 case $server in
 
     hdt)
-        mkdir rdf
-        curl -s https://sireneld.io/data/sireneld.trig.gz --output sireneld.trig.gz
+        if [[ ! -d rdf ]]
+        then
+            mkdir rdf
+        fi
+        curl https://sireneld.io/data/sireneld.trig.gz --output rdf/sireneld.trig.gz
         makeHdt > log
         mv log finished
 
@@ -82,6 +85,7 @@ case $server in
     ;;
 
     *)
+        "Processing HDT locally..."
         makeHdt
 
     ;;
