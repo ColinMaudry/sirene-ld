@@ -42,7 +42,7 @@ case $server in
         name="hdt-cpp-server-$datetime"
 
         echo "Creating dedicated instance..."
-        scw exec -w $(scw start $(scw create --name "$name" --commercial-type="GP1-L" "hdt-cpp")) cd sirene-ld && git checkout $branch && git pull origin "$branch" && export server=hdt && make hdtOnly
+        scw exec -w $(scw start $(scw create --name "$name" --commercial-type="GP1-L" "hdt-cpp")) cd sirene-ld && git checkout "$branch" && git pull origin "$branch" && export server="hdt" && make hdtOnly
         echo "Done, processing started..."
 
         # Clear cache (see bug in scw: https://github.com/scaleway/scaleway-cli/issues/531)
