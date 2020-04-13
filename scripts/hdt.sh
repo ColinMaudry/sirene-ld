@@ -10,8 +10,10 @@ else
 fi
 
 
-echo "server=$name"
+echo "server=$server"
 echo "branch=$branch"
+
+sleep 3
 
 root=`pwd`
 rdf="$root/rdf/sireneld.trig.gz"
@@ -25,7 +27,7 @@ function makeHdt {
     time rdf2hdt -i -f "trig" "$rdf" $root/hdt/sireneld.hdt
 }
 
-case $name in
+case $server in
 
     hdt)
         mkdir rdf

@@ -1,4 +1,5 @@
 home=`pwd`
+branch?="develop"
 
 hdt: rdf hdtOnly
 	echo "Download + RDF + HDT".
