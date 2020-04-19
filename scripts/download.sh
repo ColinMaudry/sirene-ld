@@ -61,7 +61,6 @@ then
         set -e
 
         mv $csv tmpcsv
-        exit 0
     done
 
     echo "Removing unselected departement CSVs..."
