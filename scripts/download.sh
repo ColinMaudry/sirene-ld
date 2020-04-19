@@ -70,6 +70,13 @@ then
 
     echo "done"
     echo ""
+  else
+    rm -f *.csv *.gz
+    wget -N -c -q -np -nd http://data.cquest.org/geo_sirene/v2019/last/StockEtablissementActif_utf8_geo.csv.gz
+    set +e
+    echo "Extracting..."
+    gzip -dfv Stock*
+    set -e
 fi
 cd ../..
 
