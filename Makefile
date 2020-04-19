@@ -1,20 +1,23 @@
-home=`pwd`
 branch?="develop"
+root=`pwd`
 
-hdt: rdf hdtOnly
+hdt: rdf cleanHdt hdtOnly
 	echo "Download + RDF + HDT".
 
 hdtOnly:
 	./scripts/hdt.sh $(branch) $(server)
 
-rdf: download convertOnly
+rdf: download cleanRdf rdfOnly zipRdf
 	echo "Download + RDF."
+
+zipRdf:
+	cd rdf && gzip -f -9 sireneld.trig
 
 rdfOnly:
 	./scripts/rdf.sh $(type)
 
-download:
-	departements=$(DEPARTEMENTS) ./scripts/download.sh
+download: 
+	./scripts/download.sh
 
 clean: cleanCsv cleanRdf cleanHdt
 	echo "Cleaned RDF, CSV and HDT..."
@@ -27,3 +30,4 @@ cleanRdf:
 
 cleanHdt:
 	rm -rf hdt
+

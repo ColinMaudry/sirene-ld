@@ -1,22 +1,24 @@
 #!/bin/bash
+root=`pwd`
+rof="$root/rdf/sireneld.trig.gz"
 
-if [[ -z $2 ]]
+if [[ -z $test ]]
 then
-    branch=`git rev-parse --abbrev-ref HEAD`
-    server=
+  branch=$1
+  server=$2
+  scalewayType="GP1-L"
 else
-    branch=$1
-    server=$2
+  branch=`git rev-parse --abbrev-ref HEAD`
+  server=main
+  scalewayType="GP1-L"
+  scp $rdf soyou:git/sirene-ld/rdf/
 fi
 
 
 echo "server=$server"
 echo "branch=$branch"
 
-sleep 3
-
 root=`pwd`
-rdf="$root/rdf/sireneld.trig.gz"
 
 if [[ ! -d hdt ]]
 then
@@ -44,15 +46,16 @@ case $server in
         datetime=`date "+%FT%T"`
         name="hdt-cpp-server-$datetime"
 
-        echo "Creating dedicated instance..."
-        scw exec -w $(scw start $(scw create --name "$name" --commercial-type="GP1-L" "hdt-cpp")) 'cd sirene-ld && git checkout "$branch" && git pull origin "$branch" && make hdtOnly branch="$branch" server="hdt"'
-        echo "Done, processing started..."
+        echo "Creating dedicated instance in the background..."
+        scw exec -w $(scw start $(scw create --name "$name" --commercial-type="$scalewayType" "hdt-cpp")) "cd sirene-ld && git checkout $branch && git pull origin $branch && make hdtOnly branch="$branch" server='hdt'"
+        echo "Server created."
 
         # Clear cache (see bug in scw: https://github.com/scaleway/scaleway-cli/issues/531)
         rm ~/.scw-cache.db
 
         ip=`scw inspect "$name" | jq -r '.[0].public_ip.address'`
-
+        scw exec -w $name "cd sirene-ld && git checkout $branch && git pull origin $branch && make hdtOnly branch="$branch" server='hdt'" &
+        echo "HDT processing started..."
         #wait for HDT
         while [[ ! -f finished ]]
         do
@@ -63,15 +66,7 @@ case $server in
             sleep 60
         done
 
-        echo "Processing finished. Printing logs:"
-        echo ""
-        echo "========================"
-
-        # HDT is ready, show the Scaleway server logs
-        cat finished
-
-        echo "========================"
-        echo ""
+        echo "Processing finished."
 
         echo "Downloading HDT from instance server..."
         # Download HDT from Scaleway server
@@ -89,4 +84,5 @@ case $server in
         makeHdt
 
     ;;
+
 esac

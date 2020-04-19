@@ -2,10 +2,14 @@
 
 # fail on error
 set -e
-source config.sh
-
+echo $bla
 date=`date +%Y-%m-%d`
 time=`date +%H:%M:%S`
+
+if [[ $test ]]
+then
+  departements="52"
+fi
 
 echo "***** Download **********"
 echo "Download and extraction started: $date $time"
@@ -14,6 +18,8 @@ echo "Download and extraction started: $date $time"
 # -----------------------------------------
 # Etablissement
 # -----------------------------------------
+
+echo $mytest
 
 if [[ ! -d csv/Etablissement ]]
 then
@@ -36,7 +42,7 @@ then
 
     rm -rf tmpcsv
     mkdir tmpcsv
-
+ echo "$departements"
     IFS=',' read -ra arrayDep <<< "$departements"
     for dep in "${arrayDep[@]}"
     do
@@ -50,10 +56,12 @@ then
         fi
 
         set +e
+        echo "Extracting ${gz}..."
         gzip -dkfv $gz
         set -e
 
         mv $csv tmpcsv
+        exit 0
     done
 
     echo "Removing unselected departement CSVs..."
@@ -69,38 +77,44 @@ cd ../..
 # -----------------------------------------
 # Unite Legale
 # -----------------------------------------
-
-if [[ ! -d csv/UniteLegale ]]; then
-    mkdir -p csv/UniteLegale
-fi
-
-cd csv/UniteLegale
-
-
-
-zip=StockUniteLegale_utf8.zip
-csv=StockUniteLegale_utf8.csv
-
-if [[ ! -f $zip ]]
-
+echo "test=$test"
+if [[ -z $test ]]
 then
+
+  if [[ ! -d csv/UniteLegale ]]; then
+    mkdir -p csv/UniteLegale
+  fi
+
+  cd csv/UniteLegale
+
+
+
+  zip=StockUniteLegale_utf8.zip
+  csv=StockUniteLegale_utf8.csv
+
+  if [[ ! -f $zip ]]
+
+  then
     echo "Downloading UniteLegale data from https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip..."
     wget -N -q https://files.data.gouv.fr/insee-sirene/$zip
     echo "done"
     echo ""
-else
+  else
     echo "$zip already downloaded."
-fi
+  fi
 
 
-if [[ ! -f $csv ]]
-then
+  if [[ ! -f $csv ]]
+  then
     echo "Extracting... "
     unzip $zip
     echo "done"
     echo ""
-else
+  else
     echo "$csv already exists"
+  fi
+else
+  echo "UniteLegale download skipped"
 fi
 
 date=`date +%Y-%m-%d`

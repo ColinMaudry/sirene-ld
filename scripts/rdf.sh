@@ -19,7 +19,6 @@ then
 @prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sirecj: <https://sireneld.io/vocab/sirecj> .
-
     " > $rdf;
 fi
 
@@ -27,6 +26,7 @@ echo "rdf:	$rdf";
 echo "type:	$type";
 
 function EtablissementUniteLegale {
+    type=$1
     echo "<urn:graph:${type,,}> {" >> $rdf
 
     cd csv/$type
@@ -36,6 +36,16 @@ function EtablissementUniteLegale {
     echo "}" >> $rdf
 }
 
+function SupportData {
+    type=$1
+    echo "<urn:graph:${type,,}> {" >> $rdf
+    cd $root/$type
+    cat *.ttl | grep -v "^@" >> $rdf
+    cat *.nt | grep -v "^@" >> $rdf
+    echo "}" >> $rdf
+}
+
+
 case "$type" in
 
     Etablissement)
@@ -43,21 +53,18 @@ case "$type" in
     ;;
 
     UniteLegale)
+      if [[ -z $test ]]
+      then
         EtablissementUniteLegale $type
+      fi
     ;;
 
     ontologies)
-        echo "<urn:graph:${type,,}> {" >> $rdf
-        cd $root/$type
-        cat *.ttl | grep -v "^@" >> $rdf
-        echo "}" >> $rdf
+        SupportData $type
     ;;
 
     nomenclatures)
-        echo "<urn:graph:${type,,}> {" >> $rdf
-        cd $root/$type
-        cat *.ttl | grep -v "^@" >> $rdf
-        echo "}" >> $rdf
+        SupportData $type
     ;;
 
     *)
@@ -71,4 +78,3 @@ case "$type" in
 esac
 
 cd $root/rdf
-gzip -9 sireneld.trig
