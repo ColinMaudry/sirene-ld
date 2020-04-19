@@ -6,7 +6,7 @@ echo $bla
 date=`date +%Y-%m-%d`
 time=`date +%H:%M:%S`
 
-if [[ $test ]]
+if [ $test -a -z $departements ]
 then
   departements="52"
 fi

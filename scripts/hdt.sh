@@ -1,16 +1,20 @@
 #!/bin/bash
 root=`pwd`
-rof="$root/rdf/sireneld.trig.gz"
+gz=${rdf}.gz
+gzFile=${rdfFile}.gz
+
 
 if [[ -z $test ]]
 then
   branch=$1
   server=$2
-  scalewayType="GP1-L"
+  scalewayType="commercial-type=GP1-L"
+  image="hdt-cpp"
 else
   branch=`git rev-parse --abbrev-ref HEAD`
   server=main
-  scalewayType="GP1-L"
+  scalewayType=""
+  image="hdt-cpp-test"
   scp $rdf soyou:git/sirene-ld/rdf/
 fi
 
@@ -18,15 +22,13 @@ fi
 echo "server=$server"
 echo "branch=$branch"
 
-root=`pwd`
-
 if [[ ! -d hdt ]]
 then
     mkdir hdt
 fi
 
 function makeHdt {
-    time rdf2hdt -i -f "trig" "$rdf" $root/hdt/sireneld.hdt
+    time rdf2hdt -i -f nq "$gzFile" $root/hdt/sireneld.hdt
 }
 
 case $server in
@@ -36,7 +38,7 @@ case $server in
         then
             mkdir rdf
         fi
-        curl https://sireneld.io/data/sirene/sireneld.trig.gz --output rdf/sireneld.trig.gz
+        curl https://sireneld.io/data/sirene/$gzFile --output $gz
         makeHdt > log
         mv log finished
 
@@ -47,16 +49,18 @@ case $server in
         name="hdt-cpp-server-$datetime"
 
         echo "Creating dedicated instance in the background..."
-        scw exec -w $(scw start $(scw create --name "$name" --commercial-type="$scalewayType" "hdt-cpp")) "cd sirene-ld && git checkout $branch && git pull origin $branch && make hdtOnly branch="$branch" server='hdt'"
-        echo "Server created."
+        id=`scw start $(scw create --name "$name" $scalewayType $image)`
+        echo "Server created and started."
 
         # Clear cache (see bug in scw: https://github.com/scaleway/scaleway-cli/issues/531)
         rm ~/.scw-cache.db
 
-        ip=`scw inspect "$name" | jq -r '.[0].public_ip.address'`
-        scw exec -w $name "cd sirene-ld && git checkout $branch && git pull origin $branch && make hdtOnly branch="$branch" server='hdt'" &
+        scw exec -w $id "cd sirene-ld && git checkout $branch && git pull origin $branch && make hdtOnly branch="$branch" server='hdt'" &
         echo "HDT processing started..."
         #wait for HDT
+
+        ip=`scw inspect "$id" | jq -r '.[0].public_ip.address'`
+
         while [[ ! -f finished ]]
         do
             # I wish I could use scw cp but... : https://github.com/scaleway/scaleway-cli/issues/537
@@ -75,7 +79,7 @@ case $server in
 
         echo "Deleting instance server..."
         # Delete the server
-        scw rm -f "$name"
+        scw rm -f "$id"
         echo "done"
     ;;
 

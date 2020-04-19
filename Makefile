@@ -1,20 +1,22 @@
 branch?="develop"
 root=`pwd`
+rdfFile="sireneld.nq"
+rdf=$(root)/rdf/$(rdfFile)
 
 hdt: rdf cleanHdt hdtOnly
 	echo "Download + RDF + HDT".
 
 hdtOnly:
-	./scripts/hdt.sh $(branch) $(server)
+	rdf=$(rdf) rdfFile=$(rdfFile) ./scripts/hdt.sh $(branch) $(server)
 
 rdf: download cleanRdf rdfOnly zipRdf
 	echo "Download + RDF."
 
 zipRdf:
-	cd rdf && gzip -f -9 sireneld.trig
+	gzip -f9 $(rdf)
 
 rdfOnly:
-	./scripts/rdf.sh $(type)
+	rdf=$(rdf) rdfFile=$(rdfFile) ./scripts/rdf.sh $(type)
 
 download: 
 	./scripts/download.sh

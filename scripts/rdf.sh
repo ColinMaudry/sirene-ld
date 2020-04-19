@@ -2,24 +2,11 @@
 
 type=$1
 root=`pwd`
-rdf="$root/rdf/sireneld.trig"
+
 
 if [[ ! -d rdf ]]
 then
     mkdir rdf
-fi
-
-if [[ ! -f $rdf ]]
-then
-    echo "
-@prefix sn: <https://sireneld.io/vocab/sirene#> .
-@prefix sx: <https://sireneld.io/vocab/sirext#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
-@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sirecj: <https://sireneld.io/vocab/sirecj> .
-    " > $rdf;
 fi
 
 echo "rdf:	$rdf";
@@ -27,22 +14,24 @@ echo "type:	$type";
 
 function EtablissementUniteLegale {
     type=$1
-    echo "<urn:graph:${type,,}> {" >> $rdf
 
     cd csv/$type
     csvs=`ls *.csv`
     echo $csvs
-    tarql $root/sparql/${type}2rdf.rq $csvs | grep -v "^@" >> $rdf
-    echo "}" >> $rdf
+    tarql --ntriples $root/sparql/${type}2rdf.rq $csvs | sed "s/\.$/<urn:graph:${type,,}>./" >> $rdf
 }
 
 function SupportData {
     type=$1
-    echo "<urn:graph:${type,,}> {" >> $rdf
     cd $root/$type
-    cat *.ttl | grep -v "^@" >> $rdf
-    cat *.nt | grep -v "^@" >> $rdf
-    echo "}" >> $rdf
+    mkdir nt
+    for ttl in `ls *.ttl`
+    do
+      rdf2rdf -in $ttl -out nt/$ttl.nt
+    done
+    cp *.nt nt
+    cat nt/*.nt | sed "s/\.$/<urn:graph:${type,,}>./" >> $rdf
+    rm -r nt
 }
 
 
@@ -69,7 +58,7 @@ case "$type" in
 
     *)
         echo "No type provided, do them all..."
-        rm $rdf
+        rm -f $rdf
         for type in Etablissement UniteLegale ontologies nomenclatures
         do
             $root/scripts/rdf.sh $type
