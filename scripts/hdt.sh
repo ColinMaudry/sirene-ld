@@ -39,6 +39,7 @@ case $server in
             mkdir rdf
         fi
         curl https://sireneld.io/data/sirene/$gzFile --output $gz
+        ll rdf
         makeHdt > log
         mv log finished
 
@@ -50,6 +51,7 @@ case $server in
 
         echo "Creating dedicated instance in the background..."
         id=`scw start $(scw create --name "$name" $scalewayType $image)`
+        sleep 10
         echo "Server created and started."
 
         # Clear cache (see bug in scw: https://github.com/scaleway/scaleway-cli/issues/531)
