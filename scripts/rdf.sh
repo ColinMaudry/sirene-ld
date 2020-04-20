@@ -18,7 +18,8 @@ function EtablissementUniteLegale {
     cd csv/$type
     csvs=`ls *.csv`
     echo $csvs
-    tarql --ntriples $root/sparql/${type}2rdf.rq $csvs | sed "s/\.$/<urn:graph:${type,,}>./" >> $rdf
+    echo "$(date +%H:%M:%S): starting RDF conversion of ${type}..."
+    tarql --ntriples $root/sparql/${type}2rdf.rq $csvs  >> $rdf
 }
 
 function SupportData {
@@ -30,7 +31,7 @@ function SupportData {
       rdf2rdf -in $ttl -out nt/$ttl.nt
     done
     cp *.nt nt
-    cat nt/*.nt | sed "s/\.$/<urn:graph:${type,,}>./" >> $rdf
+    cat nt/*.nt >> $rdf
     rm -r nt
 }
 

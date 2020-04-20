@@ -51,13 +51,14 @@ case $server in
 
         echo "Creating dedicated instance in the background..."
         id=`scw start $(scw create --name "$name" $scalewayType $image)`
-        sleep 10
+        scw exec -w $id "cd sirene-ld && git pull && git checkout $branch && git pull origin $branch"
+
         echo "Server created and started."
 
         # Clear cache (see bug in scw: https://github.com/scaleway/scaleway-cli/issues/531)
         rm ~/.scw-cache.db
 
-        scw exec -w $id "cd sirene-ld && git checkout $branch && git pull origin $branch && make hdtOnly branch="$branch" server='hdt'" &
+        scw exec $id "cd /root/sirene-ld && make hdtOnly branch="$branch" server='hdt'" &
         echo "HDT processing started..."
         #wait for HDT
 
