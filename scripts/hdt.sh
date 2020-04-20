@@ -27,7 +27,8 @@ then
 fi
 
 function makeHdt {
-    echo "About to process $gz for HDT conversion."
+    gz=$1
+    echo "$server: about to process $gz for HDT conversion."
     time rdf2hdt -i -f nq "$gz" $root/hdt/sireneld.hdt
 }
 
@@ -38,8 +39,10 @@ case $server in
         then
             mkdir rdf
         fi
+        echo "$server: pwd=$(pwd)"
+        echo "$server: gz=$gz"
         ls rdf
-        makeHdt > log
+        makeHdt $gz > log
         mv log finished
 
     ;;
@@ -48,11 +51,11 @@ case $server in
         datetime=`date "+%FT%T"`
         name="hdt-cpp-server-$datetime"
 
-        echo "Creating dedicated instance in the background..."
+        echo "$server: Creating dedicated instance in the background..."
         id=`scw start $(scw create --name "$name" $scalewayType $image)`
         scw exec -w $id "cd sirene-ld && git pull && git checkout $branch && git pull origin $branch && mkdir rdf"
 
-        echo "Server created and started."
+        echo "$server: Server created and started."
 
         # Clear cache (see bug in scw: https://github.com/scaleway/scaleway-cli/issues/531)
         rm ~/.scw-cache.db
@@ -61,9 +64,9 @@ case $server in
 
         scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q $rdf root@${ip}:/root/sirene-ld/rdf/ 
 
-        echo "$(date +%H:%M:%S): starting HDT creation... ${type}..."
+        echo "$server: $(date +%H:%M:%S): starting HDT creation... ${type}..."
         scw exec -w $id "cd /root/sirene-ld && make hdtOnly branch="$branch" server='hdt'" &
-        echo "HDT processing started..."
+        echo "$server: HDT processing started..."
         #wait for HDT
 
 
@@ -76,7 +79,7 @@ case $server in
             sleep 60
         done
 
-        echo "$(date +%H:%M:%S): finished HDT creation."
+        echo "$server: $(date +%H:%M:%S): finished HDT creation."
 
         echo "Downloading HDT from instance server..."
         # Download HDT from Scaleway server
