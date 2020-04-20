@@ -42,8 +42,9 @@ case $server in
         echo "$server: pwd=$(pwd)"
         echo "$server: gz=$gz"
         ls rdf
-        makeHdt $gz 
+        makeHdt $gz
 
+        echo "done" > finished
     ;;
 
     main)
@@ -64,7 +65,7 @@ case $server in
         scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q $gz root@${ip}:/root/sirene-ld/rdf/ 
 
         echo "$server: $(date +%H:%M:%S): starting HDT creation... ${type}..."
-        scw exec -w $id "cd /root/sirene-ld && make hdtOnly branch="$branch" server='hdt' &> log && mv log finished" &
+        scw exec -w $id "cd /root/sirene-ld && make hdtOnly branch="$branch" server='hdt'" &
         echo "$server: HDT processing started..."
         #wait for HDT
 
@@ -74,16 +75,11 @@ case $server in
             # I wish I could use scw cp but... : https://github.com/scaleway/scaleway-cli/issues/537
             scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q root@${ip}:/root/sirene-ld/finished . 2>&1 | grep "xx"
 
-            # #GreenIT
-            sleep 60
+            sleep 10
         done
 
         echo "$server: $(date +%H:%M:%S): finished HDT creation."
-
-        echo "Logs:"
-        echo "+++++++++++++"
-        cat finished
-        echo "+++++++++++++"
+        rm finished
         echo "Downloading HDT from instance server..."
         # Download HDT from Scaleway server
         scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q root@${ip}:/root/sirene-ld/hdt/* ./hdt/
