@@ -27,7 +27,8 @@ then
 fi
 
 function makeHdt {
-    time rdf2hdt -i -f nq "$gzFile" $root/hdt/sireneld.hdt
+    echo "About to process $gz for HDT conversion."
+    time rdf2hdt -i -f nq "$gz" $root/hdt/sireneld.hdt
 }
 
 case $server in
@@ -37,7 +38,7 @@ case $server in
         then
             mkdir rdf
         fi
-        ll rdf
+        ls rdf
         makeHdt > log
         mv log finished
 
@@ -58,7 +59,7 @@ case $server in
 
         ip=`scw inspect "$id" | jq -r '.[0].public_ip.address'`
 
-        scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q $rdf root@${ip}:/root/sirene-ld/rdf/ 2>&1 | grep "xx"
+        scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q $rdf root@${ip}:/root/sirene-ld/rdf/ 
 
         echo "$(date +%H:%M:%S): starting HDT creation... ${type}..."
         scw exec -w $id "cd /root/sirene-ld && make hdtOnly branch="$branch" server='hdt'" &
