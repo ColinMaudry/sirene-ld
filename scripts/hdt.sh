@@ -29,7 +29,7 @@ fi
 function makeHdt {
     gz=$1
     echo "$server: about to process $gz for HDT conversion."
-    time rdf2hdt -i -f nq "$gz" $root/hdt/sireneld.hdt
+    time rdf2hdt -i -f nt "$gz" $root/hdt/sireneld.hdt
 }
 
 case $server in
@@ -42,8 +42,7 @@ case $server in
         echo "$server: pwd=$(pwd)"
         echo "$server: gz=$gz"
         ls rdf
-        makeHdt $gz > log
-        mv log finished
+        makeHdt $gz 
 
     ;;
 
@@ -62,10 +61,10 @@ case $server in
 
         ip=`scw inspect "$id" | jq -r '.[0].public_ip.address'`
 
-        scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q $rdf root@${ip}:/root/sirene-ld/rdf/ 
+        scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q $gz root@${ip}:/root/sirene-ld/rdf/ 
 
         echo "$server: $(date +%H:%M:%S): starting HDT creation... ${type}..."
-        scw exec -w $id "cd /root/sirene-ld && make hdtOnly branch="$branch" server='hdt'" &
+        scw exec -w $id "cd /root/sirene-ld && make hdtOnly branch="$branch" server='hdt' &> log && mv log finished" &
         echo "$server: HDT processing started..."
         #wait for HDT
 
@@ -81,6 +80,10 @@ case $server in
 
         echo "$server: $(date +%H:%M:%S): finished HDT creation."
 
+        echo "Logs:"
+        echo "+++++++++++++"
+        cat finished
+        echo "+++++++++++++"
         echo "Downloading HDT from instance server..."
         # Download HDT from Scaleway server
         scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q root@${ip}:/root/sirene-ld/hdt/* ./hdt/
