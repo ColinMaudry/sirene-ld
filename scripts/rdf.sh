@@ -64,6 +64,7 @@ case "$type" in
         do
             $root/scripts/rdf.sh $type
         done
+        echo "$(date +%H:%M:%S): finished RDF conversion."
     ;;
 esac
 
