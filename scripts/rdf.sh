@@ -19,7 +19,8 @@ function EtablissementUniteLegale {
     csvs=`ls *.csv`
     echo $csvs
     echo "$(date +%H:%M:%S): starting RDF conversion of ${type}..."
-    tarql --ntriples $root/sparql/${type}2rdf.rq $csvs  >> $rdf
+    time tarql --ntriples $root/sparql/${type}2rdf.rq $csvs  >> $rdf
+    echo "$(date +%H:%M:%S): finished RDF conversion of ${type}."
 }
 
 function SupportData {

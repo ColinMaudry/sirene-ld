@@ -62,7 +62,8 @@ case $server in
 
         ip=`scw inspect "$id" | jq -r '.[0].public_ip.address'`
 
-        scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q $gz root@${ip}:/root/sirene-ld/rdf/ 
+        echo "$server: Sending $gz to the server..."
+        scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q $gz root@${ip}:/root/sirene-ld/rdf/
 
         echo "$server: $(date +%H:%M:%S): starting HDT creation... ${type}..."
         scw exec -w $id "cd /root/sirene-ld && make hdtOnly branch="$branch" server='hdt'" &
