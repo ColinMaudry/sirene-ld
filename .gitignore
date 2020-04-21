@@ -3,6 +3,7 @@ config.sh
 *.csv
 ./*.nt
 !sirene2018vs2019.csv
+!journal.csv
 *.gz
 *.hdt*
 /*.trig
