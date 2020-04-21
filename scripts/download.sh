@@ -71,9 +71,9 @@ then
     echo "done"
     echo ""
   else
-    echo "Downloading all active Etablissement data..."
+    echo "Downloading all Etablissement data..."
     rm -f *.csv *.gz
-    wget -N -c -q -np -nd http://data.cquest.org/geo_sirene/v2019/last/StockEtablissementActif_utf8_geo.csv.gz
+    wget -N -c -q -np -nd http://data.cquest.org/geo_sirene/v2019/last/StockEtablissement_utf8_geo.csv.gz
     set +e
     echo "Extracting..."
     gzip -dfv Stock*
