@@ -1,11 +1,12 @@
-date,etablissements,unitesLegales,supportData,nbTriplesQuadsM,triplesQuads,sizeMb,sizeGzMb,command,timeHMS,peakMemoryConsumptionGb
-2019-11-30,geoAll,,,674.474335,triples,,,tarql –ntriples $rq $csv,02:12:26,
-2019-12-01,,all,,394.602929,triples,,,tarql –ntriples $rq $csv,01:31:39,
-2020-04-20,geoActiveOnly,all,ontologies + nomenclatures,724.179635,triples,88516,4662,rdf2hdt -i -f nt $in $out ,01:51:35,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,, ,,,,,,
+date,etablissements,unitesLegales,supportData,nbTriplesQuadsM,triplesQuads,sizeRdfMb,sizeGzMb,command,timeHMS,peakMemoryConsumptionGb,sizeHdt+IndexMb
+2019-11-30,geoAll,,,674.474335,triples,,,tarql –ntriples,02:12:26,,
+2019-12-01,,all,,394.602929,triples,,,tarql –ntriples,01:31:39,,
+2020-04-19,geoActiveOnly,all,ontologies + nomenclatures,,quads,,4793,,,,
+2020-04-20,geoActiveOnly,all,ontologies + nomenclatures,724.179635,triples,88516,4662,rdf2hdt -i,01:51:35,29,9772
+2020-04-21,geoAll,all,ontologies + nomenclatures,1169.826900,triples,143854,,rdf2hdt -i,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,, ,,,,,,,
