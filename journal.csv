@@ -1,0 +1,11 @@
+date,etablissements,unitesLegales,supportData,nbTriplesQuads,triplesQuads,sizeMb,sizeGzMb,command,timeHMS,peakMemoryConsumptionGb
+2019-11-30,geoAll,,,674474335,triples,,,tarql –ntriples $rq $csv,02:12:26,
+2019-12-01,,all,,394602929,triples,,,tarql –ntriples $rq $csv,01:31:39,
+2020-04-20,geoActiveOnly,all,ontologies + nomenclatures,724179635,triples,88516,4662,rdf2hdt -i -f nt $in $out ,01:51:35,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,, ,,,,,,
