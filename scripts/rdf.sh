@@ -18,13 +18,24 @@ function EtablissementUniteLegale {
     cd csv/$type
     csvs=`ls *.csv`
     echo $csvs
+    tarqlCommand="time tarql --ntriples $root/sparql/${type}2rdf.rq $csvs"
+
     echo "$(date +%H:%M:%S): starting RDF conversion of ${type}..."
-    time tarql --ntriples $root/sparql/${type}2rdf.rq $csvs  >> $rdf
+
+    if [[ $output == "nq" ]]
+    then
+      time tarql --ntriples $root/sparql/${type}2rdf.rq $csvs | sed "s/\.$/<urn:graphs:${type,,}> ./" >> $rdf
+    else
+      time tarql --ntriples $root/sparql/${type}2rdf.rq $csvs >> $rdf
+      echo "No quad output. Triple output for $type."
+    fi
+
     echo "$(date +%H:%M:%S): finished RDF conversion of ${type}."
 }
 
 function SupportData {
     type=$1
+
     cd $root/$type
     mkdir nt
     for ttl in `ls *.ttl`
@@ -32,7 +43,15 @@ function SupportData {
       rdf2rdf -in $ttl -out nt/$ttl.nt
     done
     cp *.nt nt
-    cat nt/*.nt >> $rdf
+
+    if [[ $output == "nq" ]]
+    then
+      cat nt/*.nt | sed "s/\.$/<urn:graphs:${type,,}> ./" >> $rdf
+    else
+      cat nt/*.nt  >> $rdf
+      echo "No quad output. Triple output for $type."
+    fi
+
     rm -r nt
 }
 

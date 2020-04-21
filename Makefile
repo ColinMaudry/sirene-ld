@@ -1,6 +1,7 @@
 branch?="develop"
+output?="nt"
 root=`pwd`
-rdfFile="sireneld.nt"
+rdfFile=sireneld.$(output)
 rdf=$(root)/rdf/$(rdfFile)
 
 hdt: rdf cleanHdt hdtOnly
