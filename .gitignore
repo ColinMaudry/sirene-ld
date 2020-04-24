@@ -1,5 +1,16 @@
 televersementConfig.sh
+config.sh
 *.csv
-*.nt
+./*.nt
 !sirene2018vs2019.csv
+!journal.csv
 *.gz
+*.hdt*
+/*.trig
+/*.ttl
+/*.nt
+rdf
+csv
+*.save
+*.zip
+*.log

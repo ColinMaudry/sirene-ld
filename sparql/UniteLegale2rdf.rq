@@ -2,67 +2,68 @@ PREFIX sn: <https://sireneld.io/vocab/sirene#>
 PREFIX sx: <https://sireneld.io/vocab/sirext#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+PREFIX geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 
 CONSTRUCT {
 
     ?entreprise a ?categorie_class ;
     a sx:UniteLegale ;
-    a ?categoriejuridiqueunitelegale_class ;
+    a ?categoriejuridiqueUniteLegale_class ;
 
     sn:siren ?siren ;
-    sn:statutdiffusionunitelegale ?statutdiffusionunitelegale ;
-    sn:unitepurgeeunitelegale ?unitepurgeeunitelegale ;
-    sn:datecreationunitelegale ?datecreationunitelegale_date ;
-    sn:sigleunitelegale ?sigleunitelegale ;
-    sn:sexeunitelegale ?sexeunitelegale ;
+    sn:statutDiffusionUniteLegale ?statutDiffusionUniteLegale ;
+    sn:unitePurgeeUniteLegale ?unitePurgeeUniteLegale ;
+    sn:dateCreationUniteLegale ?dateCreationUniteLegale_date ;
+    sn:sigleUniteLegale ?sigleUniteLegale ;
+    sn:sexeUniteLegale ?sexeUniteLegale ;
     sn:prenom1UniteLegale ?prenom1UniteLegale ;
     sn:prenom2UniteLegale ?prenom2UniteLegale ;
     sn:prenom3UniteLegale ?prenom3UniteLegale ;
     sn:prenom4UniteLegale ?prenom4UniteLegale ;
-    sn:prenomusuelunitelegale ?prenomusuelunitelegale ;
-    sn:pseudonymeunitelegale ?pseudonymeunitelegale ;
-    sn:identifiantassociationunitelegale ?identifiantassociationunitelegale ;
-    sn:trancheeffectifsunitelegale ?trancheeffectifsunitelegale ;
-    sn:anneeeffectifsunitelegale ?anneeeffectifsunitelegale_year ;
-    sn:datederniertraitementunitelegale ?datederniertraitementunitelegale_date ;
-    sn:nombreperiodesunitelegale ?nombreperiodesunitelegale_integer ;
-    sn:categorieentreprise ?categorieentreprise ;
-    sn:anneecategorieentreprise ?anneecategorieentreprise_year ;
-    sn:datedebut ?datedebut_date ;
-    sn:etatadministratifunitelegale ?etatadministratifunitelegale ;
-    sn:nomunitelegale ?nomunitelegale ;
-    sn:nomusageunitelegale ?nomusageunitelegale ;
-    sn:denominationunitelegale ?denominationunitelegale ;
-    sn:denominationusuelle1unitelegale ?denominationusuelle1unitelegale ;
-    sn:denominationusuelle2unitelegale ?denominationusuelle2unitelegale ;
-    sn:denominationusuelle3unitelegale ?denominationusuelle3unitelegale ;
-    sn:categoriejuridiqueunitelegale ?categoriejuridiqueunitelegale ;
-    sn:activiteprincipaleunitelegale ?activiteprincipaleunitelegale ;
-    sn:nomenclatureactiviteprincipaleunitelegale ?nomenclatureactiviteprincipaleunitelegale ;
-    sn:nicsiegeunitelegale ?nicsiegeunitelegale ;
-    sn:economiesocialesolidaireunitelegale ?economiesocialesolidaireunitelegale ;
-    sn:caractereemployeurunitelegale ?caractereemployeurunitelegale ;
+    sn:prenomUsuelUniteLegale ?prenomUsuelUniteLegale ;
+    sn:pseudonymeUniteLegale ?pseudonymeUniteLegale ;
+    sn:identifiantAssociationUniteLegale ?identifiantAssociationUniteLegale ;
+    sn:trancheEffectifsUniteLegale ?trancheEffectifsUniteLegale ;
+    sn:anneeEffectifsUniteLegale ?anneeEffectifsUniteLegale_year ;
+    sn:dateDernierTraitementUniteLegale ?dateDernierTraitementUniteLegale_date ;
+    sn:nombrePeriodesUniteLegale ?nombrePeriodesUniteLegale_integer ;
+    sn:categorieEntreprise ?categorieEntreprise ;
+    sn:anneeCategorieEntreprise ?anneeCategorieEntreprise_year ;
+    sn:dateDebut ?dateDebut_date ;
+    sn:etatAdministratifUniteLegale ?etatAdministratifUniteLegale ;
+    sn:nomUniteLegale ?nomUniteLegale ;
+    sn:nomUsageUniteLegale ?nomUsageUniteLegale ;
+    sn:denominationUniteLegale ?denominationUniteLegale ;
+    sn:denominationUsuelle1UniteLegale ?denominationUsuelle1UniteLegale ;
+    sn:denominationUsuelle2UniteLegale ?denominationUsuelle2UniteLegale ;
+    sn:denominationUsuelle3UniteLegale ?denominationUsuelle3UniteLegale ;
+    sn:categorieJuridiqueUniteLegale ?categorieJuridiqueUniteLegale ;
+    sn:activitePrincipaleUniteLegale ?activitePrincipaleUniteLegale ;
+    sn:nomenclatureActivitePrincipaleUniteLegale ?nomenclatureActivitePrincipaleUniteLegale ;
+    sn:nicSiegeUniteLegale ?nicSiegeUniteLegale ;
+    sn:economieSocialeSolidaireUniteLegale ?economieSocialeSolidaireUniteLegale ;
+    sn:caractereEmployeurUniteLegale ?caractereEmployeurUniteLegale ;
 
 
-    sx:trancheEffectifs ?trancheeffectifsunitelegale_uri ;
-    sx:etatAdministratif ?etatadministratifunitelegale_uri ;
-    sx:activitePrincipale ?activiteprincipaleunitelegale_uri ;
-    sx:siege ?nicsiegeunitelegale_uri .
+    sx:trancheEffectifs ?trancheEffectifsUniteLegale_uri ;
+    sx:etatAdministratif ?etatAdministratifUniteLegale_uri ;
+    sx:activitePrincipale ?activitePrincipaleUniteLegale_uri ;
+    sx:siege ?nicSiegeUniteLegale_uri .
 }
 
 WHERE {
-    bind(uri(concat("https://sireneld.io/vocab/sirext#",?categorieentreprise)) as ?categorie_class)
-    bind(uri(concat("https://sireneld.io/vocab/sirecj#",?categoriejuridiqueunitelegale)) as ?nj_class)
+    bind(uri(concat("https://sireneld.io/vocab/sirext#",?categorieEntreprise)) as ?categorie_class)
+    bind(uri(concat("https://sireneld.io/vocab/sirecj#",?categorieJuridiqueUniteLegale)) as ?categorieJuridiqueUniteLegale_class)
     bind(uri(concat("https://sireneld.io/siren/",?siren)) as ?entreprise)
-    bind(uri(concat("https://sireneld.io/tef/",?trancheeffectifsunitelegale)) as ?trancheeffectifsunitelegale_uri)
-    bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatadministratifunitelegale)) as ?etatadministratifunitelegale_uri)
-    bind(if(?nomenclatureactiviteprincipaleunitelegale = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activiteprincipaleunitelegale)),?null) as ?activiteprincipaleunitelegale_uri)
-    bind(uri(concat("https://sireneld.io/siret/",?siren,?nicsiegeunitelegale)) as ?nicsiegeunitelegale_uri)
+    bind(uri(concat("https://sireneld.io/tef/",?trancheEffectifsUniteLegale)) as ?trancheEffectifsUniteLegale_uri)
+    bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatAdministratifUniteLegale)) as ?etatAdministratifUniteLegale_uri)
+    bind(if(?nomenclatureActivitePrincipaleUniteLegale = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activitePrincipaleUniteLegale)),?null) as ?activitePrincipaleUniteLegale_uri)
+    bind(uri(concat("https://sireneld.io/siret/",?siren,?nicSiegeUniteLegale)) as ?nicSiegeUniteLegale_uri)
 
-    bind(xs:date(?datecreationunitelegale) as ?datecreationunitelegale_date)
-    bind(xs:gYear(?anneeeffectifsunitelegale) as ?anneeeffectifsunitelegale_year)
-    bind(xs:date(?datederniertraitementunitelegale) as ?datederniertraitementunitelegale_date)
-    bind(xs:int(?nombreperiodesunitelegale) as ?nombreperiodesunitelegale_integer)
-    bind(xs:gYear(?anneecategorieentreprise) as ?anneecategorieentreprise_year)
-    bind(xs:date(?datedebut) as ?datedebut_date)
+    bind(xs:date(?dateCreationUniteLegale) as ?dateCreationUniteLegale_date)
+    bind(xs:gYear(?anneeEffectifsUniteLegale) as ?anneeEffectifsUniteLegale_year)
+    bind(xs:date(?dateDernierTraitementUniteLegale) as ?dateDernierTraitementUniteLegale_date)
+    bind(xs:int(?nombrePeriodesUniteLegale) as ?nombrePeriodesUniteLegale_integer)
+    bind(xs:gYear(?anneeCategorieEntreprise) as ?anneeCategorieEntreprise_year)
+    bind(xs:date(?dateDebut) as ?dateDebut_date)
 }

@@ -4,6 +4,7 @@
 @prefix igeo:  <http://id.insee.fr/def/geo#> .
 @prefix sirext: <https://sireneld.io/vocab/sirext#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 
 
 <http://id.insee.fr/geo/region/91>

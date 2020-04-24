@@ -12,73 +12,78 @@ construct {
         sx:uniteLegale ?uniteLegale ;
         sn:nic ?nic ;
         sn:siret ?siret ;
-        sn:statutdiffusionetablissement ?statutdiffusionetablissement ;
-        sn:datecreationetablissement ?datecreationetablissement_date ;
-        sn:trancheeffectifsetablissement ?trancheeffectifsetablissement ;
-        sn:anneeeffectifsetablissement ?anneeeffectifsetablissement_year ;
-        sn:activiteprincipaleregistremetiersetablissement ?activiteprincipaleregistremetiersetablissement ;
-        sn:datederniertraitementetablissement ?datederniertraitementetablissement_date ;
-        sn:etablissementsiege ?etablissementsiege ;
-        sn:nombreperiodesetablissement ?nombreperiodesetablissement_integer ;
-        sn:complementadresseetablissement ?complementadresseetablissement ;
-        sn:numerovoieetablissement ?numerovoieetablissement ;
-        sn:indicerepetitionetablissement ?indicerepetition2etablissement ;
-        sn:typevoieetablissement ?typevoieetablissement ;
-        sn:libellevoieetablissement ?libellevoieetablissement ;
-        sn:codepostaletablissement ?codePostalEtablissement ;
-        sn:libellecommuneetablissement ?libellecommuneetablissement ;
-        sn:distributionspecialeetablissement ?distributionspecialeetablissement ;
-        sn:codecommuneetablissement ?codecommuneetablissement ;
-        sn:codecedexetablissement ?codecedexetablissement ;
-        sn:libellecedexetablissement ?libellecedexetablissement ;
-        sn:codepaysetrangeretablissement ?codepaysetrangeretablissement ;
-        sn:libellepaysetrangeretablissement ?libellepaysetrangeretablissement ;
-        sn:numerovoie2etablissement ?numerovoie2etablissement ;
-        sn:indicerepetition2etablissement ?indicerepetition2etablissement ;
-        sn:typevoiee2tablissement ?typevoiee2tablissement ;
-        sn:libellevoie2etablissement ?libellevoie2etablissement ;
-        sn:codepostal2etablissement ?codepostal2etablissement ;
-        sn:libellecommune2etablissement ?libellecommune2etablissement ;
-        sn:distributionspeciale2etablissement ?distributionspeciale2etablissement ;
-        sn:codecommune2etablissement ?codecommune2etablissement ;
-        sn:codecedex2etablissement ?codecedex2etablissement ;
-        sn:libellecedex2etablissement ?libellecedex2etablissement ;
-        sn:codepaysetranger2etablissement ?codepaysetranger2etablissement ;
-        sn:libellepaysetranger2etablissement ?libellepaysetranger2etablissement ;
-        sn:datedebut ?datedebut_date ;
-        sn:etatadministratifetablissement ?etatadministratifetablissement ;
-        sn:enseigne1etablissement ?enseigne1etablissement ;
-        sn:enseigne2etablissement ?enseigne2etablissement ;
-        sn:enseigne3etablissement ?enseigne3etablissement ;
-        sn:denominationusuelleetablissement ?denominationusuelleetablissement ;
-        sn:activiteprincipaleetablissement ?activiteprincipaleetablissement ;
-        sn:nomenclatureactiviteprincipaleetablissement ?nomenclatureactiviteprincipaleetablissement ;
-        sn:caractereemployeuretablissement ?caractereemployeuretablissement ;
+        sn:statutDiffusionEtablissement ?statutDiffusionEtablissement ;
+        sn:dateCreationEtablissement ?dateCreationEtablissement_date ;
+        sn:trancheEffectifsEtablissement ?trancheEffectifsEtablissement ;
+        sn:anneeEffectifsEtablissement ?anneeEffectifsEtablissement_year ;
+        sn:activitePrincipaleRegistreMetiersEtablissement ?activitePrincipaleRegistreMetiersEtablissement ;
+        sn:dateDernierTraitementEtablissement ?dateDernierTraitementEtablissement_date ;
+        sn:etablissementSiege ?etablissementSiege ;
+        sn:nombrePeriodesEtablissement ?nombrePeriodesEtablissement_integer ;
+        sn:complementAdresseEtablissement ?complementAdresseEtablissement ;
+        sn:complementAdresse2Etablissement ?complementAdresse2Etablissement ;
+        sn:numeroVoieEtablissement ?numeroVoieEtablissement ;
+        sn:indiceRepetitionEtablissement ?indiceRepetitionEtablissement ;
+        sn:typeVoieEtablissement ?typeVoieEtablissement ;
+        sn:libelleVoieEtablissement ?libelleVoieEtablissement ;
+        sn:codePostalEtablissement ?codePostalEtablissement ;
+        sn:libelleCommuneEtablissement ?libelleCommuneEtablissement ;
+        sn:distributionSpecialeEtablissement ?distributionSpecialeEtablissement ;
+        sn:codeCommuneEtablissement ?codeCommuneEtablissement ;
+        sn:codeCedexEtablissement ?codeCedexEtablissement ;
+        sn:libelleCedexEtablissement ?libelleCedexEtablissement ;
+        sn:codePaysEtrangerEtablissement ?codePaysEtrangerEtablissement ;
+        sn:libellePaysEtrangerEtablissement ?libellePaysEtrangerEtablissement ;
+        sn:numeroVoie2Etablissement ?numeroVoie2Etablissement ;
+        sn:indiceRepetition2Etablissement ?indiceRepetition2Etablissement ;
+        sn:typeVoie2Etablissement ?typeVoie2Etablissement ;
+        sn:libelleVoie2Etablissement ?libelleVoie2Etablissement ;
+        sn:codePostal2Etablissement ?codePostal2Etablissement ;
+        sn:libelleCommune2Etablissement ?libelleCommune2Etablissement ;
+        sn:libelleCommuneEtrangerEtablissement ?libelleCommuneEtrangerEtablissement ;
+        sn:libelleCommuneEtranger2Etablissement ?libelleCommuneEtranger2Etablissement ;
+        sn:distributionSpeciale2Etablissement ?distributionSpeciale2Etablissement ;
+        sn:codeCommune2Etablissement ?codeCommune2Etablissement ;
+        sn:codeCedex2Etablissement ?codeCedex2Etablissement ;
+        sn:libelleCedex2Etablissement ?libelleCedex2Etablissement ;
+        sn:codePaysEtranger2Etablissement ?codePaysEtranger2Etablissement ;
+        sn:libellePaysEtranger2Etablissement ?libellePaysEtranger2Etablissement ;
+        sn:dateDebut ?dateDebut_date ;
+        sn:etatAdministratifEtablissement ?etatAdministratifEtablissement ;
+        sn:enseigne1Etablissement ?enseigne1Etablissement ;
+        sn:enseigne2Etablissement ?enseigne2Etablissement ;
+        sn:enseigne3Etablissement ?enseigne3Etablissement ;
+        sn:denominationUsuelleEtablissement ?denominationUsuelleEtablissement ;
+        sn:activitePrincipaleEtablissement ?activitePrincipaleEtablissement ;
+        sn:nomenclatureActivitePrincipaleEtablissement ?nomenclatureActivitePrincipaleEtablissement ;
+        sn:caractereEmployeurEtablissement ?caractereEmployeurEtablissement ;
 
-        sx:trancheEffectifs ?trancheeffectifsetablissement_uri ;
-        sx:etatAdministratif ?etatadministratifetablissement_uri ;
+        sx:trancheEffectifs ?trancheEffectifsEtablissement_uri ;
+        sx:etatAdministratif ?etatAdministratifEtablissement_uri ;
         # geo-pos:lat ?latitude_double ;
         # geo-pos:long ?longitude_double ;
         # sx:geo_type ?geo_type ;
         # sx:adresseNormalisee1 ?geo_l4 ;
         # sx:adresseNormalisee2 ?geo_l5 ;
-        sx:activitePrincipale ?activiteprincipaleetablissement_uri .
+        sx:activitePrincipale ?activitePrincipaleEtablissement_uri ;
+        sx:communeEtablisement ?communeEtablisement_uri .
 
 }
 where {
     bind(uri(concat("https://sireneld.io/siret/",?siret)) as ?etablissement)
     bind(uri(concat("https://sireneld.io/siren/",?siren)) as ?uniteLegale)
-    bind(uri(concat("https://sireneld.io/tef/",?trancheeffectifsetablissement)) as ?trancheeffectifsetablissement_uri)
-    bind(if(?etablissementsiege = "true",<https://sireneld.io/vocab/sirext#Siege>,?null) as ?siegeClass)
-    bind(if(?nomenclatureactiviteprincipaleetablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activiteprincipaleetablissement)),?null) as ?activiteprincipaleetablissement_uri)
-    bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatadministratifetablissement)) as ?etatadministratifetablissement_uri)
+    bind(uri(concat("https://sireneld.io/tef/",?trancheEffectifsEtablissement)) as ?trancheEffectifsEtablissement_uri)
+    bind(if(?etablissementSiege = "true",<https://sireneld.io/vocab/sirext#Siege>,?null) as ?siegeClass)
+    bind(if(?nomenclatureActivitePrincipaleEtablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activitePrincipaleEtablissement)),?null) as ?activitePrincipaleEtablissement_uri)
+    bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatAdministratifEtablissement)) as ?etatAdministratifEtablissement_uri)
+    bind(uri(concat("http://id.insee.fr/geo/commune/",?codeCommuneEtablissement)) as ?communeEtablisement_uri)
 
 
-    bind(xs:date(?datecreationetablissement) as ?datecreationetablissement_date)
-    bind(xs:gYear(?anneeeffectifsetablissement) as ?anneeeffectifsetablissement_year)
-    bind(xs:date(?datederniertraitementetablissement) as ?datederniertraitementetablissement_date)
-    bind(xs:int(?nombreperiodesetablissement) as ?nombreperiodesetablissement_integer)
-    bind(xs:date(?datedebut) as ?datedebut_date)
+    bind(xs:date(?dateCreationEtablissement) as ?dateCreationEtablissement_date)
+    bind(xs:gYear(?anneeEffectifsEtablissement) as ?anneeEffectifsEtablissement_year)
+    bind(xs:date(?dateDernierTraitementEtablissement) as ?dateDernierTraitementEtablissement_date)
+    bind(xs:int(?nombrePeriodesEtablissement) as ?nombrePeriodesEtablissement_integer)
+    bind(xs:date(?dateDebut) as ?dateDebut_date)
     # bind(xs:double(?latitude) as ?latitude_double)
     # bind(xs:double(?longitude) as ?longitude_double)
 }

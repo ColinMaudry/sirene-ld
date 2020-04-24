@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://sireneld.io/marche/",
+    "@vocab":"https://sireneld.io/vocab/decp#",
+    "rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "decp": "https://sireneld.io/vocab/decp#",
+    "sirext":"https://sireneld.io/vocab/sirext#",
+    "xsd":"http://www.w3.org/2001/XMLSchema#",
+    "$schema": {
+      "@id": null
+    },
+    "decp:Marche": "decp:Marché",
+    "_type":{
+      "@id":"@type"
+    },
+    "marches": "@set",
+    "id": "@id",
+    "acheteur": {
+      "@context": {
+        "@base": "https://sireneld.io/siret/",
+        "nom": "decp:nom"
+      },
+      "@type": "decp:Acheteur",
+      "@id": "decp:acheteur"
+    },
+    "titulaires": {
+      "@context": {
+        "@base": "https://sireneld.io/siret/",
+        "nom": "decp:nom"
+      },
+      "@type": "decp:Titulaire",
+      "@id":"decp:titulaire"
+    },
+    "montant": {
+      "@type":"xsd:decimal",
+      "@id":"decp:montant"
+    },
+    "dureeMois": {
+      "@type":"xsd:decimal"
+    },
+    "datePublicationDonnees": {
+      "@id":"decp:datePublicationDonnees",
+      "@type":"xsd:date"
+    }
+    },
+  "$schema": "https://raw.githubusercontent.com/etalab/format-commande-publique/master/schemas/json/paquet.json",
+  "marches": [
+    {
+      "id": "2018pWF-4aManU00",
+      "acheteur": {
+        "id": "30150323100039",
+        "nom": "SEMITAG"
+      },
+      "_type": "Marché",
+      "nature": "Accord-cadre",
+      "objet": "Fourniture de tenues professionnelles",
+      "codeCPV": "18110000",
+      "procedure": "Procédure adaptée",
+      "lieuExecution": {
+        "code": "38360",
+        "typeCode": "Code postal",
+        "nom": "Is�re"
+      },
+      "dureeMois": 24,
+      "datePublicationDonnees": "2019-03-01",
+      "montant": 82394,
+      "formePrix": "Ferme et actualisable",
+      "titulaires": [
+        {
+          "typeIdentifiant": "SIRET",
+          "id": "44871810600033",
+          "denominationSociale": "RODIER EPI"
+        }
+      ],
+      "modifications": []
+    },
+    {
+      "id": "2018YtBr1eiXTU00",
+      "acheteur": {
+        "id": "21680376700013",
+        "nom": "Mairie de Wittenheim"
+      },
+      "_type": "Marché",
+      "nature": "Accord-cadre",
+      "objet": "Fourniture / pose de signalisation routi�re",
+      "codeCPV": "34992200",
+      "procedure": "Procédure adaptée",
+      "lieuExecution": {
+        "code": "68",
+        "typeCode": "Code département",
+        "nom": "Haut-Rhin"
+      },
+      "dureeMois": 36,
+      "datePublicationDonnees": "2019-03-01",
+      "montant": 165000,
+      "formePrix": "Révisable",
+      "titulaires": [
+        {
+          "typeIdentifiant": "SIRET",
+          "id": "51482274100013",
+          "denominationSociale": "SIGNALSACE"
+        }
+      ],
+      "modifications": []
+    }
+  ]
+}

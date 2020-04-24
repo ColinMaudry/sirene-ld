@@ -1,0 +1,84 @@
+PREFIX sn: <https://sireneld.io/vocab/sirene#>
+PREFIX sx: <https://sireneld.io/vocab/sirext#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+PREFIX geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+construct {
+    ?etablissement a sx:Etablissement ;
+        a geo-pos:SpatialThing ;
+        a ?siegeClass ;
+        sn:siren ?siren ;
+        sx:uniteLegale ?uniteLegale ;
+        sn:nic ?nic ;
+        sn:siret ?siret ;
+        sn:statutDiffusionDtablissement ?statutDiffusionEtablissement ;
+        # sn:dateCreationEtablissement ?dateCreationEtablissement_date ;
+        # sn:trancheEffectifsEtablissement ?trancheEffectifsEtablissement ;
+        # sn:anneeEffectifsEtablissement ?anneeEffectifsEtablissement_year ;
+        # sn:activitePrincipaleRegistreMetiersEtablissement ?activitePrincipaleRegistreMetiersEtablissement ;
+        # sn:dateDernierTraitementEtablissement ?dateDernierTraitementEtablissement_date ;
+        sn:etablissementSiege ?etablissementSiege ;
+        # sn:nombrePeriodesEtablissement ?nombrePeriodesEtablissement_integer ;
+        # sn:complementAdresseEtablissement ?complementAdresseEtablissement ;
+        # sn:numeroVoieEtablissement ?numeroVoieEtablissement ;
+        # sn:indiceRepetitionEtablissement ?indiceRepetitionEtablissement ;
+        # sn:typeVoieEtablissement ?typeVoieEtablissement ;
+        # sn:libelleVoieEtablissement ?libelleVoieEtablissement ;
+        # sn:codePostalEtablissement ?codePostalEtablissement ;
+        sn:libelleCommuneEtablissement ?libelleCommuneEtablissement ;
+        # sn:distributionSpecialeEtablissement ?distributionSpecialeEtablissement ;
+        sn:codeCommuneEtablissement ?codeCommuneEtablissement ;
+        # sn:codeCedexEtablissement ?codeCedexEtablissement ;
+        # sn:libelleCedexEtablissement ?libelleCedexEtablissement ;
+        # sn:codePaysEtrangerEtablissement ?codePaysEtrangerEtablissement ;
+        # sn:libellePaysEtrangerEtablissement ?libellePaysEtrangerEtablissement ;
+        # sn:numeroVoie2Etablissement ?numeroVoie2Etablissement ;
+        # sn:indiceRepetition2Etablissement ?indiceRepetition2Etablissement ;
+        # sn:typeVoie2Etablissement ?typeVoie2Etablissement ;
+        # sn:libelleVoie2Etablissement ?libelleVoie2Etablissement ;
+        # sn:codePostal2Etablissement ?codePostal2Etablissement ;
+        # sn:libelleCommune2Etablissement ?libelleCommune2Etablissement ;
+        # sn:distributionSpeciale2Etablissement ?distributionSpeciale2Etablissement ;
+        # sn:codeCommune2Etablissement ?codeCommune2Etablissement ;
+        # sn:codecedex2etablissement ?codecedex2etablissement ;
+        # sn:libelleCedex2Etablissement ?libelleCedex2Etablissement ;
+        # sn:codePaysEtranger2Etablissement ?codePaysEtranger2Etablissement ;
+        # sn:libellePaysEtranger2Etablissement ?libellePaysEtranger2Etablissement ;
+        # sn:dateDebut ?dateDebut_date ;
+        # sn:etatAdministratifEtablissement ?etatAdministratifEtablissement ;
+        sn:enseigne1Etablissement ?enseigne1Etablissement ;
+        sn:enseigne2Etablissement ?enseigne2Etablissement ;
+        sn:enseigne3Etablissement ?enseigne3Etablissement ;
+        sn:denominationUsuelleEtablissement ?denominationUsuelleEtablissement ;
+        sn:activitePrincipaleEtablissement ?activitePrincipaleEtablissement ;
+        # sn:nomenclatureActivitePrincipaleEtablissement ?nomenclatureActivitePrincipaleEtablissement ;
+        # sn:caractereEmployeurEtablissement ?caractereEmployeurEtablissement ;
+        #
+        # sx:trancheEffectifs ?trancheEffectifsEtablissement_uri ;
+        sx:etatAdministratif ?etatAdministratifEtablissement_uri ;
+        # geo-pos:lat ?latitude_double ;
+        # geo-pos:long ?longitude_double ;
+        # sx:geo_type ?geo_type ;
+        # sx:adresseNormalisee1 ?geo_l4 ;
+        # sx:adresseNormalisee2 ?geo_l5 ;
+        sx:activitePrincipale ?activitePrincipaleEtablissement_uri .
+
+}
+where {
+    bind(uri(concat("https://sireneld.io/siret/",?siret)) as ?etablissement)
+    bind(uri(concat("https://sireneld.io/siren/",?siren)) as ?uniteLegale)
+    # bind(uri(concat("https://sireneld.io/tef/",?trancheEffectifsEtablissement)) as ?trancheEffectifsEtablissement_uri)
+    bind(if(?etablissementSiege = "true",<https://sireneld.io/vocab/sirext#Siege>,?null) as ?siegeClass)
+    bind(if(?nomenclatureActivitePrincipaleEtablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activitePrincipaleEtablissement)),?null) as ?activitePrincipaleEtablissement_uri)
+    bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatAdministratifEtablissement)) as ?etatAdministratifEtablissement_uri)
+
+
+    # bind(xs:date(?dateCreationEtablissement) as ?dateCreationEtablissement_date)
+    # bind(xs:gYear(?anneeEffectifsEtablissement) as ?anneeEffectifsEtablissement_year)
+    # bind(xs:date(?dateDernierTraitementEtablissement) as ?dateDernierTraitementEtablissement_date)
+    # bind(xs:int(?nombrePeriodesEtablissement) as ?nombrePeriodesEtablissement_integer)
+    # bind(xs:date(?datedebut) as ?dateDebut_date)
+    # bind(xs:double(?latitude) as ?latitude_double)
+    # bind(xs:double(?longitude) as ?longitude_double)
+}

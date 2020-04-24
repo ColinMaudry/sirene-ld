@@ -1,0 +1,863 @@
+<https://sireneld.io/vocab/sirecj#1> <http://www.w3.org/2000/01/rdf-schema#label> "Entrepreneur individuel".
+<https://sireneld.io/vocab/sirecj#2> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement de droit privé non doté de la personnalité morale".
+<https://sireneld.io/vocab/sirecj#3> <http://www.w3.org/2000/01/rdf-schema#label> "Personne morale de droit étranger".
+<https://sireneld.io/vocab/sirecj#4> <http://www.w3.org/2000/01/rdf-schema#label> "Personne morale de droit public soumise au droit commercial".
+<https://sireneld.io/vocab/sirecj#5> <http://www.w3.org/2000/01/rdf-schema#label> "Société commerciale".
+<https://sireneld.io/vocab/sirecj#6> <http://www.w3.org/2000/01/rdf-schema#label> "Autre personne morale immatriculée au RCS".
+<https://sireneld.io/vocab/sirecj#7> <http://www.w3.org/2000/01/rdf-schema#label> "Personne morale et organisme soumis au droit administratif".
+<https://sireneld.io/vocab/sirecj#8> <http://www.w3.org/2000/01/rdf-schema#label> "Organisme privé spécialisé".
+<https://sireneld.io/vocab/sirecj#9> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement de droit privé".
+<https://sireneld.io/vocab/sirecj#10> <http://www.w3.org/2000/01/rdf-schema#label> "Entrepreneur individuel".
+<https://sireneld.io/vocab/sirecj#10> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#1>.
+<https://sireneld.io/vocab/sirecj#21> <http://www.w3.org/2000/01/rdf-schema#label> "Indivision".
+<https://sireneld.io/vocab/sirecj#21> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#22> <http://www.w3.org/2000/01/rdf-schema#label> "Société créée de fait".
+<https://sireneld.io/vocab/sirecj#22> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#23> <http://www.w3.org/2000/01/rdf-schema#label> "Société en participation".
+<https://sireneld.io/vocab/sirecj#23> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#24> <http://www.w3.org/2000/01/rdf-schema#label> "Fiducie".
+<https://sireneld.io/vocab/sirecj#24> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#27> <http://www.w3.org/2000/01/rdf-schema#label> "Paroisse hors zone concordataire".
+<https://sireneld.io/vocab/sirecj#27> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#29> <http://www.w3.org/2000/01/rdf-schema#label> "Autre groupement de droit privé non doté de la personnalité morale".
+<https://sireneld.io/vocab/sirecj#29> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#31> <http://www.w3.org/2000/01/rdf-schema#label> "Personne morale de droit étranger, immatriculée au RCS (registre du commerce et des sociétés)".
+<https://sireneld.io/vocab/sirecj#31> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#3>.
+<https://sireneld.io/vocab/sirecj#32> <http://www.w3.org/2000/01/rdf-schema#label> "Personne morale de droit étranger, non immatriculée au RCS".
+<https://sireneld.io/vocab/sirecj#32> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#3>.
+<https://sireneld.io/vocab/sirecj#41> <http://www.w3.org/2000/01/rdf-schema#label> "Etablissement public ou régie à caractère industriel ou commercial".
+<https://sireneld.io/vocab/sirecj#41> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#4>.
+<https://sireneld.io/vocab/sirecj#51> <http://www.w3.org/2000/01/rdf-schema#label> "Société coopérative commerciale particulière".
+<https://sireneld.io/vocab/sirecj#51> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#52> <http://www.w3.org/2000/01/rdf-schema#label> "Société en nom collectif".
+<https://sireneld.io/vocab/sirecj#52> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#53> <http://www.w3.org/2000/01/rdf-schema#label> "Société en commandite".
+<https://sireneld.io/vocab/sirecj#53> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#54> <http://www.w3.org/2000/01/rdf-schema#label> "Société à responsabilité limitée (SARL)".
+<https://sireneld.io/vocab/sirecj#54> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#55> <http://www.w3.org/2000/01/rdf-schema#label> "Société anonyme à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#55> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#56> <http://www.w3.org/2000/01/rdf-schema#label> "Société anonyme à directoire".
+<https://sireneld.io/vocab/sirecj#56> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#57> <http://www.w3.org/2000/01/rdf-schema#label> "Société par actions simplifiée".
+<https://sireneld.io/vocab/sirecj#57> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#58> <http://www.w3.org/2000/01/rdf-schema#label> "Société européenne".
+<https://sireneld.io/vocab/sirecj#58> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#61> <http://www.w3.org/2000/01/rdf-schema#label> "Caisse d'épargne et de prévoyance".
+<https://sireneld.io/vocab/sirecj#61> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#62> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement d'intérêt économique".
+<https://sireneld.io/vocab/sirecj#62> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#63> <http://www.w3.org/2000/01/rdf-schema#label> "Société coopérative agricole".
+<https://sireneld.io/vocab/sirecj#63> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#64> <http://www.w3.org/2000/01/rdf-schema#label> "Société d'assurance mutuelle".
+<https://sireneld.io/vocab/sirecj#64> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#65> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile".
+<https://sireneld.io/vocab/sirecj#65> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#69> <http://www.w3.org/2000/01/rdf-schema#label> "Autre personne morale de droit privé inscrite au registre du commerce et des sociétés".
+<https://sireneld.io/vocab/sirecj#69> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#71> <http://www.w3.org/2000/01/rdf-schema#label> "Administration de l'état".
+<https://sireneld.io/vocab/sirecj#71> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#72> <http://www.w3.org/2000/01/rdf-schema#label> "Collectivité territoriale".
+<https://sireneld.io/vocab/sirecj#72> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#73> <http://www.w3.org/2000/01/rdf-schema#label> "Etablissement public administratif".
+<https://sireneld.io/vocab/sirecj#73> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#74> <http://www.w3.org/2000/01/rdf-schema#label> "Autre personne morale de droit public administratif".
+<https://sireneld.io/vocab/sirecj#74> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#81> <http://www.w3.org/2000/01/rdf-schema#label> "Organisme gérant un régime de protection sociale à adhésion obligatoire".
+<https://sireneld.io/vocab/sirecj#81> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#82> <http://www.w3.org/2000/01/rdf-schema#label> "Organisme mutualiste".
+<https://sireneld.io/vocab/sirecj#82> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#83> <http://www.w3.org/2000/01/rdf-schema#label> "Comité d'entreprise".
+<https://sireneld.io/vocab/sirecj#83> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#84> <http://www.w3.org/2000/01/rdf-schema#label> "Organisme professionnel".
+<https://sireneld.io/vocab/sirecj#84> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#85> <http://www.w3.org/2000/01/rdf-schema#label> "Organisme de retraite à adhésion non obligatoire".
+<https://sireneld.io/vocab/sirecj#85> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#91> <http://www.w3.org/2000/01/rdf-schema#label> "Syndicat de propriétaires".
+<https://sireneld.io/vocab/sirecj#91> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#92> <http://www.w3.org/2000/01/rdf-schema#label> "Association loi 1901 ou assimilé".
+<https://sireneld.io/vocab/sirecj#92> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#93> <http://www.w3.org/2000/01/rdf-schema#label> "Fondation".
+<https://sireneld.io/vocab/sirecj#93> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#99> <http://www.w3.org/2000/01/rdf-schema#label> "Autre personne morale de droit privé".
+<https://sireneld.io/vocab/sirecj#99> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#1000> <http://www.w3.org/2000/01/rdf-schema#label> "Entrepreneur individuel".
+<https://sireneld.io/vocab/sirecj#1000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#1>.
+<https://sireneld.io/vocab/sirecj#1000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#10>.
+<https://sireneld.io/vocab/sirecj#2110> <http://www.w3.org/2000/01/rdf-schema#label> "Indivision entre personnes physiques".
+<https://sireneld.io/vocab/sirecj#2110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#21>.
+<https://sireneld.io/vocab/sirecj#2120> <http://www.w3.org/2000/01/rdf-schema#label> "Indivision avec personne morale".
+<https://sireneld.io/vocab/sirecj#2120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#21>.
+<https://sireneld.io/vocab/sirecj#2210> <http://www.w3.org/2000/01/rdf-schema#label> "Société créée de fait entre personnes physiques".
+<https://sireneld.io/vocab/sirecj#2210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#22>.
+<https://sireneld.io/vocab/sirecj#2220> <http://www.w3.org/2000/01/rdf-schema#label> "Société créée de fait avec personne morale".
+<https://sireneld.io/vocab/sirecj#2220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#22>.
+<https://sireneld.io/vocab/sirecj#2310> <http://www.w3.org/2000/01/rdf-schema#label> "Société en participation entre personnes physiques".
+<https://sireneld.io/vocab/sirecj#2310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#23>.
+<https://sireneld.io/vocab/sirecj#2320> <http://www.w3.org/2000/01/rdf-schema#label> "Société en participation avec personne morale".
+<https://sireneld.io/vocab/sirecj#2320> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2320> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#23>.
+<https://sireneld.io/vocab/sirecj#2385> <http://www.w3.org/2000/01/rdf-schema#label> "Société en participation de professions libérales".
+<https://sireneld.io/vocab/sirecj#2385> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2385> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#23>.
+<https://sireneld.io/vocab/sirecj#2400> <http://www.w3.org/2000/01/rdf-schema#label> "Fiducie".
+<https://sireneld.io/vocab/sirecj#2400> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2400> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#24>.
+<https://sireneld.io/vocab/sirecj#2700> <http://www.w3.org/2000/01/rdf-schema#label> "Paroisse hors zone concordataire".
+<https://sireneld.io/vocab/sirecj#2700> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2700> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#27>.
+<https://sireneld.io/vocab/sirecj#2900> <http://www.w3.org/2000/01/rdf-schema#label> "Autre groupement de droit privé non doté de la personnalité morale".
+<https://sireneld.io/vocab/sirecj#2900> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#2>.
+<https://sireneld.io/vocab/sirecj#2900> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#29>.
+<https://sireneld.io/vocab/sirecj#3110> <http://www.w3.org/2000/01/rdf-schema#label> "Représentation ou agence commerciale d'état ou organisme public étranger immatriculé au RCS".
+<https://sireneld.io/vocab/sirecj#3110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#3>.
+<https://sireneld.io/vocab/sirecj#3110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#31>.
+<https://sireneld.io/vocab/sirecj#3120> <http://www.w3.org/2000/01/rdf-schema#label> "Société commerciale étrangère immatriculée au RCS".
+<https://sireneld.io/vocab/sirecj#3120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#3>.
+<https://sireneld.io/vocab/sirecj#3120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#31>.
+<https://sireneld.io/vocab/sirecj#3205> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation internationale".
+<https://sireneld.io/vocab/sirecj#3205> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#3>.
+<https://sireneld.io/vocab/sirecj#3205> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#32>.
+<https://sireneld.io/vocab/sirecj#3210> <http://www.w3.org/2000/01/rdf-schema#label> "État, collectivité ou établissement public étranger".
+<https://sireneld.io/vocab/sirecj#3210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#3>.
+<https://sireneld.io/vocab/sirecj#3210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#32>.
+<https://sireneld.io/vocab/sirecj#3220> <http://www.w3.org/2000/01/rdf-schema#label> "Société étrangère non immatriculée au RCS".
+<https://sireneld.io/vocab/sirecj#3220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#3>.
+<https://sireneld.io/vocab/sirecj#3220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#32>.
+<https://sireneld.io/vocab/sirecj#3290> <http://www.w3.org/2000/01/rdf-schema#label> "Autre personne morale de droit étranger".
+<https://sireneld.io/vocab/sirecj#3290> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#3>.
+<https://sireneld.io/vocab/sirecj#3290> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#32>.
+<https://sireneld.io/vocab/sirecj#4110> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public national à caractère industriel ou commercial doté d'un comptable public".
+<https://sireneld.io/vocab/sirecj#4110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#4>.
+<https://sireneld.io/vocab/sirecj#4110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#41>.
+<https://sireneld.io/vocab/sirecj#4120> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public national à caractère industriel ou commercial non doté d'un comptable public".
+<https://sireneld.io/vocab/sirecj#4120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#4>.
+<https://sireneld.io/vocab/sirecj#4120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#41>.
+<https://sireneld.io/vocab/sirecj#4130> <http://www.w3.org/2000/01/rdf-schema#label> "Exploitant public".
+<https://sireneld.io/vocab/sirecj#4130> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#4>.
+<https://sireneld.io/vocab/sirecj#4130> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#41>.
+<https://sireneld.io/vocab/sirecj#4140> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public local à caractère industriel ou commercial".
+<https://sireneld.io/vocab/sirecj#4140> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#4>.
+<https://sireneld.io/vocab/sirecj#4140> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#41>.
+<https://sireneld.io/vocab/sirecj#4150> <http://www.w3.org/2000/01/rdf-schema#label> "Régie d'une collectivité locale à caractère industriel ou commercial".
+<https://sireneld.io/vocab/sirecj#4150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#4>.
+<https://sireneld.io/vocab/sirecj#4150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#41>.
+<https://sireneld.io/vocab/sirecj#4160> <http://www.w3.org/2000/01/rdf-schema#label> "Institution Banque de France".
+<https://sireneld.io/vocab/sirecj#4160> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#4>.
+<https://sireneld.io/vocab/sirecj#4160> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#41>.
+<https://sireneld.io/vocab/sirecj#5191> <http://www.w3.org/2000/01/rdf-schema#label> "Société de caution mutuelle".
+<https://sireneld.io/vocab/sirecj#5191> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5191> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#51>.
+<https://sireneld.io/vocab/sirecj#5192> <http://www.w3.org/2000/01/rdf-schema#label> "Société coopérative de banque populaire".
+<https://sireneld.io/vocab/sirecj#5192> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5192> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#51>.
+<https://sireneld.io/vocab/sirecj#5193> <http://www.w3.org/2000/01/rdf-schema#label> "Caisse de crédit maritime mutuel".
+<https://sireneld.io/vocab/sirecj#5193> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5193> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#51>.
+<https://sireneld.io/vocab/sirecj#5194> <http://www.w3.org/2000/01/rdf-schema#label> "Caisse (fédérale) de crédit mutuel".
+<https://sireneld.io/vocab/sirecj#5194> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5194> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#51>.
+<https://sireneld.io/vocab/sirecj#5195> <http://www.w3.org/2000/01/rdf-schema#label> "Association coopérative inscrite (droit local Alsace Moselle)".
+<https://sireneld.io/vocab/sirecj#5195> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5195> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#51>.
+<https://sireneld.io/vocab/sirecj#5196> <http://www.w3.org/2000/01/rdf-schema#label> "Caisse d'épargne et de prévoyance à forme coopérative".
+<https://sireneld.io/vocab/sirecj#5196> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5196> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#51>.
+<https://sireneld.io/vocab/sirecj#5202> <http://www.w3.org/2000/01/rdf-schema#label> "Société en nom collectif".
+<https://sireneld.io/vocab/sirecj#5202> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5202> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#52>.
+<https://sireneld.io/vocab/sirecj#5203> <http://www.w3.org/2000/01/rdf-schema#label> "Société en nom collectif coopérative".
+<https://sireneld.io/vocab/sirecj#5203> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5203> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#52>.
+<https://sireneld.io/vocab/sirecj#5306> <http://www.w3.org/2000/01/rdf-schema#label> "Société en commandite simple".
+<https://sireneld.io/vocab/sirecj#5306> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5306> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#53>.
+<https://sireneld.io/vocab/sirecj#5307> <http://www.w3.org/2000/01/rdf-schema#label> "Société en commandite simple coopérative".
+<https://sireneld.io/vocab/sirecj#5307> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5307> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#53>.
+<https://sireneld.io/vocab/sirecj#5308> <http://www.w3.org/2000/01/rdf-schema#label> "Société en commandite par actions".
+<https://sireneld.io/vocab/sirecj#5308> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5308> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#53>.
+<https://sireneld.io/vocab/sirecj#5309> <http://www.w3.org/2000/01/rdf-schema#label> "Société en commandite par actions coopérative".
+<https://sireneld.io/vocab/sirecj#5309> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5309> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#53>.
+<https://sireneld.io/vocab/sirecj#5370> <http://www.w3.org/2000/01/rdf-schema#label> "Société de Participations Financières de Profession Libérale Société en commandite par actions (SPFPL SCA)".
+<https://sireneld.io/vocab/sirecj#5370> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5370> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#53>.
+<https://sireneld.io/vocab/sirecj#5385> <http://www.w3.org/2000/01/rdf-schema#label> "Société d'exercice libéral en commandite par actions".
+<https://sireneld.io/vocab/sirecj#5385> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5385> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#53>.
+<https://sireneld.io/vocab/sirecj#5410> <http://www.w3.org/2000/01/rdf-schema#label> "SARL nationale".
+<https://sireneld.io/vocab/sirecj#5410> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5410> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5415> <http://www.w3.org/2000/01/rdf-schema#label> "SARL d'économie mixte".
+<https://sireneld.io/vocab/sirecj#5415> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5415> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5422> <http://www.w3.org/2000/01/rdf-schema#label> "SARL immobilière pour le commerce et l'industrie (SICOMI)".
+<https://sireneld.io/vocab/sirecj#5422> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5422> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5426> <http://www.w3.org/2000/01/rdf-schema#label> "SARL immobilière de gestion".
+<https://sireneld.io/vocab/sirecj#5426> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5426> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5430> <http://www.w3.org/2000/01/rdf-schema#label> "SARL d'aménagement foncier et d'équipement rural (SAFER)".
+<https://sireneld.io/vocab/sirecj#5430> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5430> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5431> <http://www.w3.org/2000/01/rdf-schema#label> "SARL mixte d'intérêt agricole (SMIA)".
+<https://sireneld.io/vocab/sirecj#5431> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5431> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5432> <http://www.w3.org/2000/01/rdf-schema#label> "SARL d'intérêt collectif agricole (SICA)".
+<https://sireneld.io/vocab/sirecj#5432> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5432> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5442> <http://www.w3.org/2000/01/rdf-schema#label> "SARL d'attribution".
+<https://sireneld.io/vocab/sirecj#5442> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5442> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5443> <http://www.w3.org/2000/01/rdf-schema#label> "SARL coopérative de construction".
+<https://sireneld.io/vocab/sirecj#5443> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5443> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5451> <http://www.w3.org/2000/01/rdf-schema#label> "SARL coopérative de consommation".
+<https://sireneld.io/vocab/sirecj#5451> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5451> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5453> <http://www.w3.org/2000/01/rdf-schema#label> "SARL coopérative artisanale".
+<https://sireneld.io/vocab/sirecj#5453> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5453> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5454> <http://www.w3.org/2000/01/rdf-schema#label> "SARL coopérative d'intérêt maritime".
+<https://sireneld.io/vocab/sirecj#5454> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5454> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5455> <http://www.w3.org/2000/01/rdf-schema#label> "SARL coopérative de transport".
+<https://sireneld.io/vocab/sirecj#5455> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5455> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5458> <http://www.w3.org/2000/01/rdf-schema#label> "SARL coopérative ouvrière de production (SCOP)".
+<https://sireneld.io/vocab/sirecj#5458> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5458> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5459> <http://www.w3.org/2000/01/rdf-schema#label> "SARL union de sociétés coopératives".
+<https://sireneld.io/vocab/sirecj#5459> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5459> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5460> <http://www.w3.org/2000/01/rdf-schema#label> "Autre SARL coopérative".
+<https://sireneld.io/vocab/sirecj#5460> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5460> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5470> <http://www.w3.org/2000/01/rdf-schema#label> "Société de Participations Financières de Profession Libérale Société à responsabilité limitée (SPFPL SARL)".
+<https://sireneld.io/vocab/sirecj#5470> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5470> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5485> <http://www.w3.org/2000/01/rdf-schema#label> "Société d'exercice libéral à responsabilité limitée".
+<https://sireneld.io/vocab/sirecj#5485> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5485> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5498> <http://www.w3.org/2000/01/rdf-schema#label> "SARL unipersonnelle".
+<https://sireneld.io/vocab/sirecj#5498> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5498> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5499> <http://www.w3.org/2000/01/rdf-schema#label> "Société à responsabilité limitée (sans autre indication)".
+<https://sireneld.io/vocab/sirecj#5499> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5499> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#54>.
+<https://sireneld.io/vocab/sirecj#5505> <http://www.w3.org/2000/01/rdf-schema#label> "SA à participation ouvrière à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5505> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5505> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5510> <http://www.w3.org/2000/01/rdf-schema#label> "SA nationale à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5510> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5510> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5515> <http://www.w3.org/2000/01/rdf-schema#label> "SA d'économie mixte à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5515> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5515> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5520> <http://www.w3.org/2000/01/rdf-schema#label> "Fonds à forme sociétale à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5520> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5520> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5522> <http://www.w3.org/2000/01/rdf-schema#label> "SA immobilière pour le commerce et l'industrie (SICOMI) à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5522> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5522> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5525> <http://www.w3.org/2000/01/rdf-schema#label> "SA immobilière d'investissement à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5525> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5525> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5530> <http://www.w3.org/2000/01/rdf-schema#label> "SA d'aménagement foncier et d'équipement rural (SAFER) à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5530> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5530> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5531> <http://www.w3.org/2000/01/rdf-schema#label> "Société anonyme mixte d'intérêt agricole (SMIA) à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5531> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5531> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5532> <http://www.w3.org/2000/01/rdf-schema#label> "SA d'intérêt collectif agricole (SICA) à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5532> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5532> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5542> <http://www.w3.org/2000/01/rdf-schema#label> "SA d'attribution à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5542> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5542> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5543> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative de construction à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5543> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5543> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5546> <http://www.w3.org/2000/01/rdf-schema#label> "SA de HLM à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5546> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5546> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5547> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative de production de HLM à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5547> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5547> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5548> <http://www.w3.org/2000/01/rdf-schema#label> "SA de crédit immobilier à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5548> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5548> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5551> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative de consommation à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5551> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5551> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5552> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative de commerçants-détaillants à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5552> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5552> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5553> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative artisanale à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5553> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5553> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5554> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative (d'intérêt) maritime à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5554> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5554> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5555> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative de transport à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5555> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5555> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5558> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative ouvrière de production (SCOP) à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5558> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5558> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5559> <http://www.w3.org/2000/01/rdf-schema#label> "SA union de sociétés coopératives à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5559> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5559> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5560> <http://www.w3.org/2000/01/rdf-schema#label> "Autre SA coopérative à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5560> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5560> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5570> <http://www.w3.org/2000/01/rdf-schema#label> "Société de Participations Financières de Profession Libérale Société anonyme à conseil d'administration (SPFPL SA à conseil d'administration)".
+<https://sireneld.io/vocab/sirecj#5570> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5570> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5585> <http://www.w3.org/2000/01/rdf-schema#label> "Société d'exercice libéral à forme anonyme à conseil d'administration".
+<https://sireneld.io/vocab/sirecj#5585> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5585> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5599> <http://www.w3.org/2000/01/rdf-schema#label> "SA à conseil d'administration (s.a.i.)".
+<https://sireneld.io/vocab/sirecj#5599> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5599> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#55>.
+<https://sireneld.io/vocab/sirecj#5605> <http://www.w3.org/2000/01/rdf-schema#label> "SA à participation ouvrière à directoire".
+<https://sireneld.io/vocab/sirecj#5605> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5605> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5610> <http://www.w3.org/2000/01/rdf-schema#label> "SA nationale à directoire".
+<https://sireneld.io/vocab/sirecj#5610> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5610> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5615> <http://www.w3.org/2000/01/rdf-schema#label> "SA d'économie mixte à directoire".
+<https://sireneld.io/vocab/sirecj#5615> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5615> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5620> <http://www.w3.org/2000/01/rdf-schema#label> "Fonds à forme sociétale à directoire".
+<https://sireneld.io/vocab/sirecj#5620> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5620> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5622> <http://www.w3.org/2000/01/rdf-schema#label> "SA immobilière pour le commerce et l'industrie (SICOMI) à directoire".
+<https://sireneld.io/vocab/sirecj#5622> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5622> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5625> <http://www.w3.org/2000/01/rdf-schema#label> "SA immobilière d'investissement à directoire".
+<https://sireneld.io/vocab/sirecj#5625> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5625> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5630> <http://www.w3.org/2000/01/rdf-schema#label> "Safer anonyme à directoire".
+<https://sireneld.io/vocab/sirecj#5630> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5630> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5631> <http://www.w3.org/2000/01/rdf-schema#label> "SA mixte d'intérêt agricole (SMIA)".
+<https://sireneld.io/vocab/sirecj#5631> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5631> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5632> <http://www.w3.org/2000/01/rdf-schema#label> "SA d'intérêt collectif agricole (SICA)".
+<https://sireneld.io/vocab/sirecj#5632> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5632> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5642> <http://www.w3.org/2000/01/rdf-schema#label> "SA d'attribution à directoire".
+<https://sireneld.io/vocab/sirecj#5642> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5642> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5643> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative de construction à directoire".
+<https://sireneld.io/vocab/sirecj#5643> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5643> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5646> <http://www.w3.org/2000/01/rdf-schema#label> "SA de HLM à directoire".
+<https://sireneld.io/vocab/sirecj#5646> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5646> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5647> <http://www.w3.org/2000/01/rdf-schema#label> "Société coopérative de production de HLM anonyme à directoire".
+<https://sireneld.io/vocab/sirecj#5647> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5647> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5648> <http://www.w3.org/2000/01/rdf-schema#label> "SA de crédit immobilier à directoire".
+<https://sireneld.io/vocab/sirecj#5648> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5648> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5651> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative de consommation à directoire".
+<https://sireneld.io/vocab/sirecj#5651> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5651> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5652> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative de commerçants-détaillants à directoire".
+<https://sireneld.io/vocab/sirecj#5652> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5652> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5653> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative artisanale à directoire".
+<https://sireneld.io/vocab/sirecj#5653> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5653> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5654> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative d'intérêt maritime à directoire".
+<https://sireneld.io/vocab/sirecj#5654> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5654> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5655> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative de transport à directoire".
+<https://sireneld.io/vocab/sirecj#5655> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5655> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5658> <http://www.w3.org/2000/01/rdf-schema#label> "SA coopérative ouvrière de production (SCOP) à directoire".
+<https://sireneld.io/vocab/sirecj#5658> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5658> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5659> <http://www.w3.org/2000/01/rdf-schema#label> "SA union de sociétés coopératives à directoire".
+<https://sireneld.io/vocab/sirecj#5659> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5659> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5660> <http://www.w3.org/2000/01/rdf-schema#label> "Autre SA coopérative à directoire".
+<https://sireneld.io/vocab/sirecj#5660> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5660> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5670> <http://www.w3.org/2000/01/rdf-schema#label> "Société de Participations Financières de Profession Libérale Société anonyme à Directoire (SPFPL SA à directoire)".
+<https://sireneld.io/vocab/sirecj#5670> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5670> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5685> <http://www.w3.org/2000/01/rdf-schema#label> "Société d'exercice libéral à forme anonyme à directoire".
+<https://sireneld.io/vocab/sirecj#5685> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5685> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5699> <http://www.w3.org/2000/01/rdf-schema#label> "SA à directoire (s.a.i.)".
+<https://sireneld.io/vocab/sirecj#5699> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5699> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#56>.
+<https://sireneld.io/vocab/sirecj#5710> <http://www.w3.org/2000/01/rdf-schema#label> "SAS, société par actions simplifiée".
+<https://sireneld.io/vocab/sirecj#5710> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5710> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#57>.
+<https://sireneld.io/vocab/sirecj#5720> <http://www.w3.org/2000/01/rdf-schema#label> "Société par actions simplifiée à associé unique ou société par actions simplifiée unipersonnelle".
+<https://sireneld.io/vocab/sirecj#5720> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5720> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#57>.
+<https://sireneld.io/vocab/sirecj#5770> <http://www.w3.org/2000/01/rdf-schema#label> "Société de Participations Financières de Profession Libérale Société par actions simplifiée (SPFPL SAS)".
+<https://sireneld.io/vocab/sirecj#5770> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5770> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#57>.
+<https://sireneld.io/vocab/sirecj#5785> <http://www.w3.org/2000/01/rdf-schema#label> "Société d'exercice libéral par action simplifiée".
+<https://sireneld.io/vocab/sirecj#5785> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5785> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#57>.
+<https://sireneld.io/vocab/sirecj#5800> <http://www.w3.org/2000/01/rdf-schema#label> "Société européenne".
+<https://sireneld.io/vocab/sirecj#5800> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#5>.
+<https://sireneld.io/vocab/sirecj#5800> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#58>.
+<https://sireneld.io/vocab/sirecj#6100> <http://www.w3.org/2000/01/rdf-schema#label> "Caisse d'Épargne et de Prévoyance".
+<https://sireneld.io/vocab/sirecj#6100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#61>.
+<https://sireneld.io/vocab/sirecj#6210> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement européen d'intérêt économique (GEIE)".
+<https://sireneld.io/vocab/sirecj#6210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#62>.
+<https://sireneld.io/vocab/sirecj#6220> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement d'intérêt économique (GIE)".
+<https://sireneld.io/vocab/sirecj#6220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#62>.
+<https://sireneld.io/vocab/sirecj#6316> <http://www.w3.org/2000/01/rdf-schema#label> "Coopérative d'utilisation de matériel agricole en commun (CUMA)".
+<https://sireneld.io/vocab/sirecj#6316> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6316> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#63>.
+<https://sireneld.io/vocab/sirecj#6317> <http://www.w3.org/2000/01/rdf-schema#label> "Société coopérative agricole".
+<https://sireneld.io/vocab/sirecj#6317> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6317> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#63>.
+<https://sireneld.io/vocab/sirecj#6318> <http://www.w3.org/2000/01/rdf-schema#label> "Union de sociétés coopératives agricoles".
+<https://sireneld.io/vocab/sirecj#6318> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6318> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#63>.
+<https://sireneld.io/vocab/sirecj#6411> <http://www.w3.org/2000/01/rdf-schema#label> "Société d'assurance à forme mutuelle".
+<https://sireneld.io/vocab/sirecj#6411> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6411> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#64>.
+<https://sireneld.io/vocab/sirecj#6511> <http://www.w3.org/2000/01/rdf-schema#label> "Sociétés Interprofessionnelles de Soins Ambulatoires ".
+<https://sireneld.io/vocab/sirecj#6511> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6511> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6521> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile de placement collectif immobilier (SCPI)".
+<https://sireneld.io/vocab/sirecj#6521> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6521> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6532> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile d'intérêt collectif agricole (SICA)".
+<https://sireneld.io/vocab/sirecj#6532> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6532> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6533> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement agricole d'exploitation en commun (GAEC)".
+<https://sireneld.io/vocab/sirecj#6533> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6533> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6534> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement foncier agricole".
+<https://sireneld.io/vocab/sirecj#6534> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6534> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6535> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement agricole foncier".
+<https://sireneld.io/vocab/sirecj#6535> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6535> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6536> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement forestier".
+<https://sireneld.io/vocab/sirecj#6536> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6536> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6537> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement pastoral".
+<https://sireneld.io/vocab/sirecj#6537> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6537> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6538> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement foncier et rural".
+<https://sireneld.io/vocab/sirecj#6538> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6538> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6539> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile foncière".
+<https://sireneld.io/vocab/sirecj#6539> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6539> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6540> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile immobilière".
+<https://sireneld.io/vocab/sirecj#6540> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6540> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6541> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile immobilière de construction-vente".
+<https://sireneld.io/vocab/sirecj#6541> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6541> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6542> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile d'attribution".
+<https://sireneld.io/vocab/sirecj#6542> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6542> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6543> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile coopérative de construction".
+<https://sireneld.io/vocab/sirecj#6543> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6543> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6544> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile immobilière d' accession progressive à la propriété".
+<https://sireneld.io/vocab/sirecj#6544> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6544> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6551> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile coopérative de consommation".
+<https://sireneld.io/vocab/sirecj#6551> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6551> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6554> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile coopérative d'intérêt maritime".
+<https://sireneld.io/vocab/sirecj#6554> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6554> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6558> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile coopérative entre médecins".
+<https://sireneld.io/vocab/sirecj#6558> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6558> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6560> <http://www.w3.org/2000/01/rdf-schema#label> "Autre société civile coopérative".
+<https://sireneld.io/vocab/sirecj#6560> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6560> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6561> <http://www.w3.org/2000/01/rdf-schema#label> "SCP d'avocats".
+<https://sireneld.io/vocab/sirecj#6561> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6561> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6562> <http://www.w3.org/2000/01/rdf-schema#label> "SCP d'avocats aux conseils".
+<https://sireneld.io/vocab/sirecj#6562> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6562> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6563> <http://www.w3.org/2000/01/rdf-schema#label> "SCP d'avoués d'appel".
+<https://sireneld.io/vocab/sirecj#6563> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6563> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6564> <http://www.w3.org/2000/01/rdf-schema#label> "SCP d'huissiers".
+<https://sireneld.io/vocab/sirecj#6564> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6564> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6565> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de notaires".
+<https://sireneld.io/vocab/sirecj#6565> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6565> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6566> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de commissaires-priseurs".
+<https://sireneld.io/vocab/sirecj#6566> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6566> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6567> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de greffiers de tribunal de commerce".
+<https://sireneld.io/vocab/sirecj#6567> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6567> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6568> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de conseils juridiques".
+<https://sireneld.io/vocab/sirecj#6568> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6568> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6569> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de commissaires aux comptes".
+<https://sireneld.io/vocab/sirecj#6569> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6569> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6571> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de médecins".
+<https://sireneld.io/vocab/sirecj#6571> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6571> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6572> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de dentistes".
+<https://sireneld.io/vocab/sirecj#6572> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6572> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6573> <http://www.w3.org/2000/01/rdf-schema#label> "SCP d'infirmiers".
+<https://sireneld.io/vocab/sirecj#6573> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6573> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6574> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de masseurs-kinésithérapeutes".
+<https://sireneld.io/vocab/sirecj#6574> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6574> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6575> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de directeurs de laboratoire d'analyse médicale".
+<https://sireneld.io/vocab/sirecj#6575> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6575> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6576> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de vétérinaires".
+<https://sireneld.io/vocab/sirecj#6576> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6576> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6577> <http://www.w3.org/2000/01/rdf-schema#label> "SCP de géomètres experts".
+<https://sireneld.io/vocab/sirecj#6577> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6577> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6578> <http://www.w3.org/2000/01/rdf-schema#label> "SCP d'architectes".
+<https://sireneld.io/vocab/sirecj#6578> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6578> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6585> <http://www.w3.org/2000/01/rdf-schema#label> "Autre société civile professionnelle".
+<https://sireneld.io/vocab/sirecj#6585> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6585> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6588> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile laitière".
+<https://sireneld.io/vocab/sirecj#6588> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6588> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6589> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile de moyens".
+<https://sireneld.io/vocab/sirecj#6589> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6589> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6595> <http://www.w3.org/2000/01/rdf-schema#label> "Caisse locale de crédit mutuel".
+<https://sireneld.io/vocab/sirecj#6595> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6595> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6596> <http://www.w3.org/2000/01/rdf-schema#label> "Caisse de crédit agricole mutuel".
+<https://sireneld.io/vocab/sirecj#6596> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6596> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6597> <http://www.w3.org/2000/01/rdf-schema#label> "Société civile d'exploitation agricole".
+<https://sireneld.io/vocab/sirecj#6597> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6597> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6598> <http://www.w3.org/2000/01/rdf-schema#label> "Exploitation agricole à responsabilité limitée".
+<https://sireneld.io/vocab/sirecj#6598> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6598> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6599> <http://www.w3.org/2000/01/rdf-schema#label> "Autre société civile".
+<https://sireneld.io/vocab/sirecj#6599> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6599> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#65>.
+<https://sireneld.io/vocab/sirecj#6901> <http://www.w3.org/2000/01/rdf-schema#label> "Autre personne de droit privé inscrite au registre du commerce et des sociétés".
+<https://sireneld.io/vocab/sirecj#6901> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#6>.
+<https://sireneld.io/vocab/sirecj#6901> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#69>.
+<https://sireneld.io/vocab/sirecj#7111> <http://www.w3.org/2000/01/rdf-schema#label> "Autorité constitutionnelle".
+<https://sireneld.io/vocab/sirecj#7111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7111> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7112> <http://www.w3.org/2000/01/rdf-schema#label> "Autorité administrative ou publique indépendante".
+<https://sireneld.io/vocab/sirecj#7112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7113> <http://www.w3.org/2000/01/rdf-schema#label> "Ministère".
+<https://sireneld.io/vocab/sirecj#7113> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7113> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7120> <http://www.w3.org/2000/01/rdf-schema#label> "Service central d'un ministère".
+<https://sireneld.io/vocab/sirecj#7120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7150> <http://www.w3.org/2000/01/rdf-schema#label> "Service du ministère de la Défense".
+<https://sireneld.io/vocab/sirecj#7150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7160> <http://www.w3.org/2000/01/rdf-schema#label> "Service déconcentré à compétence nationale d'un ministère (hors Défense)".
+<https://sireneld.io/vocab/sirecj#7160> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7160> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7171> <http://www.w3.org/2000/01/rdf-schema#label> "Service déconcentré de l'État à compétence (inter) régionale".
+<https://sireneld.io/vocab/sirecj#7171> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7171> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7172> <http://www.w3.org/2000/01/rdf-schema#label> "Service déconcentré de l'État à compétence (inter) départementale".
+<https://sireneld.io/vocab/sirecj#7172> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7172> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7179> <http://www.w3.org/2000/01/rdf-schema#label> "(Autre) Service déconcentré de l'État à compétence territoriale".
+<https://sireneld.io/vocab/sirecj#7179> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7179> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7190> <http://www.w3.org/2000/01/rdf-schema#label> "Ecole nationale non dotée de la personnalité morale".
+<https://sireneld.io/vocab/sirecj#7190> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7190> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#71>.
+<https://sireneld.io/vocab/sirecj#7210> <http://www.w3.org/2000/01/rdf-schema#label> "Commune et commune nouvelle".
+<https://sireneld.io/vocab/sirecj#7210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#72>.
+<https://sireneld.io/vocab/sirecj#7220> <http://www.w3.org/2000/01/rdf-schema#label> "Département".
+<https://sireneld.io/vocab/sirecj#7220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#72>.
+<https://sireneld.io/vocab/sirecj#7225> <http://www.w3.org/2000/01/rdf-schema#label> "Collectivité et territoire d'Outre Mer".
+<https://sireneld.io/vocab/sirecj#7225> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7225> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#72>.
+<https://sireneld.io/vocab/sirecj#7229> <http://www.w3.org/2000/01/rdf-schema#label> "(Autre) Collectivité territoriale".
+<https://sireneld.io/vocab/sirecj#7229> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7229> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#72>.
+<https://sireneld.io/vocab/sirecj#7230> <http://www.w3.org/2000/01/rdf-schema#label> "Région".
+<https://sireneld.io/vocab/sirecj#7230> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7230> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#72>.
+<https://sireneld.io/vocab/sirecj#7312> <http://www.w3.org/2000/01/rdf-schema#label> "Commune associée et commune déléguée".
+<https://sireneld.io/vocab/sirecj#7312> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7312> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7313> <http://www.w3.org/2000/01/rdf-schema#label> "Section de commune".
+<https://sireneld.io/vocab/sirecj#7313> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7313> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7314> <http://www.w3.org/2000/01/rdf-schema#label> "Ensemble urbain".
+<https://sireneld.io/vocab/sirecj#7314> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7314> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7321> <http://www.w3.org/2000/01/rdf-schema#label> "Association syndicale autorisée".
+<https://sireneld.io/vocab/sirecj#7321> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7321> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7322> <http://www.w3.org/2000/01/rdf-schema#label> "Association foncière urbaine".
+<https://sireneld.io/vocab/sirecj#7322> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7322> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7323> <http://www.w3.org/2000/01/rdf-schema#label> "Association foncière de remembrement".
+<https://sireneld.io/vocab/sirecj#7323> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7323> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7331> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public local d'enseignement".
+<https://sireneld.io/vocab/sirecj#7331> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7331> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7340> <http://www.w3.org/2000/01/rdf-schema#label> "Pôle métropolitain".
+<https://sireneld.io/vocab/sirecj#7340> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7340> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7341> <http://www.w3.org/2000/01/rdf-schema#label> "Secteur de commune".
+<https://sireneld.io/vocab/sirecj#7341> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7341> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7342> <http://www.w3.org/2000/01/rdf-schema#label> "District urbain".
+<https://sireneld.io/vocab/sirecj#7342> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7342> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7343> <http://www.w3.org/2000/01/rdf-schema#label> "Communauté urbaine".
+<https://sireneld.io/vocab/sirecj#7343> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7343> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7344> <http://www.w3.org/2000/01/rdf-schema#label> "Métropole".
+<https://sireneld.io/vocab/sirecj#7344> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7344> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7345> <http://www.w3.org/2000/01/rdf-schema#label> "Syndicat intercommunal à vocation multiple (SIVOM)".
+<https://sireneld.io/vocab/sirecj#7345> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7345> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7346> <http://www.w3.org/2000/01/rdf-schema#label> "Communauté de communes".
+<https://sireneld.io/vocab/sirecj#7346> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7346> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7347> <http://www.w3.org/2000/01/rdf-schema#label> "Communauté de villes".
+<https://sireneld.io/vocab/sirecj#7347> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7347> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7348> <http://www.w3.org/2000/01/rdf-schema#label> "Communauté d'agglomération".
+<https://sireneld.io/vocab/sirecj#7348> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7348> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7349> <http://www.w3.org/2000/01/rdf-schema#label> "Autre établissement public local de coopération non spécialisé ou entente".
+<https://sireneld.io/vocab/sirecj#7349> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7349> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7351> <http://www.w3.org/2000/01/rdf-schema#label> "Institution interdépartementale ou entente".
+<https://sireneld.io/vocab/sirecj#7351> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7351> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7352> <http://www.w3.org/2000/01/rdf-schema#label> "Institution interrégionale ou entente".
+<https://sireneld.io/vocab/sirecj#7352> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7352> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7353> <http://www.w3.org/2000/01/rdf-schema#label> "Syndicat intercommunal à vocation unique (SIVU)".
+<https://sireneld.io/vocab/sirecj#7353> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7353> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7354> <http://www.w3.org/2000/01/rdf-schema#label> "Syndicat mixte fermé".
+<https://sireneld.io/vocab/sirecj#7354> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7354> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7355> <http://www.w3.org/2000/01/rdf-schema#label> "Syndicat mixte ouvert".
+<https://sireneld.io/vocab/sirecj#7355> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7355> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7356> <http://www.w3.org/2000/01/rdf-schema#label> "Commission syndicale pour la gestion des biens indivis des communes".
+<https://sireneld.io/vocab/sirecj#7356> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7356> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7357> <http://www.w3.org/2000/01/rdf-schema#label> "Pôle d'équilibre territorial et rural (PETR)".
+<https://sireneld.io/vocab/sirecj#7357> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7357> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7361> <http://www.w3.org/2000/01/rdf-schema#label> "Centre communal d'action sociale".
+<https://sireneld.io/vocab/sirecj#7361> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7361> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7362> <http://www.w3.org/2000/01/rdf-schema#label> "Caisse des écoles".
+<https://sireneld.io/vocab/sirecj#7362> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7362> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7363> <http://www.w3.org/2000/01/rdf-schema#label> "Caisse de crédit municipal".
+<https://sireneld.io/vocab/sirecj#7363> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7363> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7364> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement d'hospitalisation".
+<https://sireneld.io/vocab/sirecj#7364> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7364> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7365> <http://www.w3.org/2000/01/rdf-schema#label> "Syndicat inter hospitalier".
+<https://sireneld.io/vocab/sirecj#7365> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7365> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7366> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public local social et médico-social".
+<https://sireneld.io/vocab/sirecj#7366> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7366> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7367> <http://www.w3.org/2000/01/rdf-schema#label> "Centre Intercommunal d'action sociale (CIAS)".
+<https://sireneld.io/vocab/sirecj#7367> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7367> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7371> <http://www.w3.org/2000/01/rdf-schema#label> "Office public d'habitation à loyer modéré (OPHLM)".
+<https://sireneld.io/vocab/sirecj#7371> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7371> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7372> <http://www.w3.org/2000/01/rdf-schema#label> "Service départemental d'incendie et de secours (SDIS)".
+<https://sireneld.io/vocab/sirecj#7372> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7372> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7373> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public local culturel".
+<https://sireneld.io/vocab/sirecj#7373> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7373> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7378> <http://www.w3.org/2000/01/rdf-schema#label> "Régie d'une collectivité locale à caractère administratif".
+<https://sireneld.io/vocab/sirecj#7378> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7378> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7379> <http://www.w3.org/2000/01/rdf-schema#label> "(Autre) Établissement public administratif local".
+<https://sireneld.io/vocab/sirecj#7379> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7379> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7381> <http://www.w3.org/2000/01/rdf-schema#label> "Organisme consulaire".
+<https://sireneld.io/vocab/sirecj#7381> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7381> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7382> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public national ayant fonction d'administration centrale".
+<https://sireneld.io/vocab/sirecj#7382> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7382> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7383> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public national à caractère scientifique culturel et professionnel".
+<https://sireneld.io/vocab/sirecj#7383> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7383> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7384> <http://www.w3.org/2000/01/rdf-schema#label> "Autre établissement public national d'enseignement".
+<https://sireneld.io/vocab/sirecj#7384> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7384> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7385> <http://www.w3.org/2000/01/rdf-schema#label> "Autre établissement public national administratif à compétence territoriale limitée".
+<https://sireneld.io/vocab/sirecj#7385> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7385> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7389> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public national à caractère administratif".
+<https://sireneld.io/vocab/sirecj#7389> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7389> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#73>.
+<https://sireneld.io/vocab/sirecj#7410> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement d'intérêt public (GIP)".
+<https://sireneld.io/vocab/sirecj#7410> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7410> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#74>.
+<https://sireneld.io/vocab/sirecj#7430> <http://www.w3.org/2000/01/rdf-schema#label> "Établissement public des cultes d'Alsace-Lorraine".
+<https://sireneld.io/vocab/sirecj#7430> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7430> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#74>.
+<https://sireneld.io/vocab/sirecj#7450> <http://www.w3.org/2000/01/rdf-schema#label> "Etablissement public administratif, cercle et foyer dans les armées".
+<https://sireneld.io/vocab/sirecj#7450> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7450> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#74>.
+<https://sireneld.io/vocab/sirecj#7470> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement de coopération sanitaire à gestion publique".
+<https://sireneld.io/vocab/sirecj#7470> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7470> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#74>.
+<https://sireneld.io/vocab/sirecj#7490> <http://www.w3.org/2000/01/rdf-schema#label> "Autre personne morale de droit administratif".
+<https://sireneld.io/vocab/sirecj#7490> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#7>.
+<https://sireneld.io/vocab/sirecj#7490> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#74>.
+<https://sireneld.io/vocab/sirecj#8110> <http://www.w3.org/2000/01/rdf-schema#label> "Régime général de la Sécurité Sociale".
+<https://sireneld.io/vocab/sirecj#8110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#81>.
+<https://sireneld.io/vocab/sirecj#8120> <http://www.w3.org/2000/01/rdf-schema#label> "Régime spécial de Sécurité Sociale".
+<https://sireneld.io/vocab/sirecj#8120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#81>.
+<https://sireneld.io/vocab/sirecj#8130> <http://www.w3.org/2000/01/rdf-schema#label> "Institution de retraite complémentaire".
+<https://sireneld.io/vocab/sirecj#8130> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8130> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#81>.
+<https://sireneld.io/vocab/sirecj#8140> <http://www.w3.org/2000/01/rdf-schema#label> "Mutualité sociale agricole".
+<https://sireneld.io/vocab/sirecj#8140> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8140> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#81>.
+<https://sireneld.io/vocab/sirecj#8150> <http://www.w3.org/2000/01/rdf-schema#label> "Régime maladie des non-salariés non agricoles".
+<https://sireneld.io/vocab/sirecj#8150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#81>.
+<https://sireneld.io/vocab/sirecj#8160> <http://www.w3.org/2000/01/rdf-schema#label> "Régime vieillesse ne dépendant pas du régime général de la Sécurité Sociale".
+<https://sireneld.io/vocab/sirecj#8160> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8160> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#81>.
+<https://sireneld.io/vocab/sirecj#8170> <http://www.w3.org/2000/01/rdf-schema#label> "Régime d'assurance chômage".
+<https://sireneld.io/vocab/sirecj#8170> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8170> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#81>.
+<https://sireneld.io/vocab/sirecj#8190> <http://www.w3.org/2000/01/rdf-schema#label> "Autre régime de prévoyance sociale".
+<https://sireneld.io/vocab/sirecj#8190> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8190> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#81>.
+<https://sireneld.io/vocab/sirecj#8210> <http://www.w3.org/2000/01/rdf-schema#label> "Mutuelle".
+<https://sireneld.io/vocab/sirecj#8210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#82>.
+<https://sireneld.io/vocab/sirecj#8250> <http://www.w3.org/2000/01/rdf-schema#label> "Assurance mutuelle agricole".
+<https://sireneld.io/vocab/sirecj#8250> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8250> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#82>.
+<https://sireneld.io/vocab/sirecj#8290> <http://www.w3.org/2000/01/rdf-schema#label> "Autre organisme mutualiste".
+<https://sireneld.io/vocab/sirecj#8290> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8290> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#82>.
+<https://sireneld.io/vocab/sirecj#8310> <http://www.w3.org/2000/01/rdf-schema#label> "Comité central d'entreprise".
+<https://sireneld.io/vocab/sirecj#8310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#83>.
+<https://sireneld.io/vocab/sirecj#8311> <http://www.w3.org/2000/01/rdf-schema#label> "Comité d'établissement".
+<https://sireneld.io/vocab/sirecj#8311> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8311> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#83>.
+<https://sireneld.io/vocab/sirecj#8410> <http://www.w3.org/2000/01/rdf-schema#label> "Syndicat de salariés".
+<https://sireneld.io/vocab/sirecj#8410> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8410> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#84>.
+<https://sireneld.io/vocab/sirecj#8420> <http://www.w3.org/2000/01/rdf-schema#label> "Syndicat patronal".
+<https://sireneld.io/vocab/sirecj#8420> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8420> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#84>.
+<https://sireneld.io/vocab/sirecj#8450> <http://www.w3.org/2000/01/rdf-schema#label> "Ordre professionnel ou assimilé".
+<https://sireneld.io/vocab/sirecj#8450> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8450> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#84>.
+<https://sireneld.io/vocab/sirecj#8470> <http://www.w3.org/2000/01/rdf-schema#label> "Centre technique industriel ou comité professionnel du développement économique".
+<https://sireneld.io/vocab/sirecj#8470> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8470> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#84>.
+<https://sireneld.io/vocab/sirecj#8490> <http://www.w3.org/2000/01/rdf-schema#label> "Autre organisme professionnel".
+<https://sireneld.io/vocab/sirecj#8490> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8490> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#84>.
+<https://sireneld.io/vocab/sirecj#8510> <http://www.w3.org/2000/01/rdf-schema#label> "Institution de prévoyance".
+<https://sireneld.io/vocab/sirecj#8510> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8510> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#85>.
+<https://sireneld.io/vocab/sirecj#8520> <http://www.w3.org/2000/01/rdf-schema#label> "Institution de retraite supplémentaire".
+<https://sireneld.io/vocab/sirecj#8520> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#8>.
+<https://sireneld.io/vocab/sirecj#8520> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#85>.
+<https://sireneld.io/vocab/sirecj#9110> <http://www.w3.org/2000/01/rdf-schema#label> "Syndicat de copropriété".
+<https://sireneld.io/vocab/sirecj#9110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#91>.
+<https://sireneld.io/vocab/sirecj#9150> <http://www.w3.org/2000/01/rdf-schema#label> "Association syndicale libre".
+<https://sireneld.io/vocab/sirecj#9150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#91>.
+<https://sireneld.io/vocab/sirecj#9210> <http://www.w3.org/2000/01/rdf-schema#label> "Association non déclarée".
+<https://sireneld.io/vocab/sirecj#9210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9210> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#92>.
+<https://sireneld.io/vocab/sirecj#9220> <http://www.w3.org/2000/01/rdf-schema#label> "Association déclarée".
+<https://sireneld.io/vocab/sirecj#9220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9220> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#92>.
+<https://sireneld.io/vocab/sirecj#9221> <http://www.w3.org/2000/01/rdf-schema#label> "Association déclarée d'insertion par l'économique".
+<https://sireneld.io/vocab/sirecj#9221> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9221> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#92>.
+<https://sireneld.io/vocab/sirecj#9222> <http://www.w3.org/2000/01/rdf-schema#label> "Association intermédiaire".
+<https://sireneld.io/vocab/sirecj#9222> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9222> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#92>.
+<https://sireneld.io/vocab/sirecj#9223> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement d'employeurs".
+<https://sireneld.io/vocab/sirecj#9223> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9223> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#92>.
+<https://sireneld.io/vocab/sirecj#9224> <http://www.w3.org/2000/01/rdf-schema#label> "Association d'avocats à responsabilité professionnelle individuelle".
+<https://sireneld.io/vocab/sirecj#9224> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9224> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#92>.
+<https://sireneld.io/vocab/sirecj#9230> <http://www.w3.org/2000/01/rdf-schema#label> "Association déclarée, reconnue d'utilité publique".
+<https://sireneld.io/vocab/sirecj#9230> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9230> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#92>.
+<https://sireneld.io/vocab/sirecj#9240> <http://www.w3.org/2000/01/rdf-schema#label> "Congrégation".
+<https://sireneld.io/vocab/sirecj#9240> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9240> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#92>.
+<https://sireneld.io/vocab/sirecj#9260> <http://www.w3.org/2000/01/rdf-schema#label> "Association de droit local (Bas-Rhin, Haut-Rhin et Moselle)".
+<https://sireneld.io/vocab/sirecj#9260> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9260> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#92>.
+<https://sireneld.io/vocab/sirecj#9300> <http://www.w3.org/2000/01/rdf-schema#label> "Fondation".
+<https://sireneld.io/vocab/sirecj#9300> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9300> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#93>.
+<https://sireneld.io/vocab/sirecj#9900> <http://www.w3.org/2000/01/rdf-schema#label> "Autre personne morale de droit privé".
+<https://sireneld.io/vocab/sirecj#9900> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9900> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#99>.
+<https://sireneld.io/vocab/sirecj#9970> <http://www.w3.org/2000/01/rdf-schema#label> "Groupement de coopération sanitaire à gestion privée".
+<https://sireneld.io/vocab/sirecj#9970> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#9>.
+<https://sireneld.io/vocab/sirecj#9970> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sireneld.io/vocab/sirecj#99>.
