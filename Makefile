@@ -19,18 +19,18 @@ zipRdf:
 rdfOnly:
 	rdf=$(rdf) rdfFile=$(rdfFile) ./scripts/rdf.sh $(type)
 
-download: 
-	./scripts/download.sh
+download:
+	root=$(root) ./scripts/download.sh
 
 clean: cleanCsv cleanRdf cleanHdt
 	echo "Cleaned RDF, CSV and HDT..."
 
-cleanCsv:
-	rm -rf csv
+cleanSource:
+	root=$(root) scripts/clean.sh sources
 
 cleanRdf:
-	rm -rf rdf
+	root=$(root) scripts/clean.sh rdf
 
 cleanHdt:
-	rm -rf hdt
+	root=$(root) scripts/clean.sh hdt
 
