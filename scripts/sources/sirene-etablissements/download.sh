@@ -13,6 +13,11 @@ function notify {
   echo "$date $time | $source | $step > $message"
 }
 
+if [ $test -a -z $departemnets ]
+then
+  departements=52
+fi
+
 if [[ ! -z $departements ]]
 then
     notify $source "Downloading and extracting only selected departements ($departements)..."

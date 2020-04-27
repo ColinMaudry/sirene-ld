@@ -8,7 +8,7 @@ hdt: rdf cleanHdt hdtOnly
 	echo "Download + RDF + HDT".
 
 hdtOnly:
-	rdf=$(rdf) rdfFile=$(rdfFile) ./scripts/hdt.sh $(branch) $(server)
+	rdf=$(rdf) rdfFile=$(rdfFile) root=$(root) ./scripts/hdt.sh $(branch) $(server)
 
 rdf: download cleanRdf rdfOnly zipRdf
 	echo "Download + RDF."
@@ -17,12 +17,12 @@ zipRdf:
 	gzip -f9 $(rdf)
 
 rdfOnly:
-	rdf=$(rdf) rdfFile=$(rdfFile) ./scripts/rdf.sh $(type)
+	rdf=$(rdf) rdfFile=$(rdfFile) root=$(root) ./scripts/rdf.sh $(type)
 
 download:
 	root=$(root) ./scripts/download.sh
 
-clean: cleanCsv cleanRdf cleanHdt
+clean: cleanSource cleanRdf cleanHdt
 	echo "Cleaned RDF, CSV and HDT..."
 
 cleanSource:

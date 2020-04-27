@@ -1,8 +1,7 @@
 #!/bin/bash
 
 function notify {
-  source=$1
-  message=$2 
+  message=$1
   step="download"
   date=`date +%Y-%m-%d`
   time=`date +%H:%M:%S`
@@ -18,7 +17,7 @@ then
 
   if [[ ! -f $zip ]]
   then
-    notify $source "Downloading data from https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip..."
+    notify "Downloading data from https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip..."
     wget -N -q https://files.data.gouv.fr/insee-sirene/$zip
   else
     echo "$zip already downloaded."
@@ -27,13 +26,13 @@ then
 
   if [[ ! -f $csv ]]
   then
-    notify $source "Starting ZIP extraction... "
+    notify "Starting ZIP extraction... "
     unzip $zip
   else
-    notify $source "$csv already exists"
+    notify "$csv already exists"
   fi
 else
-  notify $source "UniteLegale download skipped for testing"
+  notify "UniteLegale download skipped (test=test)"
 fi
 
-notify $source "Finished step."
+notify "Finished step."
