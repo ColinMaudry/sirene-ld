@@ -1,14 +1,6 @@
 #!/bin/bash
 
-function notify {
-  message=$1
-  step="download"
-  date=`date +%Y-%m-%d`
-  time=`date +%H:%M:%S`
-
-  echo "$date $time | $source | $step > $message"
-}
-
+source $root/scripts/functions.sh
 
 if [[ -z $test ]]
 then

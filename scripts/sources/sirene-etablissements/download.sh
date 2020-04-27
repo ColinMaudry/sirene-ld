@@ -1,17 +1,9 @@
 #!/bin/bash
 
+source $root/scripts/functions.sh
+
 # fail on error
 set -e
-
-function notify {
-  source=$1
-  message=$2
-  step="download"
-  date=`date +%Y-%m-%d`
-  time=`date +%H:%M:%S`
-
-  echo "$date $time | $source | $step > $message"
-}
 
 if [ $test -a -z $departemnets ]
 then

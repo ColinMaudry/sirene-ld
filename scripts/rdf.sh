@@ -21,16 +21,16 @@ then
       notify "Data already processed, exiting."
       exit 0
     else
-      mkdir $root/sources/$source
       cd $root/sources/$source
 
       notify "Starting RDF processing..."
       $root/scripts/sources/$source/rdf.sh $source
       notify "Finished RDF processing."
     fi
-  elif [ ! -f $root/scripts/sources/$source/download.sh ]
+  elif [ ! -f $root/scripts/sources/$source/rdf.sh ]
   then
     notify "No rdf.sh for $source."
+    exit 0
   else
     notify "This source doesn't exist.'"
     echo ""
