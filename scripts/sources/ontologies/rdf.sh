@@ -1,21 +1,6 @@
 #!/bin/bash
 
-function notify {
-  if [[ ! $source ]]
-    then
-      msgSource=all
-    else
-      msgSource=$source
-  fi
-  msgSource=`printf '%-22s' "$msgSource"`
-  message=$1
-  step="rdf"
-  date=`date +%Y-%m-%d`
-  time=`date +%H:%M:%S`
-
-  echo "$date $time | $msgSource | $step > $message"
-}
-
+source $root/scripts/functions.sh
 
 mkdir nt
 
@@ -28,9 +13,9 @@ cp *.nt nt
 
 if [[ $output == "nq" ]]
 then
-  cat nt/*.nt | sed "s/\.$/<urn:graphs:${source}> ./" >> $rdf
+  cat nt/*.nt | sed "s/\.$/<urn:graphs:${source}> ./" | gzip -9 - > $sourceRdf
 else
-  cat nt/*.nt  >> $rdf
+  cat nt/*.nt | gzip -9 - > $sourceRdf
 fi
 
 rm -r nt

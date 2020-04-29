@@ -4,15 +4,15 @@ source $root/scripts/functions.sh
 
 csvs=`ls *.csv`
 notify "Input: $csvs"
-notify "Output: $rdf"
+notify "Output: $sourceRdf"
 tarqlCommand="time tarql --ntriples $root/sparql/${source}2rdf.rq $csvs"
 
 
 if [[ $output == "nq" ]]
 then
- time tarql --ntriples $root/sparql/${source}2rdf.rq $csvs | sed "s/\.$/<urn:graphs:${source}> ./" >> $rdf
+ time tarql --ntriples $root/sparql/${source}2rdf.rq $csvs | sed "s/\.$/<urn:graphs:${source}> ./" | gzip -9 - > $sourceRdf
 else
- time tarql --ntriples $root/sparql/${source}2rdf.rq $csvs >> $rdf
+ time tarql --ntriples $root/sparql/${source}2rdf.rq $csvs | gzip -9 - > $sourceRdf
 fi
 
 notify "Finished step"

@@ -10,14 +10,14 @@ hdt: rdf cleanHdt hdtOnly
 hdtOnly:
 	rdf=$(rdf) rdfFile=$(rdfFile) root=$(root) ./scripts/hdt.sh $(branch) $(server)
 
-rdf: download cleanRdf rdfOnly zipRdf
+rdf: download cleanRdf rdfOnly concatRdf
 	echo "Download + RDF."
 
-zipRdf:
-	gzip -f9 $(rdf)
+concatRdf:
+	cat rdf/*.gz > $(rdf).gz
 
 rdfOnly:
-	rdf=$(rdf) rdfFile=$(rdfFile) root=$(root) ./scripts/rdf.sh $(type)
+	output=$(output) root=$(root) ./scripts/rdf.sh $(type)
 
 download:
 	root=$(root) ./scripts/download.sh

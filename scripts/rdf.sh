@@ -22,7 +22,7 @@ then
       exit 0
     else
       cd $root/sources/$source
-
+      export sourceRdf="$root/rdf/$source.$output.gz"
       notify "Starting RDF processing..."
       $root/scripts/sources/$source/rdf.sh $source
       notify "Finished RDF processing."
