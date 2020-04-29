@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "code": "ontologies",
+    "description": "Ontologies crées pour sireneLD",
+    "url": "https://github.com/ColinMaudry/sirene-ld"
+  },
+  {
+    "id": "2",
+    "code": "sirene-uniteslegales",
+    "description": "SIRENE : données des unités légales",
+    "url": "https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/"
+  },
+  {
+    "id": "3",
+    "code": "sirene-etablissements",
+    "description": "SIRENE : données des établissements",
+    "url": "http://data.cquest.org/geo_sirene/v2019/last/"
+  }
+]

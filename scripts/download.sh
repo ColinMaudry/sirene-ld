@@ -2,131 +2,51 @@
 
 # fail on error
 set -e
-echo $bla
-date=`date +%Y-%m-%d`
-time=`date +%H:%M:%S`
+export step=download
+source $root/scripts/functions.sh
 
-if [ $test -a -z $departements ]
+if [[ $source ]]
 then
-  departements="52"
-fi
 
-echo "***** Download **********"
-echo "Download and extraction started: $date $time"
+  if [ -d $root/scripts/sources/$source -a -f $root/scripts/sources/$source/download.sh ]
+      then
 
-
-# -----------------------------------------
-# Etablissement
-# -----------------------------------------
-
-echo $mytest
-
-if [[ ! -d csv/Etablissement ]]
-then
-    mkdir -p csv/Etablissement
-fi
-
-cd csv/Etablissement
-
-echo "Downloading Etablissement data from http://data.cquest.org/geo_sirene/v2019/last/dep/..."
-
-
-echo "done"
-echo ""
-
-echo "Extracting... "
-
-if [[ ! -z $departements ]]
-then
-    echo "Downloading and extracting only selected departements ($departements)..."
-
-    rm -rf tmpcsv
-    mkdir tmpcsv
- echo "$departements"
-    IFS=',' read -ra arrayDep <<< "$departements"
-    for dep in "${arrayDep[@]}"
-    do
-        gz="geo_siret_${dep}.csv.gz"
-        csv="geo_siret_${dep}.csv"
-
-        if [[ ! -f $gz ]]
+     notify "Starting download..." 
+     
+      # If data is already here, we keep it...
+      if [[ -d $root/sources/$source ]]
         then
-            echo "Downloading $gz..."
-            wget -N -c -q -np -nd "http://data.cquest.org/geo_sirene/v2019/last/dep/${gz}"
-        fi
+          notify "Data already downloaded, exiting."
+          exit 0
+      else
+        mkdir $root/sources/$source
+        cd $root/sources/$source
 
-        set +e
-        echo "Extracting ${gz}..."
-        gzip -dkfv $gz
-        set -e
-
-        mv $csv tmpcsv
-    done
-
-    echo "Removing unselected departement CSVs..."
-    rm -f *.csv
-    mv tmpcsv/*.csv .
-    rm -r tmpcsv
-
-    echo "done"
-    echo ""
+        $root/scripts/sources/$source/download.sh $source
+      fi
   else
-    echo "Downloading all Etablissement data..."
-    rm -f *.csv *.gz
-    wget -N -c -q -np -nd http://data.cquest.org/geo_sirene/v2019/last/StockEtablissement_utf8_geo.csv.gz
-    set +e
-    echo "Extracting..."
-    gzip -dfv Stock*
-    set -e
-fi
-cd ../..
+     notify "This source doesn't exit.'"
+      echo ""
 
-# -----------------------------------------
-# Unite Legale
-# -----------------------------------------
-echo "test=$test"
-if [[ -z $test ]]
-then
-
-  if [[ ! -d csv/UniteLegale ]]; then
-    mkdir -p csv/UniteLegale
-  fi
-
-  cd csv/UniteLegale
-
-
-
-  zip=StockUniteLegale_utf8.zip
-  csv=StockUniteLegale_utf8.csv
-
-  if [[ ! -f $zip ]]
-
-  then
-    echo "Downloading UniteLegale data from https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip..."
-    wget -N -q https://files.data.gouv.fr/insee-sirene/$zip
-    echo "done"
-    echo ""
-  else
-    echo "$zip already downloaded."
-  fi
-
-
-  if [[ ! -f $csv ]]
-  then
-    echo "Extracting... "
-    unzip $zip
-    echo "done"
-    echo ""
-  else
-    echo "$csv already exists"
+      exit 1
   fi
 else
-  echo "UniteLegale download skipped"
+  echo "======================================================="
+  notify "Starting download for all sources...."
+  echo ""
+
+  sources=`jq -r '.[] | .code' $root/sources/metadata.json`
+
+ for source in $sources
+ do
+
+   make -s download source=$source &
+ done
+
+ # Waiting for parrallel downloads to finish
+ wait
+
+ echo ""
+ notify "All downloads finished."
+ echo "========================================="
 fi
-
-date=`date +%Y-%m-%d`
-time=`date +%H:%M:%S`
-
-echo "Download and extraction complete: $date $time"
-echo "***** Download **********"
-echo ""

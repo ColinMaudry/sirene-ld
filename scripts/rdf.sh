@@ -1,91 +1,58 @@
 #!/bin/bash
 
-type=$1
-root=`pwd`
-
+export step=rdf
+source $root/scripts/functions.sh
 
 if [[ ! -d rdf ]]
 then
     mkdir rdf
 fi
 
-echo "rdf:	$rdf";
-echo "type:	$type";
+if [[ $source ]]
+then
+  if [ -d $root/scripts/sources/$source -a -f $root/scripts/sources/$source/rdf.sh ]
+  then
 
-function EtablissementUniteLegale {
-    type=$1
+    notify "Starting RDF processing..."
 
-    cd csv/$type
-    csvs=`ls *.csv`
-    echo $csvs
-    tarqlCommand="time tarql --ntriples $root/sparql/${type}2rdf.rq $csvs"
-
-    echo "$(date +%H:%M:%S): starting RDF conversion of ${type}..."
-
-    if [[ $output == "nq" ]]
+    # If data is already here, we keep it...
+    if [[ -d $root/rdf/$source ]]
     then
-      time tarql --ntriples $root/sparql/${type}2rdf.rq $csvs | sed "s/\.$/<urn:graphs:${type,,}> ./" >> $rdf
+      notify "Data already processed, exiting."
+      exit 0
     else
-      time tarql --ntriples $root/sparql/${type}2rdf.rq $csvs >> $rdf
-      echo "No quad output. Triple output for $type."
+      cd $root/sources/$source
+
+      notify "Starting RDF processing..."
+      $root/scripts/sources/$source/rdf.sh $source
+      notify "Finished RDF processing."
     fi
+  elif [ ! -f $root/scripts/sources/$source/rdf.sh ]
+  then
+    notify "No rdf.sh for $source."
+    exit 0
+  else
+    notify "This source doesn't exist.'"
+    echo ""
 
-    echo "$(date +%H:%M:%S): finished RDF conversion of ${type}."
-}
+    exit 1
+  fi
+else
+  echo "======================================================="
+  notify "Starting RDF processing for all sources...."
 
-function SupportData {
-    type=$1
+  sources=`jq -r '.[] | .code' $root/sources/metadata.json`
 
-    cd $root/$type
-    mkdir nt
-    for ttl in `ls *.ttl`
-    do
-      rdf2rdf -in $ttl -out nt/$ttl.nt
-    done
-    cp *.nt nt
+  for source in $sources
+  do
+    make -s rdfOnly source=$source &
+  done
 
-    if [[ $output == "nq" ]]
-    then
-      cat nt/*.nt | sed "s/\.$/<urn:graphs:${type,,}> ./" >> $rdf
-    else
-      cat nt/*.nt  >> $rdf
-      echo "No quad output. Triple output for $type."
-    fi
+  # Waiting for parrallel downloads to finish
+  wait
 
-    rm -r nt
-}
+  echo ""
+  notify "All RDF processing finished."
+  echo "========================================="
+fi
 
-
-case "$type" in
-
-    Etablissement)
-        EtablissementUniteLegale $type
-    ;;
-
-    UniteLegale)
-      if [[ -z $test ]]
-      then
-        EtablissementUniteLegale $type
-      fi
-    ;;
-
-    ontologies)
-        SupportData $type
-    ;;
-
-    nomenclatures)
-        SupportData $type
-    ;;
-
-    *)
-        echo "No type provided, do them all..."
-        rm -f $rdf
-        for type in Etablissement UniteLegale ontologies nomenclatures
-        do
-            $root/scripts/rdf.sh $type
-        done
-        echo "$(date +%H:%M:%S): finished RDF conversion."
-    ;;
-esac
-
-cd $root/rdf

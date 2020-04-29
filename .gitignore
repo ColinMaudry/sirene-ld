@@ -14,3 +14,5 @@ csv
 *.save
 *.zip
 *.log
+sources/*
+!metadata.json
