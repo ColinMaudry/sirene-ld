@@ -174,20 +174,6 @@ sirene:dateCreationEtablissement a rdf:Property ;
 	rdfs:domain sirext:Etablissement ;
 	rdfs:isDefinedBy sirene: .
 
-sirene:activitePrincipaleEtablissement a rdf:Property ;
-	rdfs:comment "Activité principale de l'établissement" ;
-	rdfs:label "Activité principale" ;
-	rdfs:range xs:string ;
-	rdfs:domain sirext:Etablissement ;
-	rdfs:isDefinedBy sirene: .
-
-sirene:trancheEffectifsEtablissement a rdf:Property ;
-	rdfs:comment "Tranche d'effectif salarié de l'établissement" ;
-	rdfs:label "Tranche d'effectif salarié" ;
-	rdfs:range xs:string ;
-	rdfs:domain sirext:Etablissement ;
-	rdfs:isDefinedBy sirene: .
-
 sirene:anneeEffectifsEtablissement a rdf:Property ;
 	rdfs:comment "Année de validité de l'effectif salarié de l'établissement" ;
 	rdfs:label "Année de validité de l'effectif salarié" ;
@@ -293,13 +279,6 @@ sirene:categorieJuridiqueUniteLegale a rdf:Property ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
-sirene:activitePrincipaleUniteLegale a rdf:Property ;
-	rdfs:comment "Lors de son inscription au répertoire, l’Insee attribue à toute unité légale un code dit « APE » sur la base de la description de l’activité principale faite par le déclarant. Ce code est modifiable au cours de la vie de l’unité légale en fonction des déclarations de l’exploitant." ;
-	rdfs:label "Activité principale de l’unité légale" ;
-	rdfs:range xs:string ;
-	rdfs:domain sirext:UniteLegale ;
-	rdfs:isDefinedBy sirene: .
-
 sirene:activitePrincipaleRegistreMetiersEtablissement a rdf:Property ;
 	rdfs:comment "Activité principale au registre des métiers" ;
 	rdfs:label "Activité principale au registre des métiers" ;
@@ -314,26 +293,10 @@ sirene:economieSocialeSolidaireUniteLegale a rdf:Property ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
-sirene:trancheEffectifsUniteLegale a rdf:Property ;
-	rdfs:comment "Il s’agit d’une variable statistique, millésimée au 31/12 d’une année donnée (voir variable anneeEffectifsUniteLegale)." ;
-	rdfs:label "Tranche d'effectif salarié" ;
-	rdfs:range xs:string ;
-	rdfs:domain sirext:UniteLegale ;
-	rdfs:isDefinedBy sirene: .
-
 sirene:anneeEffectifsUniteLegale a rdf:Property ;
 	rdfs:comment "Seule la dernière année de mise à jour de l’effectif salarié de l’unité légale est donnée si celle-ci est inférieure ou égale à l’année d’interrogation-3. Ainsi une interrogation en 2018 ne renverra la dernière année de mise à jour de l’effectif que si cette année est supérieure ou égale à 2015." ;
 	rdfs:label "Année de validité de l'effectif salarié" ;
 	rdfs:range xs:gYear ;
-	rdfs:domain sirext:UniteLegale ;
-	rdfs:isDefinedBy sirene: .
-
-sirene:categorieEntreprise a rdf:Property ;
-	rdfs:comment "La catégorie d’entreprise est une variable statistique et calculée par l'Insee. Ce n’est pas une variable du répertoire Sirene." ;
-	rdfs:label "Catégorie d'entreprise" ;
-	rdfs:range xs:string ;
-    rdfs:seeAlso <https://www.insee.fr/fr/metadonnees/definition/c1057> ;
-    rdfs:seeAlso <https://www.insee.fr/fr/information/1730869> ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
 
@@ -446,13 +409,6 @@ sirene:distributionSpeciale2Etablissement a rdf:Property ;
 	rdfs:domain sirext:Etablissement ;
 	rdfs:isDefinedBy sirene: .
 
-sirene:etatAdministratifEtablissement a rdf:Property ;
-	rdfs:comment "Lors de son inscription au répertoire, un établissement est, sauf exception, à l’état « Actif ». Le passage à l’état « Fermé » découle de la prise en compte d’une déclaration de fermeture. À noter qu’un établissement fermé peut être rouvert. En règle générale, la première période d’historique d’un établissement correspond à un etatAdministratifUniteLegale égal à « Actif ». Toutefois, l'état administratif peut être à null (première date de début de l'état postérieure à la première date de début d'une autre variable historisée)." ;
-	rdfs:label "État administratif de l’établissement" ;
-	rdfs:range xs:string ;
-	rdfs:domain sirext:Etablissement ;
-	rdfs:isDefinedBy sirene: .
-
 sirene:libelleCommuneEtablissement a rdf:Property ;
 	rdfs:comment "Cette variable indique le libellé de la commune de localisation de l'établissement si celui-ci n’est pas à l’étranger. C’est un élément constitutif de l’adresse." ;
 	rdfs:label "Libellé de la commune" ;
@@ -547,13 +503,6 @@ sirene:denominationUsuelle2UniteLegale a rdf:Property ;
 sirene:denominationUsuelle3UniteLegale a rdf:Property ;
 	rdfs:comment "Cette variable désigne le nom (ou les noms) sous lequel l'entreprise est connue du grand public. Cet élément d'identification de l'entreprise (sur trois champs : denominationUsuelle1UniteLegale, denominationUsuelle2UniteLegale et denominationUsuelle3UniteLegale) a été enregistré au niveau unité légale avant l'application de la norme d'échanges CFE de 2008." ;
 	rdfs:label "Dénomination usuelle de l’unité légale - troisième champ" ;
-	rdfs:range xs:string ;
-	rdfs:domain sirext:UniteLegale ;
-	rdfs:isDefinedBy sirene: .
-
-sirene:etatAdministratifUniteLegale a rdf:Property ;
-	rdfs:comment "Le passage à l’état « Cessée » découle de la prise en compte d’une déclaration de cessation administrative. Pour les personnes morales, cela correspond au dépôt de la déclaration de disparition de la personne morale. Pour les personnes physiques, cela correspond soit à la prise en compte de la déclaration de cessation d’activité déposée par l’exploitant soit au décès de l’exploitant conformément à la réglementation. En dehors de ces cas, l’unité légale est toujours à l’état administratif « Active »." ;
-	rdfs:label "État administratif de l’unité légale" ;
 	rdfs:range xs:string ;
 	rdfs:domain sirext:UniteLegale ;
 	rdfs:isDefinedBy sirene: .
