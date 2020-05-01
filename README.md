@@ -4,6 +4,8 @@ Transformation du répertoire SIRENE (CSV) et données connexes au format RDF po
 
 Le projet est en chantier total, mais quand il y a du nouveau, c'est sur [sireneld.io](https://sireneld.io) et sur Twitter via le hashtag [#sireneLD](https://twitter.com/hashtag/sireneld).
 
+Vous pouvez suivre l'avancement du projet sur [le tableau de suivi (kanban)](https://github.com/users/ColinMaudry/projects/1).
+
 ## Données sources
 
 ### SIRENE
