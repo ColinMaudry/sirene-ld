@@ -63,20 +63,6 @@
 <http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
 
 
-###  https://sireneld.io/vocab/sirene#geo_id
-:geo_id rdf:type owl:AnnotationProperty ;
-        rdfs:range xsd:string ;
-        rdfs:domain :Etablissement ,
-                    :Organisation .
-
-
-###  https://sireneld.io/vocab/sirene#geo_ligne
-:geo_ligne rdf:type owl:AnnotationProperty ;
-           rdfs:range xsd:string ;
-           rdfs:domain :Etablissement ,
-                       :Organisation .
-
-
 #################################################################
 #    Datatypes
 #################################################################
@@ -95,8 +81,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://sireneld.io/vocab/sirene#activitePrincipale
 :activitePrincipale rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Etablissement ,
-                                :UniteLegale ;
+                    rdfs:domain :ObjetSirene ;
                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                     rdfs:comment "Code d'activité principale exercée selon la nomenclature NAFRev2." ;
                     rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
@@ -115,8 +100,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://sireneld.io/vocab/sirene#etatAdministratif
 :etatAdministratif rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Etablissement ,
-                               :UniteLegale ;
+                   rdfs:domain :ObjetSirene ;
                    rdfs:range :EtatAdministratif ;
                    rdfs:comment "Un nouvel établissement est toujours Actif. Un établissement fermé peut être rouvert." ;
                    rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
@@ -135,8 +119,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://sireneld.io/vocab/sirene#trancheEffectifs
 :trancheEffectifs rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Etablissement ,
-                              :UniteLegale ;
+                  rdfs:domain :ObjetSirene ;
                   rdfs:range :TrancheEffectifs ;
                   rdfs:comment "Il s’agit d’une variable statistique, millésimée au 31/12 d’une année donnée (voir variable anneeEffectifsEtablissement)." ;
                   rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
@@ -306,8 +289,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://sireneld.io/vocab/sirene#dateCreation
 :dateCreation rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Etablissement ,
-                          :UniteLegale ;
+              rdfs:domain :ObjetSirene ;
               rdfs:range xsd:date ;
               rdfs:comment "Date de création de l'unité légale ou de l'établissement" ;
               rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
@@ -479,11 +461,19 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  https://sireneld.io/vocab/sirene#geo_id
-:geo_id rdf:type owl:DatatypeProperty .
+:geo_id rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Etablissement ;
+        rdfs:range xsd:string ;
+        rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
+        rdfs:label "geo_id" .
 
 
 ###  https://sireneld.io/vocab/sirene#geo_ligne
-:geo_ligne rdf:type owl:DatatypeProperty .
+:geo_ligne rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Etablissement ;
+           rdfs:range xsd:string ;
+           rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
+           rdfs:label "geo_ligne" .
 
 
 ###  https://sireneld.io/vocab/sirene#geo_score
@@ -891,6 +881,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://sireneld.io/vocab/sirene#Etablissement
 :Etablissement rdf:type owl:Class ;
+               rdfs:subClassOf :ObjetSirene ;
                rdfs:comment "Entité identifiée par un numéro SIRET" ;
                rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
                rdfs:label "Établissement" .
@@ -912,6 +903,11 @@ xsd:gYear rdf:type rdfs:Datatype .
     rdfs:label "Grande Entreprise" ;
     rdfs:seeAlso <https://www.insee.fr/fr/information/1730869> ,
                  <https://www.insee.fr/fr/metadonnees/definition/c1057> .
+
+
+###  https://sireneld.io/vocab/sirene#ObjetSirene
+:ObjetSirene rdf:type owl:Class ;
+             rdfs:label "Objet Sirene" .
 
 
 ###  https://sireneld.io/vocab/sirene#PME
@@ -942,6 +938,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://sireneld.io/vocab/sirene#UniteLegale
 :UniteLegale rdf:type owl:Class ;
+             rdfs:subClassOf :ObjetSirene ;
              rdfs:comment "Entité identifiée par un numéro SIREN" ;
              rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
              rdfs:label "Unité légale" .
@@ -953,16 +950,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 <http://colin.maudry.com/rdf/colin-maudry#me> <http://xmlns.com/foaf/0.1/mbox> <mailto:colin@maudry.com> ;
                                               <http://xmlns.com/foaf/0.1/name> "Colin Maudry" .
-
-
-:geo_id rdfs:label "geo_id" ;
-        rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
-        rdfs:comment "" .
-
-
-:geo_ligne rdfs:comment "" ;
-           rdfs:isDefinedBy <https://sireneld.io/vocab/sirene#> ;
-           rdfs:label "geo_ligne" .
 
 
 ###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
