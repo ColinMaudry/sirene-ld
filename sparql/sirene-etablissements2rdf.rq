@@ -1,24 +1,23 @@
 PREFIX sn: <https://sireneld.io/vocab/sirene#>
-PREFIX sx: <https://sireneld.io/vocab/sirext#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
 PREFIX geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 
 construct {
-    ?etablissement a sx:Etablissement ;
+    ?etablissement a sn:Etablissement ;
         a geo-pos:SpatialThing ;
         a ?siegeClass ;
-        sn:siren ?siren ;
-        sx:uniteLegale ?uniteLegale ;
+        # sn:siren ?siren ;
+        sn:uniteLegale ?uniteLegale ;
         sn:nic ?nic ;
         sn:siret ?siret ;
         sn:statutDiffusionEtablissement ?statutDiffusionEtablissement ;
-        sn:dateCreationEtablissement ?dateCreationEtablissement_date ;
-        sn:trancheEffectifsEtablissement ?trancheEffectifsEtablissement ;
+        sn:dateCreation ?dateCreationEtablissement_date ;
+        # sn:trancheEffectifsEtablissement ?trancheEffectifsEtablissement ;
         sn:anneeEffectifsEtablissement ?anneeEffectifsEtablissement_year ;
         sn:activitePrincipaleRegistreMetiersEtablissement ?activitePrincipaleRegistreMetiersEtablissement ;
         sn:dateDernierTraitementEtablissement ?dateDernierTraitementEtablissement_date ;
-        sn:etablissementSiege ?etablissementSiege ;
+        # sn:etablissementSiege ?etablissementSiege ;
         sn:nombrePeriodesEtablissement ?nombrePeriodesEtablissement_integer ;
         sn:complementAdresseEtablissement ?complementAdresseEtablissement ;
         sn:complementAdresse2Etablissement ?complementAdresse2Etablissement ;
@@ -49,7 +48,7 @@ construct {
         sn:codePaysEtranger2Etablissement ?codePaysEtranger2Etablissement ;
         sn:libellePaysEtranger2Etablissement ?libellePaysEtranger2Etablissement ;
         sn:dateDebut ?dateDebut_date ;
-        sn:etatAdministratifEtablissement ?etatAdministratifEtablissement ;
+        # sn:etatAdministratifEtablissement ?etatAdministratifEtablissement ;
         sn:enseigne1Etablissement ?enseigne1Etablissement ;
         sn:enseigne2Etablissement ?enseigne2Etablissement ;
         sn:enseigne3Etablissement ?enseigne3Etablissement ;
@@ -58,22 +57,22 @@ construct {
         sn:nomenclatureActivitePrincipaleEtablissement ?nomenclatureActivitePrincipaleEtablissement ;
         sn:caractereEmployeurEtablissement ?caractereEmployeurEtablissement ;
 
-        sx:trancheEffectifs ?trancheEffectifsEtablissement_uri ;
-        sx:etatAdministratif ?etatAdministratifEtablissement_uri ;
+        sn:trancheEffectifs ?trancheEffectifsEtablissement_uri ;
+        sn:etatAdministratif ?etatAdministratifEtablissement_uri ;
         # geo-pos:lat ?latitude_double ;
         # geo-pos:long ?longitude_double ;
-        # sx:geo_type ?geo_type ;
-        # sx:adresseNormalisee1 ?geo_l4 ;
-        # sx:adresseNormalisee2 ?geo_l5 ;
-        sx:activitePrincipale ?activitePrincipaleEtablissement_uri ;
-        sx:communeEtablisement ?communeEtablisement_uri .
+        # sn:geo_type ?geo_type ;
+        # sn:adresseNormalisee1 ?geo_l4 ;
+        # sn:adresseNormalisee2 ?geo_l5 ;
+        sn:activitePrincipale ?activiePrincipaleEtablissement_uri ;
+        sn:communeEtablisement ?communeEtablisement_uri .
 
 }
 where {
     bind(uri(concat("https://sireneld.io/siret/",?siret)) as ?etablissement)
     bind(uri(concat("https://sireneld.io/siren/",?siren)) as ?uniteLegale)
     bind(uri(concat("https://sireneld.io/tef/",?trancheEffectifsEtablissement)) as ?trancheEffectifsEtablissement_uri)
-    bind(if(?etablissementSiege = "true",<https://sireneld.io/vocab/sirext#Siege>,?null) as ?siegeClass)
+    bind(if(?etablissementSiege = "true",<https://sireneld.io/vocab/sirene#Siege>,?null) as ?siegeClass)
     bind(if(?nomenclatureActivitePrincipaleEtablissement = "NAFRev2", uri(concat("http://id.insee.fr/codes/nafr2/sousClasse/", ?activitePrincipaleEtablissement)),?null) as ?activitePrincipaleEtablissement_uri)
     bind(uri(concat("https://sireneld.io/etatAdministratif/",?etatAdministratifEtablissement)) as ?etatAdministratifEtablissement_uri)
     bind(uri(concat("http://id.insee.fr/geo/commune/",?codeCommuneEtablissement)) as ?communeEtablisement_uri)
@@ -86,4 +85,4 @@ where {
     bind(xs:date(?dateDebut) as ?dateDebut_date)
     # bind(xs:double(?latitude) as ?latitude_double)
     # bind(xs:double(?longitude) as ?longitude_double)
-}
+}t
