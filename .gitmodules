@@ -1,0 +1,3 @@
+[submodule "ontologies"]
+	path = ontologies
+	url = git@github.com:ColinMaudry/sirene-ld-ontologies.git
