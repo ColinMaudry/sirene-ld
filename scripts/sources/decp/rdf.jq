@@ -4,16 +4,31 @@
 def makeUri(base;text):
     "<" + base + text + ">"
     ;
-def makeTriple(uid;key;value;objectType):
-    if (objectType == "string") then
-    makeUri($base;uid) + " " + makeUri($vocab;key) + " \"" + .value +  "\" ."
+def makeObject(value;objectType):
+    if
+        (objectType == "string") then
+        " \"" + .value +  "\""
+    elif (objectType == "date") then
+        " \"" + .value[0:10] + "T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>"
     else empty end
     ;
 
-    .marches[10] | .uid as $uid | to_entries
+def makeTriple(uid;key;value;objectType):
+    makeUri($base;uid) as $subject |
+    makeObject(value;objectType) as $object |
+    makeUri($vocab;key) as $predicate |
+
+
+    $subject + " " + $predicate + " " + $object + " ."
+    ;
+
+    .marches[] | .uid as $uid | to_entries
 
     | map(
-    if (.value | type == "string") then
+    if (.key[0:4] == "date" ) then
+        makeTriple($uid;.key;.value;"date")
+
+    elif (.value | type == "string") then
          makeTriple($uid;.key;.value;"string")
          else empty end
      ) | .[]
