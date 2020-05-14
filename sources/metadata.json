@@ -19,8 +19,8 @@
   },
   {
     "id": "4",
-    "code": "decp",
-    "description": "Données essentielles de la commande publique",
+    "code": "compub",
+    "description": "Données de la commande publique",
     "url": "https://www.data.gouv.fr/fr/datasets/5cd57bf68b4c4179299eb0e9/"
   }
 ]
