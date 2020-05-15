@@ -1,6 +1,7 @@
 "https://sireneld.io/vocab/compub#" as $vocab |
 "https://sireneld.io/attribution/" as $base |
-
+# https://stackoverflow.com/questions/43259563/how-to-check-if-element-exists-in-array-with-jq
+def IN(s): first((s == .) // empty) // false;
 def makeUri(base;text):
     "<" + base + text + ">"
     ;
@@ -12,8 +13,8 @@ def makeObject(value;objectType):
         " \"" + .value[0:10] + "T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>"
     elif (objectType == "siret") then
         makeUri("https://sireneld.io/siret/";value)
-    # elif (["arrondissement","commune","region","canton","departement","pays", "postal"] | index(objectType)) then
-    #     makeUri("https://sireneld.io/" + objectType + "/";value)
+    elif (objectType == "decimal" or objectType == "short") then
+         "\"" + value + "\"^^<http://www.w3.org/2001/XMLSchema#" + objectType + ">"
     else
         makeUri("https://sireneld.io/" + objectType + "/";value)
     end
@@ -39,13 +40,13 @@ def cog(typeCode):
     end
     ;
 
-    .marches[] | . as $marche | .uid as $uid | to_entries
+    .marches[10] | . as $marche | .uid as $uid | to_entries
 
     | map(
     if (.key[0:4] == "date" ) then
         makeTriple($uid;.key;.value;"date")
 
-    elif (.value | type == "string") then
+    elif ((.value | type) == "string" and .key != "codeCPV") then
         makeTriple($uid;.key;.value;"string")
 
     # elif (.value | type == "object" and ( ["acheteur","titulaires","autoriteConcedante","concessionnaires"] | index("titulaires")) ) then
@@ -56,8 +57,8 @@ def cog(typeCode):
          if ($marche["_type"] == "Marché") then
             ($marche.acheteur? | makeTriple($uid;"acheteur";.id;"siret")),
             ($marche.titulaires[]? | makeTriple($uid;"titulaire";.id;"siret")),
-            ($marche.lieuExecution? | makeTriple($uid;"lieuExecution";.code;cog(.typeCode)))
+            ($marche.lieuExecution? | makeTriple($uid;"lieuExecution";.code;cog(.typeCode))),
+            ($marche.dureeMois? | makeTriple($uid;"duree";(.|tostring);"short"))
             else empty
-            #$marche | .titulaires? | .[] | makeTriple($uid;"titulaires")
         end
       ]| .[]
