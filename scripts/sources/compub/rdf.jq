@@ -12,21 +12,34 @@ def makeObject(value;objectType):
         " \"" + .value[0:10] + "T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>"
     elif (objectType == "siret") then
         makeUri("https://sireneld.io/siret/";value)
+    # elif (["arrondissement","commune","region","canton","departement","pays", "postal"] | index(objectType)) then
+    #     makeUri("https://sireneld.io/" + objectType + "/";value)
     else
-        empty
+        makeUri("https://sireneld.io/" + objectType + "/";value)
     end
     ;
 
 def makeTriple(uid;key;value;objectType):
+    if (objectType) then
     makeUri($base;uid) as $subject |
     makeUri($vocab;key) as $predicate |
     makeObject(value;objectType) as $object |
 
-
     $subject + " " + $predicate + " " + $object + " ."
+    else empty end
+    ;
+def cog(typeCode):
+    if (typeCode == "Code département") then
+        "departement"
+    elif (typeCode == "Code région") then
+            "region"
+    elif (typeCode[0:3] | ascii_downcase == "code") then
+        typeCode[5:] | ascii_downcase
+    else empty
+    end
     ;
 
-    .marches[100] | . as $marche | .uid as $uid | to_entries
+    .marches[] | . as $marche | .uid as $uid | to_entries
 
     | map(
     if (.key[0:4] == "date" ) then
@@ -41,7 +54,9 @@ def makeTriple(uid;key;value;objectType):
 
      ) + [
          if ($marche["_type"] == "Marché") then
-            $marche | .acheteur? | makeTriple($uid;"acheteur";.id;"siret")
+            ($marche.acheteur? | makeTriple($uid;"acheteur";.id;"siret")),
+            ($marche.titulaires[]? | makeTriple($uid;"titulaire";.id;"siret")),
+            ($marche.lieuExecution? | makeTriple($uid;"lieuExecution";.code;cog(.typeCode)))
             else empty
             #$marche | .titulaires? | .[] | makeTriple($uid;"titulaires")
         end
