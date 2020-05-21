@@ -5,16 +5,14 @@ rdfFile=sireneld.$(output)
 rdf=$(root)/rdf/$(rdfFile)
 
 hdt: rdf cleanHdt hdtOnly
-	echo "Download + RDF + HDT".
 
 hdtOnly:
 	rdf=$(rdf) rdfFile=$(rdfFile) root=$(root) ./scripts/hdt.sh $(branch) $(server)
 
 rdf: download cleanRdf rdfOnly concatRdf
-	echo "Download + RDF."
 
 concatRdf:
-	cat rdf/*.gz > $(rdf).gz
+	rm $(rdf).gz && cat rdf/*.gz > $(rdf).gz
 
 rdfOnly:
 	output=$(output) root=$(root) ./scripts/rdf.sh $(type)
