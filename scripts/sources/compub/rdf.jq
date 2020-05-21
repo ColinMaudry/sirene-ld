@@ -3,14 +3,18 @@
 # https://stackoverflow.com/questions/43259563/how-to-check-if-element-exists-in-array-with-jq
 def IN(s): first((s == .) // empty) // false;
 def makeUri(base;text):
+    if (text == "class") then
+    "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>" else
     "<" + base + text + ">"
+    end
     ;
 def makeObject(value;objectType):
-    if
-        (objectType == "string") then
-        " \"" + .value +  "\""
+    if (objectType == "class") then
+        "<" + $vocab + value + ">"
+    elif    (objectType == "string") then
+        " \"" + value +  "\""
     elif (objectType == "date") then
-        " \"" + .value[0:10] + "T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>"
+        " \"" + value[0:10] + "T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>"
     elif (objectType == "siret") then
         makeUri("https://sireneld.io/siret/";value)
     elif (objectType == "decimal" or objectType == "short") then
@@ -40,25 +44,28 @@ def cog(typeCode):
     end
     ;
 
-    .marches[10] | . as $marche | .uid as $uid | to_entries
+    .marches[10] | . as $marche | .uid as $uid
 
-    | map(
-    if (.key[0:4] == "date" ) then
-        makeTriple($uid;.key;.value;"date")
+    | [
+        # Commons between Marché and Contrat de concession
+        (.id? | makeTriple($uid;"id";.;"string")),
+        (.uid? | makeTriple($uid;"uid";.;"string")),
+        (.datePublicationDonnees? | makeTriple($uid;"datePublicationDonnees";.;"date")),
+        (.procedure? | makeTriple($uid;"procedure";.;"string")),
+        (.source? | makeTriple($uid;"source";.;"string")),
+        (.lieuExecution? | makeTriple($uid;"lieuExecution";.code;cog(.typeCode))),
+        (.dureeMois? | makeTriple($uid;"duree";(.|tostring);"short")),
+        (.dateNotification? | makeTriple($uid;"datePublicationDonnees";.;"date")),
 
-    elif ((.value | type) == "string" and .key != "codeCPV") then
-        makeTriple($uid;.key;.value;"string")
+        # Specific to Marché
+        if ($marche["_type"] == "Marché") then
+            # (.nature) | makeTriple(),
+            makeTriple($uid;"class";"MarchePublic";"class"),
+            (.acheteur? | makeTriple($uid;"acheteur";.id;"siret")),
+            (.titulaires[]? | makeTriple($uid;"titulaire";.id;"siret")),
+            (.formePrix? | makeTriple($uid;"formePrix";.;"string")),
+            (.dateNotification? | makeTriple($uid;"dateNotification";.;"date"))
 
-    # elif (.value | type == "object" and ( ["acheteur","titulaires","autoriteConcedante","concessionnaires"] | index("titulaires")) ) then
-    #     "elif works with: " + .key
-         else empty end
-
-     ) + [
-         if ($marche["_type"] == "Marché") then
-            ($marche.acheteur? | makeTriple($uid;"acheteur";.id;"siret")),
-            ($marche.titulaires[]? | makeTriple($uid;"titulaire";.id;"siret")),
-            ($marche.lieuExecution? | makeTriple($uid;"lieuExecution";.code;cog(.typeCode))),
-            ($marche.dureeMois? | makeTriple($uid;"duree";(.|tostring);"short"))
             else empty
         end
       ]| .[]
