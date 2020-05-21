@@ -16,5 +16,11 @@
     "code": "sirene-etablissements",
     "description": "SIRENE : données des établissements",
     "url": "http://data.cquest.org/geo_sirene/v2019/last/"
+  },
+  {
+    "id": "4",
+    "code": "compub",
+    "description": "Données de la commande publique",
+    "url": "https://www.data.gouv.fr/fr/datasets/5cd57bf68b4c4179299eb0e9/"
   }
 ]
