@@ -15,22 +15,22 @@ def IN(s): first((s == .) // empty) // false;
 def makeUri(base;text):
     if (text == "class") then
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>" else
-    "<" + base + text + ">"
+    "<" + (base + (text|@uri)) + ">"
     end
     ;
 def makeObject(value;objectType):
     if (objectType == "class") then
-        "<" + $vocab + value + ">"
+        makeUri($vocab;value)
     elif (objectType == "string") then
-        " \"" + value +  "\""
+        " \"" + (value|gsub("\"";"'")|gsub("\\n";" ")) + "\""
     elif (objectType == "date") then
         " \"" + value[0:10] + "T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>"
     elif (objectType == "siret") then
         makeUri("https://sireneld.io/siret/";value)
     elif (objectType == "decimal" or objectType == "short") then
-         "\"" + value + "\"^^<http://www.w3.org/2001/XMLSchema#" + objectType + ">"
+        "\"" + value + "\"^^<http://www.w3.org/2001/XMLSchema#" + objectType + ">"
     elif (objectType == "nature") then
-         "<" + $vocab + $natures[value|ascii_downcase] + ">"
+        makeUri($vocab;$natures[value|ascii_downcase])
     else
         makeUri("https://sireneld.io/" + objectType + "/";value)
     end
@@ -55,7 +55,13 @@ def cog(typeCode):
         typeCode[5:] | ascii_downcase
     else empty end
     ;
-
+def checkSiret(object):
+    object |
+    if ((.typeIdentifiant == "siret" or (.typeIdentifiant|not)) and (.id|length) == 14) then
+      "siret"
+      else empty
+    end
+    ;
     .marches[] | select(.id) |
      .uid as $uid |
 
@@ -83,7 +89,7 @@ def cog(typeCode):
         if (._type == "Marché") then
             makeTriple($uid;"class";"MarchePublic";"class"),
             (.acheteur? | makeTriple($uid;"acheteur";.id;"siret")),
-            ($modified.titulaires[]? // .titulaires[]? | makeTriple($uid;"titulaire";.id;"siret")),
+            ($modified.titulaires[]? // .titulaires[]? | makeTriple($uid;"titulaire";.id;checkSiret(.))),
             (.formePrix? | makeTriple($uid;"formePrix";.;"string")),
             (.dateNotification? | makeTriple($uid;"datePublicationDonnees";.;"date")),
             (.codeCPV? | makeTriple($uid;"codeCPV";.;"cpv")),
@@ -93,7 +99,7 @@ def cog(typeCode):
         elif (._type == "Contrat de concession") then
             makeTriple($uid;"class";"ContratConcession";"class"),
             (.autoriteConcedante? | makeTriple($uid;"autoriteConcedante";.id;"siret")),
-            (.concessionnaires[]? | makeTriple($uid;"concessionnaire";.id;"siret")),
+            (.concessionnaires[]? | makeTriple($uid;"concessionnaire";.id;checkSiret(.))),
             ($modified.valeurGlobale // .valeurGlobale? | makeTriple($uid;"valeurGlobale";(.|tostring);"decimal")),
             (.montantSubventionPublique? | makeTriple($uid;"montantSubventionPublique";(.|tostring);"decimal")),
             (.dateDebutExecution? | makeTriple($uid;"dateDebutExecution";.;"date")),
