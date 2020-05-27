@@ -9,8 +9,13 @@ do
   rdf2rdf -in $ttl -out nt/$ttl.nt
 done
 
-cp *.nt nt
+ls *.nt &> /dev/null
+if [[ $? -eq 0 ]]
+then
+  cp *.nt nt
+fi
 
+echo "sourceRdf = $sourceRdf"
 if [[ $output == "nq" ]]
 then
   cat nt/*.nt | sed "s/\.$/<urn:graphs:${source}> ./" | gzip -9 - > $sourceRdf

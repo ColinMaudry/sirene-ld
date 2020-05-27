@@ -1,6 +1,10 @@
 #!/bin/bash
 
+set -e
 
-cp $root/ontologies/*.ttl .
+curl -sL https://sireneld.io/data/ontologies.tar.gz -o ontologies.tar.gz
+tar -xzvf ontologies.tar.gz
+rm ontologies.tar.gz
+
 
 
