@@ -22,5 +22,11 @@
     "code": "compub",
     "description": "Données de la commande publique",
     "url": "https://www.data.gouv.fr/fr/datasets/5cd57bf68b4c4179299eb0e9/"
+  },
+  {
+    "id": "5",
+    "code": "nomenclatures",
+    "description": "Nomenclatures utilisées dans sireneLD",
+    "url": "https://github.com/ColinMaudry/sirene-ld"
   }
 ]

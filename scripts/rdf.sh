@@ -13,8 +13,6 @@ then
   if [ -d $root/scripts/sources/$source -a -f $root/scripts/sources/$source/rdf.sh ]
   then
 
-    notify "Starting RDF processing..."
-
     # If data is already here, we keep it...
     if [[ -d $root/rdf/$source ]]
     then

@@ -1,5 +1,5 @@
 branch?="develop"
-output?="nt"
+output?=nt
 root=`pwd`
 rdfFile=sireneld.$(output)
 rdf=$(root)/rdf/$(rdfFile)
@@ -12,7 +12,7 @@ hdtOnly:
 rdf: download cleanRdf rdfOnly concatRdf
 
 concatRdf:
-	rm $(rdf).gz && cat rdf/*.gz > $(rdf).gz
+	rm -f $(rdf).gz && cat rdf/*.gz > $(rdf).gz
 
 rdfOnly:
 	output=$(output) root=$(root) ./scripts/rdf.sh $(type)
@@ -20,10 +20,10 @@ rdfOnly:
 download:
 	root=$(root) ./scripts/download.sh
 
-clean: cleanSource cleanRdf cleanHdt
+clean: cleanSources cleanRdf cleanHdt
 	echo "Cleaned RDF, CSV and HDT..."
 
-cleanSource:
+cleanSources:
 	root=$(root) scripts/clean.sh sources
 
 cleanRdf:

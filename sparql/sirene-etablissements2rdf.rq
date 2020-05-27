@@ -85,4 +85,4 @@ where {
     bind(xs:date(?dateDebut) as ?dateDebut_date)
     # bind(xs:double(?latitude) as ?latitude_double)
     # bind(xs:double(?longitude) as ?longitude_double)
-}t
+}
