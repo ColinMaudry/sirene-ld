@@ -2,7 +2,7 @@
 "https://sireneld.io/attribution/" as $base |
 {
     "accord-cadre": "AccordCadre",
-    "marché public": "Marche",
+    "marché": "Marche",
     "marché subséquent": "MarcheSubsequent",
     "marché de partenariat": "MarchePartenariat",
     "concession de travaux": "ConcessionTravaux",
