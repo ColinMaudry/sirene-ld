@@ -4,6 +4,7 @@ PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
 PREFIX geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 
 construct {
+    ?uniteLegale sn:etablissement ?etablissement . 
     ?etablissement a sn:Etablissement ;
         a geo-pos:SpatialThing ;
         a ?siegeClass ;
