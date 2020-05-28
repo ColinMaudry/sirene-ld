@@ -57,7 +57,7 @@ def cog(typeCode):
     ;
 def checkSiret(object):
     object |
-    if ((.typeIdentifiant == "siret" or (.typeIdentifiant|not)) and (.id|length) == 14) then
+    if (((.typeIdentifiant|not) or (.typeIdentifiant|ascii_downcase) == "siret") and (.id|length) == 14) then
       "siret"
       else empty
     end
