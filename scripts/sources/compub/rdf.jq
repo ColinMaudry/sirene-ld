@@ -91,7 +91,7 @@ def checkSiret(object):
             (.acheteur? | makeTriple($uid;"acheteur";.id;"siret")),
             ($modified.titulaires[]? // .titulaires[]? | makeTriple($uid;"titulaire";.id;checkSiret(.))),
             (.formePrix? | makeTriple($uid;"formePrix";.;"string")),
-            (.dateNotification? | makeTriple($uid;"datePublicationDonnees";.;"date")),
+            (.dateNotification? | makeTriple($uid;"dateNotification";.;"date")),
             (.codeCPV? | makeTriple($uid;"codeCPV";.;"cpv")),
             ($modified.montant // .montant? | makeTriple($uid;"montant";(.|tostring);"decimal"))
 
@@ -103,6 +103,6 @@ def checkSiret(object):
             ($modified.valeurGlobale // .valeurGlobale? | makeTriple($uid;"valeurGlobale";(.|tostring);"decimal")),
             (.montantSubventionPublique? | makeTriple($uid;"montantSubventionPublique";(.|tostring);"decimal")),
             (.dateDebutExecution? | makeTriple($uid;"dateDebutExecution";.;"date")),
-            (.dateSignature? | makeTriple($uid;"dateSignaturex";.;"date"))
+            (.dateSignature? | makeTriple($uid;"dateSignature";.;"date"))
             else empty
         end
